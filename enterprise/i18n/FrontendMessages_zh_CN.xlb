@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="zh-CN">
+  <messages>
+    <msg name="MSG_advanced_search" desc="Page title">高级搜索</msg>
+    <msg name="MSG_advsearch_example" desc="Advanced Search: See http://www.google.com/advanced_search  example domains">例如： .org, google.com</msg>
+    <msg name="MSG_advsearch_file_format" desc="Advanced Search: See http://www.google.com/advanced_search  label to select desired file formats">文件格式</msg>
+    <msg name="MSG_advsearch_return_files" desc="Advanced Search: Prefixed with &quot;Only&quot; or &quot;Don't&quot;">返回该文件格式的结果</msg>
+    <msg name="MSG_alerts">快讯</msg>
+    <msg name="MSG_all_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>包含以下<ph name="START_BOLD">&lt;b></ph>全部<ph name="END_BOLD">&lt;/b></ph>的字词</msg>
+    <msg name="MSG_any_format" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any file format">任何格式</msg>
+    <msg name="MSG_any_language" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any language">任何语言</msg>
+    <msg name="MSG_any_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>包含<ph name="START_BOLD">&lt;b></ph>至少一个<ph name="END_BOLD">&lt;/b></ph>下列字词</msg>
+    <msg name="MSG_anywhere_on_page" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Return results where my terms occur"'>网页内的任何地方</msg>
+    <msg name="MSG_ar">阿拉伯文</msg>
+    <msg name="MSG_cache" desc="Link to cached copy of document">网页快照</msg>
+    <msg name="MSG_cached_copy" desc="Followed by URL">这是以下项目的缓存副本</msg>
+    <msg name="MSG_correct_credentials_help">清确认您的安全凭证是正确的。</msg>
+    <msg name="MSG_correct_spelling_help">请检查输入字词有无错误。</msg>
+    <msg name="MSG_cs" desc="Language">捷克语</msg>
+    <msg name="MSG_da" desc="Language">丹麦语</msg>
+    <msg name="MSG_de" desc="Language">德语</msg>
+    <msg name="MSG_different_keywords_help">请换用另外的查询字词。</msg>
+    <msg name="MSG_do_not" desc='Advanced search: See       http://www.google.com/advanced_search  dropdown, followed by "return results of the file format..."'>除去</msg>
+    <msg name="MSG_domains" desc="Advanced Search: See http://www.google.com/advanced_search - Domain is .com, .org, etc.">网域</msg>
+    <msg name="MSG_egds_appliance_tab_label" desc="Label on search tab: Google Search Appliance">Appliance</msg>
+    <msg name="MSG_el" desc="Language">希腊语</msg>
+    <msg name="MSG_en" desc="Language">英语</msg>
+    <msg name="MSG_err_description">说明：</msg>
+    <msg name="MSG_err_details">详细资料：</msg>
+    <msg name="MSG_err_message">邮件正文：</msg>
+    <msg name="MSG_error" desc="Title for Error Page">错误</msg>
+    <msg name="MSG_es" desc="Language">西班牙语</msg>
+    <msg name="MSG_et" desc="Language">爱沙尼亚语</msg>
+    <msg name="MSG_exact_phrase" desc='Advanced Search: See http://www.google.com/advanced_search  prefixed by "Find results"'>包含以下的<ph name="START_BOLD">&lt;b></ph>完整字句<ph name="END_BOLD">&lt;/b></ph></msg>
+    <msg name="MSG_fi" desc="Language">芬兰语</msg>
+    <msg name="MSG_file_doc">Microsoft Word (.doc)</msg>
+    <msg name="MSG_file_pdf">Adobe Acrobat PDF (.pdf)</msg>
+    <msg name="MSG_file_ppt">Microsoft Powerpoint (.ppt)</msg>
+    <msg name="MSG_file_ps">Adobe Postscript (.ps)</msg>
+    <msg name="MSG_file_rtf">.rtf 格式</msg>
+    <msg name="MSG_file_xls">Microsoft Excel (.xls)</msg>
+    <msg name="MSG_filtered_results">为了提供最相关的结果，我们省略了与已显示的 <ph name="NUM">%1$d</ph> 个类似的条目。<ph name="BREAK">&lt;br/></ph>根据您的意愿，可<ph name="START_LINK">&lt;a href="%2$s"></ph>将省略的结果纳入搜索范围后再重新搜索<ph name="END_LINK">&lt;/a></ph>。</msg>
+    <msg name="MSG_find_pages_linking_to" desc="Text to find pages that have a link to this page">搜索与该网页存在链接的网页</msg>
+    <msg name="MSG_find_results" desc='Advanced Search: See http://www.google.com/advanced_search - Followed by "with all of the words ..."'>搜索结果</msg>
+    <msg name="MSG_fr" desc="Language">法语</msg>
+    <msg name="MSG_general_keywords_help">请改用较常见的字词。</msg>
+    <msg name="MSG_gmail_tab" desc="Label for the tab on the homepage or search results page that leads to Gmail.  Should match http://google.com">Gmail</msg>
+    <msg name="MSG_go_to_google_home">Google 首页</msg>
+    <msg name="MSG_groups_tab" desc="Label for the tab on the homepage or search results page that leads to Google Groups (usenet) search.  Should match http://google.com">论坛</msg>
+    <msg name="MSG_help" desc="Link that gives tips on how to search">搜索提示</msg>
+    <msg name="MSG_homepage_search_label">搜索：</msg>
+    <msg name="MSG_hu" desc="Language">匈牙利语</msg>
+    <msg name="MSG_images_tab" desc="Label for the tab on the homepage or search results page that leads to image search.  Should match http://google.com">图片</msg>
+    <msg name="MSG_in_title" desc='Advanced Search: See       http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>网页的标题</msg>
+    <msg name="MSG_in_url" desc='Advanced Search: See http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>网页内的网址</msg>
+    <msg name="MSG_is" desc="Language">冰岛语</msg>
+    <msg name="MSG_it" desc="Language">意大利语</msg>
+    <msg name="MSG_iw" desc="Language">希伯来语</msg>
+    <msg name="MSG_ja" desc="Language">日语</msg>
+    <msg name="MSG_ko" desc="Language">朝鲜语</msg>
+    <msg name="MSG_links" desc="Advanced Search: See http://www.google.com/advanced_search - This is the label on the form section to find pages with links to other pages">链接</msg>
+    <msg name="MSG_local_tab" desc="Label for the tab on the homepage or search results page that leads to search on map.  Should match http://google.com">本地</msg>
+    <msg name="MSG_lt" desc="Language">立陶宛语</msg>
+    <msg name="MSG_lv" desc="Language">拉脱维亚语</msg>
+    <msg name="MSG_maps_tab" desc="Label for the tab on the homepage or search results page that leads to Maps.  Should match http://google.com">地图</msg>
+    <msg name="MSG_more_from_host" desc="Label on a link to get more results from a host machine"><ph name="HOSTNAME">%1$s</ph>站内的其它相关信息</msg>
+    <msg name="MSG_my_alerts">我的快讯</msg>
+    <msg name="MSG_navbar_header">结果页码</msg>
+    <msg name="MSG_navbar_next">&lt;b&gt;下一页&lt;/b&gt;</msg>
+    <msg name="MSG_navbar_previous">&lt;b&gt;上一页&lt;/b&gt;</msg>
+    <msg name="MSG_news_tab" desc="Label for the tab on the homepage or search results page that leads to Google News search.  Should match http://google.com">资讯</msg>
+    <msg name="MSG_news_lite_version" desc="Link to get a text version of a document">文本版</msg>
+    <msg name="MSG_nl" desc="Language">荷兰语</msg>
+    <msg name="MSG_no" desc="Language">挪威语</msg>
+    <msg name="MSG_no_results">找不到和您的查询 "<ph name="SEARCH_TERM">&lt;b>%1$s&lt;/b></ph>" 相符的网页。</msg>
+    <msg name="MSG_not_indexed">未编制索引</msg>
+    <msg name="MSG_noword_warning">找不到任何包含 <ph name="SEARCH_TERM">&lt;b>"%2$.*1$s"&lt;/b></ph> 的网页。</msg>
+    <msg name="MSG_occurrences" desc="See http://www.google.com/advanced_search - Section label for selecting if results occur anywhere or in title">字词位置</msg>
+    <msg name="MSG_only" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown, followed by 'return results from the site'">仅</msg>
+    <msg name="MSG_page_specific_search">搜索特定网页</msg>
+    <msg name="MSG_pl" desc="Language">波兰语</msg>
+    <msg name="MSG_powered_by_GSA" desc="Page footer">由 Google Search Appliance 驱动</msg>
+    <msg name="MSG_powered_by_GSAVDE" desc="Page footer: a virtualized edition for software developers">Google Search Appliance 提供支持, 开发人员虚拟版</msg>
+    <msg name="MSG_pt" desc="Language">葡萄牙语</msg>
+    <msg name="MSG_public_content" desc="Security radio button item.  Caption is 'Search:'">公共内容</msg>
+    <msg name="MSG_public_secure_content" desc="Security radio button item.  Caption is 'Search:'">公共内容和安全内容</msg>
+    <msg name="MSG_results" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown to specify how many search results to return.  Prefixed by 10, 20, etc.">项结果</msg>
+    <msg name="MSG_results_a_b_for_q"><ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph> 的第 <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> 个结果。</msg>
+    <msg name="MSG_results_a_b_of_n_for_q"><ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>共有约 <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> 个结果，这是第 <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> 个结果。</msg>
+    <msg name="MSG_results_page">结果页</msg>
+    <msg name="MSG_return_domains" desc="Advanced Search: See http://www.google.com/advanced_search   Prefixed by 'Only', followed by e.g. '.com'">搜索以下网站或网域</msg>
+    <msg name="MSG_return_occurrences" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'anywhere in the page'">查询字词位于</msg>
+    <msg name="MSG_return_only_pages_in" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'any language'">搜索网页语言是</msg>
+    <msg name="MSG_ro" desc="Language">罗马尼亚语</msg>
+    <msg name="MSG_ru" desc="Language">俄语</msg>
+    <msg name="MSG_search">Google 搜索</msg>
+    <msg name="MSG_search_home" desc="Page title; home page for search">搜索主页</msg>
+    <msg name="MSG_search_public_content" desc="Label on checkbox">仅搜索公共内容</msg>
+    <msg name="MSG_search_public_secure_content" desc="Label on checkbox">搜索公共内容和安全内容（要求登录）</msg>
+    <msg name="MSG_search_results" desc="Results of search">搜索结果</msg>
+    <msg name="MSG_searchtime">搜索用时 <ph name="NUMBER">&lt;b>%1$.2f&lt;/b></ph> 秒。</msg>
+    <msg name="MSG_security" desc="Label for the selector of the security mode">安全</msg>
+    <msg name="MSG_sep_bar_adv_text">高级搜索</msg>
+    <msg name="MSG_sep_bar_error_text" desc="Title for Error Page">错误</msg>
+    <msg name="MSG_sep_bar_std_text" desc="Tab label for doing a search">搜索</msg>
+    <msg name="MSG_server_error_des_text">详细检查服务器响应代码。</msg>
+    <msg name="MSG_server_error_msg_text">服务器出现错误。</msg>
+    <msg name="MSG_server_error_title" desc="Heading on error page">服务器错误</msg>
+    <msg name="MSG_sign_out">退出</msg>
+    <msg name="MSG_sort" desc="Label for the selector of 'Sort by Date/Relevance'">排序</msg>
+    <msg name="MSG_sort_by_date">按日期排序</msg>
+    <msg name="MSG_sort_by_relevance">按内容相关性排序</msg>
+    <msg name="MSG_spell_suggest" desc="Spelling suggestion">您是不是要找：</msg>
+    <msg name="MSG_suggest_help">建议：</msg>
+    <msg name="MSG_sv" desc="Language">瑞典语</msg>
+    <msg name="MSG_swr_num_results_found"><ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>约有 <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> 个结果。</msg>
+    <msg name="MSG_swr_page_title">在结果内搜索</msg>
+    <msg name="MSG_swr_search_anchor_text">在结果内搜索</msg>
+    <msg name="MSG_swr_search_within_these_results">使用下面的搜索框在这些结果内搜索。</msg>
+    <msg name="MSG_synonym_text" desc="Synonym suggestion">您还可以尝试：</msg>
+    <msg name="MSG_the_word_language">语言</msg>
+    <msg name="MSG_unknown_xml" desc="Error message">XML 结果类型未知。</msg>
+    <msg name="MSG_video_tab" desc="Label for the tab on the homepage or search results page that leads to Video.  Should match http://google.com">视频</msg>
+    <msg name="MSG_view_all_data">查看所有数据</msg>
+    <msg name="MSG_view_xml" desc="'View page source' is a browser action">查看网页的源文件，以了解违反规则的 XML。</msg>
+    <msg name="MSG_web_tab" desc="Label for the tab on the homepage or search results page that leads to web search.  Should match http://google.com">网页</msg>
+    <msg name="MSG_without_words" desc="Advanced Search: See http://www.google.com/advanced_search "><ph name="START_BOLD">&lt;b></ph>不包括<ph name="END_BOLD">&lt;/b></ph>以下字词</msg>
+    <msg name="MSG_zh_CN" desc="Language">中文(简体)</msg>
+    <msg name="MSG_zh_TW" desc="Language">中文(繁体)</msg>
+  </messages>
+</localizationbundle>

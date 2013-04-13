@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="fi">
+  <localizationbundle locale="fi">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">Jos haluat poistaa SSH-ylläpitoyhteyden käytöstä, anna alla näkyvään HAASTEESEEN oikea VASTAUS. SSH-portti poistetaan sitten käytöstä.</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">Jos haluat ottaa SSH-ylläpitoyhteyden käyttöön, anna alla näkyvään HAASTEESEEN oikea VASTAUS. SSH-portti otetaan sitten käyttöön.</msg>
+    <msg name="ABOUT_TO_HALT" desc="">Jos haluat pysäyttää laitteiston, anna alla näkyvään HAASTEESEEN oikea VASTAUS. Laitteisto jatkaa sitten sulkemista.</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">Jos haluat käynnistää hakupalvelut, anna oikea VASTAUS alla olevaan HAASTEESEEN. Appliance jatkaa sitten uudelleenkäynnistymistä.</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">Jos haluat tuhota hakukonelaitteiston, ota yhteyttä Googlen asiakastukeen ja pyydä oikeaa VASTAUSTA alla olevaan HAASTEESEEN. Huomaa, ettei tätä vaihetta voi kumota. Kun itsetuho käynnistyy, kaikki koneessa olevat tiedot poistetaan.</msg>
+    <msg name="ACCEPT" desc="">Hyväksy ja jatka vaiheeseen 1</msg>
+    <msg name="ACCOUNT_TYPE" desc="">Tilin tyyppi</msg>
+    <msg name="ADMIN" desc="">admin</msg>
+    <msg name="ADMINISTRATOR" desc="">Järjestelmänvalvoja</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc=""><ph name="START_BOLD">&lt;b></ph>admin<ph name="END_BOLD">&lt;/b></ph>-tiliä käytetään hallintakonsolin, joka on sovellus, jolla hallitaan hakukonelaitteistoa, sekä ohjelmistopäivityksiin käytettävän versionhallinnan käyttöön.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">Käyttäjätunnuksessa ja salasanassa käytetään kirjainkoon erottelua.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">Luo salasana tälle tilille.  On suositeltavaa kirjoittaa salasana muistiin hallintakonsolin (tai versionhallinnan) myöhempää käyttöä varten.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">Hakukonelaitteisto lähettää ilmoitukset ja hälytykset sähköpostiosoitteeseen.  Sitä käytetään myös silloin, kun salasana on unohtunut.  Laitteisto tarvitsee sähköpostiviestien lähettämiseen myös vaiheessa 2/5 määritettävän SMTP-postipalvelimen.</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">Järjestelmänvalvojan salasanat eivät täsmää</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">Järjestelmänvalvojan salasana on annettava</msg>
+    <msg name="ADMIN_SETTINGS" desc="">Järjestelmänvalvojatili</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">TÄRKEÄÄ:  Laitteisto tarvitsee kelvollisen NTP-palvelimen käyttösopimusavaimen käyttöönottoa varten.</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">IP-osoitteen ja yhdyskäytävän on oltava samassa verkossa</msg>
+    <msg name="ANGUILLA" desc="">Anguilla</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">Antigua ja Barbuda</msg>
+    <msg name="ARGENTINA" desc="">Argentiina</msg>
+    <msg name="ARUBA" desc="">Aruba</msg>
+    <msg name="AUSTRALIA" desc="">Australia</msg>
+    <msg name="AUSTRIA" desc="">Itävalta</msg>
+    <msg name="AUTONEGOTIATION" desc="">Kuormituksen tasauksen automaattinen käsittely</msg>
+    <msg name="BACK" desc="">&lt;&lt; Takaisin</msg>
+    <msg name="BANGLADESH" desc="">Bangladesh</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">Verkon perusasetukset</msg>
+    <msg name="BELGIUM" desc="">Belgia</msg>
+    <msg name="BERMUDA" desc="">Bermuda</msg>
+    <msg name="BRAZIL" desc="">Brasilia</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">Brittiläiset Neitsytsaaret</msg>
+    <msg name="BULGARIA" desc="">Bulgaria</msg>
+    <msg name="CANADA" desc="">Kanada</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">Caymansaaret</msg>
+    <msg name="CHALLENGE" desc="">Haaste</msg>
+    <msg name="CHANGE_PASSWORD" desc="">Salasana</msg>
+    <msg name="CHILE" desc="">Chile</msg>
+    <msg name="CHINA" desc="">Kiina</msg>
+    <msg name="COLOMBIA" desc="">Kolumbia</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Määritä lokipalvelin</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">Määritä järjestelmänvalvojatili</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">Laitteen määritykset ovat valmiit. Jos näyttöön ei ole tullut varoituksia tai virheitä, voit nyt irrottaa kannettavan tietokoneen ja käyttää laitteistoa. Käytä hallintakonsolisovellusta päivittäiseen järjestelmänhallintaan.</msg>
+    <msg name="CONTINUE" desc="">Jatka &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">Costa Rica</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>Tervetuloa!<ph name="END_BOLD">&lt;/b></ph> Jatka verkkoasennusta hyväksymällä käyttöoikeussopimus. Valitse maasi oheisesta luettelosta ja jatka sitten napsauttamalla Jatka:</msg>
+    <msg name="CRAWL_IP" desc="">Indeksoi IP</msg>
+    <msg name="CZECH_REPUBLIC" desc="">Tšekin tasavalta</msg>
+    <msg name="DENMARK" desc="">Tanska</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">Vianmääritysilmoitukset</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">Verkon diagnostiikka on havainnut ongelman edellisen vaiheen asetuksissa. Vaikka voitkin jatkaa, sinun kannattaa palata ja muuttaa asetuksia.</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">DNS-liite (DNS-hakupolku)</msg>
+    <msg name="DNS_SERVERS" desc="">DNS-palvelimet</msg>
+    <msg name="DNS_SETTINGS" desc="">DNS- ja postiasetukset</msg>
+    <msg name="ECUADOR" desc="">Ecuador</msg>
+    <msg name="EGYPT" desc="">Egypti</msg>
+    <msg name="EL_SALVADOR" desc="">El Salvador</msg>
+    <msg name="EMAIL_ADDRESS" desc="">Sähköpostiosoite</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">Virhe ladattaessa määritystiedostoa. Yritä uudelleen</msg>
+    <msg name="EXAMPLE" desc="">Esimerkki</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">tekniikka.omayritys.fi, paayhtio.omayritys.fi, yritys.fi</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">Suomi</msg>
+    <msg name="FRANCE" desc="">Ranska</msg>
+    <msg name="FRENCH_GUIANA" desc="">Ranskan Guayana</msg>
+    <msg name="GATEWAY" desc="">Oletusyhdyskäytävä</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Yhdyskäytävä ei saa olla sama kuin mikään muu IP</msg>
+    <msg name="GERMANY" desc="">Saksa</msg>
+    <msg name="GREECE" desc="">Kreikka</msg>
+    <msg name="GUADELOUPE" desc="">Guadeloupe</msg>
+    <msg name="GUATEMALA" desc="">Guatemala</msg>
+    <msg name="HONDURAS" desc="">Honduras</msg>
+    <msg name="HONG_KONG" desc="">Hongkong</msg>
+    <msg name="HOSTNAME" desc="">Palvelimen nimi</msg>
+    <msg name="HUNGARY" desc="">Unkari</msg>
+    <msg name="ICELAND" desc="">Islanti</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">Määritettiin virheellinen automaattinen käsittely</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">Virheellinen tai varattu IP-indeksointiosoite</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">Määritetty virheelliset DNS-palvelimet</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">Määritettiin virheellinen yhdyskäytävä</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">Virheellinen tai varattu IP-osoite</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">Määritettiin virheellinen verkon peite</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">Määritettiin virheellinen verkon nopeus</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">Määritettiin virheelliset NTP-palvelimet</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">Määritettiin virheellinen lähtevän sähköpostin lähettäjä</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">Määritetty hakupolku ei kelpaa</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">Määritettiin virheellinen SMTP-palvelin</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">Virheellinen tai varattu IP-kytkimen osoite</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">Määritettiin virheellinen lokipalvelin</msg>
+    <msg name="INDIA" desc="">Intia</msg>
+    <msg name="INDONESIA" desc="">Indonesia</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">Virheellinen järjestelmänvalvojan sähköpostiosoite</msg>
+    <msg name="IP_ADDRESS" desc="">IP-osoite</msg>
+    <msg name="IRELAND" desc="">Irlanti</msg>
+    <msg name="ISRAEL" desc="">Israel</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">ei ole kelvollinen aikavyöhyke.</msg>
+    <msg name="ITALY" desc="">Italia</msg>
+    <msg name="JAPAN" desc="">Japani</msg>
+    <msg name="LICENSE_ERROR" desc="">Hanki käyttölupa ottamalla yhteyttä Googlen tukeen.</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">Lue nämä ehdot huolellisesti ja jatka valitsemalla Hyväksy ja jatka vaiheeseen 1.</msg>
+    <msg name="LICENSE_WELCOME" desc="">Käyttölupasopimus</msg>
+    <msg name="LUXEMBOURG" desc="">Luxemburg</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">Postipalvelimen asetukset</msg>
+    <msg name="MALAYSIA" desc="">Malesia</msg>
+    <msg name="MALTA" desc="">Malta</msg>
+    <msg name="MARTINIQUE" desc="">Martinique</msg>
+    <msg name="MEXICO" desc="">Meksiko</msg>
+    <msg name="MODIFY" desc="">Palaa vaiheeseen 1</msg>
+    <msg name="MONACO" desc="">Monaco</msg>
+    <msg name="MONTSERRAT" desc="">Montserrat</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">Sinun on kirjoitettava järjestelmänvalvojan salasana kahdesti</msg>
+    <msg name="NETHERLANDS" desc="">Alankomaat</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">Alankomaiden Antillit</msg>
+    <msg name="NETMASK" desc="">Aliverkon peite</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">Verkkoasennus</msg>
+    <msg name="NETWORK_SPEED" desc="">Verkon nopeus</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">automaattinen käsittely</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">10 Mb/s puoliksi kaksisuuntainen</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">10 Mb/s täysin kaksisuuntainen</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">100 Mb/s puoliksi kaksisuuntainen</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">100 Mb/s täysin kaksisuuntainen</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1000 Mb/s (kaksisuuntaisuus neuvotellaan aina tällä nopeudella)</msg>
+    <msg name="NEW_PASSWORD" desc="">Uusi salasana</msg>
+    <msg name="NEW_ZEALAND" desc="">Uusi-Seelanti</msg>
+    <msg name="NICARAGUA" desc="">Nicaragua</msg>
+    <msg name="NORWAY" desc="">Norja</msg>
+    <msg name="NOT_A_VALID_URL" desc="">ei ole kelvollinen URL</msg>
+    <msg name="NTP_SERVERS" desc="">NTP-palvelimet</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">DNS-asetukset</msg>
+    <msg name="OPEN_LICENSE" desc="">Avaa käyttöoikeussopimus uudessa ikkunassa</msg>
+    <msg name="OPTIONAL" desc="">valinnainen</msg>
+    <msg name="OTHER" desc="">Muu</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">Lähtevän sähköpostiviestin lähettäjä</msg>
+    <msg name="PANAMA" desc="">Panama</msg>
+    <msg name="PARAGUAY" desc="">Paraguay</msg>
+    <msg name="PERU" desc="">Peru</msg>
+    <msg name="PHILIPPINES" desc="">Filippiinit</msg>
+    <msg name="POLAND" desc="">Puola</msg>
+    <msg name="PORTUGAL" desc="">Portugali</msg>
+    <msg name="PUERTO_RICO" desc="">Puerto Rico</msg>
+    <msg name="REDIRECT" desc="">Tunnustellaan verkkoa ja ohjataan uudelleen pääsivulle. Jos uudelleenohjaus ei onnistu minuutin kuluessa, napsauta PLACEHOLDER_LINK tätä PLACEHOLDER_ENDLINK.</msg>
+    <msg name="REENTER" desc="">Anna uudelleen</msg>
+    <msg name="REJECT" desc="">Älä hyväksy</msg>
+    <msg name="RESPONSE" desc="">Vastaus</msg>
+    <msg name="RUSSIA" desc="">Venäjä</msg>
+    <msg name="SAVE" desc="">Tallenna</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">Erota merkinnät toisistaan pilkuilla.</msg>
+    <msg name="SINGAPORE" desc="">Singapore</msg>
+    <msg name="SLOVAKIA" desc="">Slovakia</msg>
+    <msg name="SLOVENIA" desc="">Slovenia</msg>
+    <msg name="SMTP_SERVER" desc="">SMTP-palvelin</msg>
+    <msg name="SOUTH_AFRICA" desc="">Etelä-Afrikka</msg>
+    <msg name="SOUTH_KOREA" desc="">Etelä-Korea</msg>
+    <msg name="SPAIN" desc="">Espanja</msg>
+    <msg name="SRI_LANKA" desc="">Sri Lanka</msg>
+    <msg name="STEP_1_OF_5" desc="">Vaihe 1 / 5</msg>
+    <msg name="STEP_2_OF_5" desc="">Vaihe 2 / 5</msg>
+    <msg name="STEP_3_OF_5" desc="">Vaihe 3 / 5</msg>
+    <msg name="STEP_4_OF_5" desc="">Vaihe 4 / 5</msg>
+    <msg name="STEP_5_OF_5" desc="">Vaihe 5 / 5</msg>
+    <msg name="SWEDEN" desc="">Ruotsi</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">SwitchIP ei saa olla sama kuin mikään muu IP</msg>
+    <msg name="SWITCH_IP" desc="">Vaihda IP-osoite</msg>
+    <msg name="SWITZERLAND" desc="">Sveitsi</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Lokipalvelimet</msg>
+    <msg name="TAIWAN" desc="">Taiwan</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">Testataan verkkopalvelinten ja URL-osoitteiden yhteydet ja käyttöoikeudet</msg>
+    <msg name="TESTURLS" desc="">Testaa URL-osoitteet</msg>
+    <msg name="TESTURLS_BULLET1" desc="">Kirjoita URL-osoitteet kukin omalle rivilleen, jotta voit testata, löytääkö Google Search Appliance kyseiset sivustot.  Päätä osoite kauttaviivalla seuraavan esimerkin mukaisesti:</msg>
+    <msg name="TESTURLS_BULLET2" desc="">Varmista, etteivät ACL-luettelot tai väärät verkkoreititykset estä laitteen yhteyksiä.  Katson teknisen liitteen luku &amp;ldquo;vianetsintä&amp;rdquo;.</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://paayhtio.omayritys.fi/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://paayhtio.omayritys.fi/tuotteet/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">Tarkista verkkopalvelinten käyttö</msg>
+    <msg name="THAILAND" desc="">Thaimaa</msg>
+    <msg name="TIME_SETTINGS" desc="">Aika-asetukset</msg>
+    <msg name="TURKEY" desc="">Turkki</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">Turks- ja Caicossaaret</msg>
+    <msg name="UK" desc="">Iso-Britannia</msg>
+    <msg name="UKRAINE" desc="">Ukraina</msg>
+    <msg name="UNITED_STATES" desc="">Yhdysvallat</msg>
+    <msg name="URUGUAY" desc="">Uruguay</msg>
+    <msg name="USERNAME" desc="">Käyttäjätunnus</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">Yhdysvaltain Neitsytsaaret</msg>
+    <msg name="VENEZUELA" desc="">Venezuela</msg>
+    <msg name="VIETNAM" desc="">Vietnam</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">Olet yrittänyt hankkia verkkoasetukset automaattisesti DHCP-protokollan avulla. Haetut oletusarvot ovat alla. Muokkaa arvoja tarvittaessa.</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">Hallintakonsolin käytössä käytetään järjestelmänvalvojatiliä.
+Anna alle tämän tilin salasana ja yhteyssähköpostiosoite.</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">Määritä kaiken lähtevän liikenteen IP-osoite. Voit käyttää tätä esimerkiksi määrittämään ACL- tai palomuurisäännöt sallimaan laitteiston intranetin indeksoimisen.</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">Määritä laitteiston verkon oletusarvoinen yhdyskäytävä.</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">Määritä kelpaamattomien palvelimien nimien ratkaisupolku. Tämä vastaa UNIX-järjestelmien resolv.conf-tiedoston search-merkintää ja Windows-järjestelmien DNS-liite-merkintää.</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">Määritä DNS-palvelimet niiden IP-osoitteiden mukaan. DNS-palvelimet auttavat isäntänimien, kuten &amp;ldquo;www.google.fi&amp;rdquo;, muuttamisessa IP-osoitteiksi.  Toimintavarmuuden takaamiseksi on suositeltavaa käyttää vähintään kahta DNS-palvelinta.</msg>
+    <msg name="WHATIS_NETMASK" desc="">Määritä hakukonelaitteison verkon aliverkon peite.</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">laitteisto käsittelee automaattisesti verkon nopeuden ja kaksisuuntaisuuden sen kytkimen tai reitittimen kanssa, johon se on liitetty. Valitse tarvittaessa sopiva kiinteä nopeus ja kaksisuuntaisuusasetus.</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">Määritä oikean ajan ylläpitämistä helpottamaan korkeintaan kolme NTP-palvelinta. NTP-versio 3 on pakollinen.  Mikäli sisäverkossa ei ole omaa aikapalvelinta, voidaan käyttää avointa, julkista NTP-aikapalvelinta. Valitse aikapalvelin, joka on tasoa stratum 2 tai korkeampi. Älä käytä palvelimia, joille on annettava ennakkoilmoitus käytöstä.</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">Määritä sähköpostiosoite. Hakukonelaitteiston lähettämät viestit tulevat tästä osoitteesta.</msg>
+    <msg name="WHATIS_SENDER" desc="">Määritä luojan nimi, jota laitteisto käyttää ilmoituksia ja hälytyksiä lähetettäessä. Hyvä oletusarvo on &amp;ldquo;eikukaan@paikallinenpalvelin&amp;rdquo;.</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">Laitteisto käsittelee automaattisesti verkon nopeuden ja kaksisuuntaisuuden sen kytkimen tai reitittimen kanssa, johon se on liitetty. Tarvittaessa voit määrittää laitteiston käyttämään kuormituksen tasaamiseen nopeutta 100 Mb/s ja täysin kaksisuuntaista tietoliikennettä.</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">Anna laitteistolle kiinteä IP-osoite.
+Muista myös antaa yrityksen DNS-tietokantaan symbolinen nimi, kuten &amp;ldquo;googlebox.omayritys.fi&amp;rdquo;, ja käänteinen DNS-merkintä.</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">Määritä SMTP-postipalvelin, jota laitteisto käyttää lähettäessään järjestelmänvalvojalle ilmoituksia ja hälytyksiä mukaan lukien ilmoitukset unohtuneista salasanoista.</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">Määritä palvelimen IP-osoite.</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">Voit määrittää SYSLOG-palvelimen, joka kaappaa järjestelmän tapahtumat ja lokit ulkoiseen koneeseen.</msg>
+    <msg name="WHATIS_TESTURLS" desc="">Joskus palomuuri- ja suojausasetukset voivat estää laitteistoa käyttämästä verkkopalvelimia, joista haluat etsiä. Voit tarkistaa, voiko laitteisto käyttää verkkopalvelimia, määrittämällä täydellisiä URL-osoitteita alla olevaan tekstikenttään ja valitsemalla Jatka. Saat varoituksen, jos johonkin antamaasi URL-osoitteeseen ei saada yhteyttä.</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">Määritä aikavyöhyke, jota käytetään lokeissa ja kuormitusaikatauluissa.</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">Laitteisto käynnistyy nyt uudelleen. Odota hetki. Laitteiston pitäisi olla valmiina noin kahden minuutin kuluttua.</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">Laitteisto poistaa kaikki tietonsa. Odota 60 minuuttia. Tämän jälkeen koneen voi irrottaa turvallisesti.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">Laitteisto estää nyt ylläpitoyhteyden SSH-yhteyden kautta. Odota 30 sekuntia, jotta määritysten muutos astuu voimaan.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">Laitteisto sallii nyt ylläpitoyhteyden SSH-yhteyden kautta. Odota 30 sekuntia, jotta määritysten muutos astuu voimaan.</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">Laitteisto sammutetaan. Odota 2 minuuttia. Tämän jälkeen laitteen voi sammuttaa turvallisesti.</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">Paikallinen aikavyöhyke</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">Et ole vielä tallentanut muutoksia.
+Tallenna ne palaamalla edelliselle sivulle napsauttamalla selaimen Edellinen-painiketta ja napsauttamalla Tallenna-painiketta.</msg>
+  </localizationbundle>
+</localizationbundle>

@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="ru">
+  <localizationbundle locale="ru">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">Если нужно отключить доступ для системного обслуживания через SSH, введите правильный ОТВЕТ на приведенный ниже ВОПРОС. После этого порт SSH будет отключен.</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">Если нужно включить доступ для системного обслуживания через SSH, введите правильный ОТВЕТ на приведенный ниже ВОПРОС. После этого порт SSH будет включен.</msg>
+    <msg name="ABOUT_TO_HALT" desc="">Если действительно нужно остановить устройство, введите правильный ОТВЕТ на поставленный ниже ВОПРОС. После этого устройство начнет процедуру завершения работы.</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">Если вы действительно хотите перезапустить поисковые службы устройства, введите правильный ОТВЕТ на поставленный ниже ВОПРОС. После этого устройство начнет процедуру перезапуска.</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">Если вы действительно хотите самостоятельно уничтожить устройство, обратитесь в центр обслуживания клиентов Google и узнайте правильный ОТВЕТ на поставленный ниже ВОПРОС. Учтите, что это действие не может быть отменено. После начала самоуничтожения все данные на компьютере будут удалены.</msg>
+    <msg name="ACCEPT" desc="">Принять и перейти к действию 1</msg>
+    <msg name="ACCOUNT_TYPE" desc="">Тип аккаунта</msg>
+    <msg name="ADMIN" desc="">администратор</msg>
+    <msg name="ADMINISTRATOR" desc="">Администратор</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc="">Аккаунт <ph name="START_BOLD">&lt;b></ph>admin<ph name="END_BOLD">&lt;/b></ph> применяется для доступа к консоли администратора – приложению, используемому для управления поисковым устройством, а также к диспетчеру версий, используемому для обновления программного обеспечения.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">Имя пользователя и пароль вводятся с учетом регистра.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">Создайте пароль для этого аккаунта. Рекомендуется записать этот пароль, чтобы указывать его при входе в консоль администратора (или диспетчер версий).</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">Адрес электронной почты используется поисковым устройством для отправки уведомлений и оповещений. Кроме того, он используется в том случае, если пользователь забыл пароль. Почтовый SMTP-сервер, настраиваемый на шаге 2 из 5, также необходим поисковому устройству для отправки почты.</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">Пароли администратора не совпадают</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">Необходимо ввести пароль администратора</msg>
+    <msg name="ADMIN_SETTINGS" desc="">Аккаунт администратора</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">Важно. Для активации лицензионного ключа поисковому устройству требуется действующий NTP-сервер.</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">IP-адрес и шлюз должны быть в одной сети.</msg>
+    <msg name="ANGUILLA" desc="">Ангилья</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">Антигуа и Барбуда</msg>
+    <msg name="ARGENTINA" desc="">Аргентина</msg>
+    <msg name="ARUBA" desc="">Аруба</msg>
+    <msg name="AUSTRALIA" desc="">Австралия</msg>
+    <msg name="AUSTRIA" desc="">Австрия</msg>
+    <msg name="AUTONEGOTIATION" desc="">Автосогласование с балансировщиком нагрузки</msg>
+    <msg name="BACK" desc="">&lt;&lt; Назад</msg>
+    <msg name="BANGLADESH" desc="">Бангладеш</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">Основные параметры сети</msg>
+    <msg name="BELGIUM" desc="">Бельгия</msg>
+    <msg name="BERMUDA" desc="">Бермуды</msg>
+    <msg name="BRAZIL" desc="">Бразилия</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">Виргинские острова (Британские)</msg>
+    <msg name="BULGARIA" desc="">Болгария</msg>
+    <msg name="CANADA" desc="">Канада</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">Каймановы острова</msg>
+    <msg name="CHALLENGE" desc="">Вопрос</msg>
+    <msg name="CHANGE_PASSWORD" desc="">Пароль</msg>
+    <msg name="CHILE" desc="">Чили</msg>
+    <msg name="CHINA" desc="">Китай</msg>
+    <msg name="COLOMBIA" desc="">Колумбия</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Настроить сервер системного журнала</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">Настроить аккаунт администратора</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">Поздравляем!
+Вы настроили устройство. Если в процессе не появлялись предупреждения или ошибки, можно отсоединить ноутбук и начать использование устройства. Для повседневного управления устройством используйте консоль администратора.</msg>
+    <msg name="CONTINUE" desc="">Далее &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">Коста-Рика</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>Добро пожаловать!<ph name="END_BOLD">&lt;/b></ph> Чтобы продолжить сетевую установку, необходимо сначала принять лицензионное соглашение. Для продолжения выберите страну в списке и нажмите "Продолжить":</msg>
+    <msg name="CRAWL_IP" desc="">Сканировать IP-адрес</msg>
+    <msg name="CZECH_REPUBLIC" desc="">Чехия</msg>
+    <msg name="DENMARK" desc="">Дания</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">Диагностические сообщения</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">Наша система диагностики сети обнаружила ошибку в настройках, заданных при выполнении предыдущего действия. Она не помешает вам продолжать процедуру, но можно вернуться и внести изменения.</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">DNS-суффикс (путь поиска DNS)</msg>
+    <msg name="DNS_SERVERS" desc="">DNS-серверы</msg>
+    <msg name="DNS_SETTINGS" desc="">Параметры DNS и электронной почты</msg>
+    <msg name="ECUADOR" desc="">Эквадор</msg>
+    <msg name="EGYPT" desc="">Египет</msg>
+    <msg name="EL_SALVADOR" desc="">Сальвадор</msg>
+    <msg name="EMAIL_ADDRESS" desc="">Адрес электронной почты</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">Ошибка при загрузке файла конфигурации. Повторите попытку.</msg>
+    <msg name="EXAMPLE" desc="">Пример</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">razrabotka.moya_kompania.ru, korp.moya_kompania.ru, kompania.ru</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">Финляндия</msg>
+    <msg name="FRANCE" desc="">Франция</msg>
+    <msg name="FRENCH_GUIANA" desc="">Французская Гвинея</msg>
+    <msg name="GATEWAY" desc="">Шлюз по умолчанию</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Шлюз не должен конфликтовать с другими IP-адресами</msg>
+    <msg name="GERMANY" desc="">Германия</msg>
+    <msg name="GREECE" desc="">Греция</msg>
+    <msg name="GUADELOUPE" desc="">Гваделупа (французская)</msg>
+    <msg name="GUATEMALA" desc="">Гватемала</msg>
+    <msg name="HONDURAS" desc="">Гондурас</msg>
+    <msg name="HONG_KONG" desc="">Гонконг</msg>
+    <msg name="HOSTNAME" desc="">Имя хоста</msg>
+    <msg name="HUNGARY" desc="">Венгрия</msg>
+    <msg name="ICELAND" desc="">Исландия</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">Указано недействительное автосогласование</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">Неверный или зарезервированный IP-адрес сканера</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">Указаны недействительные DNS-серверы</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">Указан недействительный шлюз</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">Неверный или зарезервированный IP-адрес</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">Указана недействительная маска сети</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">Указана недействительная скорость в сети</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">Указаны недействительные NTP-серверы</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">Указан недействительный отправитель исходящего сообщения</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">Указан недействительный путь поиска</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">Указан недействительный SMTP-сервер</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">Неверный или зарезервированный IP-адрес коммутатора</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">Указан недействительный сервер системного журнала</msg>
+    <msg name="INDIA" desc="">Индия</msg>
+    <msg name="INDONESIA" desc="">Индонезия</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">Неправильный адрес электронной почты администратора</msg>
+    <msg name="IP_ADDRESS" desc="">IP-aдрес</msg>
+    <msg name="IRELAND" desc="">Ирландия</msg>
+    <msg name="ISRAEL" desc="">Израиль</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">- это неправильный часовой пояс.</msg>
+    <msg name="ITALY" desc="">Италия</msg>
+    <msg name="JAPAN" desc="">Япония</msg>
+    <msg name="LICENSE_ERROR" desc="">Чтобы получить лицензию, обратитесь в службу поддержки компании Google.</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">Внимательно просмотрите эти условия и нажмите кнопку "Принять и перейти к шагу 1" для продолжения.</msg>
+    <msg name="LICENSE_WELCOME" desc="">Лицензионное соглашение конечного пользователя</msg>
+    <msg name="LUXEMBOURG" desc="">Люксембург</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">Настройки почтового сервера</msg>
+    <msg name="MALAYSIA" desc="">Малайзия</msg>
+    <msg name="MALTA" desc="">Мальта</msg>
+    <msg name="MARTINIQUE" desc="">Мартиника (французский)</msg>
+    <msg name="MEXICO" desc="">Мексика</msg>
+    <msg name="MODIFY" desc="">Вернитесь к шагу 1</msg>
+    <msg name="MONACO" desc="">Монако</msg>
+    <msg name="MONTSERRAT" desc="">Монсеррат</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">Необходимо дважды ввести пароль администратора</msg>
+    <msg name="NETHERLANDS" desc="">Нидерланды</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">Нидерландские Антильские острова</msg>
+    <msg name="NETMASK" desc="">Маска подсети</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">Установка сети</msg>
+    <msg name="NETWORK_SPEED" desc="">Скорость в сети</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">автосогласование</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">10 Мб/с в режиме "полудуплекс"</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">10 Мб/с в режиме "полный дуплекс"</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">100 Мб/с в режиме "полудуплекс"</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">100 Мб/с в режиме "полный дуплекс"</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1000 Мб/с (обмен данными в режиме дуплекса всегда осуществляется на этой скорости)</msg>
+    <msg name="NEW_PASSWORD" desc="">Новый пароль</msg>
+    <msg name="NEW_ZEALAND" desc="">Новая Зеландия</msg>
+    <msg name="NICARAGUA" desc="">Никарагуа</msg>
+    <msg name="NORWAY" desc="">Норвегия</msg>
+    <msg name="NOT_A_VALID_URL" desc="">- это недействительный URL</msg>
+    <msg name="NTP_SERVERS" desc="">NTP-серверы</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">Параметры DNS</msg>
+    <msg name="OPEN_LICENSE" desc="">Открыть лицензию в новом окне</msg>
+    <msg name="OPTIONAL" desc="">по желанию</msg>
+    <msg name="OTHER" desc="">Другое</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">Отправитель исходящего сообщения</msg>
+    <msg name="PANAMA" desc="">Панама</msg>
+    <msg name="PARAGUAY" desc="">Парагвай</msg>
+    <msg name="PERU" desc="">Перу</msg>
+    <msg name="PHILIPPINES" desc="">Филиппины</msg>
+    <msg name="POLAND" desc="">Польша</msg>
+    <msg name="PORTUGAL" desc="">Португалия</msg>
+    <msg name="PUERTO_RICO" desc="">Пуэрто-Рико</msg>
+    <msg name="REDIRECT" desc="">Зондирование сети и перенаправление на главную страницу. Нажмите PLACEHOLDER_LINK здесьPLACEHOLDER_ENDLINK, если перенаправление не будет выполнено в течение минуты.</msg>
+    <msg name="REENTER" desc="">Введите еще раз</msg>
+    <msg name="REJECT" desc="">Не принимаю</msg>
+    <msg name="RESPONSE" desc="">Ответ</msg>
+    <msg name="RUSSIA" desc="">Россия</msg>
+    <msg name="SAVE" desc="">Сохранить</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">Разделяйте записи запятыми.</msg>
+    <msg name="SINGAPORE" desc="">Сингапур</msg>
+    <msg name="SLOVAKIA" desc="">Словакия</msg>
+    <msg name="SLOVENIA" desc="">Словения</msg>
+    <msg name="SMTP_SERVER" desc="">SMTP-сервер:</msg>
+    <msg name="SOUTH_AFRICA" desc="">Южная Африка</msg>
+    <msg name="SOUTH_KOREA" desc="">Южная Корея</msg>
+    <msg name="SPAIN" desc="">Испания</msg>
+    <msg name="SRI_LANKA" desc="">Шри-Ланка</msg>
+    <msg name="STEP_1_OF_5" desc="">Действие 1 из 5</msg>
+    <msg name="STEP_2_OF_5" desc="">Действие 2 из 5</msg>
+    <msg name="STEP_3_OF_5" desc="">Действие 3 из 5</msg>
+    <msg name="STEP_4_OF_5" desc="">Действие 4 из 5</msg>
+    <msg name="STEP_5_OF_5" desc="">Действие 5 из 5</msg>
+    <msg name="SWEDEN" desc="">Швеция</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">IP-адрес коммутатора не должен конфликтовать с другими IP-адресами</msg>
+    <msg name="SWITCH_IP" desc="">IP-адрес коммутатора</msg>
+    <msg name="SWITZERLAND" desc="">Швейцария</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Серверы системного журнала</msg>
+    <msg name="TAIWAN" desc="">Тайвань</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">Тестирование подключения и разрешений доступа для веб-серверов и URL</msg>
+    <msg name="TESTURLS" desc="">Проверочные URL</msg>
+    <msg name="TESTURLS_BULLET1" desc="">Введите один или несколько URL-адресов (по одному на каждой строке), чтобы проверить, может ли поисковое устройство сканировать эти сайты. Добавьте концевую косую черту в каждый URL-адрес, как показано в примере.</msg>
+    <msg name="TESTURLS_BULLET2" desc="">Убедитесь, что устройство не заблокировано в списках контроля доступа (ACL) или из-за ошибок маршрутизации сети. См. раздел &amp;ldquo;Устранение неполадок&amp;rdquo; в разделе "Техническое дополнение".</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://korp.moya_kompaniya.ru/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http:/korp.moya_kompaniya.ru/produkty/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">Проверить доступ к веб-серверам</msg>
+    <msg name="THAILAND" desc="">Таиланд</msg>
+    <msg name="TIME_SETTINGS" desc="">Настройки времени</msg>
+    <msg name="TURKEY" desc="">Турция</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">острова Теркс и Кайкос</msg>
+    <msg name="UK" desc="">Великобритания</msg>
+    <msg name="UKRAINE" desc="">Украина</msg>
+    <msg name="UNITED_STATES" desc="">США</msg>
+    <msg name="URUGUAY" desc="">Уругвай</msg>
+    <msg name="USERNAME" desc="">Имя пользователя</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">Виргинские острова (США)</msg>
+    <msg name="VENEZUELA" desc="">Венесуэла</msg>
+    <msg name="VIETNAM" desc="">Вьетнам</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">Мы попытались извлечь сетевые настройки автоматически с помощью DHCP. Ниже приведены полученные нами значения по умолчанию. Измените любые значения, если это необходимо.</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">Аккаунт администратора предоставляет доступ к консоли администратора.
+Введите ниже пароль и контактный адрес электронной почты для данного аккаунта.</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">Укажите IP-адрес для всего исходящего трафика. Его можно использовать, например, чтобы указать правила для ACL или брандмауэров, разрешающие устройству сканировать интрасеть.</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">Укажите шлюз по умолчанию для сети, в которой установлено устройство.</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">Укажите путь разрешения для неквалифицированных имен хостов. Он соответствует записи "search" в файле resolv.conf в системах UNIX и записи "DNS Suffix" в системах Windows.</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">Укажите один или несколько DNS-серверов по IP-адресам. DNS-серверы позволяют выполнять разрешение имен хостов, таких как &amp;ldquo;www.google.ru&amp;rdquo;, в IP-адреса. Для отказоустойчивости рекомендуется использовать не менее двух DNS-серверов.</msg>
+    <msg name="WHATIS_NETMASK" desc="">Укажите маску подсети для сети, в которой установлено устройство Google Search Appliance.</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">Устройство выполняет автосогласование скорости в сети и параметров дуплекса с коммутатором или маршрутизатором, к которому оно подключено. При необходимости выберите соответствующие фиксированные настройки дуплекса и скорость линий.</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">Укажите до трех NTP-серверов, чтобы установить и поддерживать правильное время в сети. Для этого требуется NTP версии 3. Если в вашей сети нет NTP-сервера, можно подключиться к одному из серверов с открытым доступом. Выбирайте серверы stratum 2 или более поздней версии и не используйте серверы, которые требуют уведомления перед использованием.</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">Укажите адрес электронной почты. Он будет указываться в строке "От:" в сообщениях, отправляемых поисковым устройством.</msg>
+    <msg name="WHATIS_SENDER" desc="">Укажите имя автора, которое будет использоваться устройством при отправке уведомлений и оповещений. По умолчанию следует использовать &amp;ldquo;nikto@lokalny_host&amp;rdquo;.</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">Устройство выполняет автосогласование скорости в сети и параметров дуплекса с коммутатором или маршрутизатором, к которому оно подключено. При необходимости можно установить флажок, чтобы устройство использовало скорость линий 100 Мб/с и связь в режиме полного дуплекса для балансировки нагрузки.</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">Укажите статический IP-адрес, присвоенный поисковому устройству.
+Не забудьте ввести символическое имя, например &amp;ldquo;googlebox.moya_kompaniya.ru&amp;rdquo;, и запись обратного просмотра DNS в базу данных DNS компании.</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">Укажите почтовый SMTP-сервер, который необходимо использовать устройству для отправки уведомлений и оповещений (включая уведомления о забытом пароле).</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">Укажите IP-адрес для системы serveriron.</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">Можно указать сервер системного журнала, чтобы фиксировать события и журналы системы на внешнем компьютере.</msg>
+    <msg name="WHATIS_TESTURLS" desc="">Иногда существующие настройки безопасности и брандмауэра не позволяют устройству получать доступ к нужным веб-серверам. Чтобы обеспечить доступ устройства к ним, укажите URL в расположенном ниже текстовом окне и нажмите "Продолжить". Мы предупредим вас, если какие-либо из указанных URL окажутся недоступными.</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">Укажите часовой пояс, который необходимо использовать для расписания нагрузки на хост и для журналов.</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">Выполняется перезапуск устройства. Подождите, устройство будет готово примерно через 2 минуты.</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">Ваше устройство удаляет все данные. В целях безопасности подождите 60 минут, после чего можно отключить устройство от питания.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">Сейчас устройство запретит доступ для системного обслуживания через SSH. Изменение конфигурации вступит в силу через 30 секунд.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">Сейчас устройство предоставит доступ для системного обслуживания через SSH. Изменение конфигурации вступит в силу через 30 секунд.</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">Работа устройства завершается. В целях безопасности подождите 2 минуты, после чего можно выключить питание.</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">Ваш местный часовой пояс</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">Вы не сохранили изменения. Чтобы сохранить, нажмите кнопку браузера "Назад", а затем, вернувшись на предыдущую страницу, нажмите кнопку "Сохранить".</msg>
+  </localizationbundle>
+</localizationbundle>

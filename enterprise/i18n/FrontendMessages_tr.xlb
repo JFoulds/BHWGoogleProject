@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="tr">
+  <messages>
+    <msg name="MSG_advanced_search" desc="Page title">Gelişmiş Arama</msg>
+    <msg name="MSG_advsearch_example" desc="Advanced Search: See http://www.google.com/advanced_search  example domains">örneğin, google.com, .org</msg>
+    <msg name="MSG_advsearch_file_format" desc="Advanced Search: See http://www.google.com/advanced_search  label to select desired file formats">Dosya Biçimi</msg>
+    <msg name="MSG_advsearch_return_files" desc="Advanced Search: Prefixed with &quot;Only&quot; or &quot;Don't&quot;">şu dosya biçimindeki sonuçları döndür</msg>
+    <msg name="MSG_alerts">Uyarılar</msg>
+    <msg name="MSG_all_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>şu kelimelerin <ph name="START_BOLD">&lt;b></ph>tümünü<ph name="END_BOLD">&lt;/b></ph> içeren</msg>
+    <msg name="MSG_any_format" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any file format">herhangi bir biçim</msg>
+    <msg name="MSG_any_language" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any language">herhangi bir dil</msg>
+    <msg name="MSG_any_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>şu kelimelerden <ph name="START_BOLD">&lt;b></ph>en az birini<ph name="END_BOLD">&lt;/b></ph> içeren</msg>
+    <msg name="MSG_anywhere_on_page" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Return results where my terms occur"'>sayfada herhangi bir yer</msg>
+    <msg name="MSG_ar">Arapça</msg>
+    <msg name="MSG_cache" desc="Link to cached copy of document">Önbelleğe Alınmış</msg>
+    <msg name="MSG_cached_copy" desc="Followed by URL">Bu önbelleğe alınmış kopyadır</msg>
+    <msg name="MSG_correct_credentials_help">Güvenlik kimlik bilgilerinizin doğru olduğundan emin olun.</msg>
+    <msg name="MSG_correct_spelling_help">Tüm kelimelerin doğru yazıldığından emin olun.</msg>
+    <msg name="MSG_cs" desc="Language">Çekçe</msg>
+    <msg name="MSG_da" desc="Language">Danca</msg>
+    <msg name="MSG_de" desc="Language">Almanya</msg>
+    <msg name="MSG_different_keywords_help">Farklı anahtar kelimeler deneyin.</msg>
+    <msg name="MSG_do_not" desc='Advanced search: See       http://www.google.com/advanced_search  dropdown, followed by "return results of the file format..."'>İstenmeyen Eylem</msg>
+    <msg name="MSG_domains" desc="Advanced Search: See http://www.google.com/advanced_search - Domain is .com, .org, etc.">Etki Alanı</msg>
+    <msg name="MSG_egds_appliance_tab_label" desc="Label on search tab: Google Search Appliance">Cihaz</msg>
+    <msg name="MSG_el" desc="Language">Yunanca</msg>
+    <msg name="MSG_en" desc="Language">İngilizce</msg>
+    <msg name="MSG_err_description">Açıklama:</msg>
+    <msg name="MSG_err_details">Ayrıntılar:</msg>
+    <msg name="MSG_err_message">İleti:</msg>
+    <msg name="MSG_error" desc="Title for Error Page">Hata</msg>
+    <msg name="MSG_es" desc="Language">İspanyolca</msg>
+    <msg name="MSG_et" desc="Language">Estonca</msg>
+    <msg name="MSG_exact_phrase" desc='Advanced Search: See http://www.google.com/advanced_search  prefixed by "Find results"'>şu <ph name="START_BOLD">&lt;b></ph>tam ifadeyi<ph name="END_BOLD">&lt;/b></ph> içeren</msg>
+    <msg name="MSG_fi" desc="Language">Fince</msg>
+    <msg name="MSG_file_doc">Microsoft Word (.doc)</msg>
+    <msg name="MSG_file_pdf">Adobe Acrobat PDF (.pdf)</msg>
+    <msg name="MSG_file_ppt">Microsoft Powerpoint (.ppt)</msg>
+    <msg name="MSG_file_ps">Adobe Postscript (.ps)</msg>
+    <msg name="MSG_file_rtf">Zengin Metin Biçimi (.rtf)</msg>
+    <msg name="MSG_file_xls">Microsoft Excel (.xls)</msg>
+    <msg name="MSG_filtered_results">Size en alakalı sonuçları göstermek için zaten görüntülenmekte olan <ph name="NUM">%1$d</ph> ile çok benzer bazı girişleri atladık.<ph name="BREAK">&lt;br/></ph>İsterseniz, <ph name="START_LINK">&lt;a href="%2$s"></ph>aramanızı atladığımız sonuçları içerecek şekilde yeniden yapabilirsiniz<ph name="END_LINK">&lt;/a></ph>.</msg>
+    <msg name="MSG_find_pages_linking_to" desc="Text to find pages that have a link to this page">Sayfaya bağlantı veren sayfaları bul</msg>
+    <msg name="MSG_find_results" desc='Advanced Search: See http://www.google.com/advanced_search - Followed by "with all of the words ..."'>Sonuçları bul</msg>
+    <msg name="MSG_fr" desc="Language">Fransızca</msg>
+    <msg name="MSG_general_keywords_help">Daha genel anahtar kelimeler kullanmayı deneyin.</msg>
+    <msg name="MSG_gmail_tab" desc="Label for the tab on the homepage or search results page that leads to Gmail.  Should match http://google.com">Gmail</msg>
+    <msg name="MSG_go_to_google_home">Google Ana Sayfaya gidin</msg>
+    <msg name="MSG_groups_tab" desc="Label for the tab on the homepage or search results page that leads to Google Groups (usenet) search.  Should match http://google.com">Gruplar</msg>
+    <msg name="MSG_help" desc="Link that gives tips on how to search">Arama İpuçları</msg>
+    <msg name="MSG_homepage_search_label">Ara:</msg>
+    <msg name="MSG_hu" desc="Language">Macarca</msg>
+    <msg name="MSG_images_tab" desc="Label for the tab on the homepage or search results page that leads to image search.  Should match http://google.com">Resimler</msg>
+    <msg name="MSG_in_title" desc='Advanced Search: See       http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>sayfanın başlığında</msg>
+    <msg name="MSG_in_url" desc='Advanced Search: See http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>sayfanın URL'sinde</msg>
+    <msg name="MSG_is" desc="Language">İzlandaca</msg>
+    <msg name="MSG_it" desc="Language">İtalyanca</msg>
+    <msg name="MSG_iw" desc="Language">İbranice</msg>
+    <msg name="MSG_ja" desc="Language">Japonca</msg>
+    <msg name="MSG_ko" desc="Language">Korece</msg>
+    <msg name="MSG_links" desc="Advanced Search: See http://www.google.com/advanced_search - This is the label on the form section to find pages with links to other pages">Bağlantılar</msg>
+    <msg name="MSG_local_tab" desc="Label for the tab on the homepage or search results page that leads to search on map.  Should match http://google.com">Yerel</msg>
+    <msg name="MSG_lt" desc="Language">Litvanca</msg>
+    <msg name="MSG_lv" desc="Language">Letonca</msg>
+    <msg name="MSG_maps_tab" desc="Label for the tab on the homepage or search results page that leads to Maps.  Should match http://google.com">Haritalar</msg>
+    <msg name="MSG_more_from_host" desc="Label on a link to get more results from a host machine">Şu kaynaktan daha fazla sonuç <ph name="HOSTNAME">%1$s</ph></msg>
+    <msg name="MSG_my_alerts">Uyarılarım</msg>
+    <msg name="MSG_navbar_header">Sonuç Sayfası</msg>
+    <msg name="MSG_navbar_next">Sonraki</msg>
+    <msg name="MSG_navbar_previous">Önceki</msg>
+    <msg name="MSG_news_tab" desc="Label for the tab on the homepage or search results page that leads to Google News search.  Should match http://google.com">Haberler</msg>
+    <msg name="MSG_news_lite_version" desc="Link to get a text version of a document">Metin Sürümü</msg>
+    <msg name="MSG_nl" desc="Language">Felemenkçe</msg>
+    <msg name="MSG_no" desc="Language">Norveççe</msg>
+    <msg name="MSG_no_results"><ph name="SEARCH_TERM">&lt;b>%1$s&lt;/b></ph> şeklindeki aramanız hiçbir dokümanla eşleşmedi.</msg>
+    <msg name="MSG_not_indexed">Dizine Eklenmedi:</msg>
+    <msg name="MSG_noword_warning"><ph name="SEARCH_TERM">&lt;b>"%2$.*1$s"&lt;/b></ph> içeren sayfa bulunamadı.</msg>
+    <msg name="MSG_occurrences" desc="See http://www.google.com/advanced_search - Section label for selecting if results occur anywhere or in title">Yineleme</msg>
+    <msg name="MSG_only" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown, followed by 'return results from the site'">Yalnızca</msg>
+    <msg name="MSG_page_specific_search">Sayfaya Özel Arama</msg>
+    <msg name="MSG_pl" desc="Language">Lehçe</msg>
+    <msg name="MSG_powered_by_GSA" desc="Page footer">Google Arama Cihazı tarafından desteklenmektedir</msg>
+    <msg name="MSG_powered_by_GSAVDE" desc="Page footer: a virtualized edition for software developers">Google Arama Cihazı, Sanal Geliştirici Sürümü tarafından desteklenmektedir</msg>
+    <msg name="MSG_pt" desc="Language">Portekizce</msg>
+    <msg name="MSG_public_content" desc="Security radio button item.  Caption is 'Search:'">genel içerik</msg>
+    <msg name="MSG_public_secure_content" desc="Security radio button item.  Caption is 'Search:'">genel ve güvenli içerik</msg>
+    <msg name="MSG_results" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown to specify how many search results to return.  Prefixed by 10, 20, etc.">sonuçlar</msg>
+    <msg name="MSG_results_a_b_for_q"><ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph> için <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> arasındaki sonuçlar</msg>
+    <msg name="MSG_results_a_b_of_n_for_q"><ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph> için yaklaşık <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> sonuçtan <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> arası sonuç.</msg>
+    <msg name="MSG_results_page">Sonuçlar Sayfası</msg>
+    <msg name="MSG_return_domains" desc="Advanced Search: See http://www.google.com/advanced_search   Prefixed by 'Only', followed by e.g. '.com'">siteden veya etki alanından sonuç döndür</msg>
+    <msg name="MSG_return_occurrences" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'anywhere in the page'">Terimlerimin geçtiği sonuçları döndür</msg>
+    <msg name="MSG_return_only_pages_in" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'any language'">Şu dilde yazılmış sayfaları döndür</msg>
+    <msg name="MSG_ro" desc="Language">Rumence</msg>
+    <msg name="MSG_ru" desc="Language">Rusça</msg>
+    <msg name="MSG_search">Google Arama</msg>
+    <msg name="MSG_search_home" desc="Page title; home page for search">Ana Sayfada Ara</msg>
+    <msg name="MSG_search_public_content" desc="Label on checkbox">Yalnızca genel içerikte ara</msg>
+    <msg name="MSG_search_public_secure_content" desc="Label on checkbox">Genel ve güvenli içerikte arayın (giriş gereklidir)</msg>
+    <msg name="MSG_search_results" desc="Results of search">Arama Sonuçları</msg>
+    <msg name="MSG_searchtime">Arama <ph name="NUMBER">&lt;b>%1$.2f&lt;/b></ph> saniye sürdü.</msg>
+    <msg name="MSG_security" desc="Label for the selector of the security mode">Güvenlik</msg>
+    <msg name="MSG_sep_bar_adv_text">Gelişmiş Arama</msg>
+    <msg name="MSG_sep_bar_error_text" desc="Title for Error Page">Hata</msg>
+    <msg name="MSG_sep_bar_std_text" desc="Tab label for doing a search">Ara</msg>
+    <msg name="MSG_server_error_des_text">Sunucu yanıt kodunu ayrıntılı olarak kontrol edin.</msg>
+    <msg name="MSG_server_error_msg_text">Sunucu hatası oluştu.</msg>
+    <msg name="MSG_server_error_title" desc="Heading on error page">Sunucu Hatası</msg>
+    <msg name="MSG_sign_out">Oturumu Kapat</msg>
+    <msg name="MSG_sort" desc="Label for the selector of 'Sort by Date/Relevance'">Sırala</msg>
+    <msg name="MSG_sort_by_date">Tarihe göre sırala</msg>
+    <msg name="MSG_sort_by_relevance">Alaka düzeyine göre sırala</msg>
+    <msg name="MSG_spell_suggest" desc="Spelling suggestion">Bunu mu demek istediniz:</msg>
+    <msg name="MSG_suggest_help">Öneriler:</msg>
+    <msg name="MSG_sv" desc="Language">İsveççe</msg>
+    <msg name="MSG_swr_num_results_found"><ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph> için yaklaşık <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> sonuç vardı.</msg>
+    <msg name="MSG_swr_page_title">Sonuçların İçinde Ara</msg>
+    <msg name="MSG_swr_search_anchor_text">Sonuçların İçinde Ara</msg>
+    <msg name="MSG_swr_search_within_these_results">Bu sonuçların içinde arama yapmak için aşağıdaki arama kutusunu kullanın.</msg>
+    <msg name="MSG_synonym_text" desc="Synonym suggestion">Şunu da deneyebilirsiniz:</msg>
+    <msg name="MSG_the_word_language">Dil</msg>
+    <msg name="MSG_unknown_xml" desc="Error message">Bilinmeyen XML sonuç türü.</msg>
+    <msg name="MSG_video_tab" desc="Label for the tab on the homepage or search results page that leads to Video.  Should match http://google.com">Video</msg>
+    <msg name="MSG_view_all_data">Tüm verileri görüntüleyin</msg>
+    <msg name="MSG_view_xml" desc="'View page source' is a browser action">Sorunlu XML'i görmek için sayfa kaynağını görüntüleyin.</msg>
+    <msg name="MSG_web_tab" desc="Label for the tab on the homepage or search results page that leads to web search.  Should match http://google.com">Web</msg>
+    <msg name="MSG_without_words" desc="Advanced Search: See http://www.google.com/advanced_search ">şu kelimeler <ph name="START_BOLD">&lt;b></ph>olmadan<ph name="END_BOLD">&lt;/b></ph></msg>
+    <msg name="MSG_zh_CN" desc="Language">Çince (Basitleştirilmiş)</msg>
+    <msg name="MSG_zh_TW" desc="Language">Çince (Geleneksel)</msg>
+  </messages>
+</localizationbundle>

@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="cs">
+  <localizationbundle locale="cs">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">V případě, že chcete pomocí SSH zakázat přístup údržby, zadejte prosím správnou RESPONSE na níže zobrazenou CHALLENGE. Tím bude zakázán port SSH.</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">V případě, že chcete pomocí SSH povolit přístup údržby, zadejte prosím správnou RESPONSE na níže zobrazenou CHALLENGE. Poté bude port SSH povolen.</msg>
+    <msg name="ABOUT_TO_HALT" desc="">V případě, že chcete zařízení zastavit, zadejte prosím správnou ODPOVĚĎ na níže zobrazenou VÝZVU. Zařízení pak bude pokračovat v postupu pro vypnutí.</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">V případě, že chcete, aby se restartovaly služby vyhledávání na zařízení, zadejte prosím správnou ODPOVĚĎ na níže zobrazenou VÝZVU. Zařízení pak bude pokračovat v procesu restartování.</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">V případě, že chcete spustit proces sebedestrukce zařízení samo zničilo, kontaktujte vprosím zákaznickou podporu Google a požádejte o správnou ODPOVĚĎ na níže zobrazenou VÝZVU. Nezapomeňte, že tento krok je nenávratný. Po zahájení procesu sebedestrukce, budou vymazána všechna data v zařízení.</msg>
+    <msg name="ACCEPT" desc="">Přijmout a pokračovat na krok 1</msg>
+    <msg name="ACCOUNT_TYPE" desc="">Typ účtu</msg>
+    <msg name="ADMIN" desc="">admin</msg>
+    <msg name="ADMINISTRATOR" desc="">Správce</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc="">Účet <ph name="START_BOLD">&lt;b></ph>admin<ph name="END_BOLD">&lt;/b></ph> se používá pro přístup do konzoly pro správu, což je aplikace pro správu vyhledávacího zařízení, a do Správce verze, který se používá pro instalaci softwarových aktualizací.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">Přihlašovací jméno a heslo rozlišují malá a velká písmena.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">Vytvořte heslo pro tento účet.  Doporučujeme vám si toto heslo poznamenat, abyste jej mohli použít při přihlašování do Konzoly pro správu (či Správce verze).</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">Tuto e-mailovou adresu používá vyhledávací zařízení k rozesílání upozornění a varování.  Bude rovněž použita v případě, že zapomenete heslo.  Nastavení serveru SMTP v kroku 2 z 5 je rovněž potřebné k tomu, aby mohlo vyhledávací zařízení odesílat e-maily.</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">Hesla správce se neshodují</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">Musíte zadat heslo správce</msg>
+    <msg name="ADMIN_SETTINGS" desc="">Účet „admin“</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">DŮLEŽITÉ:  K aktivaci licenčního klíče potřebuje vyhledávací zařízení platný server NTP.</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">Adres IP a portál se musí nacházet na stejné síti</msg>
+    <msg name="ANGUILLA" desc="">Anguilla</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">Antigua a Barbuda</msg>
+    <msg name="ARGENTINA" desc="">Argentina</msg>
+    <msg name="ARUBA" desc="">Aruba</msg>
+    <msg name="AUSTRALIA" desc="">Austrálie</msg>
+    <msg name="AUSTRIA" desc="">Rakousko</msg>
+    <msg name="AUTONEGOTIATION" desc="">Automatické vyjednávání kompenzátoru zátěže</msg>
+    <msg name="BACK" desc="">&lt;&lt; Zpět</msg>
+    <msg name="BANGLADESH" desc="">Bangladéš</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">Základní nastavení sítě</msg>
+    <msg name="BELGIUM" desc="">Belgie</msg>
+    <msg name="BERMUDA" desc="">Bermudy</msg>
+    <msg name="BRAZIL" desc="">Brazílie</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">Panenské ostrovy (Britské)</msg>
+    <msg name="BULGARIA" desc="">Bulharsko</msg>
+    <msg name="CANADA" desc="">Kanada</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">Kajmanské ostrovy</msg>
+    <msg name="CHALLENGE" desc="">Výzva</msg>
+    <msg name="CHANGE_PASSWORD" desc="">Heslo</msg>
+    <msg name="CHILE" desc="">Čile</msg>
+    <msg name="CHINA" desc="">Čína</msg>
+    <msg name="COLOMBIA" desc="">Kolumbie</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Konfigurovat server Syslog</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">Konfigurovat účet „správce“</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">Gratulujeme!
+Zařízení je nakonfigurováno. Nejsou-li zobrazena žádná varování, či chyby, můžete nyní svůj počítač odpojit a můžete začít zařízení používat.  Pro každodenní správu používejte aplikaci Konzola pro správu.</msg>
+    <msg name="CONTINUE" desc="">Pokračovat &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">Kostarika</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>Vítejte!<ph name="END_BOLD">&lt;/b></ph> Abyste mohli v síťové instalaci pokračovat, musíte nejdříve přijmout tuto licenční smlouvu. Vyberte prosím svou zemi z následujícího seznamu a poté klikněte na tlačítko „Pokračovat“:</msg>
+    <msg name="CRAWL_IP" desc="">Prohledávat adresu IP</msg>
+    <msg name="CZECH_REPUBLIC" desc="">Česká republika</msg>
+    <msg name="DENMARK" desc="">Dánsko</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">Diagnostické zprávy</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">Naše diagnostika sítě nalezla problém s nastavením v předešlém kroku. Přestože je pokračování stále možné, možná byste se měli vrátit a nastavení změnit.</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">Přípona DNS (cesta pro vyhledávání DNS)</msg>
+    <msg name="DNS_SERVERS" desc="">Servery DNS</msg>
+    <msg name="DNS_SETTINGS" desc="">Nastavení DNS a e-mailu</msg>
+    <msg name="ECUADOR" desc="">Ekvádor</msg>
+    <msg name="EGYPT" desc="">Egypt</msg>
+    <msg name="EL_SALVADOR" desc="">Salvador</msg>
+    <msg name="EMAIL_ADDRESS" desc="">E-mailová adresa</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">Chyba při nahrávání konfiguračního souboru. Zkuste to prosím znovu</msg>
+    <msg name="EXAMPLE" desc="">Příklad</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">technika.mafirma.cz, as.mojefirma.cz, firma.cz</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">Finsko</msg>
+    <msg name="FRANCE" desc="">Francie</msg>
+    <msg name="FRENCH_GUIANA" desc="">Francouzská Guayana</msg>
+    <msg name="GATEWAY" desc="">Výchozí portál</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Portál nesmí kolidovat s žádnou jinou adresou IP</msg>
+    <msg name="GERMANY" desc="">Německo</msg>
+    <msg name="GREECE" desc="">Řecko</msg>
+    <msg name="GUADELOUPE" desc="">Guadeloupe (Francie)</msg>
+    <msg name="GUATEMALA" desc="">Guatemala</msg>
+    <msg name="HONDURAS" desc="">Honduras</msg>
+    <msg name="HONG_KONG" desc="">Hongkong</msg>
+    <msg name="HOSTNAME" desc="">Název hostitele</msg>
+    <msg name="HUNGARY" desc="">Maďarsko</msg>
+    <msg name="ICELAND" desc="">Island</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">Zadali jste neplatnou hodnotu pro automatické vyjednávání</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">Neplatná či rezervovaná adresa IP pro procházení</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">Zadány ilegální servery DNS</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">Zadali jste neoprávněný portál</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">Neplatné či rezervované adresy IP</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">Zadána neoprávněná maska</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">Zadána neplatná rychlost sítě</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">Zadány neoprávněné servery NTP</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">Zadán neplatný odesilatel odchozí pošty</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">Zadány neoprávněné cesty pro vyhledávání</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">Zadán neoprávněný server SMTP</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">Neplatná či rezervovaná adresa IP přepínače</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">Zadán neoprávněný server Syslog</msg>
+    <msg name="INDIA" desc="">Indie</msg>
+    <msg name="INDONESIA" desc="">Indonésie</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">Neplatná e-mailová adresa správce</msg>
+    <msg name="IP_ADDRESS" desc="">IP adresa</msg>
+    <msg name="IRELAND" desc="">Irsko</msg>
+    <msg name="ISRAEL" desc="">Izrael</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">není platné časové pásmo.</msg>
+    <msg name="ITALY" desc="">Itálie</msg>
+    <msg name="JAPAN" desc="">Japonsko</msg>
+    <msg name="LICENSE_ERROR" desc="">Kontaktujte prosím podporu Google ohledně své licence.</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">Přečtěte si pečlivě tyto podmínky a chcete-li pokračovat, klikněte na možnost „Přijmout a pokračovat na krok 1“.</msg>
+    <msg name="LICENSE_WELCOME" desc="">Licenční smlouva koncového uživatele</msg>
+    <msg name="LUXEMBOURG" desc="">Lucembursko</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">Nastavení e-mailového serveru</msg>
+    <msg name="MALAYSIA" desc="">Malajsie</msg>
+    <msg name="MALTA" desc="">Malta</msg>
+    <msg name="MARTINIQUE" desc="">Martinique (Francie)</msg>
+    <msg name="MEXICO" desc="">Mexiko</msg>
+    <msg name="MODIFY" desc="">Zpět na krok 1</msg>
+    <msg name="MONACO" desc="">Monako</msg>
+    <msg name="MONTSERRAT" desc="">Montserrat</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">Heslo správce je nutné zadat dvakrát</msg>
+    <msg name="NETHERLANDS" desc="">Nizozemí</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">Nizozemské Antily</msg>
+    <msg name="NETMASK" desc="">Maska podsítě</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">Instalace sítě</msg>
+    <msg name="NETWORK_SPEED" desc="">Rychlost sítě</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">vyjednat automaticky</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">10 Mb/s poloduplexní</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">10 Mb/s plně duplexní</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">100 Mb/s poloduplexní</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">100 Mb/s plně duplexní</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1000 Mb/s (při této rychlosti je duplex vždy vyjednáván)</msg>
+    <msg name="NEW_PASSWORD" desc="">Nové heslo</msg>
+    <msg name="NEW_ZEALAND" desc="">Nový Zéland</msg>
+    <msg name="NICARAGUA" desc="">Nikaragua</msg>
+    <msg name="NORWAY" desc="">Norsko</msg>
+    <msg name="NOT_A_VALID_URL" desc="">neplatná adresa URL</msg>
+    <msg name="NTP_SERVERS" desc="">Servery NTP</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">Nastavení DNS</msg>
+    <msg name="OPEN_LICENSE" desc="">Otevřít licenci v novém okně</msg>
+    <msg name="OPTIONAL" desc="">nepovinné</msg>
+    <msg name="OTHER" desc="">Jiné</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">Odesílatel odchozích e-mailů</msg>
+    <msg name="PANAMA" desc="">Panama</msg>
+    <msg name="PARAGUAY" desc="">Paraguay</msg>
+    <msg name="PERU" desc="">Peru</msg>
+    <msg name="PHILIPPINES" desc="">Filipíny</msg>
+    <msg name="POLAND" desc="">Polsko</msg>
+    <msg name="PORTUGAL" desc="">Portugalsko</msg>
+    <msg name="PUERTO_RICO" desc="">Portoriko</msg>
+    <msg name="REDIRECT" desc="">Průzkum sítě a přesměrování na hlavní stránku. PLACEHOLDER_LINK Sem PLACEHOLDER_ENDLINK klikněte v případě, že se přesměrování během 1 minuty neuskuteční.</msg>
+    <msg name="REENTER" desc="">Zadejte znovu</msg>
+    <msg name="REJECT" desc="">Nepřijmout</msg>
+    <msg name="RESPONSE" desc="">Odpověď</msg>
+    <msg name="RUSSIA" desc="">Rusko</msg>
+    <msg name="SAVE" desc="">Uložit</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">Více záznamů oddělte čárkou.</msg>
+    <msg name="SINGAPORE" desc="">Singapur</msg>
+    <msg name="SLOVAKIA" desc="">Slovensko</msg>
+    <msg name="SLOVENIA" desc="">Slovinsko</msg>
+    <msg name="SMTP_SERVER" desc="">Server SMTP</msg>
+    <msg name="SOUTH_AFRICA" desc="">Jižní Afrika</msg>
+    <msg name="SOUTH_KOREA" desc="">Jižní Korea</msg>
+    <msg name="SPAIN" desc="">Španělsko</msg>
+    <msg name="SRI_LANKA" desc="">Srí Lanka</msg>
+    <msg name="STEP_1_OF_5" desc="">Krok 1 z 5</msg>
+    <msg name="STEP_2_OF_5" desc="">Krok 2 z 5</msg>
+    <msg name="STEP_3_OF_5" desc="">Krok 3 z 5</msg>
+    <msg name="STEP_4_OF_5" desc="">Krok 4 z 5</msg>
+    <msg name="STEP_5_OF_5" desc="">Krok 5 z 5</msg>
+    <msg name="SWEDEN" desc="">Švédsko</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Switch IP nesmí kolidovat s žádnou jinou adresou IP</msg>
+    <msg name="SWITCH_IP" desc="">Adresa IP přepínače</msg>
+    <msg name="SWITZERLAND" desc="">Švýcarsko</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Servery Syslog</msg>
+    <msg name="TAIWAN" desc="">Tchaj-wan</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">Testování webových serverů a adres URL na připojitelnost a přístupová oprávnění</msg>
+    <msg name="TESTURLS" desc="">Testovat adresy URL</msg>
+    <msg name="TESTURLS_BULLET1" desc="">Zadejte alespoň jednu adresu URL (na každý řádek jednu), abyste otestovali, zda má vyhledávací zařízení přístup k těmto stránkám.  Ke každé adrese URL přidejte lomítko, např.:</msg>
+    <msg name="TESTURLS_BULLET2" desc="">Ujistěte se, že zařízení není blokováno pomocí Seznamů pro řízení přístupu (ACL) či chybnými trasami sítě. Podívejte se do části &amp;amp;ldquo;Odstraňování závad&amp;amp;rdquo; v oddílu Technická příloha.</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://as.mojefirma.cz/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://as.mojefirma.cz/produkty/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">Zkontrolujte přístup k webovým serverům</msg>
+    <msg name="THAILAND" desc="">Thajsko</msg>
+    <msg name="TIME_SETTINGS" desc="">Nastavení času</msg>
+    <msg name="TURKEY" desc="">Turecko</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">Ostrovy Turks a Caicos</msg>
+    <msg name="UK" desc="">Spojené království</msg>
+    <msg name="UKRAINE" desc="">Ukrajina</msg>
+    <msg name="UNITED_STATES" desc="">Spojené státy americké</msg>
+    <msg name="URUGUAY" desc="">Uruguay</msg>
+    <msg name="USERNAME" desc="">Uživatelské jméno</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">Panenské ostrovy (Americké)</msg>
+    <msg name="VENEZUELA" desc="">Venezuela</msg>
+    <msg name="VIETNAM" desc="">Vietnam</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">Pokusili jste se získat nastavení sítě automaticky pomocí DHCP. Výchozí hodnoty, které jsme získali jsou uvedeny níže. Upravte prosím všechny hodnoty, o kterých si myslíte, že by se měly změnit.</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">Účet „admin“ je používán pro přístup do Konzoly pro správu. Níže zadejte heslo a kontaktní e-mailovou adresu pro tento účet.</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">Zadejte adresu IP pro všechen odchozí provoz. Toto můžete použít například pro zadání pravidel ACL či brány firewall, abyste zařízení umožnili procházet váš intranet.</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">Zadejte výchozí portál sítě, ve které je zařízení umístěno.</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">Zadejte rozlišovací cestu pro neoprávněné názvy hostitelů. Ta odpovídá položce „vyhledávání“ v souboru resolv.conf na systémech UNIX a položce „přípona DNS“ na systémech Windows.</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">Pomocí adresy IP určete alespoň jeden server DNS. Servery DNS pomáhají rozkládat názvy hostitelů, např. &amp;ldquo;www.google.com&amp;rdquo;, na adresy IP.  Kvůli zálohování se doporučují alespoň dva servery DNS.</msg>
+    <msg name="WHATIS_NETMASK" desc="">Zadejte masku podsítě sítě, ve které je Vyhledávací zařízení Google umístěno.</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">Zařízení automaticky vyjednává rychlost sítě a duplexní nastavení s přepínačem či směrovačem, ke kterému je připojeno. V případě nutnosti vyberte příslušnou stálou rychlost přenosu a duplexní nastavení.</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">Chcete-li zachovat správný čas, určete až tři servery protokolu NTP. Je požadována verze 3 protokolu NTP.  Jestliže se na vaší síti nenalézá žádný server NTP, můžete se připojit k serveru s otevřeným přístupem.  Zvolte vrstvu 2 či vyšší služby a vyhněte se serverům, které před použitím požadují oznámení.</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">Zadejte e-mailovou adresu.  Zprávy zasílané vyhledávacím zařízením budou vypadat, jako kdyby přicházely z této adresy.</msg>
+    <msg name="WHATIS_SENDER" desc="">Zadejte jméno autora, které má zařízení používat při rozesílání upozornění a varování. Správná výchozí hodnota by měla být &amp;ldquo;nikdo@lokalnihostitel&amp;rdquo;.</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">Zařízení automaticky vyjednává rychlost sítě a duplexní nastavení s přepínačem či měrovačem, ke kterému je připojeno. V případě potřeby kliknutím na zaškrtávací políčko nastavte, aby zařízení používalo rychlost přenosu 100Mb/s a plně duplexní komunikaci pro rozdělení zatížení.</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">Vyhledávacímu zařízení přidělte statickou adresu IP. Nezapomeňte také zadat symbolický název, např. &amp;ldquo;googlebox.mojefirma.com&amp;rdquo;, a zpětný zápis DNS do databáze DNS vaší firmy.</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">Zadejte e-mailový server SMTP, který má zařízení používat, když vám zasílá oznámení a upozornění, nápovědy pro zapomenuté heslo.</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">Zadejte adresu IP pro serveriron.</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">Můžete zadat server SYSLOG pro zachycení systémových událostí a protokolů na externím přístroji.</msg>
+    <msg name="WHATIS_TESTURLS" desc="">Někdy se může stát, že předchozí nastavení brány firewall a zabezpečení zabrání zařízení v přístupu na webové servery, které chcete prohledávat. Můžete zkontrolovat, zda se zařízení může dostat na webové servery. Stačí zadat úplné adresy URL v níže uvedeném textovém poli a kliknout na příkaz „Pokračovat.“ Nebude-li možné získat přístup k některé s vámi zadaných adres URL, upozorníme vás.</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">Zadejte časové pásmo, které chcete používat pro protokoly a pro rozvrh zatížení hostitele.</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">Zařízení se nyní restartuje. Počkejte prosím zařízení by mělo být připraveno za zhruba dvě minuty.</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">Zařízení právě maže veškerá data. Počkejte prosím 60 minut. Poté můžete zařízení bezpečně odpojit.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">Zařízení nyní znemožní přístup údržby přes SSH. Mějte strpení až 30 sekund, než změna konfigurace vstoupí v platnost.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">Zařízení nyní umožní přístup údržby přes SSH. Mějte strpení až 30 sekund, než změna konfigurace vstoupí v platnost.</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">Zařízení se vypíná. Počkejte prosím 2 minuty. Poté můžete zařízení bezpečně odpojit.</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">Vaše místní časové pásmo</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">Neuložili jste změny. Chcete-li je uložit, stlačte tlačítko „zpět“ vašeho prohlížeče a vraťte se na předchozí stránku a klikněte na tlačítko Uložit.</msg>
+  </localizationbundle>
+</localizationbundle>

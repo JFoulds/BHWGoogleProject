@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="vi">
+  <messages>
+    <msg name="MSG_advanced_search" desc="Page title">Tìm kiếm Nâng cao</msg>
+    <msg name="MSG_advsearch_example" desc="Advanced Search: See http://www.google.com/advanced_search  example domains">ví dụ: google.com, .org</msg>
+    <msg name="MSG_advsearch_file_format" desc="Advanced Search: See http://www.google.com/advanced_search  label to select desired file formats">Định dạng Tệp tin</msg>
+    <msg name="MSG_advsearch_return_files" desc="Advanced Search: Prefixed with &quot;Only&quot; or &quot;Don't&quot;">trả lại kết quả của định dạng tệp tin</msg>
+    <msg name="MSG_alerts">Cảnh báo</msg>
+    <msg name="MSG_all_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>có <ph name="START_BOLD">&lt;b></ph>tất cả<ph name="END_BOLD">&lt;/b></ph> các từ</msg>
+    <msg name="MSG_any_format" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any file format">định dạng bất kỳ</msg>
+    <msg name="MSG_any_language" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any language">ngôn ngữ bất kỳ</msg>
+    <msg name="MSG_any_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>có <ph name="START_BOLD">&lt;b></ph>ít nhất một<ph name="END_BOLD">&lt;/b></ph> trong các từ</msg>
+    <msg name="MSG_anywhere_on_page" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Return results where my terms occur"'>bất kỳ nơi nào trong trang</msg>
+    <msg name="MSG_ar">Tiếng A-rập</msg>
+    <msg name="MSG_cache" desc="Link to cached copy of document">Đã lưu trong bộ nhớ cache</msg>
+    <msg name="MSG_cached_copy" desc="Followed by URL">Đây là bản sao đã lưu trong bộ nhớ cache của</msg>
+    <msg name="MSG_correct_credentials_help">Bảo đảm giấy uỷ nhiệm bảo mật của bạn là chính xác.</msg>
+    <msg name="MSG_correct_spelling_help">Bảo đảm tất cả từ đều viết đúng chính tả.</msg>
+    <msg name="MSG_cs" desc="Language">Tiếng Séc</msg>
+    <msg name="MSG_da" desc="Language">Tiếng Đan Mạch</msg>
+    <msg name="MSG_de" desc="Language">Tiếng Đức</msg>
+    <msg name="MSG_different_keywords_help">Hãy thử các từ khoá khác.</msg>
+    <msg name="MSG_do_not" desc='Advanced search: See       http://www.google.com/advanced_search  dropdown, followed by "return results of the file format..."'>Không</msg>
+    <msg name="MSG_domains" desc="Advanced Search: See http://www.google.com/advanced_search - Domain is .com, .org, etc.">Tên miền</msg>
+    <msg name="MSG_egds_appliance_tab_label" desc="Label on search tab: Google Search Appliance">Công cụ</msg>
+    <msg name="MSG_el" desc="Language">Tiếng Hy Lạp</msg>
+    <msg name="MSG_en" desc="Language">Tiếng Anh</msg>
+    <msg name="MSG_err_description">Mô tả:</msg>
+    <msg name="MSG_err_details">Chi tiết:</msg>
+    <msg name="MSG_err_message">Thông báo:</msg>
+    <msg name="MSG_error" desc="Title for Error Page">Lỗi</msg>
+    <msg name="MSG_es" desc="Language">Tiếng Tây Ban Nha</msg>
+    <msg name="MSG_et" desc="Language">Tiếng Estonia</msg>
+    <msg name="MSG_exact_phrase" desc='Advanced Search: See http://www.google.com/advanced_search  prefixed by "Find results"'>có <ph name="START_BOLD">&lt;b></ph>cụm từ chính xác<ph name="END_BOLD">&lt;/b></ph></msg>
+    <msg name="MSG_fi" desc="Language">Tiếng Phần Lan</msg>
+    <msg name="MSG_file_doc">Microsoft Word (.doc)</msg>
+    <msg name="MSG_file_pdf">Adobe Acrobat PDF (.pdf)</msg>
+    <msg name="MSG_file_ppt">Microsoft Powerpoint (.ppt)</msg>
+    <msg name="MSG_file_ps">Adobe Postscript (.ps)</msg>
+    <msg name="MSG_file_rtf">Rich Text Format (.rtf)</msg>
+    <msg name="MSG_file_xls">Microsoft Excel (.xls)</msg>
+    <msg name="MSG_filtered_results">Để hiển thị cho bạn hầu hết kết quả có liên qua, chúng tôi đã bỏ qua một số mục rất giống với <ph name="NUM">%1$d</ph> đã hiển thị.<ph name="BREAK">&lt;br/></ph>Nếu muốn, bạn có thể <ph name="START_LINK">&lt;a href="%2$s"></ph>lặp lại tìm kiếm với những kết quả bỏ qua được bao gồm<ph name="END_LINK">&lt;/a></ph>.</msg>
+    <msg name="MSG_find_pages_linking_to" desc="Text to find pages that have a link to this page">Tìm các trang liên kết tới trang này.</msg>
+    <msg name="MSG_find_results" desc='Advanced Search: See http://www.google.com/advanced_search - Followed by "with all of the words ..."'>Tìm kết quả</msg>
+    <msg name="MSG_fr" desc="Language">Tiếng Pháp</msg>
+    <msg name="MSG_general_keywords_help">Hãy thử các từ khoá chung hơn.</msg>
+    <msg name="MSG_gmail_tab" desc="Label for the tab on the homepage or search results page that leads to Gmail.  Should match http://google.com">Gmail</msg>
+    <msg name="MSG_go_to_google_home">Đi tới Trang chủ Google</msg>
+    <msg name="MSG_groups_tab" desc="Label for the tab on the homepage or search results page that leads to Google Groups (usenet) search.  Should match http://google.com">Nhóm</msg>
+    <msg name="MSG_help" desc="Link that gives tips on how to search">Mẹo Tìm kiếm</msg>
+    <msg name="MSG_homepage_search_label">Tìm kiếm:</msg>
+    <msg name="MSG_hu" desc="Language">Tiếng Hungari</msg>
+    <msg name="MSG_images_tab" desc="Label for the tab on the homepage or search results page that leads to image search.  Should match http://google.com">Hình ảnh</msg>
+    <msg name="MSG_in_title" desc='Advanced Search: See       http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>trong tiêu đề của trang</msg>
+    <msg name="MSG_in_url" desc='Advanced Search: See http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>trong URL của trang</msg>
+    <msg name="MSG_is" desc="Language">Tiếng Ai-xơ-len</msg>
+    <msg name="MSG_it" desc="Language">Tiếng Ý</msg>
+    <msg name="MSG_iw" desc="Language">Tiếng Do Thái</msg>
+    <msg name="MSG_ja" desc="Language">Tiếng Nhật</msg>
+    <msg name="MSG_ko" desc="Language">Tiếng Hàn</msg>
+    <msg name="MSG_links" desc="Advanced Search: See http://www.google.com/advanced_search - This is the label on the form section to find pages with links to other pages">Liên kết</msg>
+    <msg name="MSG_local_tab" desc="Label for the tab on the homepage or search results page that leads to search on map.  Should match http://google.com">Địa phương</msg>
+    <msg name="MSG_lt" desc="Language">Tiếng Lithuania</msg>
+    <msg name="MSG_lv" desc="Language">Tiếng Latvi</msg>
+    <msg name="MSG_maps_tab" desc="Label for the tab on the homepage or search results page that leads to Maps.  Should match http://google.com">Bản đồ</msg>
+    <msg name="MSG_more_from_host" desc="Label on a link to get more results from a host machine">Kết quả khác từ <ph name="HOSTNAME">%1$s</ph></msg>
+    <msg name="MSG_my_alerts">Cảnh báo của tôi</msg>
+    <msg name="MSG_navbar_header">Trang kết quả</msg>
+    <msg name="MSG_navbar_next">Tiếp theo</msg>
+    <msg name="MSG_navbar_previous">Trước đó</msg>
+    <msg name="MSG_news_tab" desc="Label for the tab on the homepage or search results page that leads to Google News search.  Should match http://google.com">Tin tức</msg>
+    <msg name="MSG_news_lite_version" desc="Link to get a text version of a document">Phiên bản bằng Văn bản</msg>
+    <msg name="MSG_nl" desc="Language">Tiếng Hà Lan</msg>
+    <msg name="MSG_no" desc="Language">Tiếng Na Uy</msg>
+    <msg name="MSG_no_results">Tìm kiếm của bạn - <ph name="SEARCH_TERM">&lt;b>%1$s&lt;/b></ph> - không phù hợp với bất kỳ tài liệu nào.</msg>
+    <msg name="MSG_not_indexed">Không được lập chỉ mục:</msg>
+    <msg name="MSG_noword_warning">Không tìm thấy trang nào có chứa <ph name="SEARCH_TERM">&lt;b>"%2$.*1$s"&lt;/b></ph>.</msg>
+    <msg name="MSG_occurrences" desc="See http://www.google.com/advanced_search - Section label for selecting if results occur anywhere or in title">Lần xuất hiện</msg>
+    <msg name="MSG_only" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown, followed by 'return results from the site'">Chỉ</msg>
+    <msg name="MSG_page_specific_search">Tìm kiếm Trang Cụ thể</msg>
+    <msg name="MSG_pl" desc="Language">Tiếng Ba Lan</msg>
+    <msg name="MSG_powered_by_GSA" desc="Page footer">Được hỗ trợ bởi Công cụ Tìm kiếm Google</msg>
+    <msg name="MSG_powered_by_GSAVDE" desc="Page footer: a virtualized edition for software developers">Được hỗ trợ bởi Công cụ Tìm kiếm Google, Phiên bản Nhà phát triển Ảo</msg>
+    <msg name="MSG_pt" desc="Language">Tiếng Bồ Đào Nha</msg>
+    <msg name="MSG_public_content" desc="Security radio button item.  Caption is 'Search:'">nội dung công cộng</msg>
+    <msg name="MSG_public_secure_content" desc="Security radio button item.  Caption is 'Search:'">nội dung công cộng và an toàn</msg>
+    <msg name="MSG_results" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown to specify how many search results to return.  Prefixed by 10, 20, etc.">kết quả</msg>
+    <msg name="MSG_results_a_b_for_q">Kết quả <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> cho <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_a_b_of_n_for_q">Kết quả <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> của khoảng <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> cho <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_page">Trang Kết quả</msg>
+    <msg name="MSG_return_domains" desc="Advanced Search: See http://www.google.com/advanced_search   Prefixed by 'Only', followed by e.g. '.com'">trả lại kết quả từ trang web hoặc tên miền</msg>
+    <msg name="MSG_return_occurrences" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'anywhere in the page'">Trả lại kết quả khi thuật ngữ của tôi xuất hiện tại</msg>
+    <msg name="MSG_return_only_pages_in" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'any language'">Trả lại những trang viết bằng</msg>
+    <msg name="MSG_ro" desc="Language">Tiếng Rumani</msg>
+    <msg name="MSG_ru" desc="Language">Tiếng Nga</msg>
+    <msg name="MSG_search">Tìm kiếm Google</msg>
+    <msg name="MSG_search_home" desc="Page title; home page for search">Trang chủ Tìm kiếm</msg>
+    <msg name="MSG_search_public_content" desc="Label on checkbox">Chỉ tìm nội dung công cộng</msg>
+    <msg name="MSG_search_public_secure_content" desc="Label on checkbox">Tìm nội dung công cộng và an toàn (yêu cầu đăng nhập)</msg>
+    <msg name="MSG_search_results" desc="Results of search">Kết quả Tìm kiếm</msg>
+    <msg name="MSG_searchtime">Tìm kiếm mất <ph name="NUMBER">&lt;b>%1$.2f&lt;/b></ph> giây.</msg>
+    <msg name="MSG_security" desc="Label for the selector of the security mode">Bảo mật</msg>
+    <msg name="MSG_sep_bar_adv_text">Tìm kiếm Nâng cao</msg>
+    <msg name="MSG_sep_bar_error_text" desc="Title for Error Page">Lỗi</msg>
+    <msg name="MSG_sep_bar_std_text" desc="Tab label for doing a search">Tìm kiếm</msg>
+    <msg name="MSG_server_error_des_text">Kiểm tra chi tiết mã hồi đáp máy chủ.</msg>
+    <msg name="MSG_server_error_msg_text">Xảy ra lỗi máy chủ.</msg>
+    <msg name="MSG_server_error_title" desc="Heading on error page">Lỗi Máy chủ</msg>
+    <msg name="MSG_sign_out">Đăng xuất</msg>
+    <msg name="MSG_sort" desc="Label for the selector of 'Sort by Date/Relevance'">Phân loại</msg>
+    <msg name="MSG_sort_by_date">Phân loại theo ngày</msg>
+    <msg name="MSG_sort_by_relevance">Phân loại theo mức độ liên quan</msg>
+    <msg name="MSG_spell_suggest" desc="Spelling suggestion">Ý của bạn là:</msg>
+    <msg name="MSG_suggest_help">Đề xuất:</msg>
+    <msg name="MSG_sv" desc="Language">Tiếng Thụy Điển</msg>
+    <msg name="MSG_swr_num_results_found">Có khoảng <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> kết quả cho <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_swr_page_title">Tìm kiếm trong Kết quả</msg>
+    <msg name="MSG_swr_search_anchor_text">Tìm kiếm trong Kết quả</msg>
+    <msg name="MSG_swr_search_within_these_results">Sử dụng hộp tìm kiếm bên dưới để tìm trong những kết quả này.</msg>
+    <msg name="MSG_synonym_text" desc="Synonym suggestion">Bạn cũng có thể thử:</msg>
+    <msg name="MSG_the_word_language">Ngôn ngữ</msg>
+    <msg name="MSG_unknown_xml" desc="Error message">Loại kết quả XML chưa biết.</msg>
+    <msg name="MSG_video_tab" desc="Label for the tab on the homepage or search results page that leads to Video.  Should match http://google.com">Video</msg>
+    <msg name="MSG_view_all_data">Xem tất cả dữ liệu</msg>
+    <msg name="MSG_view_xml" desc="'View page source' is a browser action">Xem nguồn trang để nhìn thấy XML lỗi.</msg>
+    <msg name="MSG_web_tab" desc="Label for the tab on the homepage or search results page that leads to web search.  Should match http://google.com">Web</msg>
+    <msg name="MSG_without_words" desc="Advanced Search: See http://www.google.com/advanced_search "><ph name="START_BOLD">&lt;b></ph>không có<ph name="END_BOLD">&lt;/b></ph> các từ</msg>
+    <msg name="MSG_zh_CN" desc="Language">Tiếng Trung (Giản thể)</msg>
+    <msg name="MSG_zh_TW" desc="Language">Tiếng Trung (Phồn thể)</msg>
+  </messages>
+</localizationbundle>

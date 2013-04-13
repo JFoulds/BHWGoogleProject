@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="sv">
+  <localizationbundle locale="sv">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">Om du vill inaktivera underhållsåtkomst via SSH anger du rätt RESPONSE för CHALLENGE som visas nedan. SSH-porten inaktiveras därefter.</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">Om du vill aktivera underhållsåtkomst via SSH anger du rätt RESPONSE för CHALLENGE som visas nedan. SSH-porten aktiveras därefter.</msg>
+    <msg name="ABOUT_TO_HALT" desc="">Om du verkligen vill stoppa verktyget måste du ange rätt SVAR på den FRÅGA som visas nedan. Verktyget fortsätter då med avstängningen.</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">Om du verkligen vill starta om söktjänsten i verktyget anger du rätt RESPONSE för CHALLENGE som visas nedan. Verktyget fortsätter då med omstartsekvensen.</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">Om du verkligen vill radera verktyget kontaktar du Googles kundsupport och ber om rätt RESPONSE för CHALLENGE som visas nedan. Observera att denna åtgärd inte kan ångras. När raderingen har startat raderas alla data på datorn.</msg>
+    <msg name="ACCEPT" desc="">Godkänn villkoren och fortsätt till steg 1</msg>
+    <msg name="ACCOUNT_TYPE" desc="">Kontotyp</msg>
+    <msg name="ADMIN" desc="">admin</msg>
+    <msg name="ADMINISTRATOR" desc="">Administratör</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc=""><ph name="START_BOLD">&lt;b></ph>Admin<ph name="END_BOLD">&lt;/b></ph>-kontot används för att komma åt administratörskonsolen, som är administrationsverktyget för sökverktyget, samt för versionshanteraren, som används för att installera programuppdateringar.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">Vi skiljer mellan versaler och gemener för användarnamn och lösenord.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">Skapa ett lösenord för det här kontot. Vi föreslår att du antecknar lösenordet så att du hittar det när du ska logga in på administratörskonsolen (eller versionshanteraren).</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">E-postadressen används av sökverktyget för att skicka meddelanden och varningar.  Den används också om du glömmer ett lösenord.  SMTP-e-postservern som konfigurerades i steg 2 av 5 behövs också för att sökverktyget ska kunna skicka e-post.</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">Administratörslösenord matchar inte</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">Måste ange administratörslösenord</msg>
+    <msg name="ADMIN_SETTINGS" desc="">'Admin'-konto</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">VIKTIGT!  Sökverktyget kräver en giltig NTP-server för att kunna aktivera licensnyckeln.</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">IP-adressen och gateway måste vara i samma nätverk</msg>
+    <msg name="ANGUILLA" desc="">Anguilla</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">Antigua och Barbuda</msg>
+    <msg name="ARGENTINA" desc="">Argentina</msg>
+    <msg name="ARUBA" desc="">Aruba</msg>
+    <msg name="AUSTRALIA" desc="">Australien</msg>
+    <msg name="AUSTRIA" desc="">Österrike</msg>
+    <msg name="AUTONEGOTIATION" desc="">Belastningsbalanserare, automatisk förhandling</msg>
+    <msg name="BACK" desc="">&lt;&lt; Föregående</msg>
+    <msg name="BANGLADESH" desc="">Bangladesh</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">Grundläggande nätverksinställningar</msg>
+    <msg name="BELGIUM" desc="">Belgien</msg>
+    <msg name="BERMUDA" desc="">Bermuda</msg>
+    <msg name="BRAZIL" desc="">Brasilien</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">Jungfruöarna (brittiska)</msg>
+    <msg name="BULGARIA" desc="">Bulgarien</msg>
+    <msg name="CANADA" desc="">Kanada</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">Caymanöarna</msg>
+    <msg name="CHALLENGE" desc="">Utmaning</msg>
+    <msg name="CHANGE_PASSWORD" desc="">Lösenord</msg>
+    <msg name="CHILE" desc="">Chile</msg>
+    <msg name="CHINA" desc="">Kina</msg>
+    <msg name="COLOMBIA" desc="">Colombia</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Konfigurera Syslog-server</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">Konfigurera 'admin'-konto</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">Grattis!
+Du har konfigurerat verktyget. Om inga varningar eller fel har visats kan du nu koppla bort din bärbara dator och använda verktyget. Sköt den dagliga administrationen från administratörskonsolen.</msg>
+    <msg name="CONTINUE" desc="">Fortsätt &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">Costa Rica</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>Välkommen!<ph name="END_BOLD">&lt;/b></ph> Om du vill fortsätta med nätverksinstallationen måste du först godkänna licensavtalet. Välj ditt land i listan nedan och fortsätt genom att klicka på "Fortsätt":</msg>
+    <msg name="CRAWL_IP" desc="">IP för genomsökning</msg>
+    <msg name="CZECH_REPUBLIC" desc="">Tjeckien</msg>
+    <msg name="DENMARK" desc="">Danmark</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">Diagnostikmeddelanden</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">Vår nätverksdiagnostik har hittat ett problem med inställningarna från föregående steg. Även om du fortfarande kan fortsätta kan det vara bra att gå tillbaka och ändra inställningarna.</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">DNS-suffix (DNS-sökväg)</msg>
+    <msg name="DNS_SERVERS" desc="">DNS-servrar</msg>
+    <msg name="DNS_SETTINGS" desc="">DNS- och e-postinställningar</msg>
+    <msg name="ECUADOR" desc="">Ecuador</msg>
+    <msg name="EGYPT" desc="">Egypten</msg>
+    <msg name="EL_SALVADOR" desc="">El Salvador</msg>
+    <msg name="EMAIL_ADDRESS" desc="">E-postadress</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">Fel vid inläsning av konfig.fil Försök igen</msg>
+    <msg name="EXAMPLE" desc="">Exempel</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">ingenjörskonst.mittföretag.se, företag.mittföretag.se, företag.se</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">Finland</msg>
+    <msg name="FRANCE" desc="">Frankrike</msg>
+    <msg name="FRENCH_GUIANA" desc="">Franska Guyana</msg>
+    <msg name="GATEWAY" desc="">Standardgateway</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Gateway får inte sammanfalla med annan IP</msg>
+    <msg name="GERMANY" desc="">Tyskland</msg>
+    <msg name="GREECE" desc="">Grekland</msg>
+    <msg name="GUADELOUPE" desc="">Guadeloupe</msg>
+    <msg name="GUATEMALA" desc="">Guatemala</msg>
+    <msg name="HONDURAS" desc="">Honduras</msg>
+    <msg name="HONG_KONG" desc="">Hongkong</msg>
+    <msg name="HOSTNAME" desc="">Värdnamn</msg>
+    <msg name="HUNGARY" desc="">Ungern</msg>
+    <msg name="ICELAND" desc="">Island</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">Ogiltig automatisk förhandling har angetts</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">Ogiltig eller reserverad genomsöknings-IP-adress</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">Ogiltig DNS-server har angetts</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">Ogiltig gateway har angetts</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">Ogiltig eller reserverad IP-adress</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">Ogiltig nätmask har angetts</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">Ogiltig nätverkshastighet har angetts</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">Ogiltig NTP-server har angetts</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">Ogiltig sändare för utgående e-post har angetts</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">Ogiltig sökväg för sökning har angetts</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">Ogiltig SMTP-server har angetts</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">Ogiltig eller reserverad Växla IP-adress</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">Ogiltig Syslog-server har angetts</msg>
+    <msg name="INDIA" desc="">Indien</msg>
+    <msg name="INDONESIA" desc="">Indonesien</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">Ogiltig e-postadress för administratör</msg>
+    <msg name="IP_ADDRESS" desc="">IP-adress</msg>
+    <msg name="IRELAND" desc="">Irland</msg>
+    <msg name="ISRAEL" desc="">Israel</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">är inte en giltig tidszon.</msg>
+    <msg name="ITALY" desc="">Italien</msg>
+    <msg name="JAPAN" desc="">Japan</msg>
+    <msg name="LICENSE_ERROR" desc="">Kontakta Google Support om du vill ha information om din licens.</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">Granska dessa villkor noggrant och klicka på "Godkänn villkoren och fortsätt till steg 1" för att fortsätta.</msg>
+    <msg name="LICENSE_WELCOME" desc="">Slutanvändarlicensavtal</msg>
+    <msg name="LUXEMBOURG" desc="">Luxemburg</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">E-postserverinställningar</msg>
+    <msg name="MALAYSIA" desc="">Malaysia</msg>
+    <msg name="MALTA" desc="">Malta</msg>
+    <msg name="MARTINIQUE" desc="">Martinique</msg>
+    <msg name="MEXICO" desc="">Mexiko</msg>
+    <msg name="MODIFY" desc="">Återgå till steg 1</msg>
+    <msg name="MONACO" desc="">Monaco</msg>
+    <msg name="MONTSERRAT" desc="">Montserrat</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">Måste ange administratörslösenord två gånger</msg>
+    <msg name="NETHERLANDS" desc="">Nederländerna</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">Nederländska Antillerna</msg>
+    <msg name="NETMASK" desc="">Delnätsmask</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">Nätverksinstallation</msg>
+    <msg name="NETWORK_SPEED" desc="">Nätverkshastighet</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">förhandla automatiskt</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">10 Mbps halv duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">10 Mbps full duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">100 Mbps halv duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">100 Mbps full duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1000 Mbps (duplex förhandlas alltid på den här hastigheten)</msg>
+    <msg name="NEW_PASSWORD" desc="">Nytt lösenord</msg>
+    <msg name="NEW_ZEALAND" desc="">Nya Zeeland</msg>
+    <msg name="NICARAGUA" desc="">Nicaragua</msg>
+    <msg name="NORWAY" desc="">Norge</msg>
+    <msg name="NOT_A_VALID_URL" desc="">inte en godkänd webbadress</msg>
+    <msg name="NTP_SERVERS" desc="">NTP-servrar</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">DNS-inställningar</msg>
+    <msg name="OPEN_LICENSE" desc="">Öppna licens i nytt fönster</msg>
+    <msg name="OPTIONAL" desc="">valfritt</msg>
+    <msg name="OTHER" desc="">Övrigt</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">Sändare av utgående e-post</msg>
+    <msg name="PANAMA" desc="">Panama</msg>
+    <msg name="PARAGUAY" desc="">Paraguay</msg>
+    <msg name="PERU" desc="">Peru</msg>
+    <msg name="PHILIPPINES" desc="">Filippinerna</msg>
+    <msg name="POLAND" desc="">Polen</msg>
+    <msg name="PORTUGAL" desc="">Portugal</msg>
+    <msg name="PUERTO_RICO" desc="">Puerto Rico</msg>
+    <msg name="REDIRECT" desc="">Försöker komma åt nätverk och hänvisar till huvudsida. Klicka PLACEHOLDER_LINK här PLACEHOLDER_ENDLINK om hänvisningen inte fungerar inom 1 minut.</msg>
+    <msg name="REENTER" desc="">Ange igen</msg>
+    <msg name="REJECT" desc="">Godkänn inte</msg>
+    <msg name="RESPONSE" desc="">Svar</msg>
+    <msg name="RUSSIA" desc="">Ryssland</msg>
+    <msg name="SAVE" desc="">Spara</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">Skilj flera poster åt med kommatecken.</msg>
+    <msg name="SINGAPORE" desc="">Singapore</msg>
+    <msg name="SLOVAKIA" desc="">Slovakien</msg>
+    <msg name="SLOVENIA" desc="">Slovenien</msg>
+    <msg name="SMTP_SERVER" desc="">SMTP-server</msg>
+    <msg name="SOUTH_AFRICA" desc="">Sydafrika</msg>
+    <msg name="SOUTH_KOREA" desc="">Sydkorea</msg>
+    <msg name="SPAIN" desc="">Spanien</msg>
+    <msg name="SRI_LANKA" desc="">Sri Lanka</msg>
+    <msg name="STEP_1_OF_5" desc="">Steg 1 av 5</msg>
+    <msg name="STEP_2_OF_5" desc="">Steg 2 av 5</msg>
+    <msg name="STEP_3_OF_5" desc="">Steg 3 av 5</msg>
+    <msg name="STEP_4_OF_5" desc="">Steg 4 av 5</msg>
+    <msg name="STEP_5_OF_5" desc="">Steg 5 av 5</msg>
+    <msg name="SWEDEN" desc="">Sverige</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Växla IP får inte sammanfalla med annan IP</msg>
+    <msg name="SWITCH_IP" desc="">Växla IP</msg>
+    <msg name="SWITZERLAND" desc="">Schweiz</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Syslog-servrar</msg>
+    <msg name="TAIWAN" desc="">Taiwan</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">Testar webbservrar och webbadresser med avseende på anslutbarhet och åtkomstbehörigheter</msg>
+    <msg name="TESTURLS" desc="">Testwebbadresser</msg>
+    <msg name="TESTURLS_BULLET1" desc="">Ange en eller flera webbadresser (en per rad) för att testa att sökverktyget kan komma åt dessa platser. Lägg till ett avslutande snedstreck efter varje webbadress, t.ex.:</msg>
+    <msg name="TESTURLS_BULLET2" desc="">Kontrollera att enheten inte blockeras av åtkomstkontrollistor (ACL) eller felaktiga nätverksrutter.  Läs &amp;ldquo;Felsökning&amp;rdquo; i avsnittet Teknisk bilaga.</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://företag.mittföretag.se/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://företag.mittföretag.se/produkter/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">Kontrollera åtkomst till webbservrar</msg>
+    <msg name="THAILAND" desc="">Thailand</msg>
+    <msg name="TIME_SETTINGS" desc="">Tidsinställningar</msg>
+    <msg name="TURKEY" desc="">Turkiet</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">Turks- och Caicosöarna</msg>
+    <msg name="UK" desc="">Storbritannien</msg>
+    <msg name="UKRAINE" desc="">Ukraina</msg>
+    <msg name="UNITED_STATES" desc="">USA</msg>
+    <msg name="URUGUAY" desc="">Uruguay</msg>
+    <msg name="USERNAME" desc="">Användarnamn</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">Jungfruöarna (USA)</msg>
+    <msg name="VENEZUELA" desc="">Venezuela</msg>
+    <msg name="VIETNAM" desc="">Vietnam</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">Vi har försökt att få din nätverksinställningar automatiskt med hjälp av DHCP. De standardvärden vi har fått visas nedan. Redigera eventuella värden som du tycker bör ändras.</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">'admin'-kontot används för att komma åt administratörskonsolen.
+Ange ett lösenord och en e-postadress till kontakten för det här kontot nedan.</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">Ange IP-adressen för all utgående trafik. Du kan använda denna för att t.ex. ange ACL eller brandväggsregler för att tillåta att verktyget genomsöker ditt intranät.</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">Ange standardgatewayen för nätverket där verktyget finns.</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">Ange sökvägen för okvalificerade värddatornamn. Detta motsvarar en sökpost i en resolv.conf-fil i UNIX och en "DNS-suffix"-post i Windows.</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">Ange en eller flera DNS-servrar med deras IP-adresser. DNS-servrar hjälper till att översätta värddatornamn som &amp;ldquo;www.google.se&amp;rdquo; till IP-adresser.  Minst två DNS-servrar rekommenderas av redundansskäl.</msg>
+    <msg name="WHATIS_NETMASK" desc="">Ange delnätsmasken för nätverket där Google Search Appliance finns.</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">Verktyget förhandlar automatiskt om nätverkshastigheten och duplex-inställningarna med switchen eller routern till vilken det är anslutet. Välj lämplig konstant linjehastighet och duplex-inställning om det är nödvändigt.</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">Ange maximalt tre NTP-servrar (Network Time Protocol) för att hålla reda på rätt tid. NTP i version 3 krävs.  Om det inte finns någon NTP-server i nätverket kan du ansluta till en öppen server. Välj servrar på nivå 2 eller högre och undvik servrar som måste meddelas innan de kan användas.</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">Ange en e-postadress. Meddelanden som sökverktyget skickar kommer att se ut att som om de kommit från denna adress.</msg>
+    <msg name="WHATIS_SENDER" desc="">Ange namnet på upphovsmannen som verktyget ska använda vid utskick av meddelanden eller varningar. Ett bra standardvärde är &amp;ldquo;ingen@localhost&amp;rdquo;.</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">Verktyget förhandlar automatiskt om nätverkshastigheten och duplex-inställningarna med switchen eller routern till vilken det är anslutet. Om det är nödvändigt klickar du på kryssrutan så att verktyget använder en linjehastighet på 100 Mbs och dubbelriktad kommunikation för belastningsutjämning.</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">Tilldela sökverktyget en statisk IP-adress.
+Kom även ihåg att ange ett symboliskt namn som &amp;ldquo;googlebox.mittföretag.se&amp;rdquo; och en omvänd DNS-post i ditt företags DNS-databas.</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">Ange en SMTP-e-postserver som verktyget kan använda för att skicka meddelanden och varningar till dig, bl.a. meddelanden om glömda lösenord.</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">Ange IP-adressen för serveriron.</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">Du kan ange en SYSLOG-server för att fånga systemhändelser och -loggar på en extern dator.</msg>
+    <msg name="WHATIS_TESTURLS" desc="">Ibland kan befintliga brandväggar och säkerhetsinställningar förhindra att verktyget kommer åt webbservrar som du vill söka på. Du kan kontrollera att verktyget kan nå dina webbservrar genom att ange de fullständiga webbadresserna i textrutan nedan och klicka på ”Fortsätt”. Vi varnar dig om någon av de webbadresser du anger inte går att nå.</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">Ange en tidszon för loggar och för värdbelastningsplanering.</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">Verktyget startas nu om. Vänta – verktyget bör vara klart inom ca två minuter.</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">Verktyget raderar alla sina data. Vänta i 60 minuter innan du stänger av datorn.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">Verktyget omöjliggör nu åtkomst för underhåll via SSH. Vänta upp till 30 sekunder innan konfigurationsändringen träder i kraft.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">Verktyget möjliggör nu åtkomst för underhåll via SSH. Vänta upp till 30 sekunder innan konfigurationsändringen träder i kraft.</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">Verktyget stängs nu. Vänta i 2 minuter innan du stänger av maskinen.</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">Lokal tidszon</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">Du har inte sparat dina
+ändringar.
+Spara genom att trycka på Bakåt-knappen i webbläsaren och återgå till föregående sida där du klickar på knappen Spara.</msg>
+  </localizationbundle>
+</localizationbundle>

@@ -1,0 +1,101 @@
+#!/bin/sh
+#
+# Quick and dirty script for checking one or more production machines
+# for hardware problems
+
+. /root/google3/enterprise/legacy/setup/bashrc.google
+
+usage() {
+    echo "Usage: `basename $0` [-logonly] [-p] mach1 mach2 ..."
+    echo "   -chkdisk  runs the disk test too (KILLS all running servers!)"
+    echo "   -p  run the disk test on all disk at once (disk transfer speeds "
+    echo "       will be affected by interface/bus limitations in this case!)"
+    exit 1
+}
+
+background=""    # run disk tests sequentially by default
+checkdisk=0
+force=0
+user="prodadmin"
+while true; do
+  case $1 in
+    -*) case $1 in
+          -chkdisk) checkdisk=1;;
+          -force) force=1;;
+          -p) background='\&';;
+          -u*) user=`echo $1 | sed s/-u//`;;
+        esac;
+        shift;;
+    *) break;;
+  esac
+done
+
+[ $# -lt 1 ] && usage
+
+# double check if user really wants to kill servers on these machines
+if [ $checkdisk -ne 0 ] && [ $force -eq 0 ]; then
+  echo "This will KILL running servers on $*" 1>&2
+  echo -n "Are you sure you want to do this? [y|N] " 1>&2
+  read input
+  if [ "$input" != "y" ] && [ "$input" != "Y" ]; then
+    exit 0
+  fi
+fi
+
+# super-dooper disk check command. We run hdparm tests in parallel if
+# user wanted that and also pass DMA params only to disk that accept
+# that (not SCSI that is)
+chkcmd=$(cat <<'EOF' | sed "s#PARALLEL#$background#"
+chkdisk() {
+  local disk=$1
+  hdparmdisk=$(echo $disk | sed "s@/dev/hd[a-z]\$@-d &\1@")
+
+  sudo /sbin/hdparm -t $hdparmdisk | egrep -v "^$" | egrep -v "1 \(on\)"
+}
+
+gpids=`ps axwwwwo pgid,args | grep 'loop[.]' | awk '{ print "-" $1; }' | sort | uniq`
+
+kill -TERM $gpids 2> /dev/null
+sleep 1
+kill -KILL $gpids 2> /dev/null
+
+cd /root/google/bin && killall rfserver * 2> /dev/null
+
+disks=$(cat /etc/fstab | grep ext2 | egrep "^/dev/[hs]d" | awk "{ sub(/[0-9]\$/,\"\",\$1); print \$1; }" | sort | uniq)
+
+for disk in $disks; do
+   chkdisk $disk PARALLEL
+done
+
+wait
+EOF
+)
+
+# Check /var/log/messages for disk and memory problems
+
+if [ -n "$user" ]; then
+  userarg="$user@"
+fi
+
+if [ "$user" = "prodadmin" ]; then
+  sudo="sudo bash -c"
+else
+  sudo="bash -c"
+fi
+
+echo "Checking /var/log/messages"
+for m in $*; do
+  echo Checking $m 
+  alarm 60 ssh -q -n $userarg$m "$sudo '(cat /var/log/messages 2> /dev/null; zcat /var/log/messages.*.gz 2> /dev/null; dmesg)' | egrep 'CRC|Oops|UncorrectableError|SeekComplete|SectorIdNotFound|AddrMarkNotFound|(EXT2-fs error)|(NMI received)|(swap-space map bad)|(Unused swap offset entry)|(Trying to free swap from unused swap-device)|(Bad swap offset entry)|(Unable to find swap-space signature)|(Unable to handle swap header version)|(Swap area shorter than signature indicates)|(swap_dup:)|(swap_count: null entry)|tw_interrupt|(scsidisk I/O error)|(attempt to access beyond end of device)|(Machine Check Exception)|(CPU context corrupt)|(kernel: e100_wait_exec_cmd: Wait failed)|(fill rx buffer)|(card reports no resources)|(ECC circuitry error)|(end_request: I/O error)' | egrep -v 'log: executing remote command as root:'" | awk '{ if ($3 ~ /^[0-9][0-9]:[0-9][0-9]:[0-9][0-9]$/) offset=5; else offset=0; print $(offset+1),$(offset+2),$(offset+3),$(offset+4),$(offset+5),$(offset+6)}' | grep -v egrep | sort | uniq -c
+done
+
+[ $checkdisk -eq 0 ] && exit 0  # no disk test if we don't want one
+
+# check disk transfer rate
+if [ -n "$user" ]; then
+  userarg="-u$user"
+fi
+echo "Checking HDD transfer speed (should be > 27Mb/s (>15MB/s at EX))"
+googlesh -m"$*" $userarg -q -a120 -p40 -b "$chkcmd"
+
+echo "Done."

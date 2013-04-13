@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="el">
+  <localizationbundle locale="el">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">Εάν θέλετε να απενεργοποιήσετε την πρόσβαση συντήρησης μέσω SSH, καταχωρίστε τη σωστή RESPONSE για την CHALLENGE που παρουσιάζεται παρακάτω. Στη συνέχεια, η θύρα SSH θα απενεργοποιηθεί.</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">Εάν θέλετε να ενεργοποιήσετε την πρόσβαση συντήρησης μέσω SSH, καταχωρίστε τη σωστή RESPONSE για την CHALLENGE που παρουσιάζεται παρακάτω. Στη συνέχεια, η θύρα SSH θα ενεργοποιηθεί.</msg>
+    <msg name="ABOUT_TO_HALT" desc="">Εάν θέλετε πραγματικά να διακόψετε προσωρινά το εργαλείο, καταχωρίστε τη σωστή ΑΠΟΚΡΙΣΗ για την ΠΡΟΚΛΗΣΗ που παρουσιάζεται παρακάτω. Στη συνέχεια, το Εργαλείο θα συνεχίσει την ακολουθία τερματισμού λειτουργίας.</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">Εάν θέλετε πραγματικά να επανεκκινήσετε τις υπηρεσίες αναζήτησης του εργαλείου, καταχωρίστε τη σωστή ΑΠΟΚΡΙΣΗ για την ΠΡΟΚΛΗΣΗ που παρουσιάζεται παρακάτω. Στη συνέχεια, το Εργαλείο θα συνεχίσει την ακολουθία επανεκκίνησης.</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">Εάν θέλετε πραγματικά να χρησιμοποιήσετε τη λειτουργία αυτόματης καταστροφής του εργαλείου, επικοινωνήστε με το τμήμα υποστήριξης πελατών της Google και ζητήστε τη σωστή ΑΠΟΚΡΙΣΗ για την ΠΡΟΚΛΗΣΗ που παρουσιάζεται παρακάτω. Λάβετε ότι αυτό το βήμα δεν μπορεί να αναιρεθεί. Μετά την εκκίνηση της λειτουργίας αυτόματης καταστροφής, όλα τα δεδομένα στο μηχάνημα θα διαγραφούν.</msg>
+    <msg name="ACCEPT" desc="">Αποδοχή &amp; Συνέχεια στο Βήμα 1</msg>
+    <msg name="ACCOUNT_TYPE" desc="">Είδος Λογαριασμού</msg>
+    <msg name="ADMIN" desc="">διαχειρ</msg>
+    <msg name="ADMINISTRATOR" desc="">Διαχειριστής</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc="">Ο λογαριασμός <ph name="START_BOLD">&lt;b></ph>διαχειριστή<ph name="END_BOLD">&lt;/b></ph> χρησιμοποιείται για πρόσβαση στην Κονσόλα διαχειριστή, η οποία είναι το εργαλείο διαχείρισης του εργαλείου αναζήτησης και του Διαχειριστή έκδοσης, ο οποίος χρησιμοποιείται για την εγκατάσταση ενημερώσεων λογισμικού.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">Στα στοιχεία σύνδεσης και στον κωδικό πρόσβασης γίνεται διάκριση μεταξύ πεζών ή κεφαλαίων χαρακτήρων.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">Δημιουργήστε έναν κωδικό πρόσβασης για τον λογαριασμό αυτό.  Σάς συνιστούμε να καταγράψετε αυτόν τον κωδικό πρόσβασης ώστε να μπορείτε να ανατρέχετε σε αυτόν κατά τη σύνδεσή σας στην Κονσόλα διαχειριστή (ή στον Διαχειριστή έκδοσης).</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">Η διεύθυνση ηλεκτρονικού ταχυδρομείου χρησιμοποιείται από το εργαλείο αναζήτησης για την αποστολή ενημερώσεων και ειδοποιήσεων.  Χρησιμοποιείται, επίσης, στην περίπτωση που ξεχάσετε τον κωδικό πρόσβασής σας.  Η ρύθμιση του διακομιστή ηλεκτρονικού ταχυδρομείου SMTP στο Βήμα 2 από 5 είναι επίσης απαραίτητη ώστε το εργαλείο αναζήτησης να μπορεί να αποστέλλει μηνύματα ηλεκτρονικού ταχυδρομείου.</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">Οι κωδικοί πρόσβασης διαχειριστή δεν ταιριάζουν</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">Πρέπει να καταχωρίσετε τον κωδικό πρόσβασης διαχειριστή</msg>
+    <msg name="ADMIN_SETTINGS" desc="">Λογαριασμός 'admin'</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">ΣΗΜΑΝΤΙΚΟ:  Το εργαλείο αναζήτησης χρειάζεται έγκυρο διακομιστή NTP για την ενεργοποίηση του κλειδιού άδειας χρήσης.</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">Η διεύθυνση IP και η πύλη θα πρέπει να είναι στο ίδιο δίκτυο</msg>
+    <msg name="ANGUILLA" desc="">Ανγκουίλα</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">Αντίγκουα και Μπαρμπούντα</msg>
+    <msg name="ARGENTINA" desc="">Αργεντινή</msg>
+    <msg name="ARUBA" desc="">Αρούμπα</msg>
+    <msg name="AUSTRALIA" desc="">Αυστραλία</msg>
+    <msg name="AUSTRIA" desc="">Αυστρία</msg>
+    <msg name="AUTONEGOTIATION" desc="">Φόρτωση Αυτόματης διαπραγμάτευσης εξισορρόπησης</msg>
+    <msg name="BACK" desc="">&lt;&lt; Πίσω</msg>
+    <msg name="BANGLADESH" desc="">Μπαγκλαντές</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">Βασικές ρυθμίσεις δικτύου</msg>
+    <msg name="BELGIUM" desc="">Βέλγιο</msg>
+    <msg name="BERMUDA" desc="">Βερμούδες</msg>
+    <msg name="BRAZIL" desc="">Βραζιλία</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">Παρθένοι Νήσοι (Βρετανίας)</msg>
+    <msg name="BULGARIA" desc="">Βουλγαρία</msg>
+    <msg name="CANADA" desc="">Καναδάς</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">Νησιά Κέιμαν</msg>
+    <msg name="CHALLENGE" desc="">Πρόκληση</msg>
+    <msg name="CHANGE_PASSWORD" desc="">Κωδικός Πρόσβασης</msg>
+    <msg name="CHILE" desc="">Χιλή</msg>
+    <msg name="CHINA" desc="">Κίνα</msg>
+    <msg name="COLOMBIA" desc="">Κολομβία</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Διαμόρφωση Διακομιστή αρχείων καταγραφής συστήματος</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">Διαμόρφωση λογαριασμού 'admin'</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">Συγχαρητήρια!
+Διαμορφώσατε το εργαλείο. Εάν δεν εμφανίστηκαν προειδοποιήσεις ή σφάλματα, μπορείτε τώρα να αποσυνδέσετε τον φορητό υπολογιστή σας και να χρησιμοποιήσετε το εργαλείο.  Χρησιμοποιήστε την εφαρμογή Κονσόλα διαχειριστή για καθημερινή διαχείριση.</msg>
+    <msg name="CONTINUE" desc="">Συνέχεια &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">Κόστα Ρίκα</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>Καλωσορίσατε!<ph name="END_BOLD">&lt;/b></ph> Για να συνεχίσετε με την Εγκατάσταση δικτύου, πρέπει πρώτα να αποδεχθείτε τη συμφωνία άδειας χρήσης. Επιλέξτε τη χώρα σας από την παρακάτω λίστα και στη συνέχεια, κάντε κλικ στην επιλογή “Συνέχεια” για να συνεχίσετε:</msg>
+    <msg name="CRAWL_IP" desc="">Διεύθυνση IP ανίχνευσης</msg>
+    <msg name="CZECH_REPUBLIC" desc="">Δημοκρατία της Τσεχίας</msg>
+    <msg name="DENMARK" desc="">Δανία</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">Μηνύματα διαγνωστικών</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">Τα Διαγνωστικά δικτύου μας εντόπισαν πρόβλημα με τις ρυθμίσεις από το προηγούμενο βήμα. Ενώ είναι OK να συνεχίσετε, ενδεχομένως να θέλετε να επιστρέψετε πίσω και να αλλάξετε τις ρυθμίσεις σας.</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">Επίθημα DNS (Διαδρομή αναζήτησης DNS)</msg>
+    <msg name="DNS_SERVERS" desc="">Διακομιστές DNS</msg>
+    <msg name="DNS_SETTINGS" desc="">Ρυθμίσεις DNS και ηλεκτρονικού ταχυδρομείου</msg>
+    <msg name="ECUADOR" desc="">Ισημερινός</msg>
+    <msg name="EGYPT" desc="">Αίγυπτος</msg>
+    <msg name="EL_SALVADOR" desc="">Ελ Σαλβαδόρ</msg>
+    <msg name="EMAIL_ADDRESS" desc="">Διεύθυνση ηλεκτρονικού ταχυδρομείου</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">Σφάλμα φόρτωσης αρχείου config. Δοκιμάστε ξανά</msg>
+    <msg name="EXAMPLE" desc="">Παράδειγμα</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">engineering.mycompany.com, corp.mycompany.com, company.com</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">Φινλανδία</msg>
+    <msg name="FRANCE" desc="">Γαλλία</msg>
+    <msg name="FRENCH_GUIANA" desc="">Γαλλική Γουιάνα</msg>
+    <msg name="GATEWAY" desc="">Προεπιλεγμένη πύλη</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Η πύλη δεν πρέπει να έρχεται σε διένεξη με κάποια άλλη διεύθυνση IP</msg>
+    <msg name="GERMANY" desc="">Γερμανία</msg>
+    <msg name="GREECE" desc="">Ελλάδα</msg>
+    <msg name="GUADELOUPE" desc="">Γουαδελούπη (Γαλλική)</msg>
+    <msg name="GUATEMALA" desc="">Γουατεμάλα</msg>
+    <msg name="HONDURAS" desc="">Ονδούρα</msg>
+    <msg name="HONG_KONG" desc="">Χονγκ Κονγκ</msg>
+    <msg name="HOSTNAME" desc="">Όνομα κεντρικού υπολογιστή</msg>
+    <msg name="HUNGARY" desc="">Ουγγαρία</msg>
+    <msg name="ICELAND" desc="">Ισλανδία</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">Καθορίστηκε μη έγκυρη Αυτόματη διαπραγμάτευση</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">Μη έγκυρη ή δεσμευμένη διεύθυνση IP ανίχνευσης</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">Ορίστηκαν παράνομοι DNS διακομιστές</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">Καθορίστηκε μη έγκυρη πύλη</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">Μη έγκυρη ή δεσμευμένη διεύθυνση IP</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">Ορίστηκε Παράνομο Μάσκα Δικτύου</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">Καθορίστηκε μη έγκυρη ταχύτητα δικτύου</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">Καθορίστηκαν μη έγκυροι διακομιστές NTP</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">Ορίστηκε παράνομος αποστολέας για τα εξερχόμενα email</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">Καθορίστηκε μη έγκυρη διαδρομή αναζήτησης</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">Καθορίστηκε μη έγκυρος διακομιστής SMTP</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">Μη έγκυρη ή δεσμευμένη διεύθυνση IP εναλλαγής</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">Ορίστηκε παράνομος Syslog διακομιστής</msg>
+    <msg name="INDIA" desc="">Ινδία</msg>
+    <msg name="INDONESIA" desc="">Ινδονησία</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">Μη έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου διαχειριστή</msg>
+    <msg name="IP_ADDRESS" desc="">Διεύθυνση IP</msg>
+    <msg name="IRELAND" desc="">Ιρλανδία</msg>
+    <msg name="ISRAEL" desc="">Ισραήλ</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">δεν είναι έγκυρη ζώνη ώρας.</msg>
+    <msg name="ITALY" desc="">Ιταλία</msg>
+    <msg name="JAPAN" desc="">Ιαπωνία</msg>
+    <msg name="LICENSE_ERROR" desc="">Επικοινωνήστε με την υποστήριξη Google για την άδεια χρήσης σας.</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">Διαβάστε τους όρους αυτούς προσεκτικά και κάντε κλικ στην επιλογή 'Αποδοχή &amp; Συνέχεια στο Βήμα 1' για να συνεχίσετε.</msg>
+    <msg name="LICENSE_WELCOME" desc="">Συμφωνία άδειας χρήσης τελικού χρήστη</msg>
+    <msg name="LUXEMBOURG" desc="">Λουξεμβούργο</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">Ρυθμίσεις διακομιστή ηλεκτρονικού ταχυδρομείου</msg>
+    <msg name="MALAYSIA" desc="">Μαλαισία</msg>
+    <msg name="MALTA" desc="">Μάλτα</msg>
+    <msg name="MARTINIQUE" desc="">Μαρτινίκα (Γαλλική)</msg>
+    <msg name="MEXICO" desc="">Μεξικό</msg>
+    <msg name="MODIFY" desc="">Επιστροφή στο Βήμα 1</msg>
+    <msg name="MONACO" desc="">Μονακό</msg>
+    <msg name="MONTSERRAT" desc="">Μονσεράτ</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">Πρέπει να πληκτρολογήσετε τον κωδικό πρόσβασης διαχειριστή δύο φορές</msg>
+    <msg name="NETHERLANDS" desc="">Ολλανδία</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">Ολλανδικές Αντίλλες</msg>
+    <msg name="NETMASK" desc="">Μάσκα Υποδικτύου</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">Εγκατάσταση Δικτύου</msg>
+    <msg name="NETWORK_SPEED" desc="">Ταχύτητα Δικτύου</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">αυτόματη διαπραγμάτευση</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">Ημι-αμφίδρομη λειτουργία 10 Mbps</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">Πλήρης αμφίδρομη λειτουργία 10 Mbps</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">Ημι-αμφίδρομη λειτουργία 100 Mbps</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">Πλήρης αμφίδρομη λειτουργία 100 Mbps</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1000 Mbps (σε αυτήν την ταχύτητα υπάρχει πάντα διαπραγμάτευση της αμφίδρομης λειτουργίας)</msg>
+    <msg name="NEW_PASSWORD" desc="">Νέος Κωδικός Πρόσβασης</msg>
+    <msg name="NEW_ZEALAND" desc="">Νέα Ζηλανδία</msg>
+    <msg name="NICARAGUA" desc="">Νικαράγουα</msg>
+    <msg name="NORWAY" desc="">Νορβηγία</msg>
+    <msg name="NOT_A_VALID_URL" desc="">μη έγκυρη διεύθυνση URL</msg>
+    <msg name="NTP_SERVERS" desc="">Διακομιστές NTP</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">Ρυθμίσεις DNS</msg>
+    <msg name="OPEN_LICENSE" desc="">Άνοιγμα της άδειας σε νέο παράθυρο</msg>
+    <msg name="OPTIONAL" desc="">προαιρετικό</msg>
+    <msg name="OTHER" desc="">Άλλο</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">Αποστολέας εξερχόμενων μηνυμάτων ηλεκτρονικού ταχυδρομείου:</msg>
+    <msg name="PANAMA" desc="">Παναμάς</msg>
+    <msg name="PARAGUAY" desc="">Παραγουάη</msg>
+    <msg name="PERU" desc="">Περού</msg>
+    <msg name="PHILIPPINES" desc="">Φιλιππίνες</msg>
+    <msg name="POLAND" desc="">Πολωνία</msg>
+    <msg name="PORTUGAL" desc="">Πορτογαλία</msg>
+    <msg name="PUERTO_RICO" desc="">Πουέρτο Ρίκο</msg>
+    <msg name="REDIRECT" desc="">Διερεύνηση δικτύου και ανακατεύθυνση στην κύρια σελίδα. Κάντε κλικ PLACEHOLDER_LINK εδώ PLACEHOLDER_ENDLINK εάν η ανακατεύθυνση δεν επιτευχθεί μέσα σε 1 λεπτό.</msg>
+    <msg name="REENTER" desc="">Επανάληψη καταχώρισης</msg>
+    <msg name="REJECT" desc="">Να μη γίνει αποδοχή</msg>
+    <msg name="RESPONSE" desc="">Απόκριση</msg>
+    <msg name="RUSSIA" desc="">Ρωσία</msg>
+    <msg name="SAVE" desc="">Αποθήκευση</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">Διαχωρίστε τις πολλαπλές καταχωρίσεις με ένα κόμμα.</msg>
+    <msg name="SINGAPORE" desc="">Σιγκαπούρη</msg>
+    <msg name="SLOVAKIA" desc="">Σλοβακία</msg>
+    <msg name="SLOVENIA" desc="">Σλοβενία</msg>
+    <msg name="SMTP_SERVER" desc="">SMTP Διακομιστής</msg>
+    <msg name="SOUTH_AFRICA" desc="">Νότια Αφρική</msg>
+    <msg name="SOUTH_KOREA" desc="">Νότια Κορέα</msg>
+    <msg name="SPAIN" desc="">Ισπανία</msg>
+    <msg name="SRI_LANKA" desc="">Σρι Λάνκα</msg>
+    <msg name="STEP_1_OF_5" desc="">Βήμα 1 από 5</msg>
+    <msg name="STEP_2_OF_5" desc="">Βήμα 2 από 5</msg>
+    <msg name="STEP_3_OF_5" desc="">Βήμα 3 από 5</msg>
+    <msg name="STEP_4_OF_5" desc="">Βήμα 4 από 5</msg>
+    <msg name="STEP_5_OF_5" desc="">Βήμα 5 από 5</msg>
+    <msg name="SWEDEN" desc="">Σουηδία</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Το SwitchIP δεν πρέπει να έρχεται σε διένεξη με κάποια άλλη διεύθυνση IP</msg>
+    <msg name="SWITCH_IP" desc="">Εναλλαγή διεύθυνσης IP</msg>
+    <msg name="SWITZERLAND" desc="">Ελβετία</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Διακομιστές αρχείων καταγραφής συστήματος</msg>
+    <msg name="TAIWAN" desc="">Ταϊβάν</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">Δοκιμή διακομιστή ιστού και διεύθυνσης URL για δυνατότητα σύνδεσης και άδειες πρόσβασης</msg>
+    <msg name="TESTURLS" desc="">Δοκιμαστικές διευθύνσεις URL</msg>
+    <msg name="TESTURLS_BULLET1" desc="">Καταχωρίστε μία ή περισσότερες διευθύνσεις URL (μία σε κάθε γραμμή) για να δοκιμάσετε εάν το εργαλείο αναζήτησης έχει πρόσβαση σε αυτούς τους ιστοτόπους.  Προσθέστε μία κάθετο σε κάθε διεύθυνση URL, για παράδειγμα:</msg>
+    <msg name="TESTURLS_BULLET2" desc="">Βεβαιωθείτε ότι η συσκευή δεν εμποδίζεται από Λίστες ελέγχου πρόσβασης (ACL) ή ψευδές δρομολογήσεις δικτύου.  Ανατρέξτε στην ενότητα &amp;ldquo;Αντιμετώπιση προβλημάτων&amp;rdquo; Τεχνικό παράρτημα.</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://corp.mycompany.com/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://corp.mycompany.com/products/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">Ελέγξτε την πρόσβαση στους διακομιστές ιστού</msg>
+    <msg name="THAILAND" desc="">Ταϊλάνδη</msg>
+    <msg name="TIME_SETTINGS" desc="">Ρυθμίσεις χρόνου</msg>
+    <msg name="TURKEY" desc="">Τουρκία</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">Νήσοι Τερκς και Κέικος</msg>
+    <msg name="UK" desc="">Ηνωμένο Βασίλειο</msg>
+    <msg name="UKRAINE" desc="">Ουκρανία</msg>
+    <msg name="UNITED_STATES" desc="">Ηνωμένες Πολιτείες</msg>
+    <msg name="URUGUAY" desc="">Ουρουγουάη</msg>
+    <msg name="USERNAME" desc="">Όνομα Χρήστη</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">Παρθένοι Νήσοι (Η.Π.Α.)</msg>
+    <msg name="VENEZUELA" desc="">Βενεζουέλα</msg>
+    <msg name="VIETNAM" desc="">Βιετνάμ</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">Προσπαθήσουμε να λάβουμε τις ρυθμίσεις δικτύου σας αυτόματα, χρησιμοποιώντας το DHCP. Οι προεπιλεγμένες τιμές που λάβαμε παρουσιάζονται παρακάτω. Επεξεργαστείτε τυχόν τιμές που θα θέλατε να αλλάξετε.</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">Ο λογαριασμός 'admin' χρησιμοποιείται για πρόσβαση στην Κονσόλα Διαχειριστή.
+Πληκτρολογήστε παρακάτω έναν κωδικό πρόσβασης και μια διεύθυνση επικοινωνίας μέσω ηλεκτρονικού ταχυδρομείου για αυτόν τον λογαριασμό.</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">Ορίστε τη διεύθυνση IP για όλη την εξερχόμενη επισκεψιμότητα. Μπορείτε να τη χρησιμοποιήσετε, για παράδειγμα, για να ορίσετε κανόνες ACL ή τείχους προστασίας που θα επιτρέπουν στο εργαλείο να πραγματοποιεί ανίχνευση στο εσωτερικό σας δίκτυο.</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">Ορίστε την προεπιλεγμένη πύλη του δικτύου στην οποία ανήκει το εργαλείο.</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">Ορίστε τη διαδρομή ανάλυσης για μη αναγνωρισμένα ονόματα κεντρικών υπολογιστών. Αυτό αντιστοιχεί σε μια καταχώριση "αναζήτησης" σε ένα αρχείο resolv.conf σε συστήματα UNIX και σε μια καταχώριση "Επίθημα DNS" σε συστήματα Windows.</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">Καθορίστε έναν ή περισσότερους διακομιστές DNS από τις διευθύνσεις IP τους. Οι διακομιστές DNS βοηθούν στην επίλυση ονομάτων κεντρικών υπολογιστών, όπως &amp;ldquo;www.google.gr&amp;rdquo; στις διευθύνσεις IP.  Συνιστώνται τουλάχιστον δύο διακομιστές DNS, για πλεονασμό.</msg>
+    <msg name="WHATIS_NETMASK" desc="">Ορίστε τη μάσκα υποδικτύου του δικτύου όπου βρίσκεται το Εργαλείο Αναζήτησης Google.</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">Το εργαλείο διαπραγματεύεται το ίδιο τις ρυθμίσεις ταχύτητας δικτύου και αμφίδρομης λειτουργίας με το μεταγωγέα ή με το router με το οποίο είναι συνδεδεμένο. Εάν είναι απαραίτητο, επιλέξτε την κατάλληλη καθορισμένη ταχύτητα γραμμής και αμφίδρομη ρύθμιση.</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">Καθορίστε έως τρεις διακομιστές Χρονικού πρωτοκόλλου δικτύου (NTP) για τη διατήρηση του σωστού χρόνου. Απαιτείται το NTP έκδοση 3.  Εάν δεν υπάρχει διακομιστής NTP στο δίκτυό σας, μπορείτε να συνδεθείτε με έναν διακομιστή ανοικτής πρόσβασης. Επιλέξτε διαστρωμάτωση 2 ή υψηλότερους διακομιστές και αποφύγετε διακομιστές που απαιτούν ειδοποίηση πριν από τη χρήση.</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">Ορίστε μια διεύθυνση ηλεκτρονικού ταχυδρομείου.  Τα μηνύματα που αποστέλλονται από το εργαλείο αναζήτησης θα εμφανίζονται ότι προέρχονται από αυτήν τη διεύθυνση.</msg>
+    <msg name="WHATIS_SENDER" desc="">Καθορίστε το όνομα του συντάκτη που θα πρέπει να χρησιμοποιεί το εργαλείο κατά την αποστολή ενημερώσεων ή ειδοποιήσεων. Μια κατάλληλη προεπιλεγμένη τιμή, είναι η &amp;ldquo;nobody@localhost&amp;rdquo;.</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">Το εργαλείο διαπραγματεύεται αυτομάτως τις ρυθμίσεις ταχύτητας δικτύου και αμφίδρομης λειτουργίας με τον μεταγωγέα ή με τον δρομολογητή με τον οποίο είναι συνδεδεμένο. Εάν είναι απαραίτητο, κάντε κλικ στο πλαίσιο ελέγχου για να ρυθμίσετε το εργαλείο ώστε να χρησιμοποιεί ταχύτητα γραμμής 100 Mbs και πλήρως αμφίδρομη επικοινωνία για την εξισορρόπηση φορτίου.</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">Εκχώρηση στατικής διεύθυνσης IP στο εργαλείο αναζήτησης.
+Μην ξεχνάτε να καταχωρίζετε επίσης ένα συμβολικό όνομα, όπως &amp;ldquo;googlebox.mycompany.com&amp;rdquo; και μια αντίστροφη καταχώριση DNS στη βάση δεδομένων DNS της εταιρείας σας.</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">Ορίστε έναν διακομιστή ηλεκτρονικού ταχυδρομείου SMTP για το εργαλείο που θα χρησιμοποιεί για να σάς αποστέλλει ενημερώσεις και ειδοποιήσεις καθώς και ενημερώσεις σε περίπτωση που ξεχάσετε τον κωδικό πρόσβασής σας.</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">Ορίστε τη διεύθυνση IP για το serveriron.</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">Μπορείτε να καθορίσετε έναν διακομιστή αρχείων καταγραφής συστήματος για να καταγράφετε συμβάντα συστήματος και αρχεία καταγραφής σε έναν εξωτερικό υπολογιστή.</msg>
+    <msg name="WHATIS_TESTURLS" desc="">Μερικές φορές οι προϋπάρχουσες ρυθμίσεις τείχους προστασίας και ασφάλειας μπορούν να εμποδίσουν την πρόσβαση του εργαλείου σε διακομιστές ιστού όπου θέλετε να πραγματοποιήσετε αναζήτηση. Μπορείτε να ελέγξετε ότι το εργαλείο μπορεί να προσεγγίσει τους διακομιστές ιστού σας καθορίζοντας τις πλήρεις διευθύνσεις URL στο παρακάτω πλαίσιο κειμένου και κάνοντας κλικ στο κουμπί 'Συνέχεια'. Θα σάς ενημερώσουμε σε περίπτωση που είναι δυνατή η προσέγγιση κάποιων από τις διευθύνσεις URL που ορίσατε.</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">Ορίστε μια ζώνη ώρας η οποία θα χρησιμοποιείται για τα αρχεία καταγραφής και τον προγραμματισμό της φόρτωσης του κεντρικού υπολογιστή.</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">Το εργαλείο πραγματοποιεί επανεκκίνηση τώρα. Περιμένετε – το εργαλείο θα είναι έτοιμο σε περίπου δύο λεπτά.</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">Το εργαλείο σας διαγράφει όλα τα δεδομένα. Για λόγους ασφαλείας, περιμένετε 60 λεπτά και στη συνέχεια αφαιρέστε το εργαλείο από την πρίζα.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">Το εργαλείο θα απαγορεύσει τώρα την πρόσβαση συντήρησης μέσω SSH. Θα χρειαστούν έως 30 δευτερόλεπτα για την εφαρμογή των αλλαγών διαμόρφωσης.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">Το εργαλείο θα επιτρέψει τώρα την πρόσβαση συντήρησης μέσω SSH. Θα χρειαστούν έως 30 δευτερόλεπτα για την εφαρμογή των αλλαγών διαμόρφωσης.</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">Το εργαλείο απενεργοποιείται. Για λόγους ασφαλείας, περιμένετε 2 λεπτά και στη συνέχεια αφαιρέστε το εργαλείο από την πρίζα.</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">Η τοπική σας ώρα ζώνης</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">Δεν έχετε αποθηκεύσει τις αλλαγές σας. Για να τις αποθηκεύσετε, κάντε κλικ στο κουμπί 'Πίσω' του προγράμματος περιήγησης για να επιστρέψετε στην προηγούμενη σελίδα και κάντε κλικ στο κουμπί 'Αποθήκευση'.</msg>
+  </localizationbundle>
+</localizationbundle>

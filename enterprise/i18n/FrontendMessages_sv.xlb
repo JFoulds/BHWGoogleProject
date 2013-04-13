@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="sv">
+  <messages>
+    <msg name="MSG_advanced_search" desc="Page title">Avancerad sökning</msg>
+    <msg name="MSG_advsearch_example" desc="Advanced Search: See http://www.google.com/advanced_search  example domains">Exempel: .org, google.com</msg>
+    <msg name="MSG_advsearch_file_format" desc="Advanced Search: See http://www.google.com/advanced_search  label to select desired file formats">Filformat</msg>
+    <msg name="MSG_advsearch_return_files" desc="Advanced Search: Prefixed with &quot;Only&quot; or &quot;Don't&quot;">returnera resultat av filformatet</msg>
+    <msg name="MSG_alerts">Varningar</msg>
+    <msg name="MSG_all_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>med <ph name="START_BOLD">&lt;b></ph>alla<ph name="END_BOLD">&lt;/b></ph> dessa ord</msg>
+    <msg name="MSG_any_format" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any file format">alla format</msg>
+    <msg name="MSG_any_language" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any language">valfritt språk</msg>
+    <msg name="MSG_any_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>med <ph name="START_BOLD">&lt;b></ph>något<ph name="END_BOLD">&lt;/b></ph> av dessa ord</msg>
+    <msg name="MSG_anywhere_on_page" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Return results where my terms occur"'>var som helst på sidan</msg>
+    <msg name="MSG_ar">arabiska</msg>
+    <msg name="MSG_cache" desc="Link to cached copy of document">Cachad</msg>
+    <msg name="MSG_cached_copy" desc="Followed by URL">Detta är en cachad kopia av</msg>
+    <msg name="MSG_correct_credentials_help">Se till att dina säkerhetsuppgifter är korrekta.</msg>
+    <msg name="MSG_correct_spelling_help">Kontrollera att alla ord är rättstavade.</msg>
+    <msg name="MSG_cs" desc="Language">tjeckiska</msg>
+    <msg name="MSG_da" desc="Language">danska</msg>
+    <msg name="MSG_de" desc="Language">tyska</msg>
+    <msg name="MSG_different_keywords_help">Försök med andra sökord.</msg>
+    <msg name="MSG_do_not" desc='Advanced search: See       http://www.google.com/advanced_search  dropdown, followed by "return results of the file format..."'>Inga</msg>
+    <msg name="MSG_domains" desc="Advanced Search: See http://www.google.com/advanced_search - Domain is .com, .org, etc.">Domän</msg>
+    <msg name="MSG_egds_appliance_tab_label" desc="Label on search tab: Google Search Appliance">Verktyg</msg>
+    <msg name="MSG_el" desc="Language">grekiska</msg>
+    <msg name="MSG_en" desc="Language">engelska</msg>
+    <msg name="MSG_err_description">Beskrivning:</msg>
+    <msg name="MSG_err_details">Detaljer:</msg>
+    <msg name="MSG_err_message">Meddelande:</msg>
+    <msg name="MSG_error" desc="Title for Error Page">Fel</msg>
+    <msg name="MSG_es" desc="Language">spanska</msg>
+    <msg name="MSG_et" desc="Language">estniska</msg>
+    <msg name="MSG_exact_phrase" desc='Advanced Search: See http://www.google.com/advanced_search  prefixed by "Find results"'>med den <ph name="START_BOLD">&lt;b></ph>exakta frasen<ph name="END_BOLD">&lt;/b></ph></msg>
+    <msg name="MSG_fi" desc="Language">finska</msg>
+    <msg name="MSG_file_doc">Microsoft Word (.doc)</msg>
+    <msg name="MSG_file_pdf">Adobe Acrobat PDF (.pdf)</msg>
+    <msg name="MSG_file_ppt">Microsoft PowerPoint (.ppt)</msg>
+    <msg name="MSG_file_ps">Adobe PostScript (.ps)</msg>
+    <msg name="MSG_file_rtf">Rich Text Format (.rtf)</msg>
+    <msg name="MSG_file_xls">Microsoft Excel (.xls)</msg>
+    <msg name="MSG_filtered_results">Vi har uteslutit vissa svar som var snarlika <ph name="NUM">%1$d</ph> som redan visats för att kunna ge dig de mest relevanta resultaten.<ph name="BREAK">&lt;br/></ph>Om du vill kan du <ph name="START_LINK">&lt;a href="%2$s"></ph>göra om sökningen och inkludera tidigare uteslutna resultat<ph name="END_LINK">&lt;/a></ph>.</msg>
+    <msg name="MSG_find_pages_linking_to" desc="Text to find pages that have a link to this page">Sök efter sidor som är länkade till sidan</msg>
+    <msg name="MSG_find_results" desc='Advanced Search: See http://www.google.com/advanced_search - Followed by "with all of the words ..."'>Hitta sidor</msg>
+    <msg name="MSG_fr" desc="Language">franska</msg>
+    <msg name="MSG_general_keywords_help">Försök med mer allmänna sökord.</msg>
+    <msg name="MSG_gmail_tab" desc="Label for the tab on the homepage or search results page that leads to Gmail.  Should match http://google.com">Gmail</msg>
+    <msg name="MSG_go_to_google_home">Gå till Googles startsida</msg>
+    <msg name="MSG_groups_tab" desc="Label for the tab on the homepage or search results page that leads to Google Groups (usenet) search.  Should match http://google.com">Grupper</msg>
+    <msg name="MSG_help" desc="Link that gives tips on how to search">Söktips</msg>
+    <msg name="MSG_homepage_search_label">Sök:</msg>
+    <msg name="MSG_hu" desc="Language">ungerska</msg>
+    <msg name="MSG_images_tab" desc="Label for the tab on the homepage or search results page that leads to image search.  Should match http://google.com">Bilder</msg>
+    <msg name="MSG_in_title" desc='Advanced Search: See       http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>i sidans titel</msg>
+    <msg name="MSG_in_url" desc='Advanced Search: See http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>i sidans webbadress</msg>
+    <msg name="MSG_is" desc="Language">isländska</msg>
+    <msg name="MSG_it" desc="Language">italienska</msg>
+    <msg name="MSG_iw" desc="Language">hebreiska</msg>
+    <msg name="MSG_ja" desc="Language">japanska</msg>
+    <msg name="MSG_ko" desc="Language">koreanska</msg>
+    <msg name="MSG_links" desc="Advanced Search: See http://www.google.com/advanced_search - This is the label on the form section to find pages with links to other pages">Länkar</msg>
+    <msg name="MSG_local_tab" desc="Label for the tab on the homepage or search results page that leads to search on map.  Should match http://google.com">Lokal</msg>
+    <msg name="MSG_lt" desc="Language">litauiska</msg>
+    <msg name="MSG_lv" desc="Language">lettiska</msg>
+    <msg name="MSG_maps_tab" desc="Label for the tab on the homepage or search results page that leads to Maps.  Should match http://google.com">Kartor</msg>
+    <msg name="MSG_more_from_host" desc="Label on a link to get more results from a host machine">Fler resultat från <ph name="HOSTNAME">%1$s</ph></msg>
+    <msg name="MSG_my_alerts">Mina varningar</msg>
+    <msg name="MSG_navbar_header">Resultatsida</msg>
+    <msg name="MSG_navbar_next">&lt;b&gt;Nästa&lt;/b&gt;</msg>
+    <msg name="MSG_navbar_previous">&lt;b&gt;Föregående&lt;/b&gt;</msg>
+    <msg name="MSG_news_tab" desc="Label for the tab on the homepage or search results page that leads to Google News search.  Should match http://google.com">Nyheter</msg>
+    <msg name="MSG_news_lite_version" desc="Link to get a text version of a document">Textversion</msg>
+    <msg name="MSG_nl" desc="Language">holländska</msg>
+    <msg name="MSG_no" desc="Language">norska</msg>
+    <msg name="MSG_no_results">Din sökning - <ph name="SEARCH_TERM">&lt;b>%1$s&lt;/b></ph> - matchade inte något dokument.</msg>
+    <msg name="MSG_not_indexed">Inte indexerat:</msg>
+    <msg name="MSG_noword_warning">Det gick inte att hitta sidor som innehåller <ph name="SEARCH_TERM">&lt;b>"%2$.*1$s"&lt;/b></ph>.</msg>
+    <msg name="MSG_occurrences" desc="See http://www.google.com/advanced_search - Section label for selecting if results occur anywhere or in title">Placering</msg>
+    <msg name="MSG_only" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown, followed by 'return results from the site'">Endast</msg>
+    <msg name="MSG_page_specific_search">Sidspecifik sökning</msg>
+    <msg name="MSG_pl" desc="Language">polska</msg>
+    <msg name="MSG_powered_by_GSA" desc="Page footer">Tillhandahålls av Google sökverktyg</msg>
+    <msg name="MSG_powered_by_GSAVDE" desc="Page footer: a virtualized edition for software developers">Drivs av Google Search Appliance, Virtual Developer Edition</msg>
+    <msg name="MSG_pt" desc="Language">portugisiska</msg>
+    <msg name="MSG_public_content" desc="Security radio button item.  Caption is 'Search:'">offentligt innehåll</msg>
+    <msg name="MSG_public_secure_content" desc="Security radio button item.  Caption is 'Search:'">offentligt och säkert innehåll</msg>
+    <msg name="MSG_results" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown to specify how many search results to return.  Prefixed by 10, 20, etc.">resultat</msg>
+    <msg name="MSG_results_a_b_for_q">Resultat <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> för <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_a_b_of_n_for_q">Resultat <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> på ungefär <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> för <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_page">Resultatsida</msg>
+    <msg name="MSG_return_domains" desc="Advanced Search: See http://www.google.com/advanced_search   Prefixed by 'Only', followed by e.g. '.com'">sidor från denna domän</msg>
+    <msg name="MSG_return_occurrences" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'anywhere in the page'">Hitta sidor där mina sökord finns</msg>
+    <msg name="MSG_return_only_pages_in" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'any language'">Visa endast sidor på</msg>
+    <msg name="MSG_ro" desc="Language">rumänska</msg>
+    <msg name="MSG_ru" desc="Language">ryska</msg>
+    <msg name="MSG_search">Google Sökning</msg>
+    <msg name="MSG_search_home" desc="Page title; home page for search">Sökning Startsida</msg>
+    <msg name="MSG_search_public_content" desc="Label on checkbox">Sök bara offentligt innehåll</msg>
+    <msg name="MSG_search_public_secure_content" desc="Label on checkbox">Sök offentligt och säkert innehåll (inloggning krävs)</msg>
+    <msg name="MSG_search_results" desc="Results of search">Sökresultat</msg>
+    <msg name="MSG_searchtime">Sökningen tog <ph name="NUMBER">&lt;b>%1$.2f&lt;/b></ph> sekunder.</msg>
+    <msg name="MSG_security" desc="Label for the selector of the security mode">Säkerhet</msg>
+    <msg name="MSG_sep_bar_adv_text">Avancerad sökning</msg>
+    <msg name="MSG_sep_bar_error_text" desc="Title for Error Page">Fel</msg>
+    <msg name="MSG_sep_bar_std_text" desc="Tab label for doing a search">Sök</msg>
+    <msg name="MSG_server_error_des_text">Kontrollera serversvarskod i detaljer.</msg>
+    <msg name="MSG_server_error_msg_text">Ett serverfel har uppstått.</msg>
+    <msg name="MSG_server_error_title" desc="Heading on error page">Serverfel</msg>
+    <msg name="MSG_sign_out">Logga ut</msg>
+    <msg name="MSG_sort" desc="Label for the selector of 'Sort by Date/Relevance'">Sortera</msg>
+    <msg name="MSG_sort_by_date">sortera efter datum</msg>
+    <msg name="MSG_sort_by_relevance">sortera efter betydelse</msg>
+    <msg name="MSG_spell_suggest" desc="Spelling suggestion">Menade du:</msg>
+    <msg name="MSG_suggest_help">Förslag:</msg>
+    <msg name="MSG_sv" desc="Language">svenska</msg>
+    <msg name="MSG_swr_num_results_found">Det finns ungefär <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> resultat för <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_swr_page_title">Sök i resultat</msg>
+    <msg name="MSG_swr_search_anchor_text">Sök i resultat</msg>
+    <msg name="MSG_swr_search_within_these_results">Använd sökrutan nedan för att söka i dessa resultat.</msg>
+    <msg name="MSG_synonym_text" desc="Synonym suggestion">Du kan även prova:</msg>
+    <msg name="MSG_the_word_language">Språk</msg>
+    <msg name="MSG_unknown_xml" desc="Error message">Okänd XML-resultattyp.</msg>
+    <msg name="MSG_video_tab" desc="Label for the tab on the homepage or search results page that leads to Video.  Should match http://google.com">Video</msg>
+    <msg name="MSG_view_all_data">Visa alla data</msg>
+    <msg name="MSG_view_xml" desc="'View page source' is a browser action">Visa sidkällan och felaktig XML.</msg>
+    <msg name="MSG_web_tab" desc="Label for the tab on the homepage or search results page that leads to web search.  Should match http://google.com">Nätet</msg>
+    <msg name="MSG_without_words" desc="Advanced Search: See http://www.google.com/advanced_search "><ph name="START_BOLD">&lt;b></ph>utan<ph name="END_BOLD">&lt;/b></ph> dessa ord</msg>
+    <msg name="MSG_zh_CN" desc="Language">kinesiska (förenklad)</msg>
+    <msg name="MSG_zh_TW" desc="Language">kinesiska (traditionell)</msg>
+  </messages>
+</localizationbundle>

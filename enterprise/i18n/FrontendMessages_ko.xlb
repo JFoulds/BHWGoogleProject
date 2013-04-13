@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="ko">
+  <messages>
+    <msg name="MSG_advanced_search" desc="Page title">고급검색</msg>
+    <msg name="MSG_advsearch_example" desc="Advanced Search: See http://www.google.com/advanced_search  example domains">예: google.com, .org</msg>
+    <msg name="MSG_advsearch_file_format" desc="Advanced Search: See http://www.google.com/advanced_search  label to select desired file formats">파일 형식</msg>
+    <msg name="MSG_advsearch_return_files" desc="Advanced Search: Prefixed with &quot;Only&quot; or &quot;Don't&quot;">해당 파일 형식의 결과를 반환합니다.</msg>
+    <msg name="MSG_alerts">알리미</msg>
+    <msg name="MSG_all_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>다음 단어 <ph name="START_BOLD">&lt;b></ph>모두<ph name="END_BOLD">&lt;/b></ph> 포함</msg>
+    <msg name="MSG_any_format" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any file format">모든 형식</msg>
+    <msg name="MSG_any_language" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any language">모든 언어</msg>
+    <msg name="MSG_any_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>다음 단어 <ph name="START_BOLD">&lt;b></ph>적어도 하나<ph name="END_BOLD">&lt;/b></ph> 포함</msg>
+    <msg name="MSG_anywhere_on_page" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Return results where my terms occur"'>페이지 전체에서</msg>
+    <msg name="MSG_ar">아랍어</msg>
+    <msg name="MSG_cache" desc="Link to cached copy of document">저장된 페이지</msg>
+    <msg name="MSG_cached_copy" desc="Followed by URL">다음에 대한 캐시된 사본입니다.</msg>
+    <msg name="MSG_correct_credentials_help">Make sure your security credentials are correct보안 증명서의 내용이 올바른지 확인하세요.</msg>
+    <msg name="MSG_correct_spelling_help">모든 단어의 철자가 정확한지 확인하세요</msg>
+    <msg name="MSG_cs" desc="Language">체코어</msg>
+    <msg name="MSG_da" desc="Language">덴마크어</msg>
+    <msg name="MSG_de" desc="Language">독일어</msg>
+    <msg name="MSG_different_keywords_help">다른 검색어를 사용해 보세요.</msg>
+    <msg name="MSG_do_not" desc='Advanced search: See       http://www.google.com/advanced_search  dropdown, followed by "return results of the file format..."'>다음 범위를 제외한</msg>
+    <msg name="MSG_domains" desc="Advanced Search: See http://www.google.com/advanced_search - Domain is .com, .org, etc.">도메인 설정</msg>
+    <msg name="MSG_egds_appliance_tab_label" desc="Label on search tab: Google Search Appliance">검색기</msg>
+    <msg name="MSG_el" desc="Language">그리스어</msg>
+    <msg name="MSG_en" desc="Language">영어</msg>
+    <msg name="MSG_err_description">설명:</msg>
+    <msg name="MSG_err_details">세부사항:</msg>
+    <msg name="MSG_err_message">메시지:</msg>
+    <msg name="MSG_error" desc="Title for Error Page">오류</msg>
+    <msg name="MSG_es" desc="Language">스페인어</msg>
+    <msg name="MSG_et" desc="Language">에스토니아어</msg>
+    <msg name="MSG_exact_phrase" desc='Advanced Search: See http://www.google.com/advanced_search  prefixed by "Find results"'>다음 <ph name="START_BOLD">&lt;b></ph>문구 정확하게<ph name="END_BOLD">&lt;/b></ph> 포함</msg>
+    <msg name="MSG_fi" desc="Language">핀란드어</msg>
+    <msg name="MSG_file_doc">Microsoft Word(.doc)</msg>
+    <msg name="MSG_file_pdf">Adobe Acrobat PDF(.pdf)</msg>
+    <msg name="MSG_file_ppt">Microsoft Powerpoint(.ppt)</msg>
+    <msg name="MSG_file_ps">Adobe Postscript(.ps)</msg>
+    <msg name="MSG_file_rtf">RTF(.rtf)</msg>
+    <msg name="MSG_file_xls">Microsoft Excel(.xls)</msg>
+    <msg name="MSG_filtered_results">가장 관련성이 높은 결과를 제공하기 위해 이미 표시된 <ph name="NUM">%1$d</ph>개 결과와 유사한 항목은 생략했습니다.<ph name="BREAK">&lt;br/></ph>원하시면 <ph name="START_LINK">&lt;a href="%2$s"></ph> 생략된 결과를 포함하여 검색을 반복<ph name="END_LINK">&lt;/a></ph>할 수 있습니다.</msg>
+    <msg name="MSG_find_pages_linking_to" desc="Text to find pages that have a link to this page">다음 페이지에 링크된 페이지 검색:</msg>
+    <msg name="MSG_find_results" desc='Advanced Search: See http://www.google.com/advanced_search - Followed by "with all of the words ..."'>검색어 설정</msg>
+    <msg name="MSG_fr" desc="Language">프랑스어</msg>
+    <msg name="MSG_general_keywords_help">더 일반적인 검색어를 사용해 보세요.</msg>
+    <msg name="MSG_gmail_tab" desc="Label for the tab on the homepage or search results page that leads to Gmail.  Should match http://google.com">Gmail</msg>
+    <msg name="MSG_go_to_google_home">Google 홈페이지로 이동</msg>
+    <msg name="MSG_groups_tab" desc="Label for the tab on the homepage or search results page that leads to Google Groups (usenet) search.  Should match http://google.com">그룹스</msg>
+    <msg name="MSG_help" desc="Link that gives tips on how to search">검색 도움말</msg>
+    <msg name="MSG_homepage_search_label">검색</msg>
+    <msg name="MSG_hu" desc="Language">헝가리어</msg>
+    <msg name="MSG_images_tab" desc="Label for the tab on the homepage or search results page that leads to image search.  Should match http://google.com">이미지</msg>
+    <msg name="MSG_in_title" desc='Advanced Search: See       http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>페이지 제목에서</msg>
+    <msg name="MSG_in_url" desc='Advanced Search: See http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>페이지 주소에서</msg>
+    <msg name="MSG_is" desc="Language">아이슬란드어</msg>
+    <msg name="MSG_it" desc="Language">이탈리아어</msg>
+    <msg name="MSG_iw" desc="Language">히브리어</msg>
+    <msg name="MSG_ja" desc="Language">일본어</msg>
+    <msg name="MSG_ko" desc="Language">한국어</msg>
+    <msg name="MSG_links" desc="Advanced Search: See http://www.google.com/advanced_search - This is the label on the form section to find pages with links to other pages">&lt;nobr&gt;링크 페이지&lt;/nobr&gt;</msg>
+    <msg name="MSG_local_tab" desc="Label for the tab on the homepage or search results page that leads to search on map.  Should match http://google.com">지역정보</msg>
+    <msg name="MSG_lt" desc="Language">리투아니아어</msg>
+    <msg name="MSG_lv" desc="Language">라트비아어</msg>
+    <msg name="MSG_maps_tab" desc="Label for the tab on the homepage or search results page that leads to Maps.  Should match http://google.com">지도</msg>
+    <msg name="MSG_more_from_host" desc="Label on a link to get more results from a host machine"><ph name="HOSTNAME">%1$s</ph> 검색결과 더보기</msg>
+    <msg name="MSG_my_alerts">내 알리미</msg>
+    <msg name="MSG_navbar_header">결과 페이지</msg>
+    <msg name="MSG_navbar_next">&lt;b&gt;다음&lt;/b&gt;</msg>
+    <msg name="MSG_navbar_previous">&lt;b&gt;이전&lt;/b&gt;</msg>
+    <msg name="MSG_news_tab" desc="Label for the tab on the homepage or search results page that leads to Google News search.  Should match http://google.com">뉴스</msg>
+    <msg name="MSG_news_lite_version" desc="Link to get a text version of a document">텍스트 버전</msg>
+    <msg name="MSG_nl" desc="Language">네덜란드어</msg>
+    <msg name="MSG_no" desc="Language">노르웨이어</msg>
+    <msg name="MSG_no_results"><ph name="SEARCH_TERM">&lt;b>%1$s&lt;/b></ph>와(과) 일치하는 검색결과가 없습니다.</msg>
+    <msg name="MSG_not_indexed">색인생성되지 않은 항목:</msg>
+    <msg name="MSG_noword_warning"><ph name="SEARCH_TERM">&lt;b>"%2$.*1$s"&lt;/b></ph>을(를) 포함하는 페이지를 찾을 수 없습니다.</msg>
+    <msg name="MSG_occurrences" desc="See http://www.google.com/advanced_search - Section label for selecting if results occur anywhere or in title">검색영역</msg>
+    <msg name="MSG_only" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown, followed by 'return results from the site'">다음 범위로 한정한</msg>
+    <msg name="MSG_page_specific_search">페이지 지정검색</msg>
+    <msg name="MSG_pl" desc="Language">폴란드어</msg>
+    <msg name="MSG_powered_by_GSA" desc="Page footer">Google 검색기</msg>
+    <msg name="MSG_powered_by_GSAVDE" desc="Page footer: a virtualized edition for software developers">가상 개발자 버전. Google 검색기로 더욱 강력해졌습니다.</msg>
+    <msg name="MSG_pt" desc="Language">포르투갈어</msg>
+    <msg name="MSG_public_content" desc="Security radio button item.  Caption is 'Search:'">공개 콘텐츠</msg>
+    <msg name="MSG_public_secure_content" desc="Security radio button item.  Caption is 'Search:'">공개 콘텐츠 및 보안 콘텐츠</msg>
+    <msg name="MSG_results" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown to specify how many search results to return.  Prefixed by 10, 20, etc.">결과</msg>
+    <msg name="MSG_results_a_b_for_q"><ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>에 대한 <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph>개의 결과입니다.</msg>
+    <msg name="MSG_results_a_b_of_n_for_q"><ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>에 대한 약 <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph>개의 결과 중 <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph>개의 결과입니다.</msg>
+    <msg name="MSG_results_page">결과 페이지</msg>
+    <msg name="MSG_return_domains" desc="Advanced Search: See http://www.google.com/advanced_search   Prefixed by 'Only', followed by e.g. '.com'">사이트 또는 도메인 검색</msg>
+    <msg name="MSG_return_occurrences" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'anywhere in the page'">검색어 위치 설정</msg>
+    <msg name="MSG_return_only_pages_in" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'any language'">지정된 언어의 페이지만 검색</msg>
+    <msg name="MSG_ro" desc="Language">루마니아어</msg>
+    <msg name="MSG_ru" desc="Language">러시아어</msg>
+    <msg name="MSG_search">Google 검색</msg>
+    <msg name="MSG_search_home" desc="Page title; home page for search">검색 홈</msg>
+    <msg name="MSG_search_public_content" desc="Label on checkbox">공개 콘텐츠만 검색</msg>
+    <msg name="MSG_search_public_secure_content" desc="Label on checkbox">공개 콘텐츠 및 보안 콘텐츠(로그인 필요) 검색</msg>
+    <msg name="MSG_search_results" desc="Results of search">검색결과</msg>
+    <msg name="MSG_searchtime">검색 소요시간: <ph name="NUMBER">&lt;b>%1$.2f&lt;/b></ph> 초</msg>
+    <msg name="MSG_security" desc="Label for the selector of the security mode">보안</msg>
+    <msg name="MSG_sep_bar_adv_text">고급검색</msg>
+    <msg name="MSG_sep_bar_error_text" desc="Title for Error Page">오류</msg>
+    <msg name="MSG_sep_bar_std_text" desc="Tab label for doing a search">검색</msg>
+    <msg name="MSG_server_error_des_text">서버 응답 코드를 자세히 확인하십시오.</msg>
+    <msg name="MSG_server_error_msg_text">서버 오류가 발생했습니다.</msg>
+    <msg name="MSG_server_error_title" desc="Heading on error page">서버 오류</msg>
+    <msg name="MSG_sign_out">로그아웃</msg>
+    <msg name="MSG_sort" desc="Label for the selector of 'Sort by Date/Relevance'">정렬</msg>
+    <msg name="MSG_sort_by_date">최신순 정렬</msg>
+    <msg name="MSG_sort_by_relevance">관련순 정렬</msg>
+    <msg name="MSG_spell_suggest" desc="Spelling suggestion">이것을 찾으셨나요?</msg>
+    <msg name="MSG_suggest_help">제안:</msg>
+    <msg name="MSG_sv" desc="Language">스웨덴어</msg>
+    <msg name="MSG_swr_num_results_found"><ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>에 대한 약 <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph>개의 결과가 검색되었습니다.</msg>
+    <msg name="MSG_swr_page_title">결과 내 검색</msg>
+    <msg name="MSG_swr_search_anchor_text">결과 내 검색</msg>
+    <msg name="MSG_swr_search_within_these_results">이 결과 내에서 검색하려면 아래 검색창을 사용하십시오.</msg>
+    <msg name="MSG_synonym_text" desc="Synonym suggestion">다음과 같이 시도해 보실 수도 있습니다.</msg>
+    <msg name="MSG_the_word_language">언어 설정</msg>
+    <msg name="MSG_unknown_xml" desc="Error message">알 수 없는 XML 결과 유형입니다.</msg>
+    <msg name="MSG_video_tab" desc="Label for the tab on the homepage or search results page that leads to Video.  Should match http://google.com">동영상</msg>
+    <msg name="MSG_view_all_data">모든 데이터 보기</msg>
+    <msg name="MSG_view_xml" desc="'View page source' is a browser action">잘못된 XML을 확인하기 위한 페이지 소스 보기입니다.</msg>
+    <msg name="MSG_web_tab" desc="Label for the tab on the homepage or search results page that leads to web search.  Should match http://google.com">웹문서</msg>
+    <msg name="MSG_without_words" desc="Advanced Search: See http://www.google.com/advanced_search ">다음 단어 <ph name="START_BOLD">&lt;b></ph>제외<ph name="END_BOLD">&lt;/b></ph></msg>
+    <msg name="MSG_zh_CN" desc="Language">중국어(간체)</msg>
+    <msg name="MSG_zh_TW" desc="Language">중국어(번체)</msg>
+  </messages>
+</localizationbundle>

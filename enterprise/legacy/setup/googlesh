@@ -1,0 +1,138 @@
+#!/bin/sh
+
+# Uses ssh to run a command on all the google machines.  It does them
+# in parallel unless -sequential is passed.
+#    One annoying thing about ssh is that it doesn't read /etc/profile.
+# We always do that before running your commands.
+#    We get the machines from /etc/clusters.  This file format is
+# as follows: <nickname><whitespace><machine name|*nickname>.  We
+# let sh interpret this for us, making nicknames variables and
+# turning *s into $s.
+
+clustersfile=/etc/clusters         # default clusters file
+
+ulimit -c 0
+
+help() {
+   cat <<EOF
+FORMAT: $0 [-s|-q|-p<procs>|-b|-d<delay>|-f<clusterfile>|-c<cluster>...|-m<host>...|-h] command
+   -s           Run on each machine sequentially.  Normal behavior is
+                to run each command in the background, 1 sec apart.
+   -a<delay>    Wrap the rsync in an alarm with the specified timeout.
+   -q           Do not print "Running on host XXX" for each host.
+   -p<procs>    Do not run more than <procs> processes at once.
+   -b           Barrier. Wait for children to finish before returning.
+   -d<delay>    Delay to wait between successive cmds (default=1, fraction ok)
+   -f<file>     Use this file instead of $clustersfile.  It must be in
+                the same format as $clustersfile.
+   -c<cluster>  Cluster of machines to run the command on.  Can be
+                specified more than once.
+   -m<machine>  A single machine to run the command on.  Can be specified
+                more than once.
+   -u<user>     User to ssh as.
+   -sudo        Wrap command in sudo (implies -uprodadmin).
+   -pswdok      It's OK if a password/passphrase is required for ssh.
+   -h           This help.
+
+Use $0 to run a command on many machines.
+Typical use is to specify one or more clusters (from $clustersfile),
+and a command, to run the command on every machine in that cluster.
+You must always specify at least one -c or -m command.
+
+TIP: You can combine machines like so: -m"m1 m2 m3 m4", as an alternative
+     to the normal -mm1 -mm2 -mm3 -mm4
+
+WARNING: If a machine is specified more than once (is in two clusters,
+         or is in a -c and a -m), the command will be executed on that
+         machine more than once as well.  Beware.
+EOF
+}
+
+ssh="ssh"
+batchmode="-o BatchMode=yes"
+sshargs="-x -P -q -n -o ForwardAgent=yes"
+
+while [ true ]; do
+    case $1 in
+	-s|-sequential|--sequential) seq=1; shift;;
+	-q|-quiet|--quiet) quiet=1; shift;;
+	-a*) alarmcmd="alarm `echo $1 | sed s/-a//`"; shift;;
+        -b|-barrier|--barrier) barrier=1; shift;;
+        -d*) delay=`echo $1 | sed s/-d//`; shift;;
+	-f*) clustersfile=`echo $1 | sed s/-f//`; shift;;
+	-c*) clusters="$clusters `echo $1 | sed s/-c//`"; shift;;   # everything after the -c
+	-m*) machlist="$machlist `echo $1 | sed s/-m//`"; shift;;
+	-pswdok|--pswdok) batchmode="-o BatchMode=no"; shift;;  # before -p*!
+	-p*) procs="`echo $1 | sed s/-p//`"; shift;;
+	-u*) user="`echo $1 | sed s/-u//`"; shift;;
+	-sudo) ssh="ssh_sudo.py"; user="prodadmin"; shift;;
+	-h|--help) help; exit 1;;
+	*) break;;
+    esac
+done
+
+if [ -n "$user" ]; then
+  userprefix="$user@"
+fi
+
+if [ -n "$clusters" ]; then        # turn each cluster into a list of machines
+    eval `cat $clustersfile | grep -v '^[	 ]*$' | sed -e 's/[	 ]/="/' -e 's/$/"/' -e 's/*/$/g'`
+    for cluster in $clusters; do
+    	machlist="$machlist `eval echo \\$$cluster`" # reads from /etc/clusters
+    done
+fi
+
+if [ -z "$machlist" ]; then        # no machines to work on?
+    echo "ERROR: you need to use at least one -c or -m argument"
+    echo "Type $0 --help for help"
+    exit 3
+fi
+
+udelay=`echo "${delay:-1} / 0.000001" | bc`
+
+# collect self PGID
+pgid=`ps axo pid,pgid | awk -v mypid=$$ '$1==mypid { print $2; }'`
+
+# start the remote commands
+retval=0
+for mach in $machlist; do
+    if [ -n "$seq" ]; then
+        [ -z "$quiet" ] && echo "Running '$*' on $mach"
+	$alarmcmd $ssh $batchmode $sshargs $userprefix$mach ". /etc/profile; $*"
+        retv=$?
+	[ 0 -ne $retv ] && retval=$retv
+    else
+        if [ -n "$procs" ]; then
+            # make sure you are not running more that the specified
+            # num of ssh connections at once (count all immediate
+            # children in our own process group)
+            while [ true ]; do
+                crtnum=`ps axo pgid,args | awk -v mygpid=$pgid '$1==mygpid' | grep "ssh" | grep -v grep | wc -l`
+                if [ ${crtnum:-0} -lt $procs ]; then
+                    break
+                else
+                    sleep 5
+                fi
+            done
+        fi
+
+        [ -z "$quiet" ] && echo "Running '$*' on $mach"
+
+        # NOTE: in "parallel" mode, the return status of the remote
+        # commands is lost! This is because backgrounded commands only
+        # return status to "wait <pid>" and *only* if the command is
+        # still running when we "wait" (children are reaped by bash
+        # directly). The result is that the status can't be fetched
+        # reliably and, in "parallel" mode, it will *always* be 0.
+	machprefix=`printf "%-7s " "$mach:"`
+	$alarmcmd $ssh $sshargs $batchmode $userprefix$mach ". /etc/profile; $*" 2>&1 | \
+	    sed -e "s/^/$machprefix/g" &
+    fi
+    [ -z "$procs" ] && usleep $udelay  # avoid having too many ssh's at once
+done
+
+if [ ! -z "$barrier" ]; then
+    wait
+fi
+
+exit $retval

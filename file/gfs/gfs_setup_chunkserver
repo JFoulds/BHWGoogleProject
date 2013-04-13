@@ -1,0 +1,422 @@
+#!/bin/bash
+#
+# Setup chunkserver.  Run this on a brand new chunkserver.  Run this on an
+# existing chunkserver with '-p' to update -email, -gfsuser, or -gfsgroup.
+# An old chunkserver can be DESTRUCTIVELY cleaned up by using the
+# '-wipe-old-data' flag.
+#
+# Creates the chunkserver directories: complains if they already exist and
+# '-p' is not specified.  Bad disks are skipped.  The directory names must
+# have the form:
+#    .../<cellid>.gfsdata
+
+
+usage() {
+    echo "Usage: [-empty] [-p] [-l] [-wipe-old-data] [-email=addr] [-gfsuser=user] [-gfsgroup=group] [-celltype=type] all <cellid>" 1>&2
+    echo "Usage: [-empty] [-p] [-l] [-wipe-old-data] [-email=addr] [-gfsuser=user] [-gfsgroup=group] [-celltype=type] <maindir> [<auxdir>...]" 1>&2
+    echo ""
+    echo "Arguments for production only:"
+    echo ""
+    echo "  -empty        Create a new, initially empty chunkserver."
+    echo ""
+    echo "  -email=addr   Required. If addr="none", nothing is done."
+    echo "                Otherwise, a DO_NOT_WIPE_GFS file is created "
+    echo "                if it does not already exist to protect from "
+    echo "                accidental wipes and addr is recorded as the "
+    echo "                notification address"
+    echo ""
+    echo "  -workqueue_test  For using the workqueue/borg to test GFS.  Allows "
+    echo "                   relative direcotry names and does not chown "
+    echo "                   directory. Also, allows existing data to be "
+    echo "                   retained on the borglet, in conjuction with -p."
+    echo ""
+    echo "  -gfsuser=user Make specified user own all created GFS files and"
+    echo "                directories.  Default is prodbin2."
+    echo ""
+    echo "  -gfsgroup=grp Make all created GFS files and directories belong "
+    echo "                to specified group.  Default is prod."
+    echo ""
+    echo "Other arguments:"
+    echo ""
+    echo "   -p Reuse existing directories if they exist. Create parents "
+    echo "      if needed."
+    echo ""
+    echo "   -l Do not use chunkserver logs directory for data."
+    echo ""
+    echo "   -wipe-old-data Delete any existing data and subdirectories in "
+    echo "                  the chunkserver directory. "
+    echo "      WARNING: Inadvertent use of this flag will cause data loss."
+    echo ""
+    echo "   -celltype=type Type of cell to setup.  Valid values include gfs "
+    echo "                  or colossus.  If not specified, we assume the "
+    echo "                  cell is gfs."
+    exit 1
+}
+
+mkdir_p=0
+mkdir_flag=""
+exclusive_logs=0
+is_empty=0
+force_deletion=0
+notify_addr=""
+gfs_user="prodbin2"
+gfs_group="prod"
+workqueue_test=0
+# For backward compatibility, leave celltype unspecified by default.
+celltype=""
+
+#### Flag parsing
+while [ $# -gt 0 ]
+  do 
+  case "$1"
+      in
+      -wipe-old-data | --wipe-old-data ) force_deletion=1
+	  shift
+	  ;;
+      -p | --parent ) mkdir_p=1
+                      mkdir_flag="-p"
+ 	  shift
+	  ;;
+      -l | --l ) exclusive_logs=1 
+	  shift
+	  ;;
+      -empty | --empty ) is_empty=1
+	  shift
+	  ;;
+      -email=* ) notify_addr="${1#-email=}"
+          shift
+	  ;; # Record the email notification address    
+      --email=* ) notify_addr="${1#--email=}"
+          shift
+	  ;; # Record the email notification address 
+      -gfsuser=* ) gfs_user=${1#-gfsuser=}
+          shift
+	  ;; # Record the user name to use for gfs
+      --gfsuser=* ) gfs_user=${1#--gfsuser=}
+          shift
+	  ;; # Record the user name to use for gfs
+      -gfsgroup=* ) gfs_group=${1#-gfsgroup=}
+	  shift
+	  ;; # Record the group name to use for gfs
+      --gfsgroup=* ) gfs_group=${1#--gfsgroup=}
+	  shift
+	  ;; # Record the group name to use for gfs
+      -workqueue_test | --workqueue_test ) workqueue_test=1
+	  shift
+	  ;;
+      -celltype=* ) celltype=${1#-celltype=}
+	  shift
+	  ;; # Record the cell type
+      --celltype=* ) celltype=${1#--celltype=}
+	  shift
+	  ;; # Record the cell type
+      -* | --*       ) usage
+	  ;; # Unknown argument
+      *        ) break 
+	  ;; # end of options
+  esac
+done
+
+
+if test $# -lt 1; then 
+  # Check that we have enough arguments left
+    usage
+fi
+
+# If celltype is specified, it must be either gfs or colossus in lower case.
+if [ "$celltype" != "" ]; then
+    if test "$celltype" != "gfs" -a "$celltype" != "colossus" ; then
+	echo "Bad cell type \"$celltype\", if specified, it must be either "
+	echo "gfs or colossus."
+	exit 1
+    fi
+fi
+
+# Only require -email, allow -gfsuser and -gfsgroup if we are on something
+# that looks like a production machine.
+if test -d "/export/hda3" && test ! -L "/export/hda3" && test $workqueue_test == 0; then
+    is_production=1
+else
+    is_production=0
+fi
+
+if test $is_production != 0 ; then 
+    # production machine
+    if test -z "$notify_addr"; then
+    	echo "must specify a -email=addr or -email=none on production machines"
+	usage
+    fi
+    if ! id -u "${gfs_user}" >/dev/null 2>&1; then
+	echo "user $gfs_user does not exist"
+        usage  
+    elif test "$gfs_user" = "root"; then
+	echo "root cannot own GFS files and directories"
+        usage  
+    fi
+    # Check that $gfs_user belongs to $gfs_group
+    belong=0
+    for g in `id -nG $gfs_user`; do
+	if test $gfs_group == $g ; then
+	    belong=1
+	    break
+	fi
+    done
+    if test $belong == 0 ; then
+	echo "User $gfs_user does not belong to group $gfs_group"
+	usage
+    fi
+else
+  # Non production machine
+    if test -n "$notify_addr"; then
+	echo "Ignoring notification address $notify_addr on non-production machine"
+    fi
+    if test -n "$gfs_user"; then
+	echo "Ignoring gfs user $gfs_user on non-production machine"
+    fi
+    notify_addr="none"
+fi
+
+if test "$exclusive_logs" -eq 1 -a "${mkdir_p}" -eq 1; then
+  echo "Ignoring '-l' since '-p' is also specified."
+fi
+
+# If we find that a file/dir we are about to create already exists, verify
+# that the appropriate flags are set/unset
+file_exists_flag_verify() {
+  file=$1
+  if test "${mkdir_p}" -eq 0; then
+    echo "$file: already exists and '-p' not specified" 1>&2
+    exit 1
+  fi
+  if test "$is_empty" -eq 1; then
+    echo "$file: already exists; cannot specify '-empty'" 1>&2
+    exit 1
+  fi
+}
+
+# If the cell type file we are about to create already exists, verify that 
+# it is consistent with what we are about to set it to
+verify_existing_celltype() {
+  local celltype_file=$1
+  local oldtype=$(cat $celltype_file)
+  local newtype=$2
+  if test "$oldtype" != "$newtype"; then
+    echo "File $celltype_file exists, and content \"$oldtype\" does not "
+    echo "match the specified cell type \"$newtype\"."
+    exit 1
+  fi
+}
+
+#### Get directory names and cell names
+if test "$1" = "all"; then
+  # Use /export/hda3
+    cellid="$2"
+    maindir=/export/hda3/$cellid.gfsdata
+    echo "Main directory is $maindir"
+    dirs="$maindir"
+    # Mounted disks under export other than hda3
+    disks=`mount | egrep "/export/hd[a-z]{1,2}3" | grep -v hda3 | cut -d\  -f3`
+    for disk in $disks; do
+	# Add in this disk if it is not the same as the main directory disk
+	candidate="$disk/$cellid.gfsdata"
+	echo "Adding $candidate"
+	dirs="$dirs $candidate"
+    done  
+else
+    maindir="$1"
+    dirs="$@"
+    cellid=`basename $maindir .gfsdata`
+fi
+
+# Make the config dir a peer of the main dir
+mainparent=`dirname $maindir`
+
+# Should be kept consistent with gfs_setup_master to make pushing
+# config files a bit simpler
+configdir="$mainparent/$cellid.gfsconfig"
+
+##### Check directories
+
+C="[a-zA-Z0-9.-]"
+for d in $dirs; do
+    expr match "$d" "/.*" > /dev/null || {
+	echo "$d: must start with '/'" 1>&2
+	exit 1
+    }
+    expr match "$d" ".*/$C$C*.gfsdata" >/dev/null || {
+	echo "$d: must end in '/<cellid>.gfsdata'" 1>&2
+	exit 1
+    }
+
+    c2=`basename $d .gfsdata`
+    if test "$c2" != "$cellid"; then
+	echo "$d: cellid mismatch: should be '$cellid'" 1>&2
+	exit 1
+    fi
+done
+
+# check for preexisting maindir by looking for a .../logs directory
+for d in $dirs; do
+  if test "$d" != "$maindir" -a -e "$d/logs"; then
+    echo "New main directory $maindir does not match preexisting " 1>&2
+    echo "main directory $d" 1>&2
+    exit 1
+  fi
+done
+
+# If the user has used the force flag, delete everything. For post-mortem
+# purposes, warn the user if we actually delete anything. 
+if test "$force_deletion" -eq 1; then
+    for tempdir in "$maindir" "$configdir" $dirs; do
+        if test -e "$tempdir"; then
+            echo "WARNING: -wipe-old-data flag caused deletion of old $tempdir"
+        fi
+        rm -rf "$tempdir"
+        # Make sure that rm didn't error out
+        if test -e "$tempdir"; then
+            echo "ERROR: Unable to delete $tempdir. Please check "
+            echo "       permissions and file system."
+            exit 1
+        fi
+    done
+fi
+
+# configdir used to be checked here, but the assertion isn't true when you have
+# chunkservers on master.
+for d in "$dirs"; do
+  if test -e "$d"; then
+    file_exists_flag_verify "$d"
+  fi
+done
+
+#### Create the config directory
+
+mkdir ${mkdir_flag} $configdir || exit 1
+
+
+#### Create directories and make list in main directory
+dirlist=$maindir/GFS_CS_DIRECTORIES
+if test -e $dirlist; then
+  file_exists_flag_verify $dirlist
+else
+  for d in $dirs; do
+    disk_error=0
+    echo "GFS datadir for '$cellid': '$d'"
+    mkdir ${mkdir_flag} $d
+    if test $? -gt 0; then
+      disk_error=1
+    fi
+    # If the user doesn't want us to put data into his logs dir, then don't
+    # write the logs dir into GFS_CS_DIRECTORIES
+    if test "${exclusive_logs}" -ne 1 -o "${d}" != "${maindir}"; then
+      if test "$disk_error" -eq 0; then
+        echo "$d" >> $maindir/GFS_CS_DIRECTORIES || exit 1
+      else
+	echo "-$d" >> $maindir/GFS_CS_DIRECTORIES || exit 1
+      fi
+    fi
+  done
+fi
+
+# Create the cell type file if it does not exist.
+celltype_file=$maindir/CELL_TYPE
+if test -e $celltype_file; then
+    file_exists_flag_verify $celltype_file
+    # If celltype is not specified, treat it as gfs for verification purpose
+    tmp_celltype=${celltype:-gfs}
+    verify_existing_celltype $celltype_file $tmp_celltype
+else
+    # Write out the celltype if it is specified.  By default, GFS cell does
+    # not need a celltype file.
+    if [ "$celltype" != "" ]; then 
+	echo $celltype > $celltype_file || exit 1
+    fi
+fi
+
+if test "$notify_addr" != "none"; then
+  addr_update=0
+  for d in $dirs; do
+    # Create a DO_NOT_WIPE_GFS file to protect the directories
+    # from accidental wipe
+    partition=`echo $d |  sed -r 's#(/export/hd[a-z]{1,2}3/).*#\1#' `
+    do_not_wipe_file="$partition/DO_NOT_WIPE_GFS"
+    if test -e $do_not_wipe_file; then
+      current_addr=`cat $do_not_wipe_file`
+      if test "$notify_addr" != "$current_addr"; then
+	if test "$addr_update" -eq 0; then
+	  echo "Updating notification address: $current_addr -> $notify_addr"
+	  addr_update=1
+	fi
+	echo "$notify_addr" >  $do_not_wipe_file
+	if test $? -gt 0; then
+	  echo "$do_not_wipe_file: unable to create DO_NOT_WIPE_GFS file."
+	fi
+      fi
+    else
+      echo "$notify_addr" >  $do_not_wipe_file
+      if test $? -gt 0; then
+        echo "$do_not_wipe_file: unable to create DO_NOT_WIPE_GFS file."
+      fi
+    fi
+  done
+fi  
+
+#### Make log file in main directory
+logdir=$maindir/logs
+mkdir ${mkdir_flag} $logdir || exit 1
+logs="`ls -1d $logdir/GFS_CS_LOG.* 2> /dev/null`"
+if test "$logs"; then
+  file_exists_flag_verify $logs
+else
+  if (test "$is_empty" -eq 1) || (test "${workqueue_test}" -eq 1); then
+    touch $logdir/GFS_CS_LOG.0000000000.delta || exit 1
+  fi
+fi
+
+#### Check for bucket directories
+buckets="`ls -1d $maindir/bucket* 2> /dev/null`"
+if test "$buckets"; then
+  file_exists_flag_verify $buckets
+fi
+
+#### Chown files to $gfs_user.$gfs_group if necessary (probably
+#### production).  If we are not permitted to chown, this will fail with a
+#### reasonably clear message like "chown: changing ownership of ... :
+#### Operation not permitted" The files/directories will be left alone,
+#### which seems reasonable.  So, all we do in this case is to fail.
+if test $is_production == 1 ; then
+    # There must be a less stupid way to get user and group ....  stat
+    # --format is nice but not all production machines have stat command
+    # that supports --format.  Parsing stat -t is no better than this, and
+    # it gives us only uid and gid.
+    user="`ls -l $maindir | awk '{ print \$3; }' | sort | uniq | grep -v ^$`"
+    if test "$user" != "$gfs_user"; then
+      echo "chowning data dirs: $user -> $gfs_user"
+    fi
+    group="`ls -l $maindir | awk '{ print \$4; }' | sort | uniq | grep -v ^$`"
+    if test "$group" != "$gfs_group"; then
+      echo "chgrouping data dirs: $group -> $gfs_group"
+    fi
+    if test "$user" != "$gfs_user" || \
+       test "$group" != "$gfs_group"; then
+	for d in $dirs; do
+	  chown -fR $gfs_user.$gfs_group $d
+	  if test $? -gt 0; then
+	    echo "$d: unable to chown"
+	  fi
+	done
+	chown -fR $gfs_user.$gfs_group $configdir
+	if test $? -gt 0; then
+	  echo "$d: unable to chown"
+	fi
+    fi
+fi
+
+if (test "$is_empty" -eq 0) && (test "${workqueue_test}" -eq 0); then
+  echo "If you are creating a brand new chunkserver setup is incomplete,"
+  echo "you must specify -empty. (Only relevant directories have been set"
+  echo "up.) In this case, you can rerun this script with -p."
+  exit 1
+fi
+
+exit 0

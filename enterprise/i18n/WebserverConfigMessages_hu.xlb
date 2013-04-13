@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="hu">
+  <localizationbundle locale="hu">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">Ha ki szeretné kapcsolni az SSH-n keresztüli karbantartást, akkor adja meg a 
+a megfelelő [VÁLASZT] a lejjebb látható KIHÍVÁSRA. Az SSH port ilyenkor
+ki van kapcsolva.</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">Ha be szeretné kapcsolni a karbantartási elérést SSH-n keresztül, kérjük, adja meg a helyes VÁLASZt a lent látható HÍVÁSra. Az SSH port ilyenkor engedélyezve lesz.</msg>
+    <msg name="ABOUT_TO_HALT" desc="">Ha valóban le szeretné állítani a készüléket, kérjük, adja meg a helyes választ a lent látható kérdésre. A készülék ekkor folytatja a leállítási folyamatot.</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">Ha valóban újra szeretné indítani a keresési szolgáltatásokat a készüléken, kérjük, adja meg a helyes választ a lent látható kérdésre. A készülék ekkor leáll, és nem indul újra.</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">Ha valóban törölni szeretne minden adatot a készülékről, kérjük, lépjen kapcsolatba a Google ügyfélszolgálattal, és kérje a helyes választ a lent látható kérdésre. Ezt a lépést nem lehet visszavonni. A törlést követően a készüléken található összes adat elveszik.</msg>
+    <msg name="ACCEPT" desc="">Elfogadás, majd folytatás az 1. lépéssel</msg>
+    <msg name="ACCOUNT_TYPE" desc="">Számlatípus</msg>
+    <msg name="ADMIN" desc="">adminisztrátor</msg>
+    <msg name="ADMINISTRATOR" desc="">Rendszergazda</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc="">A <ph name="START_BOLD">&lt;b></ph>kezelői<ph name="END_BOLD">&lt;/b></ph> fiókkal léphet be a kezelői konzolra, amely a Google Search Appliance kezelőeszköze, valamint a verziókezelőbe, ahol a szoftver frissítéseit telepítheti.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">A felhasználónév és a jelszó megkülönbözteti a kis- és nagybetűket.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">Adjon meg egy jelszót a fiókhoz. Javasoljuk, hogy írja le a jelszót, hogy hivatkozhasson rá, ha belép a kezelői konzolba (vagy a verziókezelőbe).</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">Ezt az e-mail címet használja a készülék az értesítések és figyelmeztetések küldéséhez.  Emellett az elfelejtett jelszó újraküldésére is ezt a címet használja a rendszer.  Az 5/2. lépésben beállított SMTP levelezőszerver szintén szükséges ahhoz, hogy a készülék tudjon e-maileket is küldeni.</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">A rendszergazdai jelszavak nem egyeznek meg</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">Meg kell adni a rendszergazdai jelszót</msg>
+    <msg name="ADMIN_SETTINGS" desc="">"Rendszergazda" fiók</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">FONTOS:  A Google Search Appliance készüléknek szüksége van egy érvényes NTP szerverre a licenckulcs aktiválásához.</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">Az IP-címnek és az átjárónak ugyanazon a hálózaton kell lennie.</msg>
+    <msg name="ANGUILLA" desc="">Anguilla</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">Antigua és Barbuda</msg>
+    <msg name="ARGENTINA" desc="">Argentína</msg>
+    <msg name="ARUBA" desc="">Aruba</msg>
+    <msg name="AUSTRALIA" desc="">Ausztrália</msg>
+    <msg name="AUSTRIA" desc="">Ausztria</msg>
+    <msg name="AUTONEGOTIATION" desc="">Terhelésegyensúly automatikus beállítása</msg>
+    <msg name="BACK" desc="">&lt;&lt; Vissza</msg>
+    <msg name="BANGLADESH" desc="">Banglades</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">Alapvető hálózati beállítások</msg>
+    <msg name="BELGIUM" desc="">Belgium</msg>
+    <msg name="BERMUDA" desc="">Bermuda</msg>
+    <msg name="BRAZIL" desc="">Brazília</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">Virgin-szigetek (UK)</msg>
+    <msg name="BULGARIA" desc="">Bulgária</msg>
+    <msg name="CANADA" desc="">Kanada</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">Kajmán-szigetek</msg>
+    <msg name="CHALLENGE" desc="">Kihívás</msg>
+    <msg name="CHANGE_PASSWORD" desc="">Jelszó</msg>
+    <msg name="CHILE" desc="">Chile</msg>
+    <msg name="CHINA" desc="">Kína</msg>
+    <msg name="COLOMBIA" desc="">Kolumbia</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Syslog szerver beállítása</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">"Rendszergazda" fiók beállítása</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">Gratulálunk!
+Ön elvégezte a készülék konfigurálását. Ha nem jelentek meg hibaüzenetek vagy figyelmeztetések, eltávolíthatja noteszgépét, és használhatja a készüléket.  A kezelői konzol az alkalmazás mindennapi kezelésére használható.</msg>
+    <msg name="CONTINUE" desc="">Folytatás &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">Costa Rica</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>Üdvözöljük!<ph name="END_BOLD">&lt;/b></ph> Ha folytatni szeretné a hálózati telepítést, először el kell fogadnia a licencszerződést. Kérjük, az alábbi listáról válassza ki az országát, majd kattintson a "Folytatás" gombra a folytatáshoz:</msg>
+    <msg name="CRAWL_IP" desc="">IP-címek feltérképezése</msg>
+    <msg name="CZECH_REPUBLIC" desc="">Csehország</msg>
+    <msg name="DENMARK" desc="">Dánia</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">Diagnosztika üzenetei</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">Hálózati diagnosztikánk problémát talált az 
+előző lépés beállításainál. Így is folytathatja a jelenlegi feladatot, de vissza is mehet, és módosíthatja beállításait.</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">DNS utótag (DNS keresési URL)</msg>
+    <msg name="DNS_SERVERS" desc="">DNS szerverek</msg>
+    <msg name="DNS_SETTINGS" desc="">DNS és levelezési beállítások</msg>
+    <msg name="ECUADOR" desc="">Ecuador</msg>
+    <msg name="EGYPT" desc="">Egyiptom</msg>
+    <msg name="EL_SALVADOR" desc="">Salvador</msg>
+    <msg name="EMAIL_ADDRESS" desc="">E-mail cím</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">Hiba a konfigurációs fájl betöltése közben. Kérjük, próbálkozzon újra</msg>
+    <msg name="EXAMPLE" desc="">Példa</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">tervezes.vallalat.com, vall.vallalat.com,  vallalat.com</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">Finnország</msg>
+    <msg name="FRANCE" desc="">Franciaország</msg>
+    <msg name="FRENCH_GUIANA" desc="">Francia Guiana</msg>
+    <msg name="GATEWAY" desc="">Alapértelmezett átjáró</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Az átjáró nem ütközhet másik IP-címmel.</msg>
+    <msg name="GERMANY" desc="">Németország</msg>
+    <msg name="GREECE" desc="">Görögország</msg>
+    <msg name="GUADELOUPE" desc="">Guadeloupe (Franciaország)</msg>
+    <msg name="GUATEMALA" desc="">Guatemala</msg>
+    <msg name="HONDURAS" desc="">Honduras</msg>
+    <msg name="HONG_KONG" desc="">Hongkong</msg>
+    <msg name="HOSTNAME" desc="">Szerver neve</msg>
+    <msg name="HUNGARY" desc="">Magyarország</msg>
+    <msg name="ICELAND" desc="">Izland</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">Illegállis megadott automatikus forgalmazás</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">Érvénytelen vagy foglalt feltérképezési IP-cím</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">Érvénytelen DNS szerverek vannak megadva</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">Illegális megadott átjáró</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">Érvénytelen vagy foglalt IP-cím</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">Érvénytelen a megadott hálózati maszk</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">Érvénytelen a megadott hálózati sebesség</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">Illegális NTP-szervereket adott meg</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">Érvénytelen a feladó a kimenő e-mailhez</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">Illegális megadott keresési útvonal</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">Illegális megadott SMTP szerver</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">Érvénytelen vagy foglalt a kapcsoló IP-címe</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">Érvénytelen a megadott Syslog szerver</msg>
+    <msg name="INDIA" desc="">India</msg>
+    <msg name="INDONESIA" desc="">Indonézia</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">Érvénytelen elektronikus levelek adminisztrátora</msg>
+    <msg name="IP_ADDRESS" desc="">IP cím</msg>
+    <msg name="IRELAND" desc="">Írország</msg>
+    <msg name="ISRAEL" desc="">Izrael</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">nem érvényes időzóna.</msg>
+    <msg name="ITALY" desc="">Olaszország</msg>
+    <msg name="JAPAN" desc="">Japán</msg>
+    <msg name="LICENSE_ERROR" desc="">Kérjük, lépjen kapcsolatba a Google ügyfélszolgálatával a licenc ügyében.</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">Kérjük, olvassa el figyelmesen a feltételeket, majd kattintson az "Elfogadás, és folytatás az első lépéssel" gombra.</msg>
+    <msg name="LICENSE_WELCOME" desc="">Végfelhasználói licencszerződés</msg>
+    <msg name="LUXEMBOURG" desc="">Luxemburg</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">Mail szerver beállítások</msg>
+    <msg name="MALAYSIA" desc="">Malajzia</msg>
+    <msg name="MALTA" desc="">Málta</msg>
+    <msg name="MARTINIQUE" desc="">Martinique (Franciaország)</msg>
+    <msg name="MEXICO" desc="">Mexikó</msg>
+    <msg name="MODIFY" desc="">Visszatérés az 1. lépéshez</msg>
+    <msg name="MONACO" desc="">Monaco</msg>
+    <msg name="MONTSERRAT" desc="">Montserrat</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">A rendszergazdai jelszót kétszer kell megadni</msg>
+    <msg name="NETHERLANDS" desc="">Hollandia</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">Holland-Antillák</msg>
+    <msg name="NETMASK" desc="">Alhálózati maszk</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">Hálózati telepítés</msg>
+    <msg name="NETWORK_SPEED" desc="">Hálózati sebesség</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">automatikus beállítás</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">10 Mb/s fél-duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">10 Mb/s teljes duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">100 Mb/s fél-duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">100 Mb/s teljes duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1000 Mb/s (ennél a sebességnél mindig duplex a beállítás)</msg>
+    <msg name="NEW_PASSWORD" desc="">Új jelszó</msg>
+    <msg name="NEW_ZEALAND" desc="">Új-Zéland</msg>
+    <msg name="NICARAGUA" desc="">Nicaragua</msg>
+    <msg name="NORWAY" desc="">Norvégia</msg>
+    <msg name="NOT_A_VALID_URL" desc="">nem érvényes az URL</msg>
+    <msg name="NTP_SERVERS" desc="">NTP szerverek</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">DNS beállítások</msg>
+    <msg name="OPEN_LICENSE" desc="">A licenc megnyitása új ablakban</msg>
+    <msg name="OPTIONAL" desc="">(opcionális)</msg>
+    <msg name="OTHER" desc="">Egyéb</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">Kimenő e-mailek feladója:</msg>
+    <msg name="PANAMA" desc="">Panama</msg>
+    <msg name="PARAGUAY" desc="">Paraguay</msg>
+    <msg name="PERU" desc="">Peru</msg>
+    <msg name="PHILIPPINES" desc="">Fülöp-szigetek</msg>
+    <msg name="POLAND" desc="">Lengyelország</msg>
+    <msg name="PORTUGAL" desc="">Portugália</msg>
+    <msg name="PUERTO_RICO" desc="">Puerto Rico</msg>
+    <msg name="REDIRECT" desc="">Hálózat kipróbálása, és átirányítás a főoldalra. Kattintson PLACEHOLDER_LINK ide PLACEHOLDER_ENDLINK, ha az átirányítás nem történik meg egy percen belül.</msg>
+    <msg name="REENTER" desc="">Megadás újra</msg>
+    <msg name="REJECT" desc="">Visszautasítás</msg>
+    <msg name="RESPONSE" desc="">Válasz</msg>
+    <msg name="RUSSIA" desc="">Oroszország</msg>
+    <msg name="SAVE" desc="">Mentés</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">Az elemeket vesszővel válassza el egymástól.</msg>
+    <msg name="SINGAPORE" desc="">Szingapúr</msg>
+    <msg name="SLOVAKIA" desc="">Szlovákia</msg>
+    <msg name="SLOVENIA" desc="">Szlovénia</msg>
+    <msg name="SMTP_SERVER" desc="">SMTP szerver</msg>
+    <msg name="SOUTH_AFRICA" desc="">Dél-Afrika</msg>
+    <msg name="SOUTH_KOREA" desc="">Dél-Korea</msg>
+    <msg name="SPAIN" desc="">Spanyolország</msg>
+    <msg name="SRI_LANKA" desc="">Srí Lanka</msg>
+    <msg name="STEP_1_OF_5" desc="">5/1. lépés</msg>
+    <msg name="STEP_2_OF_5" desc="">5/2. lépés</msg>
+    <msg name="STEP_3_OF_5" desc="">5/3. lépés</msg>
+    <msg name="STEP_4_OF_5" desc="">5/4. lépés</msg>
+    <msg name="STEP_5_OF_5" desc="">5/5. lépés</msg>
+    <msg name="SWEDEN" desc="">Svédország</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">A SwitchIP nem ütközhet másik IP-címmel.</msg>
+    <msg name="SWITCH_IP" desc="">Kapcsoló IP-címe:</msg>
+    <msg name="SWITZERLAND" desc="">Svájc</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Syslog szerverek</msg>
+    <msg name="TAIWAN" desc="">Tajvan</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">Webszerverek és URL-ek tesztelése a kapcsolódás és a hozzáférési engedélyek alapján</msg>
+    <msg name="TESTURLS" desc="">URL-ek tesztelése</msg>
+    <msg name="TESTURLS_BULLET1" desc="">Kérjük, adjon meg egy vagy több URL-t (soronként egyet) annak érdekében, hogy megállapíthassa, hogy a készülék eléri-e ezeket a webhelyeket. Írjon egy perjelet az URL-ek végére, például:</msg>
+    <msg name="TESTURLS_BULLET2" desc="">Győződjön meg róla, hogy az eszközt nem blokkolják hozzáférési listák vagy hibás hálózati útvonalak.  Lásd a &amp;ldquo;Hibaelhárítás&amp;rdquo; című részt a Műszaki függelék című részben.</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://vall.vallalat.com/)</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://vall.vallalat.com/termekek/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">Hozzáférés ellenőrzése a webszerverekhez</msg>
+    <msg name="THAILAND" desc="">Thaiföld</msg>
+    <msg name="TIME_SETTINGS" desc="">Idő beállításai</msg>
+    <msg name="TURKEY" desc="">Törökország</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">Turks- és Caicos-szigetek</msg>
+    <msg name="UK" desc="">Egyesült Királyság</msg>
+    <msg name="UKRAINE" desc="">Ukrajna</msg>
+    <msg name="UNITED_STATES" desc="">Egyesült Államok</msg>
+    <msg name="URUGUAY" desc="">Uruguay</msg>
+    <msg name="USERNAME" desc="">Felhasználói név</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">Virgin-szigetek (US)</msg>
+    <msg name="VENEZUELA" desc="">Venezuela</msg>
+    <msg name="VIETNAM" desc="">Vietnam</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">Megpróbáltuk automatikusan elérni a hálózati beállításokat a DHCP segítségével. A kapott alapbeállításokat lásd lejjebb. Amelyik érték nem megfelelő, kérjük, módosítsa.</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">A kezelői konzolt a "rendszergazda" fiókkal lehet elérni. Kérjük, adja meg a fiókhoz tartozó kapcsolattartói e-mail címet és jelszót alább:</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">Adja meg az összes kimenő forgalom IP-címét. Ezt használhatja például az ACL vagy tűzfalszabályok megadására annak érdekében, hogy a készülék kereshessen az intraneten belül.</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">Adja meg annak a hálózatnak az alapértelmezett átjáróját, amelyen a készülék található.</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">Adja meg a nem hitelesített szervernevek elérési útvonalát. Ez a UNIX rendszereken a "search" bejegyzést jelenti a resolv.conf fájlban, a Windows rendszerekben pedig a "DNS utótag" bejegyzésre vonatkozik.</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">Adja meg egy vagy több DNS szerver IP-címét. A DNS-szerverek segítenek feloldani a szerverneveket (például &amp;ldquo;www.google.hu&amp;rdquo;) és hozzárendelik ezeket az IP-címekhez.</msg>
+    <msg name="WHATIS_NETMASK" desc="">Adja meg azt az alhálózati maszkot, amelyen a Google Search Appliance található.</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">A készülék automatikusan megállapítja a hálózat sebbességét és a duplex beállításokat arra a kapcsolóra vagy útválasztóra vonatkozóan, ahová csatlakozik. Ha szükséges, adja meg a megfelelő rögzített vonal sebességét és a duplex beállításokat.</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">Megadhat legfeljebb három Hálózati Időszinkronizáló Protokoll (NTP) szervert annak érdekében, hogy fenntartsa a helyes időt. Az NTP 3. verziója szükséges. Ha nincs NTP-szerver a hálózatában, csatlakozhat nyílt hozzáférésű szerverekhez is. Válasszon két- vagy többrétegű szervert, és kerülje azokat a szervereket, amelyeknek értesítésre van szükségük használat előtt.</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">Kérjük, adjon meg egy e-mail címet.  A Google Search Appliance által küldött üzenetek úgy jelennek meg, mintha erről az e-mail címről küldték volna azokat.</msg>
+    <msg name="WHATIS_SENDER" desc="">Adja meg, hogy milyen szerzőnevet alkalmazzon a készülék az értesítések és figyelmeztetések küldése során. A helyes alapértelmezett érték &amp;ldquo;senki@helyiszerver&amp;rdquo;.</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">A készülék automatikusan megállapítja a hálózat sebbességét és a duplex beállításokat arra a kapcsolóra vagy útválasztóra vonatkozóan, ahová csatlakozik. Szükség esetén jelölje be a jelölőnégyzetet, hogy a készülék 100 Mb/s teljes duplex kommunikációt használjon az egyensúlyozás érdekében.</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">A Google Search Appliance készülékhez statikus IP-címet kell rendelni. Adjon a készüléknek szimbolikus nevet is, például &amp;ldquo;googlebox.vallalat.com&amp;rdquo; és egy visszafejtő DNS bejegyzést is készítsen a vállalat DNS-adatbázisában.</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">Adjon meg egy SMTP levelezőszervert a készülék számára, hogy elérhesse Önt értesítésekkel és figyelmeztetésekkel, köztük az elfelejtett jelszó megadásával.</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">Adja meg a szerver IP-címét.</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">Megadhat egy syslog szervert annak érdekében, hogy rögzíthesse a rendszereseményeket és naplófájlokat egy külső számítógépen.</msg>
+    <msg name="WHATIS_TESTURLS" desc="">Néha a már meglévő tűzfal- és biztonsági beállítások nem engedik, hogy a készülék elérje a keresni kívánt webszervereket. Leellenőrizheti, hogy a készülék eléri-e a webszervereket, ha megadja a teljes URL-eket a lenti szöveges mezőben, majd a "Folytatás" gombra kattint. Figyelmeztetjük Önt, ha valamelyik megadott URL nem érhető el.</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">Adja meg a naplófájlokhoz, valamint szerveridőzítéshez használni kívánt időzónát.</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">A készülék most újraindul. Kérjük, várjon – a készülék körülbelül két perc múlva ismét készen áll.</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">A készülék törli az összes adatot. Kérjük, várjon 60 percet, hogy biztonságosan kihúzhassa a készüléket.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">A készülék letiltja az SSH-n keresztüli karbantartás elérését. A módosítás legfeljebb 30 másodpercen belül lép életbe.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">A készülék engedélyezi az SSH-n keresztüli karbantartás elérését. A módosítás legfeljebb 30 másodpercen belül lép életbe.</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">A készülék most kikapcsol. Kérjük, várjon 2 percet, hogy biztonságosan kikapcsolhassa a készüléket.</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">Az Ön helyi időzónája</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">Nem mentette a módosításokat. A mentéshez nyomja meg a "Vissza" gombot, majd visszatérhet az előző oldalhoz, ahol a mentés gombra kattinthat.</msg>
+  </localizationbundle>
+</localizationbundle>

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="de">
+  <messages>
+    <msg name="MSG_advanced_search" desc="Page title">Kampagnen durchsuchen</msg>
+    <msg name="MSG_advsearch_example" desc="Advanced Search: See http://www.google.com/advanced_search  example domains">Beispiele: .org, google.com</msg>
+    <msg name="MSG_advsearch_file_format" desc="Advanced Search: See http://www.google.com/advanced_search  label to select desired file formats">Dateiformat</msg>
+    <msg name="MSG_advsearch_return_files" desc="Advanced Search: Prefixed with &quot;Only&quot; or &quot;Don't&quot;">Ergebnisse mit folgendem Dateiformat ausgeben</msg>
+    <msg name="MSG_alerts">Alerts</msg>
+    <msg name="MSG_all_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>mit <ph name="START_BOLD">&lt;b></ph>allen<ph name="END_BOLD">&lt;/b></ph> Wörtern</msg>
+    <msg name="MSG_any_format" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any file format">beliebiges Format</msg>
+    <msg name="MSG_any_language" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any language">beliebiger Sprache</msg>
+    <msg name="MSG_any_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>mit <ph name="START_BOLD">&lt;b></ph>irgendeinem<ph name="END_BOLD">&lt;/b></ph> der Wörter</msg>
+    <msg name="MSG_anywhere_on_page" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Return results where my terms occur"'>irgendwo auf der Seite</msg>
+    <msg name="MSG_ar">Arabisch</msg>
+    <msg name="MSG_cache" desc="Link to cached copy of document">Im Cache</msg>
+    <msg name="MSG_cached_copy" desc="Followed by URL">Dies ist die zwischengespeicherte Kopie von</msg>
+    <msg name="MSG_correct_credentials_help">Vergewissern Sie sich, dass Ihre Sicherheitsberechtigungen korrekt sind.</msg>
+    <msg name="MSG_correct_spelling_help">Vergewissern Sie sich, dass alle Wörter richtig geschrieben sind.</msg>
+    <msg name="MSG_cs" desc="Language">Tschechisch</msg>
+    <msg name="MSG_da" desc="Language">Dänisch</msg>
+    <msg name="MSG_de" desc="Language">Deutsch</msg>
+    <msg name="MSG_different_keywords_help">Probieren Sie andere Suchbegriffe.</msg>
+    <msg name="MSG_do_not" desc='Advanced search: See       http://www.google.com/advanced_search  dropdown, followed by "return results of the file format..."'>Keine</msg>
+    <msg name="MSG_domains" desc="Advanced Search: See http://www.google.com/advanced_search - Domain is .com, .org, etc.">Domains</msg>
+    <msg name="MSG_egds_appliance_tab_label" desc="Label on search tab: Google Search Appliance">Appliance</msg>
+    <msg name="MSG_el" desc="Language">Griechisch</msg>
+    <msg name="MSG_en" desc="Language">Englisch</msg>
+    <msg name="MSG_err_description">Beschreibung:</msg>
+    <msg name="MSG_err_details">Details:</msg>
+    <msg name="MSG_err_message">Nachricht:</msg>
+    <msg name="MSG_error" desc="Title for Error Page">Fehler</msg>
+    <msg name="MSG_es" desc="Language">Spanisch</msg>
+    <msg name="MSG_et" desc="Language">Estnisch</msg>
+    <msg name="MSG_exact_phrase" desc='Advanced Search: See http://www.google.com/advanced_search  prefixed by "Find results"'>mit der <ph name="START_BOLD">&lt;b></ph>genauen Wortgruppe<ph name="END_BOLD">&lt;/b></ph></msg>
+    <msg name="MSG_fi" desc="Language">Finnisch</msg>
+    <msg name="MSG_file_doc">Microsoft Word (.doc)</msg>
+    <msg name="MSG_file_pdf">Adobe Acrobat PDF (.pdf)</msg>
+    <msg name="MSG_file_ppt">Microsoft Powerpoint (.ppt)</msg>
+    <msg name="MSG_file_ps">Adobe Postscript (.ps)</msg>
+    <msg name="MSG_file_rtf">Rich Text Format (.rtf)</msg>
+    <msg name="MSG_file_xls">Microsoft Excel (.xls)</msg>
+    <msg name="MSG_filtered_results">Um Ihnen nur die treffendsten Ergebnisse anzuzeigen, wurden einige Einträge ausgelassen, die den <ph name="NUM">%1$d</ph> bereits angezeigten Treffern sehr ähnlich sind. <ph name="BREAK">&lt;br/></ph>Sie können bei Bedarf <ph name="START_LINK">&lt;a href="%2$s"></ph> die Suche unter Einbeziehung der übersprungenen Ergebnisse wiederholen<ph name="END_LINK">&lt;/a></ph>.</msg>
+    <msg name="MSG_find_pages_linking_to" desc="Text to find pages that have a link to this page">Seiten suchen, die einen Link auf die folgende Seite enthalten</msg>
+    <msg name="MSG_find_results" desc='Advanced Search: See http://www.google.com/advanced_search - Followed by "with all of the words ..."'>Ergebnisse finden</msg>
+    <msg name="MSG_fr" desc="Language">Französisch</msg>
+    <msg name="MSG_general_keywords_help">Probieren Sie allgemeinere Suchbegriffe.</msg>
+    <msg name="MSG_gmail_tab" desc="Label for the tab on the homepage or search results page that leads to Gmail.  Should match http://google.com">Google Mail</msg>
+    <msg name="MSG_go_to_google_home">Gehe zur Google Homepage</msg>
+    <msg name="MSG_groups_tab" desc="Label for the tab on the homepage or search results page that leads to Google Groups (usenet) search.  Should match http://google.com">Groups</msg>
+    <msg name="MSG_help" desc="Link that gives tips on how to search">Suchtipps</msg>
+    <msg name="MSG_homepage_search_label">Suche:</msg>
+    <msg name="MSG_hu" desc="Language">Ungarisch</msg>
+    <msg name="MSG_images_tab" desc="Label for the tab on the homepage or search results page that leads to image search.  Should match http://google.com">Bilder</msg>
+    <msg name="MSG_in_title" desc='Advanced Search: See       http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>im Titel der Seite</msg>
+    <msg name="MSG_in_url" desc='Advanced Search: See http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>in der URL der Seite</msg>
+    <msg name="MSG_is" desc="Language">Isländisch</msg>
+    <msg name="MSG_it" desc="Language">Italienisch</msg>
+    <msg name="MSG_iw" desc="Language">Hebräisch</msg>
+    <msg name="MSG_ja" desc="Language">Japanisch</msg>
+    <msg name="MSG_ko" desc="Language">Koreanisch</msg>
+    <msg name="MSG_links" desc="Advanced Search: See http://www.google.com/advanced_search - This is the label on the form section to find pages with links to other pages">Links</msg>
+    <msg name="MSG_local_tab" desc="Label for the tab on the homepage or search results page that leads to search on map.  Should match http://google.com">Google Maps</msg>
+    <msg name="MSG_lt" desc="Language">Litauisch</msg>
+    <msg name="MSG_lv" desc="Language">Lettisch</msg>
+    <msg name="MSG_maps_tab" desc="Label for the tab on the homepage or search results page that leads to Maps.  Should match http://google.com">Maps</msg>
+    <msg name="MSG_more_from_host" desc="Label on a link to get more results from a host machine">Weitere Ergebnisse von <ph name="HOSTNAME">%1$s</ph></msg>
+    <msg name="MSG_my_alerts">Meine Alerts</msg>
+    <msg name="MSG_navbar_header">Ergebnisseite</msg>
+    <msg name="MSG_navbar_next">&lt;b&gt;Vorwärts&lt;/b&gt;</msg>
+    <msg name="MSG_navbar_previous">&lt;b&gt;Zurück&lt;/b&gt;</msg>
+    <msg name="MSG_news_tab" desc="Label for the tab on the homepage or search results page that leads to Google News search.  Should match http://google.com">News</msg>
+    <msg name="MSG_news_lite_version" desc="Link to get a text version of a document">Textversion</msg>
+    <msg name="MSG_nl" desc="Language">Niederländisch</msg>
+    <msg name="MSG_no" desc="Language">Norwegisch</msg>
+    <msg name="MSG_no_results">Es wurden keine mit Ihrer Suchanfrage - <ph name="SEARCH_TERM">&lt;b>%1$s&lt;/b></ph> - übereinstimmenden Dokumente gefunden.</msg>
+    <msg name="MSG_not_indexed">Nicht indexiert:</msg>
+    <msg name="MSG_noword_warning">Es wurden keine Seiten mit <ph name="SEARCH_TERM">&lt;b>"%2$.*1$s"&lt;/b></ph> gefunden.</msg>
+    <msg name="MSG_occurrences" desc="See http://www.google.com/advanced_search - Section label for selecting if results occur anywhere or in title">Position</msg>
+    <msg name="MSG_only" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown, followed by 'return results from the site'">Ausschließlich</msg>
+    <msg name="MSG_page_specific_search">Seitenspezifische Suche</msg>
+    <msg name="MSG_pl" desc="Language">Polnisch</msg>
+    <msg name="MSG_powered_by_GSA" desc="Page footer">Powered by Google Search Appliance</msg>
+    <msg name="MSG_powered_by_GSAVDE" desc="Page footer: a virtualized edition for software developers">Powered by Google Search Appliance, Virtual Developer Edition</msg>
+    <msg name="MSG_pt" desc="Language">Portugiesisch</msg>
+    <msg name="MSG_public_content" desc="Security radio button item.  Caption is 'Search:'">öffentliche Inhalte</msg>
+    <msg name="MSG_public_secure_content" desc="Security radio button item.  Caption is 'Search:'">öffentliche und gesicherte Inhalte</msg>
+    <msg name="MSG_results" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown to specify how many search results to return.  Prefixed by 10, 20, etc.">Ergebnisse</msg>
+    <msg name="MSG_results_a_b_for_q">Ergebnisse <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> für <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_a_b_of_n_for_q">Ergebnisse <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> von ca. <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> für <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_page">Ergebnisseite</msg>
+    <msg name="MSG_return_domains" desc="Advanced Search: See http://www.google.com/advanced_search   Prefixed by 'Only', followed by e.g. '.com'">Antwortseiten von der Site oder Domain</msg>
+    <msg name="MSG_return_occurrences" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'anywhere in the page'">Antwortseiten, in denen meine Begriffe vorkommen</msg>
+    <msg name="MSG_return_only_pages_in" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'any language'">Antwortseiten, geschrieben in</msg>
+    <msg name="MSG_ro" desc="Language">Rumänisch</msg>
+    <msg name="MSG_ru" desc="Language">Russisch</msg>
+    <msg name="MSG_search">Google-Suche</msg>
+    <msg name="MSG_search_home" desc="Page title; home page for search">Suche Startseite</msg>
+    <msg name="MSG_search_public_content" desc="Label on checkbox">Nur öffentliche Inhalte durchsuchen</msg>
+    <msg name="MSG_search_public_secure_content" desc="Label on checkbox">Öffentliche und gesicherte Inhalte durchsuchen (Login erforderlich)</msg>
+    <msg name="MSG_search_results" desc="Results of search">Suchergebnisse</msg>
+    <msg name="MSG_searchtime">Suchdauer: <ph name="NUMBER">&lt;b>%1$.2f&lt;/b></ph> Sekunden.</msg>
+    <msg name="MSG_security" desc="Label for the selector of the security mode">Sicherheit</msg>
+    <msg name="MSG_sep_bar_adv_text">Kampagnen durchsuchen</msg>
+    <msg name="MSG_sep_bar_error_text" desc="Title for Error Page">Fehler</msg>
+    <msg name="MSG_sep_bar_std_text" desc="Tab label for doing a search">Suchen</msg>
+    <msg name="MSG_server_error_des_text">Überprüfen Sie den Server-Antwortcode im Detail.</msg>
+    <msg name="MSG_server_error_msg_text">Es ist ein Serverfehler aufgetreten.</msg>
+    <msg name="MSG_server_error_title" desc="Heading on error page">Serverfehler</msg>
+    <msg name="MSG_sign_out">Abmelden</msg>
+    <msg name="MSG_sort" desc="Label for the selector of 'Sort by Date/Relevance'">Sortieren</msg>
+    <msg name="MSG_sort_by_date">Sortiert nach Datum</msg>
+    <msg name="MSG_sort_by_relevance">Sortiert nach Relevanz</msg>
+    <msg name="MSG_spell_suggest" desc="Spelling suggestion">Meinten Sie:</msg>
+    <msg name="MSG_suggest_help">Vorschläge:</msg>
+    <msg name="MSG_sv" desc="Language">Schwedisch</msg>
+    <msg name="MSG_swr_num_results_found">Es gab ca. <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> Ergebnisse für <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_swr_page_title">In Ergebnissen suchen</msg>
+    <msg name="MSG_swr_search_anchor_text">In Ergebnissen suchen</msg>
+    <msg name="MSG_swr_search_within_these_results">Verwenden Sie das unten angezeigte Suchfeld, um in diesen Ergebnissen zu suchen.</msg>
+    <msg name="MSG_synonym_text" desc="Synonym suggestion">Versuchen Sie es doch einmal mit:</msg>
+    <msg name="MSG_the_word_language">Sprache</msg>
+    <msg name="MSG_unknown_xml" desc="Error message">Unbekannter XML-Ergebnistyp.</msg>
+    <msg name="MSG_video_tab" desc="Label for the tab on the homepage or search results page that leads to Video.  Should match http://google.com">Video</msg>
+    <msg name="MSG_view_all_data">Alle Daten anzeigen</msg>
+    <msg name="MSG_view_xml" desc="'View page source' is a browser action">Im Quelltext der Seite finden Sie die fehlerhafte XML-Anweisung.</msg>
+    <msg name="MSG_web_tab" desc="Label for the tab on the homepage or search results page that leads to web search.  Should match http://google.com">Web</msg>
+    <msg name="MSG_without_words" desc="Advanced Search: See http://www.google.com/advanced_search "><ph name="START_BOLD">&lt;b></ph>ohne<ph name="END_BOLD">&lt;/b></ph> die Wörter</msg>
+    <msg name="MSG_zh_CN" desc="Language">Chinesisch (vereinfacht)</msg>
+    <msg name="MSG_zh_TW" desc="Language">Chinesisch (traditionell)</msg>
+  </messages>
+</localizationbundle>

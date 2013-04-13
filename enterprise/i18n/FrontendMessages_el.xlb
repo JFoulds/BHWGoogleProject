@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="el">
+  <messages>
+    <msg name="MSG_advanced_search" desc="Page title">Σύνθετη Αναζήτηση</msg>
+    <msg name="MSG_advsearch_example" desc="Advanced Search: See http://www.google.com/advanced_search  example domains">π.χ. google.com, .org</msg>
+    <msg name="MSG_advsearch_file_format" desc="Advanced Search: See http://www.google.com/advanced_search  label to select desired file formats">Μορφή αρχείου</msg>
+    <msg name="MSG_advsearch_return_files" desc="Advanced Search: Prefixed with &quot;Only&quot; or &quot;Don't&quot;">εμφανίζουν αποτελέσματα της μορφής αρχείου</msg>
+    <msg name="MSG_alerts">Ειδοποιήσεις</msg>
+    <msg name="MSG_all_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>με <ph name="START_BOLD">&lt;b></ph>όλες<ph name="END_BOLD">&lt;/b></ph> τις λέξεις</msg>
+    <msg name="MSG_any_format" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any file format">οποιαδήποτε μορφή</msg>
+    <msg name="MSG_any_language" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any language">οποιαδήποτε γλώσσα</msg>
+    <msg name="MSG_any_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>με <ph name="START_BOLD">&lt;b></ph>τουλάχιστον μία<ph name="END_BOLD">&lt;/b></ph> λέξη</msg>
+    <msg name="MSG_anywhere_on_page" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Return results where my terms occur"'>οπουδήποτε στη σελίδα</msg>
+    <msg name="MSG_ar">Αραβικά</msg>
+    <msg name="MSG_cache" desc="Link to cached copy of document">Προσωρινά αποθηκευμένη</msg>
+    <msg name="MSG_cached_copy" desc="Followed by URL">Αυτό είναι το προσωρινό αντίγραφο του</msg>
+    <msg name="MSG_correct_credentials_help">Βεβαιωθείτε ότι τα διαπιστευτήρια ασφάλειας είναι σωστά.</msg>
+    <msg name="MSG_correct_spelling_help">Βεβαιωθείτε ότι η ορθογραφία όλων των λέξεων είναι σωστή.</msg>
+    <msg name="MSG_cs" desc="Language">Τσέχικα</msg>
+    <msg name="MSG_da" desc="Language">Δανικά</msg>
+    <msg name="MSG_de" desc="Language">Γερμανικά</msg>
+    <msg name="MSG_different_keywords_help">Δοκιμάστε άλλες λέξεις-κλειδιά.</msg>
+    <msg name="MSG_do_not" desc='Advanced search: See       http://www.google.com/advanced_search  dropdown, followed by "return results of the file format..."'>Όχι</msg>
+    <msg name="MSG_domains" desc="Advanced Search: See http://www.google.com/advanced_search - Domain is .com, .org, etc.">Τομέας δικτύου</msg>
+    <msg name="MSG_egds_appliance_tab_label" desc="Label on search tab: Google Search Appliance">Εργαλείο</msg>
+    <msg name="MSG_el" desc="Language">Ελληνικά</msg>
+    <msg name="MSG_en" desc="Language">Αγγλικά</msg>
+    <msg name="MSG_err_description">Περιγραφή:</msg>
+    <msg name="MSG_err_details">Λεπτομέρειες:</msg>
+    <msg name="MSG_err_message">Μήνυμα:</msg>
+    <msg name="MSG_error" desc="Title for Error Page">Σφάλμα</msg>
+    <msg name="MSG_es" desc="Language">Ισπανικά</msg>
+    <msg name="MSG_et" desc="Language">Εσθονικά</msg>
+    <msg name="MSG_exact_phrase" desc='Advanced Search: See http://www.google.com/advanced_search  prefixed by "Find results"'>με την <ph name="START_BOLD">&lt;b></ph>ακριβή φράση<ph name="END_BOLD">&lt;/b></ph></msg>
+    <msg name="MSG_fi" desc="Language">Φινλανδικά</msg>
+    <msg name="MSG_file_doc">Microsoft Word (.doc)</msg>
+    <msg name="MSG_file_pdf">Adobe Acrobat PDF (.pdf)</msg>
+    <msg name="MSG_file_ppt">Microsoft Powerpoint (.ppt)</msg>
+    <msg name="MSG_file_ps">Adobe Postscript (.ps)</msg>
+    <msg name="MSG_file_rtf">Rich Text Format (.rtf)</msg>
+    <msg name="MSG_file_xls">Microsoft Excel (.xls)</msg>
+    <msg name="MSG_filtered_results">Για την εμφάνιση των πιο σχετικών αποτελεσμάτων, παραλείψαμε ορισμένα αποτελέσματα που μοιάζουν με τα <ph name="NUM">%1$d</ph> που εμφανίζονται ήδη.<ph name="BREAK">&lt;br/></ph>Εάν θέλετε, μπορείτε <ph name="START_LINK">&lt;a href="%2$s"></ph> να επαναλάβετε την αναζήτηση συμπεριλαμβάνοντας τα αποτελέσματα που παραλέιψαμε<ph name="END_LINK">&lt;/a></ph>.</msg>
+    <msg name="MSG_find_pages_linking_to" desc="Text to find pages that have a link to this page">Εύρεση σελίδων με συνδέσμους στη σελίδα</msg>
+    <msg name="MSG_find_results" desc='Advanced Search: See http://www.google.com/advanced_search - Followed by "with all of the words ..."'>Εύρεση αποτελεσμάτων</msg>
+    <msg name="MSG_fr" desc="Language">Γαλλικά</msg>
+    <msg name="MSG_general_keywords_help">Δοκιμάστε πιο γενικές λέξεις-κλειδιά.</msg>
+    <msg name="MSG_gmail_tab" desc="Label for the tab on the homepage or search results page that leads to Gmail.  Should match http://google.com">Gmail</msg>
+    <msg name="MSG_go_to_google_home">Μετάβαση στην αρχική σελίδα Google</msg>
+    <msg name="MSG_groups_tab" desc="Label for the tab on the homepage or search results page that leads to Google Groups (usenet) search.  Should match http://google.com">Ομάδες</msg>
+    <msg name="MSG_help" desc="Link that gives tips on how to search">Συμβουλές Αναζήτησης</msg>
+    <msg name="MSG_homepage_search_label">Αναζήτηση:</msg>
+    <msg name="MSG_hu" desc="Language">Ουγγρικά</msg>
+    <msg name="MSG_images_tab" desc="Label for the tab on the homepage or search results page that leads to image search.  Should match http://google.com">Εικόνες</msg>
+    <msg name="MSG_in_title" desc='Advanced Search: See       http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>στον τίτλο της σελίδας</msg>
+    <msg name="MSG_in_url" desc='Advanced Search: See http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>στη διεύθυνση URL της σελίδας</msg>
+    <msg name="MSG_is" desc="Language">Ισλανδικά</msg>
+    <msg name="MSG_it" desc="Language">Ιταλικά</msg>
+    <msg name="MSG_iw" desc="Language">Εβραϊκά</msg>
+    <msg name="MSG_ja" desc="Language">Ιαπωνικά</msg>
+    <msg name="MSG_ko" desc="Language">Κορεάτικα</msg>
+    <msg name="MSG_links" desc="Advanced Search: See http://www.google.com/advanced_search - This is the label on the form section to find pages with links to other pages">Σύνδεσμοι</msg>
+    <msg name="MSG_local_tab" desc="Label for the tab on the homepage or search results page that leads to search on map.  Should match http://google.com">Τοπικές</msg>
+    <msg name="MSG_lt" desc="Language">Λιθουανικά</msg>
+    <msg name="MSG_lv" desc="Language">Λετονικά</msg>
+    <msg name="MSG_maps_tab" desc="Label for the tab on the homepage or search results page that leads to Maps.  Should match http://google.com">Χάρτες</msg>
+    <msg name="MSG_more_from_host" desc="Label on a link to get more results from a host machine">Περισσότερα αποτελέσματα από το <ph name="HOSTNAME">%1$s</ph></msg>
+    <msg name="MSG_my_alerts">Οι Ειδοποιήσεις μου</msg>
+    <msg name="MSG_navbar_header">Σελίδα αποτελεσμάτων</msg>
+    <msg name="MSG_navbar_next">Επόμενη</msg>
+    <msg name="MSG_navbar_previous">Προηγούμενη</msg>
+    <msg name="MSG_news_tab" desc="Label for the tab on the homepage or search results page that leads to Google News search.  Should match http://google.com">Ειδήσεις</msg>
+    <msg name="MSG_news_lite_version" desc="Link to get a text version of a document">Έκδοση κειμένου</msg>
+    <msg name="MSG_nl" desc="Language">Ολλανδικά</msg>
+    <msg name="MSG_no" desc="Language">Νορβηγικά</msg>
+    <msg name="MSG_no_results">Η αναζήτηση - <ph name="SEARCH_TERM">&lt;b>%1$s&lt;/b></ph> - δε βρήκε κάποιο έγγραφο.</msg>
+    <msg name="MSG_not_indexed">Δεν υπάρχει στο ευρετήριο:</msg>
+    <msg name="MSG_noword_warning">Δε βρέθηκαν σελίδες που να περιέχουν τη λέξη <ph name="SEARCH_TERM">&lt;b>"%2$.*1$s"&lt;/b></ph>.</msg>
+    <msg name="MSG_occurrences" desc="See http://www.google.com/advanced_search - Section label for selecting if results occur anywhere or in title">Εμφανίσεις</msg>
+    <msg name="MSG_only" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown, followed by 'return results from the site'">Μόνο</msg>
+    <msg name="MSG_page_specific_search">Αναζήτηση με βάση τη σελίδα</msg>
+    <msg name="MSG_pl" desc="Language">Πολωνικά</msg>
+    <msg name="MSG_powered_by_GSA" desc="Page footer">Από το Εργαλείο Αναζήτησης Google</msg>
+    <msg name="MSG_powered_by_GSAVDE" desc="Page footer: a virtualized edition for software developers">Υποστηρίζεται από το Εργαλείο Αναζήτησης Google, έκδοση Virtual Developer</msg>
+    <msg name="MSG_pt" desc="Language">Πορτογαλικά</msg>
+    <msg name="MSG_public_content" desc="Security radio button item.  Caption is 'Search:'">δημόσιου περιεχομένου</msg>
+    <msg name="MSG_public_secure_content" desc="Security radio button item.  Caption is 'Search:'">κοινό και ασφαλές περιεχόμενο</msg>
+    <msg name="MSG_results" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown to specify how many search results to return.  Prefixed by 10, 20, etc.">αποτελέσματα</msg>
+    <msg name="MSG_results_a_b_for_q">Αποτελέσματα <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> για <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_a_b_of_n_for_q">Αποτελέσματα <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> για περίπου <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> για <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_page">Σελ. αποτελ.</msg>
+    <msg name="MSG_return_domains" desc="Advanced Search: See http://www.google.com/advanced_search   Prefixed by 'Only', followed by e.g. '.com'">επιστροφή αποτελεσμάτων από τον ιστότοπο ή το δικτυακό τομέα</msg>
+    <msg name="MSG_return_occurrences" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'anywhere in the page'">Εύρεση αποτελεσμάτων στα οποία εμφανίζονται οι όροι μου</msg>
+    <msg name="MSG_return_only_pages_in" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'any language'">Εύρεση σελίδων σε</msg>
+    <msg name="MSG_ro" desc="Language">Ρουμανικά</msg>
+    <msg name="MSG_ru" desc="Language">Ρωσικά</msg>
+    <msg name="MSG_search">Αναζήτηση Google</msg>
+    <msg name="MSG_search_home" desc="Page title; home page for search">Αρχική σελίδα αναζήτησης</msg>
+    <msg name="MSG_search_public_content" desc="Label on checkbox">Αναζήτηση μόνο δημόσιου περιεχομένου</msg>
+    <msg name="MSG_search_public_secure_content" desc="Label on checkbox">Αναζήτηση δημόσιων και ασφαλών δεδομένων (απαιτείται σύνδεση)</msg>
+    <msg name="MSG_search_results" desc="Results of search">Αποτελέσματα  Αναζήτησης</msg>
+    <msg name="MSG_searchtime">Η αναζήτηση διήρκεσε <ph name="NUMBER">&lt;b>%1$.2f&lt;/b></ph> δευτερόλεπτα.</msg>
+    <msg name="MSG_security" desc="Label for the selector of the security mode">Ασφάλεια</msg>
+    <msg name="MSG_sep_bar_adv_text">Σύνθετη Αναζήτηση</msg>
+    <msg name="MSG_sep_bar_error_text" desc="Title for Error Page">Σφάλμα</msg>
+    <msg name="MSG_sep_bar_std_text" desc="Tab label for doing a search">Αναζήτηση</msg>
+    <msg name="MSG_server_error_des_text">Ελέγξτε τον κωδικό απόκρισης του διακομιστή στις λεπτομέρειες.</msg>
+    <msg name="MSG_server_error_msg_text">Παρουσιάστηκε σφάλμα διακομιστή.</msg>
+    <msg name="MSG_server_error_title" desc="Heading on error page">Σφάλμα διακομιστή</msg>
+    <msg name="MSG_sign_out">Έξοδος</msg>
+    <msg name="MSG_sort" desc="Label for the selector of 'Sort by Date/Relevance'">Ταξινόμηση</msg>
+    <msg name="MSG_sort_by_date">Ταξινόμηση κατά ημερομηνία</msg>
+    <msg name="MSG_sort_by_relevance">Ταξινόμηση κατά συνάφεια</msg>
+    <msg name="MSG_spell_suggest" desc="Spelling suggestion">Μήπως εννοείτε:</msg>
+    <msg name="MSG_suggest_help">Υποδείξεις:</msg>
+    <msg name="MSG_sv" desc="Language">Σουηδικά</msg>
+    <msg name="MSG_swr_num_results_found">Υπήρχαν περίπου <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> αποτελέσματα για το <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_swr_page_title">Αναζήτηση εντός των αποτελεσμάτων</msg>
+    <msg name="MSG_swr_search_anchor_text">Αναζήτηση εντός των αποτελεσμάτων</msg>
+    <msg name="MSG_swr_search_within_these_results">Χρησιμοποιήστε το πλαίσιο αναζήτησης παρακάτω για να πραγματοποιήσετε αναζήτηση εντός αυτών των αποτελεσμάτων.</msg>
+    <msg name="MSG_synonym_text" desc="Synonym suggestion">Θα μπορούσατε επίσης να δοκιμάσετε τα παρακάτω:</msg>
+    <msg name="MSG_the_word_language">Γλώσσα</msg>
+    <msg name="MSG_unknown_xml" desc="Error message">Άγνωστος τύπος αποτελέσματος XML.</msg>
+    <msg name="MSG_video_tab" desc="Label for the tab on the homepage or search results page that leads to Video.  Should match http://google.com">Βίντεο</msg>
+    <msg name="MSG_view_all_data">Προβολή όλων των δεδομένων</msg>
+    <msg name="MSG_view_xml" desc="'View page source' is a browser action">Προβολή προέλευσης σελίδας για να δείτε το μη έγκυρο XML.</msg>
+    <msg name="MSG_web_tab" desc="Label for the tab on the homepage or search results page that leads to web search.  Should match http://google.com">Παγκόσμιος ιστός</msg>
+    <msg name="MSG_without_words" desc="Advanced Search: See http://www.google.com/advanced_search "><ph name="START_BOLD">&lt;b></ph>χωρίς<ph name="END_BOLD">&lt;/b></ph> τις λέξεις</msg>
+    <msg name="MSG_zh_CN" desc="Language">Κινέζικα (Απλοποιημένα)</msg>
+    <msg name="MSG_zh_TW" desc="Language">Κινέζικα (Παραδοσιακά)</msg>
+  </messages>
+</localizationbundle>

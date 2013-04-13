@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="zh-TW">
+  <localizationbundle locale="zh-TW">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">如果您要藉由 SSH 停用維護存取權，請在下方顯示的「挑戰」輸入正確的「回覆」。然後 SSH 埠便會停用。</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">如果您要透過 SSH 啟用維護存取權限，請輸入下列「挑戰」的正確「回覆」。然後 SSH 埠便會停用。</msg>
+    <msg name="ABOUT_TO_HALT" desc="">如果您真的要停止 Appliance，請輸入下列「挑戰」的正確「回覆」。然後 Appliance 會執行關機程序。</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">如果您確定要重新啟動 Appliance 上的搜尋服務，請輸入下方「挑戰」的正確「回覆」。Appliance 接著會執行重新啟動程序。</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">如果您確定要自行破壞 Appliance，請與 Google 客戶支援部門聯絡，並詢問下方顯示之「挑戰」的正確「回覆」。請注意，此步驟無法復原。自毀程序開始之後，電腦上所有資料都會刪除。</msg>
+    <msg name="ACCEPT" desc="">接受並繼續步驟 1</msg>
+    <msg name="ACCOUNT_TYPE" desc="">帳戶類型</msg>
+    <msg name="ADMIN" desc="">管理</msg>
+    <msg name="ADMINISTRATOR" desc="">管理員</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc=""><ph name="START_BOLD">&lt;b></ph>管理<ph name="END_BOLD">&lt;/b></ph>帳戶用來存取「管理控制台」(管理 Search Appliance 的應用程式) 和「版本管理員」(用來安裝軟體更新)。</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">密碼有區分大小寫。</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">為這個帳戶建立密碼。我們建議您將密碼寫下來，供您在登入「管理控制台」(或「版本管理員」) 時查閱。</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">Search Appliance 會使用此電子郵件地址傳送通知與快訊。如果您忘記密碼，也會傳送通知到這個電子郵件地址。Search Appliance 也需要使用在步驟 2 (共 5 個步驟) 設定的 SMTP 郵件伺服器才能傳送電子郵件。</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">管理員密碼不相符</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">必須輸入管理員密碼</msg>
+    <msg name="ADMIN_SETTINGS" desc="">[管理] 帳戶</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">重要事項：Search Appliance 需要有效的 NTP 伺服器來啟用授權金鑰。</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">IP 位址與閘道必須在同一個網路上。</msg>
+    <msg name="ANGUILLA" desc="">安歸拉島</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">安地卡及巴布達</msg>
+    <msg name="ARGENTINA" desc="">阿根廷</msg>
+    <msg name="ARUBA" desc="">阿魯巴島</msg>
+    <msg name="AUSTRALIA" desc="">澳洲</msg>
+    <msg name="AUSTRIA" desc="">奧地利</msg>
+    <msg name="AUTONEGOTIATION" desc="">負載平衡器自動交涉</msg>
+    <msg name="BACK" desc="">&lt;&lt; 上一步</msg>
+    <msg name="BANGLADESH" desc="">孟加拉</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">基本網路設定</msg>
+    <msg name="BELGIUM" desc="">比利時</msg>
+    <msg name="BERMUDA" desc="">百慕達</msg>
+    <msg name="BRAZIL" desc="">巴西</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">英屬維爾京群島</msg>
+    <msg name="BULGARIA" desc="">保加利亞</msg>
+    <msg name="CANADA" desc="">加拿大</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">開曼群島</msg>
+    <msg name="CHALLENGE" desc="">挑戰</msg>
+    <msg name="CHANGE_PASSWORD" desc="">密碼</msg>
+    <msg name="CHILE" desc="">智利</msg>
+    <msg name="CHINA" desc="">中國</msg>
+    <msg name="COLOMBIA" desc="">哥倫比亞</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">設定 Syslog 伺服器</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">設定 [管理] 帳戶</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">恭喜！
+您已經設定好 Appliance。如果都並未顯示警告或錯誤，現在您可以中斷連結您的筆記型電腦並使用 Appliance。使用「管理控制台」應用程式進行日常管理。</msg>
+    <msg name="CONTINUE" desc="">繼續 &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">哥斯大黎加</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>歡迎！<ph name="END_BOLD">&lt;/b></ph> 如果要執行「網路安裝」，您必須先同意授權條款。請在下列清單中選取您的國家 / 地區，然後按一下 [繼續] 以繼續進行：</msg>
+    <msg name="CRAWL_IP" desc="">檢索 IP</msg>
+    <msg name="CZECH_REPUBLIC" desc="">捷克共和國</msg>
+    <msg name="DENMARK" desc="">丹麥</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">診斷訊息</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">我們的網路診斷在上一個步驟的設定中發現
+問題。雖然可以繼續，但您還是可以返回上一步變更設定。</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">DNS 後置字元 (DNS 搜尋路徑)</msg>
+    <msg name="DNS_SERVERS" desc="">DNS 伺服器</msg>
+    <msg name="DNS_SETTINGS" desc="">DNS 與郵件設定</msg>
+    <msg name="ECUADOR" desc="">厄瓜多</msg>
+    <msg name="EGYPT" desc="">埃及</msg>
+    <msg name="EL_SALVADOR" desc="">薩爾瓦多</msg>
+    <msg name="EMAIL_ADDRESS" desc="">電子郵件地址</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">負載組態檔發生錯誤。請再試一次</msg>
+    <msg name="EXAMPLE" desc="">範例</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">engineering.mycompany.com，corp.mycompany.com，company.com</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org，time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">芬蘭</msg>
+    <msg name="FRANCE" desc="">法國</msg>
+    <msg name="FRENCH_GUIANA" desc="">法屬圭亞那</msg>
+    <msg name="GATEWAY" desc="">預設閘道</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">閘道不得與其他 IP 衝突</msg>
+    <msg name="GERMANY" desc="">德國</msg>
+    <msg name="GREECE" desc="">希臘</msg>
+    <msg name="GUADELOUPE" desc="">哥德普洛 (法屬)</msg>
+    <msg name="GUATEMALA" desc="">瓜地馬拉</msg>
+    <msg name="HONDURAS" desc="">宏都拉斯</msg>
+    <msg name="HONG_KONG" desc="">香港</msg>
+    <msg name="HOSTNAME" desc="">主機名稱</msg>
+    <msg name="HUNGARY" desc="">匈牙利</msg>
+    <msg name="ICELAND" desc="">冰島</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">不合法的自動協商已指定</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">無效或保留的檢索 IP 位址</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">已指定不合法的 DNS 伺服器</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">不合法的閘道已指定</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">無效或保留的 IP 位址</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">不合法的網路遮罩已指定</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">不合法的網路速度已指定</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">不合法的 NTP 伺服器已指定</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">不合法的外送電子郵件寄件者已指定</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">已指定不合法的搜尋路徑</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">不合法的 SMTP 伺服器已指定</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">無效的或保留的切換-IP 位址</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">已指定不合法的 Syslog 伺服器</msg>
+    <msg name="INDIA" desc="">印度</msg>
+    <msg name="INDONESIA" desc="">印尼</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">無效的管理員電子郵件地址</msg>
+    <msg name="IP_ADDRESS" desc="">IP 地址</msg>
+    <msg name="IRELAND" desc="">愛爾蘭</msg>
+    <msg name="ISRAEL" desc="">以色列</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">不是有效的時區。</msg>
+    <msg name="ITALY" desc="">義大利</msg>
+    <msg name="JAPAN" desc="">日本</msg>
+    <msg name="LICENSE_ERROR" desc="">請與 Google 支援小組聯絡，索取您的授權。</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">請仔細檢閱這些條款，然後按一下 [接受並繼續步驟 1] 以繼續進行。</msg>
+    <msg name="LICENSE_WELCOME" desc="">使用者授權合約</msg>
+    <msg name="LUXEMBOURG" desc="">盧森堡</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">郵件伺服器設定</msg>
+    <msg name="MALAYSIA" desc="">馬來西亞</msg>
+    <msg name="MALTA" desc="">馬爾他</msg>
+    <msg name="MARTINIQUE" desc="">馬丁尼克島 (法屬)</msg>
+    <msg name="MEXICO" desc="">墨西哥</msg>
+    <msg name="MODIFY" desc="">返回步驟 1</msg>
+    <msg name="MONACO" desc="">摩納哥</msg>
+    <msg name="MONTSERRAT" desc="">蒙特色納島</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">務必輸入兩次「管理員」密碼</msg>
+    <msg name="NETHERLANDS" desc="">荷蘭</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">荷屬安地列斯群島</msg>
+    <msg name="NETMASK" desc="">子網路遮罩</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">網路安裝</msg>
+    <msg name="NETWORK_SPEED" desc="">網路速度</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">自動協商</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">每秒 10 Mb 半雙工</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">每秒 10 Mb 全雙工</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">每秒 100 Mb 半雙工</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">每秒 100 Mb 全雙工</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">每秒 1000 Mb (雙工會固定以此速度協商)</msg>
+    <msg name="NEW_PASSWORD" desc="">新密碼</msg>
+    <msg name="NEW_ZEALAND" desc="">紐西蘭</msg>
+    <msg name="NICARAGUA" desc="">尼加拉瓜</msg>
+    <msg name="NORWAY" desc="">挪威</msg>
+    <msg name="NOT_A_VALID_URL" desc="">不是有效的網址</msg>
+    <msg name="NTP_SERVERS" desc="">NTP 伺服器</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">DNS 設定</msg>
+    <msg name="OPEN_LICENSE" desc="">在新視窗中開啟授權</msg>
+    <msg name="OPTIONAL" desc="">選用</msg>
+    <msg name="OTHER" desc="">其它</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">外送電子郵件的寄件者</msg>
+    <msg name="PANAMA" desc="">巴拿馬</msg>
+    <msg name="PARAGUAY" desc="">巴拉圭</msg>
+    <msg name="PERU" desc="">秘魯</msg>
+    <msg name="PHILIPPINES" desc="">菲律賓</msg>
+    <msg name="POLAND" desc="">波蘭</msg>
+    <msg name="PORTUGAL" desc="">葡萄牙</msg>
+    <msg name="PUERTO_RICO" desc="">波多黎克</msg>
+    <msg name="REDIRECT" desc="">偵測網路並重新導向至主網頁。如果未在 1 分鐘內成功重新導向，請按一下PLACEHOLDER_LINK這裡PLACEHOLDER_ENDLINK。</msg>
+    <msg name="REENTER" desc="">重新輸入</msg>
+    <msg name="REJECT" desc="">不接受</msg>
+    <msg name="RESPONSE" desc="">回覆</msg>
+    <msg name="RUSSIA" desc="">俄羅斯</msg>
+    <msg name="SAVE" desc="">儲存</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">以逗號區分多個項目。</msg>
+    <msg name="SINGAPORE" desc="">新加坡</msg>
+    <msg name="SLOVAKIA" desc="">斯洛伐克</msg>
+    <msg name="SLOVENIA" desc="">斯洛維尼亞</msg>
+    <msg name="SMTP_SERVER" desc="">SMTP 伺服器</msg>
+    <msg name="SOUTH_AFRICA" desc="">南非</msg>
+    <msg name="SOUTH_KOREA" desc="">南韓</msg>
+    <msg name="SPAIN" desc="">西班牙</msg>
+    <msg name="SRI_LANKA" desc="">斯里蘭卡</msg>
+    <msg name="STEP_1_OF_5" desc="">步驟 5 之 1</msg>
+    <msg name="STEP_2_OF_5" desc="">步驟 5 之 2</msg>
+    <msg name="STEP_3_OF_5" desc="">步驟 5 之 3</msg>
+    <msg name="STEP_4_OF_5" desc="">步驟 5 之 4</msg>
+    <msg name="STEP_5_OF_5" desc="">步驟 5 之 5</msg>
+    <msg name="SWEDEN" desc="">瑞典</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">切換 IP 不得與其他 IP 衝突</msg>
+    <msg name="SWITCH_IP" desc="">切換 IP</msg>
+    <msg name="SWITZERLAND" desc="">瑞士</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Syslog 伺服器</msg>
+    <msg name="TAIWAN" desc="">台灣</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">測試網頁伺服器與網址的連線與存取權限。</msg>
+    <msg name="TESTURLS" desc="">測試網址</msg>
+    <msg name="TESTURLS_BULLET1" desc="">輸入一或多個網址 (每行一個) 以測試 Search Appliance 是否可以連上這些網站。每個網址之後加上結尾斜線，例如：</msg>
+    <msg name="TESTURLS_BULLET2" desc="">請確認「存取控制清單」 (ACL) 或錯誤的網路路由並未攔截您的裝置。請參閱「技術附錄」一節的「疑難排解」。</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://corp.mycompany.com/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://corp.mycompany.com/products/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">檢查網頁伺服器的存取權限</msg>
+    <msg name="THAILAND" desc="">泰國</msg>
+    <msg name="TIME_SETTINGS" desc="">時間設定</msg>
+    <msg name="TURKEY" desc="">土耳其</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">特克斯和凱科斯群島</msg>
+    <msg name="UK" desc="">英國</msg>
+    <msg name="UKRAINE" desc="">烏克蘭</msg>
+    <msg name="UNITED_STATES" desc="">美國</msg>
+    <msg name="URUGUAY" desc="">烏拉圭</msg>
+    <msg name="USERNAME" desc="">使用者名稱</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">美屬維爾京群島</msg>
+    <msg name="VENEZUELA" desc="">委內瑞拉</msg>
+    <msg name="VIETNAM" desc="">越南</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">我們使用 DHCP，自動嘗試取得您的網路設定。我們所得到的預設值如下。請修改任何您認為需要變更的值。</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">[管理] 帳戶可用來存取「管理控制台」。
+請在下方輸入本帳戶的密碼與聯絡電子郵件地址。</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">指定所有外送流量的 IP 位址。例如，您可以使用這個來指定 ACL 或防火牆規則，讓 Appliance 檢索您的內部網路。</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">指定 Appliance 所在位置網路的預設閘道。</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">為不完整的主機名稱指定解析路徑。這在 UNIX 系統上對應到 resolv.conf 檔案中的「搜尋」項目，在 Windows 系統則對應到「DNS 後置字元」項目。</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">使用 IP 位址指定一個或多個 DNS 伺服器。DNS 伺服器協助將主機名稱 (例如 www.google.com.tw）解析為 IP 位址。建議您至少要有兩部 DNS 伺服器，以備不時之需。</msg>
+    <msg name="WHATIS_NETMASK" desc="">指定 Google Search Appliance 所在位置網路的子網路遮罩。</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">Appliance 會自動與它所連線的切換器或路由器協商網路速度與雙工設定。請視需要選取適當的固定行速和雙工設定。</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">最多指定三個「網路時間通訊協定」(NTP) 伺服器以維護正確時間。必須有 NTP v3。如果您的網路上沒有 NTP 伺服器，您可以連線到公開存取的伺服器。請選取第 2 層或更高層的伺服器，以避免選取在使用前需要通知的伺服器。</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">指定電子郵件地址。Search Appliance 傳送的訊息將顯示自此地址寄出。</msg>
+    <msg name="WHATIS_SENDER" desc="">指定 Appliance 在傳送通知或警告時應該使用的作者名稱。「nobody@localhost」是很好的預設值。</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">Appliance 會自動與它所連線的切換器或路由器協商網路速度與雙工設定。如有需要，您可以按一下核取方塊，設定 Appliance 使用 100Mb 的線路速度與負載平衡的全雙工通訊。</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">為 Search Appliance 指定靜態 IP 位址。
+請記得也要輸入符號名稱 (例如 googlebox.mycompany.com) 與逆向 DNS 項目至貴公司的 DNS 資料庫。</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">指定 Appliance 用來傳送通知與快訊 (包括忘記密碼通知) 給您的 SMTP 郵件伺服器名稱。</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">指定 Serveriron 的 IP 位址。</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">您可以指定 SYSLOG 伺服器來擷取外部電腦上的系統事件與記錄。</msg>
+    <msg name="WHATIS_TESTURLS" desc="">有時，現有的防火牆與安全性設定會防止 Appliance 存取您要搜尋的網站伺服器。您可以在下方的文字方塊中指定完整的網址並按一下 [繼續]，檢查 Appliance 是否可以存取您的網站伺服器。如果您所指定的網址無法存取，我們便會發出警告。</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">指定用於記錄和主機負載排程的時區。</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">Appliance 現在正重新啟動。請稍待 – Appliance 約在 2 分鐘後會準備完成。</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">您的 Appliance 正在刪除其所有資料。請等候 60 分鐘，才可安全地拔除電腦電源。</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">現在 Appliance 將不允許透過 SSH 的維護存取。允許長達 30 秒讓組態設定變更發生作用。</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">Appliance 現在可以允許透過 SSH 的維護存取。允許長達 30 秒讓組態設定變更發生作用。</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">Appliance 現在正在關閉中。請稍候兩分鐘，才可安全關機。</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">您的當地時區</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">您尚未儲存變更。如果要儲存變更，請按一下瀏覽器的 [上一步] 按鈕回到前一頁，並按一下 [儲存] 按鈕。</msg>
+  </localizationbundle>
+</localizationbundle>

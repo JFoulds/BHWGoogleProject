@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="vi">
+  <localizationbundle locale="vi">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">Nếu muốn vô hiệu hoá chức năng truy cập bảo trì qua SSH, vui lòng nhập HỒI ĐÁP chính xác cho mục THỬ THÁCH được hiển thị bên dưới. Cổng SSH khi đó sẽ bị vô hiệu hoá.</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">Nếu bạn muốn kích hoạt chức năng truy cập bảo trì qua SSH, vui lòng nhập HỒI ĐÁP chính xác cho mục THỬ THÁCH được hiển thị bên dưới. Cổng SSH khi đó sẽ được bật.</msg>
+    <msg name="ABOUT_TO_HALT" desc="">Nếu bạn thật sự muốn tạm thời dừng lại công cụ, vui lòng nhập HỒI ĐÁP chính xác cho mục THỬ THÁCH được hiển thị bên dưới. Công cụ khi đó sẽ tiếp tục với trình tự tắt.</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">Nếu bạn thật sự muốn khởi động lại dịch vụ tìm kiếm trên công cụ, vui lòng nhập HỒI ĐÁP chính xác cho mục THỬ THÁCH được hiển thị bên dưới. Công cụ khi đó sẽ tiếp tục với quá trình khởi động lại.</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">Nếu bạn thật sự muốn tự phá huỷ công cụ, vui lòng liên hệ với bộ phận hỗ trợ khách hàng của Google và yêu cầu chỉnh sửa phần HỒI ĐÁP cho THỬ THÁCH được hiển thị bên dưới. Lưu ý rằng không thể hoàn tác bước này. Sau khi chức năng tự phá huỷ bắt dầu, tất cả dữ liệu trên máy sẽ bị xoá.</msg>
+    <msg name="ACCEPT" desc="">Chấp nhận &amp;amp; Tiếp tục sang Bước 1</msg>
+    <msg name="ACCOUNT_TYPE" desc="">Loại Tài khoản</msg>
+    <msg name="ADMIN" desc="">quản trị</msg>
+    <msg name="ADMINISTRATOR" desc="">Quản trị viên</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc="">Tài khoản <ph name="START_BOLD">&lt;b></ph>quản trị<ph name="END_BOLD">&lt;/b></ph> được dùng để truy cập vào Bảng Điều khiển dành cho Quản trị viên, ứng dụng để quản trị công cụ tìm kiếm và Trình quản lý Phiên bản, được dùng để cài đặt cập nhật phần mềm.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">Tên đăng nhập và mật khẩu có phân biệt chữ hoa chữ thường.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">Tạo mật khẩu cho tài khoản này. Chúng tôi khuyên bạn nên ghi lại mật khẩu này để tham khảo khi đăng nhập vào Bảng Điều khiển dành cho Quản trị viên (hoặc Trình quản lý Phiên bản).</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">Địa chỉ email được công cụ tìm kiếm sử dụng để gửi thông báo và cảnh báo. Địa chỉ email cũng được dùng trong trường hợp quên mật khẩu. Máy chủ thư SMTP được thiết lập trong Bước 2/5 cũng được công cụ tìm kiếm sử dụng để gửi email.</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">Mật khẩu quản trị viên không khớp.</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">Phải nhập mật khẩu Quản trị viên.</msg>
+    <msg name="ADMIN_SETTINGS" desc="">Tài khoản 'quản trị'</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">QUAN TRỌNG: Công cụ tìm kiếm yêu cầu máy chủ NTP hợp lệ để kích hoạt khoá giấy phép.</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">Địa chỉ IP và cổng phải trên cùng một mạng</msg>
+    <msg name="ANGUILLA" desc="">Anguilla</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">Antigua và Barbuda</msg>
+    <msg name="ARGENTINA" desc="">Argentina</msg>
+    <msg name="ARUBA" desc="">Aruba</msg>
+    <msg name="AUSTRALIA" desc="">Úc</msg>
+    <msg name="AUSTRIA" desc="">Áo</msg>
+    <msg name="AUTONEGOTIATION" desc="">Tự động thương lượng Bộ cân bằng Tải</msg>
+    <msg name="BACK" desc="">&amp;lt;&amp;lt; Quay lại</msg>
+    <msg name="BANGLADESH" desc="">Bangladesh</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">Cài đặt Mạng Cơ bản</msg>
+    <msg name="BELGIUM" desc="">Bỉ</msg>
+    <msg name="BERMUDA" desc="">Bermuda</msg>
+    <msg name="BRAZIL" desc="">Braxin</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">Quẩn đảo Virgin (Anh)</msg>
+    <msg name="BULGARIA" desc="">Bungari</msg>
+    <msg name="CANADA" desc="">Canada</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">Quần đảo Cayman</msg>
+    <msg name="CHALLENGE" desc="">Thử thách</msg>
+    <msg name="CHANGE_PASSWORD" desc="">Mật khẩu</msg>
+    <msg name="CHILE" desc="">Chi Lê</msg>
+    <msg name="CHINA" desc="">Trung Quốc</msg>
+    <msg name="COLOMBIA" desc="">Colombia</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Đặt cấu hình Máy chủ Syslog</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">Định cấu hình Tài khoản 'quản trị'</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">Chúc mừng! Bạn đã định cấu hình công cụ. Nếu không có cảnh bảo hoặc lỗi nào hiển thị, ngay bây giờ, bạn có thể ngắt kết nối máy tính xách tay và sử dụng công cụ. Sử dụng ứng dụng Bảng điều khiển dành cho Quản trị viên để phục vụ cho công việc quản trị hàng ngày.</msg>
+    <msg name="CONTINUE" desc="">Tiếp tục &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">Costa Rica</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>Chào mừng!<ph name="END_BOLD">&lt;/b></ph> Để tiếp tục Cài đặt Mạng, trước tiên, bạn phải chấp nhận thoả thuận cấp phép. Vui lòng chọn quốc gia của bạn từ danh sách sau, rồi nhấp vào 'Tiếp tục' để tiếp tục:</msg>
+    <msg name="CRAWL_IP" desc="">Thu thập thông tin IP</msg>
+    <msg name="CZECH_REPUBLIC" desc="">Cộng hoà Séc</msg>
+    <msg name="DENMARK" desc="">Đan Mạch</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">Thông báo Chẩn đoán</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">Chẩn đoán mạng của chúng tôi đã tìm thấy sự cố với cài đặt từ bước trước đó. Vì quá trình vẫn có thể tiếp tục, bạn có thể quay lại và thay đổi cài đặt của mình.</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">Đuôi DNS (Đường dẫn Tìm kiếm DNS)</msg>
+    <msg name="DNS_SERVERS" desc="">Máy chủ DNS</msg>
+    <msg name="DNS_SETTINGS" desc="">Cài đặt DNS và Cài đặt Thư</msg>
+    <msg name="ECUADOR" desc="">Ecuador</msg>
+    <msg name="EGYPT" desc="">Ai Cập</msg>
+    <msg name="EL_SALVADOR" desc="">El Salvador</msg>
+    <msg name="EMAIL_ADDRESS" desc="">Địa chỉ Email</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">Lỗi khi tải tệp tin cấu hình. Vui lòng thử lại.</msg>
+    <msg name="EXAMPLE" desc="">Ví dụ</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">engineering.mycompany.com, corp.mycompany.com, company.com</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">Phần Lan</msg>
+    <msg name="FRANCE" desc="">Pháp</msg>
+    <msg name="FRENCH_GUIANA" desc="">Guiana thuộc Pháp</msg>
+    <msg name="GATEWAY" desc="">Cổng Mặc định</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Cổng không được xung đột với IP khác</msg>
+    <msg name="GERMANY" desc="">Đức</msg>
+    <msg name="GREECE" desc="">Hy Lạp</msg>
+    <msg name="GUADELOUPE" desc="">Guadeloupe (Pháp)</msg>
+    <msg name="GUATEMALA" desc="">Guatemala</msg>
+    <msg name="HONDURAS" desc="">Honduras</msg>
+    <msg name="HONG_KONG" desc="">Hồng Kông</msg>
+    <msg name="HOSTNAME" desc="">Tên máy chủ</msg>
+    <msg name="HUNGARY" desc="">Hungari</msg>
+    <msg name="ICELAND" desc="">Iceland</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">Tự động thương lượng được chỉ định không hợp lệ</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">Địa chỉ Thu thập IP không hợp lệ hoặc đã được dùng trước.</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">Máy chủ DNS được chỉ định không hợp lệ</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">Cổng được chỉ định không hợp lệ</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">Địa chỉ IP không hợp lệ hoặc đã được dùng.</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">Mặt nạ mạng được chỉ định không hợp lệ</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">Tốc độ mạng được chỉ định không hợp hệ</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">Máy chủ NTP được chỉ định không hợp lệ</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">Người gửi email đi được chỉ định không hợp lệ</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">Đường dẫn tìm kiếm được chỉ định không hợp lệ</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">Máy chủ SMTP được chỉ định không hợp lệ</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">Địa chỉ IP của Bộ chuyển mạch không hợp lệ hoặc đã được dùng.</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">Máy chủ Syslog được chỉ định không hợp lệ</msg>
+    <msg name="INDIA" desc="">Ấn Độ</msg>
+    <msg name="INDONESIA" desc="">Indonesia</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">Địa chỉ email của Quản trị viên không hợp lệ</msg>
+    <msg name="IP_ADDRESS" desc="">Địa chỉ IP</msg>
+    <msg name="IRELAND" desc="">Ireland</msg>
+    <msg name="ISRAEL" desc="">Israel</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">không phải là múi giờ hợp lệ.</msg>
+    <msg name="ITALY" desc="">Ý</msg>
+    <msg name="JAPAN" desc="">Nhật Bản</msg>
+    <msg name="LICENSE_ERROR" desc="">Vui lòng liên hệ với bộ phận Hỗ trợ của Google để có giấy phép.</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">Vui lòng xem lại các điều khoản này cẩn thận trước khi nhấp vào 'Chấp nhận&amp;amp; Tiếp tục sang Bước 1' để tiếp tục.</msg>
+    <msg name="LICENSE_WELCOME" desc="">Thoả thuận Cấp phép Người dùng cuối cùng</msg>
+    <msg name="LUXEMBOURG" desc="">Luxembourg</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">Cài đặt Máy chủ Thư</msg>
+    <msg name="MALAYSIA" desc="">Malaysia</msg>
+    <msg name="MALTA" desc="">Malta</msg>
+    <msg name="MARTINIQUE" desc="">Martinique (Pháp)</msg>
+    <msg name="MEXICO" desc="">Mexico</msg>
+    <msg name="MODIFY" desc="">Quay lại Bước 1</msg>
+    <msg name="MONACO" desc="">Monaco</msg>
+    <msg name="MONTSERRAT" desc="">Montserrat</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">Phải nhập mật khẩu Quản trị viên hai lần</msg>
+    <msg name="NETHERLANDS" desc="">Hà Lan</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">Netherlands Antilles</msg>
+    <msg name="NETMASK" desc="">Mặt nạ Mạng con</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">Cài đặt Mạng</msg>
+    <msg name="NETWORK_SPEED" desc="">Tốc độ Mạng</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">tự động thương lượng</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">10 Mbps bán song công</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">10 Mbps song công hoàn toàn</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">100 Mbps bán song công</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">100 Mbps song công hoàn toàn</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1000 Mbps (song công luôn thương lượng theo tốc độ này)</msg>
+    <msg name="NEW_PASSWORD" desc="">Mật khẩu Mới</msg>
+    <msg name="NEW_ZEALAND" desc="">New Zealand</msg>
+    <msg name="NICARAGUA" desc="">Nicaragua</msg>
+    <msg name="NORWAY" desc="">Na Uy</msg>
+    <msg name="NOT_A_VALID_URL" desc="">không phải URL hợp lệ</msg>
+    <msg name="NTP_SERVERS" desc="">Máy chủ NTP</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">Cài đặt DNS</msg>
+    <msg name="OPEN_LICENSE" desc="">Mở giấy phép bằng cửa sổ mới</msg>
+    <msg name="OPTIONAL" desc="">tuỳ chọn</msg>
+    <msg name="OTHER" desc="">Khác</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">Người gửi Email Đi</msg>
+    <msg name="PANAMA" desc="">Panama</msg>
+    <msg name="PARAGUAY" desc="">Paraguay</msg>
+    <msg name="PERU" desc="">Peru</msg>
+    <msg name="PHILIPPINES" desc="">Philipin</msg>
+    <msg name="POLAND" desc="">Ba Lan</msg>
+    <msg name="PORTUGAL" desc="">Bồ Đào Nha</msg>
+    <msg name="PUERTO_RICO" desc="">Puerto Rico</msg>
+    <msg name="REDIRECT" desc="">Tìm kiếm mạng và chuyển hướng đến trang chính. Nhấp vào PLACEHOLDER_LINK vào đây PLACEHOLDER_ENDLINK nếu chuyển hướng không thành công trong vòng 1 phút.</msg>
+    <msg name="REENTER" desc="">Nhập lại</msg>
+    <msg name="REJECT" desc="">Không Chấp nhận</msg>
+    <msg name="RESPONSE" desc="">Hồi đáp</msg>
+    <msg name="RUSSIA" desc="">Nga</msg>
+    <msg name="SAVE" desc="">Lưu</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">Tách nhiều mục bằng dấu phẩy.</msg>
+    <msg name="SINGAPORE" desc="">Singapo</msg>
+    <msg name="SLOVAKIA" desc="">Slovakia</msg>
+    <msg name="SLOVENIA" desc="">Slovenia</msg>
+    <msg name="SMTP_SERVER" desc="">Máy chủ SMTP</msg>
+    <msg name="SOUTH_AFRICA" desc="">Nam Phi</msg>
+    <msg name="SOUTH_KOREA" desc="">Hàn Quốc</msg>
+    <msg name="SPAIN" desc="">Tây Ban Nha</msg>
+    <msg name="SRI_LANKA" desc="">Sri Lanka</msg>
+    <msg name="STEP_1_OF_5" desc="">Bước 1/5</msg>
+    <msg name="STEP_2_OF_5" desc="">Bước 2/5</msg>
+    <msg name="STEP_3_OF_5" desc="">Bước 3/5</msg>
+    <msg name="STEP_4_OF_5" desc="">Bước 4/5</msg>
+    <msg name="STEP_5_OF_5" desc="">Bước 5/5</msg>
+    <msg name="SWEDEN" desc="">Thuỵ Điển</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">IP của Bộ chuyển mạch không được xung đột với IP khác</msg>
+    <msg name="SWITCH_IP" desc="">IP Bộ chuyển mạch:</msg>
+    <msg name="SWITZERLAND" desc="">Thuỵ Sĩ</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Máy chủ Syslog</msg>
+    <msg name="TAIWAN" desc="">Đài Loan</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">Kiểm tra Máy chủ web và URL để xem kết nối và quyền truy cập</msg>
+    <msg name="TESTURLS" desc="">Kiểm tra URL</msg>
+    <msg name="TESTURLS_BULLET1" desc="">Nhập một hoặc nhiều URL (mỗi URL một dòng) để kiểm tra xem công cụ tìm kiếm có thể truy cập những trang web này không. Thêm dấu gạch chéo vào sau mỗi URL, ví dụ:</msg>
+    <msg name="TESTURLS_BULLET2" desc="">Bảo đảm thiết bị không bị khoá bởi Danh sách Điều khiển Truy cập (ACL) hoặc các tuyến mạng bị lỗi. Xem &amp;amp;ldquo;Gỡ rối&amp;amp;rdquo; trong phần Phụ lục Kỹ thuật.</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://corp.mycompany.com/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://corp.mycompany.com/products/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">Kiểm tra Truy cập vào Máy chủ Web</msg>
+    <msg name="THAILAND" desc="">Thái Lan</msg>
+    <msg name="TIME_SETTINGS" desc="">Cài đặt Thời gian</msg>
+    <msg name="TURKEY" desc="">Thỗ Nhĩ Kỳ</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">Quần đảo Turks và Caicos</msg>
+    <msg name="UK" desc="">Vương Quốc Anh</msg>
+    <msg name="UKRAINE" desc="">Ucraina</msg>
+    <msg name="UNITED_STATES" desc="">Hoa Kỳ</msg>
+    <msg name="URUGUAY" desc="">Uruguay</msg>
+    <msg name="USERNAME" desc="">Tên người dùng</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">Quẩn đảo Virgin (Hoa Kỳ)</msg>
+    <msg name="VENEZUELA" desc="">Venezuela</msg>
+    <msg name="VIETNAM" desc="">Việt Nam</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">Chúng tôi đã thử yêu cầu cài đặt mạng tự động sử dụng DHCP. Giá trị mặc định mà chúng tôi nhận được nằm bên dưới. Vui lòng chỉnh sửa bất kỳ giá trị nào bạn nghĩ nên thay đổi.</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">Tài khoản 'quản trị' được sử dụng để truy cập vào Bảng Điều khiển dành cho Quản trị viên. Nhập mật khẩu và địa chỉ email liên hệ cho tài khoản này bên dưới.</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">Chỉ định địa chỉ IP cho tất cả lưu lượng đi. Ví dụ: bạn có thể sử dụng chức năng này để chỉ định ACL hoặc quy tắc tường lửa để cho phép ứng dụng thu thập thông tin mạng nội bộ của bạn.</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">Chỉ định cổng mặc định của mạng mà công cụ thường trú.</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">Chỉ định đường dẫn giải pháp cho tên máy chủ chưa đủ điều kiện. Mục này tương ứng với mục "tìm kiếm" trong tệp tin resolv.conf trên hệ thống UNIX và mục "Đuôi DNS" trên hệ thống Windows.</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">Chỉ định một hoặc nhiều Máy chủ DNS theo địa chỉ IP. Máy chủ DNS giúp phân giải tên máy chủ như &amp;amp;ldquo;www.google.com&amp;amp;rdquo; thành địa IP. Khuyến nghị tối thiểu hai máy chủ DNS, để dự phòng.</msg>
+    <msg name="WHATIS_NETMASK" desc="">Chỉ định mặt nạ mạng con của mạng mà Công cụ Tìm kiếm Google thường trú.</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">Ứng dụng sẽ tự động điều chỉnh tốc độ mạng và cài đặt song công với bộ chuyển mạch và bộ định tuyến được kết nối. Nếu cần, hãy chọn tốc độ đường truyền cố định và cài đặt song công thích hợp.</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">Chỉ định tối đa ba máy chủ Giao thức Thời gian Mạng (NTP) để duy trì thời gian chính xác. Yêu cầu NTP Phiên bản 3. Nếu không có máy chủ NTP nào hiển thị trên mạng của bạn, bạn có thể kết nối với máy chủ truy cập mở. Chọn giai tầng 2 hoặc máy chủ cao hơn và tránh các máy chủ yêu cầu phải thông báo trước khi sử dụng.</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">Chỉ định địa chỉ email. Các thư được gửi bằng công cụ tìm kiếm sẽ cho biết đến từ địa chỉ này.</msg>
+    <msg name="WHATIS_SENDER" desc="">Chỉ định tên tác giả mà công cụ sẽ sử dụng khi gửi thông báo hoặc cảnh báo. Giá trị mặc định tốt nên là &amp;amp;ldquo;nobody@localhost&amp;amp;rdquo;.</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">Ứng dụng sẽ tự động điều chỉnh tốc độ mạng và cài đặt song công với bộ chuyển mạch và bộ định tuyến được kết nối. Nếu cần, hãy nhấp vào hộp kiểm để công cụ sử dụng tốc độ đường truyền 100Mbs và giao tiếp song công toàn phần để cân bằng tải.</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">Chỉ định Địa chỉ IP tĩnh cho công cụ tìm kiếm. Hãy nhớ nhập tên tượng trưng như &amp;amp;ldquo;googlebox.mycompany.com&amp;amp;rdquo; và mục DNS đảo ngược vào cơ sở dữ liệu DNS của công ty bạn.</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">Chỉ định máy chủ thư SMTP cho công cụ sử dụng để liên hệ với bạn bằng thông báo và cảnh báo, kể cả thông báo quên mật khẩu.</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">Chỉ định địa chỉ IP cho serveriron.</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">Bạn có thể chỉ định Máy chủ SYSLOG để chụp hình các sự kiện và nhật ký hệ thống trên máy ngoài.</msg>
+    <msg name="WHATIS_TESTURLS" desc="">Đôi khi cài đặt tường lửa và cài đặt bảo mật có sẵn có thể chặn công cụ truy cập máy chủ Web mà bạn muốn tìm kiếm. Bạn có thể kiểm tra xem công cụ có thể truy cập máy chủ Web của bạn không bằng cách chỉ định URL đầy đủ trong hộp văn bản bên dưới và nhấp vào 'Tiếp tục'. Chúng tôi sẽ cảnh báo bạn nếu có bất kỳ URL nào mà bạn chỉ định không thể truy cập được.</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">Chỉ định múi giờ để sử dụng cho nhật ký và lên lịch lưu lượng trên máy chủ.</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">Công cụ sẽ khởi động lại ngay bây giờ. Vui lòng chờ -- công cụ sẽ sẵng sàng trong khoảng hai phút.</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">Công cụ đang xoá tất cả dữ liệu của nó. Vui lòng chờ 60 phút trước khi bạn có thể an toàn rút phích cắm của máy.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">Ngay bây giờ công cụ sẽ không cho phép truy cập bảo trì qua SSH. Cho phép tối đa 30 giây để thay đổi cấu hình có tác dụng.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">Ngay bây giờ công cụ sẽ cho phép truy cập bảo trì qua SSH. Cho phép 30 giây để thay đổi cấu hình có hiệu lực.</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">Công cụ sẽ tắt ngay bây giờ. Vui lòng chờ 2 phút trước khi bạn có thể tắt nguồn an toàn.</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">Múi giờ Địa phương của bạn</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">Bạn chưa lưu thay đổi của mình. Để lưu, nhấp vào nút "Quay lại" của trình duyệt để quay lại trang trước đó và nhấp vào nút Lưu.</msg>
+  </localizationbundle>
+</localizationbundle>

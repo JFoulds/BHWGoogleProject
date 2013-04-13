@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="no">
+  <localizationbundle locale="no">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">Hvis du vil deaktivere vedlikeholdstilgang via SSH, må du angi riktig SVAR på FORESPØRSELEN som vises nedenfor. SSH-porten vil da deaktiveres.</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">Hvis du vil aktivere vedlikeholdstilgang via SSH, må du angi riktig SVAR på den FORESPØRSELEN som vises nedenfor. SSH-porten vil da aktiveres.</msg>
+    <msg name="ABOUT_TO_HALT" desc="">Hvis du virkelig vil stoppe enheten, må du angi riktig SVAR på den FORESPØRSELEN som vises nedenfor. Enheten vil da igangsette avslutningssekvensen.</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">Hvis du virkelig vil starte søketjenestene på enheten på nytt, angir du riktig SVAR på FORESPØRSELEN som vises nedenfor. Enheten vil da igangsette omstartsekvensen.</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">Hvis du virkelig vil at enheten skal ødelegge seg selv, kan du kontakte Googles kundestøtte og be om riktig SVAR på den FORESPØRSELEN som vises nedenfor. Vær oppmerksom på at dette trinnet ikke kan angres. Når selvødeleggelsen starter, slettes alle data på maskinen.</msg>
+    <msg name="ACCEPT" desc="">Godta og fortsett til trinn 1</msg>
+    <msg name="ACCOUNT_TYPE" desc="">Kontotype</msg>
+    <msg name="ADMIN" desc="">administrator</msg>
+    <msg name="ADMINISTRATOR" desc="">Administrator</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc=""><ph name="START_BOLD">&lt;b></ph>admin<ph name="END_BOLD">&lt;/b></ph>-kontoen brukes til å få tilgang til administrasjonskonsollen, som er programmet som administrerer søkeenheten, og versjonsbehandlingen, som brukes til installasjon av programvareoppdateringer.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">Det skilles mellom små og store bokstaver i brukernavnet og passordet.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">Opprett et passord for denne kontoen. Vi foreslår at du skriver ned dette passordet slik at du kan slå det opp når du logger på administrasjonskonsollen (eller Versjonsbehandling).</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">E-postadressen som du angir, brukes av søkeenheten for å sende meldinger og varsler. Den brukes også hvis du har glemt passordet ditt. SMTP-e-postserveren som du konfigurerte i trinn 2 av 5, er også nødvendig for at søkeenheten skal kunne sende e-post.</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">Administratorpassordene samsvarer ikke</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">Administratorpassord må angis</msg>
+    <msg name="ADMIN_SETTINGS" desc="">Admin-konto</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">MERK: Enheten krever en gyldig NTP-server for å aktivere lisensnøkkelen.</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">IP-adressen og gatewayen må være på det samme nettverket</msg>
+    <msg name="ANGUILLA" desc="">Anguilla</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">Antigua og Barbuda</msg>
+    <msg name="ARGENTINA" desc="">Argentina</msg>
+    <msg name="ARUBA" desc="">Aruba</msg>
+    <msg name="AUSTRALIA" desc="">Australia</msg>
+    <msg name="AUSTRIA" desc="">Østerrike</msg>
+    <msg name="AUTONEGOTIATION" desc="">Automatisk forhandling av belastningsfordeling</msg>
+    <msg name="BACK" desc="">&lt;&lt; Tilbake</msg>
+    <msg name="BANGLADESH" desc="">Bangladesh</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">Grunnleggende nettverksinnstillinger</msg>
+    <msg name="BELGIUM" desc="">Belgia</msg>
+    <msg name="BERMUDA" desc="">Bermuda</msg>
+    <msg name="BRAZIL" desc="">Brasil</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">Jomfruøyene (Storbritannia)</msg>
+    <msg name="BULGARIA" desc="">Bulgaria</msg>
+    <msg name="CANADA" desc="">Canada</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">Caymanøyene</msg>
+    <msg name="CHALLENGE" desc="">Forespørsel</msg>
+    <msg name="CHANGE_PASSWORD" desc="">Passord</msg>
+    <msg name="CHILE" desc="">Chile</msg>
+    <msg name="CHINA" desc="">Kina</msg>
+    <msg name="COLOMBIA" desc="">Colombia</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Konfigurer syslog-server</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">Konfigurer admin-konto</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">Gratulerer!
+Du har konfigurert enheten. Hvis det ikke er vist noen advarsler eller feil, kan du nå koble fra den bærbare datamaskinen og bruke enheten. Bruk administrasjonskonsollen til daglig administrasjon.</msg>
+    <msg name="CONTINUE" desc="">Fortsett &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">Costa Rica</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>Velkommen!<ph name="END_BOLD">&lt;/b></ph> Hvis du vil gå videre med nettverksinstallasjon, må du først godta lisensavtalen. Velg land fra listen og klikk deretter på Fortsett:</msg>
+    <msg name="CRAWL_IP" desc="">Gjennomsøk IP</msg>
+    <msg name="CZECH_REPUBLIC" desc="">Tsjekkia</msg>
+    <msg name="DENMARK" desc="">Danmark</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">Diagnosemeldinger</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">Vår nettverksdiagnose har funnet et problem med innstillingene fra det forrige trinnet. Selv om det er greit å fortsette, bør du vurdere å gå tilbake og endre innstillingene dine.</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">DNS-suffiks (DNS-søkebane)</msg>
+    <msg name="DNS_SERVERS" desc="">DNS-servere</msg>
+    <msg name="DNS_SETTINGS" desc="">DNS- og e-postinnstillinger</msg>
+    <msg name="ECUADOR" desc="">Ecuador</msg>
+    <msg name="EGYPT" desc="">Egypt</msg>
+    <msg name="EL_SALVADOR" desc="">El Salvador</msg>
+    <msg name="EMAIL_ADDRESS" desc="">E-postadresse</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">Feil under innlasting av konfigurasjonsfil. Prøv igjen</msg>
+    <msg name="EXAMPLE" desc="">Eksempel</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">teknikk.minbedrift.no, intern.minbedrift.no, bedrift.no</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">Finland</msg>
+    <msg name="FRANCE" desc="">Frankrike</msg>
+    <msg name="FRENCH_GUIANA" desc="">Fransk Guyana</msg>
+    <msg name="GATEWAY" desc="">Standard gateway</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Gatewayen kan ikke være i konflikt med noen annen IP</msg>
+    <msg name="GERMANY" desc="">Tyskland</msg>
+    <msg name="GREECE" desc="">Hellas</msg>
+    <msg name="GUADELOUPE" desc="">Guadeloupe (fransk)</msg>
+    <msg name="GUATEMALA" desc="">Guatemala</msg>
+    <msg name="HONDURAS" desc="">Honduras</msg>
+    <msg name="HONG_KONG" desc="">Hongkong</msg>
+    <msg name="HOSTNAME" desc="">Vertsnavn</msg>
+    <msg name="HUNGARY" desc="">Ungarn</msg>
+    <msg name="ICELAND" desc="">Island</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">Ugyldig automatisk forhandling er angitt</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">Ugyldig eller reservert Gjennomsøk IP-adresse</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">Ugyldige DNS-servere er angitt</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">Ugyldig gateway er angitt</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">Ugyldig eller reservert IP-adresse</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">Ugyldig nettverksmaske er angitt</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">Ugyldig nettverkshastighet er angitt</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">Ugyldige NTP-servere er angitt</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">Ugyldig avsender av utgående e-post er angitt</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">Ugyldig søkebane er angitt</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">Ugyldig SMTP-server er angitt</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">Ugyldig eller reservert Bytt IP-adresse</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">Ugyldig syslog-server er angitt</msg>
+    <msg name="INDIA" desc="">India</msg>
+    <msg name="INDONESIA" desc="">Indonesia</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">Ugyldig e-postadresse for administrator</msg>
+    <msg name="IP_ADDRESS" desc="">IP-adresse</msg>
+    <msg name="IRELAND" desc="">Irland</msg>
+    <msg name="ISRAEL" desc="">Israel</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">er ikke en gyldig tidssone.</msg>
+    <msg name="ITALY" desc="">Italia</msg>
+    <msg name="JAPAN" desc="">Japan</msg>
+    <msg name="LICENSE_ERROR" desc="">Kontakt Googles brukerstøtte angående lisensen.</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">Les disse vilkårene grundig, og klikk «Godta og fortsett til trinn 1» for å fortsette.</msg>
+    <msg name="LICENSE_WELCOME" desc="">Lisensavtale for sluttbrukere</msg>
+    <msg name="LUXEMBOURG" desc="">Luxemburg</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">Innstillinger for e-postserver</msg>
+    <msg name="MALAYSIA" desc="">Malaysia</msg>
+    <msg name="MALTA" desc="">Malta</msg>
+    <msg name="MARTINIQUE" desc="">Martinique (fransk)</msg>
+    <msg name="MEXICO" desc="">Mexico</msg>
+    <msg name="MODIFY" desc="">Gå tilbake til trinn 1</msg>
+    <msg name="MONACO" desc="">Monaco</msg>
+    <msg name="MONTSERRAT" desc="">Montserrat</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">Administratorpassordet må skrives inn to ganger</msg>
+    <msg name="NETHERLANDS" desc="">Nederland</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">De nederlandske Antillene</msg>
+    <msg name="NETMASK" desc="">Nettverksmaske</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">Nettverksinstallasjon</msg>
+    <msg name="NETWORK_SPEED" desc="">Nettverkshastighet</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">automatisk forhandling</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">10 Mbps halvdupleks</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">10 Mbps heldupleks</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">100 Mbps halvdupleks</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">100 Mbps heldupleks</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1000 Mbps (dupleks forhandles alltid ved denne hastigheten)</msg>
+    <msg name="NEW_PASSWORD" desc="">Nytt passord</msg>
+    <msg name="NEW_ZEALAND" desc="">New Zealand</msg>
+    <msg name="NICARAGUA" desc="">Nicaragua</msg>
+    <msg name="NORWAY" desc="">Norge</msg>
+    <msg name="NOT_A_VALID_URL" desc="">ikke en gyldig nettadresse</msg>
+    <msg name="NTP_SERVERS" desc="">NTP-servere</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">DNS-innstillinger</msg>
+    <msg name="OPEN_LICENSE" desc="">Åpne lisensen i nytt vindu</msg>
+    <msg name="OPTIONAL" desc="">Valgfri</msg>
+    <msg name="OTHER" desc="">Annet</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">Avsender av utgående e-post</msg>
+    <msg name="PANAMA" desc="">Panama</msg>
+    <msg name="PARAGUAY" desc="">Paraguay</msg>
+    <msg name="PERU" desc="">Peru</msg>
+    <msg name="PHILIPPINES" desc="">Filippinene</msg>
+    <msg name="POLAND" desc="">Polen</msg>
+    <msg name="PORTUGAL" desc="">Portugal</msg>
+    <msg name="PUERTO_RICO" desc="">Puerto Rico</msg>
+    <msg name="REDIRECT" desc="">Verifiserer nettverk og viderekobler til hovedside. Klikk PLACEHOLDER_LINK her PLACEHOLDER_ENDLINK hvis viderekoblingen ikke utføres innen 1 minutt.</msg>
+    <msg name="REENTER" desc="">Skriv inn på nytt</msg>
+    <msg name="REJECT" desc="">Ikke godta</msg>
+    <msg name="RESPONSE" desc="">Respons</msg>
+    <msg name="RUSSIA" desc="">Russland</msg>
+    <msg name="SAVE" desc="">Lagre</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">Skill flere oppføringer med komma.</msg>
+    <msg name="SINGAPORE" desc="">Singapore</msg>
+    <msg name="SLOVAKIA" desc="">Slovakia</msg>
+    <msg name="SLOVENIA" desc="">Slovenia</msg>
+    <msg name="SMTP_SERVER" desc="">SMTP-server</msg>
+    <msg name="SOUTH_AFRICA" desc="">Sør-Afrika</msg>
+    <msg name="SOUTH_KOREA" desc="">Sør-Korea</msg>
+    <msg name="SPAIN" desc="">Spania</msg>
+    <msg name="SRI_LANKA" desc="">Sri Lanka</msg>
+    <msg name="STEP_1_OF_5" desc="">Trinn 1 av 5</msg>
+    <msg name="STEP_2_OF_5" desc="">Trinn 2 av 5</msg>
+    <msg name="STEP_3_OF_5" desc="">Trinn 3 av 5</msg>
+    <msg name="STEP_4_OF_5" desc="">Trinn 4 av 5</msg>
+    <msg name="STEP_5_OF_5" desc="">Trinn 5 av 5</msg>
+    <msg name="SWEDEN" desc="">Sverige</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Bytt IP kan ikke være i konflikt med noen annen IP</msg>
+    <msg name="SWITCH_IP" desc="">Bytt IP</msg>
+    <msg name="SWITZERLAND" desc="">Sveits</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Syslog-servere</msg>
+    <msg name="TAIWAN" desc="">Taiwan</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">Tester nettservere og nettadresser for tilkoblings- og tilgangstillatelser</msg>
+    <msg name="TESTURLS" desc="">Test nettadresser</msg>
+    <msg name="TESTURLS_BULLET1" desc="">Angi én eller flere nettadresser (én per linje) for å teste om søkeenheten får tilgang til disse nettstedene. Legg til en etterfølgende skråstrek etter nettadressen, for eksempel:</msg>
+    <msg name="TESTURLS_BULLET2" desc="">Kontroller at enheten ikke er blokkert av tilgangskontrollister (ACL, Access Control Lists) eller nettverksruter med feil. Se &amp;ldquo;Feilsøking i delen Teknisk tillegg&amp;rdquo;.</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://intern.minbedrift.no/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://intern.minbedrift.no/produkter/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">Kontroller tilgang til nettservere</msg>
+    <msg name="THAILAND" desc="">Thailand</msg>
+    <msg name="TIME_SETTINGS" desc="">Tidsinnstillinger</msg>
+    <msg name="TURKEY" desc="">Tyrkia</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">Turks- og Caicosøyene</msg>
+    <msg name="UK" desc="">Storbritannia</msg>
+    <msg name="UKRAINE" desc="">Ukraina</msg>
+    <msg name="UNITED_STATES" desc="">USA</msg>
+    <msg name="URUGUAY" desc="">Uruguay</msg>
+    <msg name="USERNAME" desc="">Brukernavn</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">Jomfruøyene (USA)</msg>
+    <msg name="VENEZUELA" desc="">Venezuela</msg>
+    <msg name="VIETNAM" desc="">Vietnam</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">Vi har forsøkt å hente nettverksinnstillingene dine automatisk ved hjelp av DHCP. Standardverdiene vi fikk tak i, vises nedenfor. Rediger eventuelle verdier du mener bør endres.</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">Admin-kontoen brukes for å få tilgang til administrasjonskonsollen.
+Angi et passord og en e-postadresse du kan kontaktes på for denne kontoen nedenfor.</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">Angi IP-adressen for all utgående trafikk. Du kan for eksempel bruke denne til å angi regler for tilgangskontrolliste eller brannmur, slik at enheten kan gjennomsøke intranettet ditt.</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">Angi standard gateway til nettverket som enheten ligger på.</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">Angi løsingsbanen for ukvalifiserte vertsnavn. Denne tilsvarer en search-oppføring i en resolv.conf-fil på UNIX-systemer, og en DNS Suffix-oppføring på Windows-systemer.</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">Angi én eller flere DNS-servere etter IP-adresse. DNS-servere løser vertsnavn som for eksempel&amp;ldquo;www.google.no&amp;rdquo;, til IP-adresser. Minimum to DNS-servere for redundans anbefales.</msg>
+    <msg name="WHATIS_NETMASK" desc="">Angi nettverksmasken til nettverket som Google Search Appliance ligger på.</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">Enheten forhandler nettverkshastigheten og dupleksinnstillingene automatisk med bryteren eller ruteren den er koblet til. Velg om nødvendig den relevante faste linjehastigheten og dupleksinnstillingen.</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">Angi opptil tre NTP-servere (nettverkstidsprotokoll) for å opprettholde riktig klokkeslett. NTP versjon 3 kreves. Hvis det ikke finnes en NTP-server i nettverket, kan du koble til en server med åpen tilgang. Velg stratum 2-servere eller høyere, og unngå servere som krever varsling før bruk.</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">Angi en e-postadresse. Meldinger som er sendt av søkeenheten, vil se ut som at de kommer fra denne adressen.</msg>
+    <msg name="WHATIS_SENDER" desc="">Angi forfatternavnet enheten skal bruke ved utsending av meldinger eller varsler. En god standardverdi er ingen@lokalvert.</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">Enheten forhandler nettverkshastigheten og dupleksinnstillingene automatisk med bryteren eller ruteren den er koblet til. Om nødvendig kan du merke av for at enheten skal bruke en linjehastighet på 100 MB/s og heldupleks kommunikasjon for belastningsfordeling.</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">Tilordne en statisk IP-adresse til søkeenheten.
+Husk å også angi et symbolsk navn, for eksempel &amp;ldquo;googlebox.minbedrift.no&amp;rdquo; og en motsatt DNS-oppføring i bedriftens DNS-database.</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">Angi en SMTP-e-postserver som enheten skal bruke for å kontakte deg med meldinger og varsler, inkludert meldinger om glemte passord.</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">Angi serverens IP-adresse.</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">Du kan angi en SYSLOG-server for å registrere systemhendelser og logger på en ekstern maskin.</msg>
+    <msg name="WHATIS_TESTURLS" desc="">Noen ganger kan allerede eksisterende brannmur- og sikkerhetsinnstillinger forhindre at enheten får tilgang til nettservere du vil søke gjennom. Du kan kontrollere at enheten når nettserverne dine ved å angi nettadresser i tekstboksen nedenfor og klikke Fortsett. Vi varsler deg hvis noen av nettadressene du angir, ikke kan nås.</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">Angi en tidssone til bruk i logger og for tidsplan for vertsbelastning.</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">Enheten startes nå på nytt. Vent litt. Enheten er klar om cirka 2 minutter.</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">Enheten sletter alle data. Vent i én time før du drar ut kontakten.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">Enheten vil nå forby vedlikeholdstilgang via SSH. Det kan ta opptil 30 sekunder før konfigurasjonsendringer trer i kraft.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">Enheten er nå klar for vedlikeholdstilgang via SSH. Det kan ta opptil 30 sekunder før konfigurasjonsendringer trer i kraft.</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">Enheten avsluttes nå. Vent i to minutter før du slår den av.</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">Din lokale tidssone</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">Du har ikke lagret endringene dine. Hvis du vil lagre, trykker du Tilbake-knappen i nettleseren for å gå tilbake til den forrige siden og klikke Lagre.</msg>
+  </localizationbundle>
+</localizationbundle>

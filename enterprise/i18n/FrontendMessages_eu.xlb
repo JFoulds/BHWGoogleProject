@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="eu">
+  <messages>
+    <msg name="MSG_advanced_search" desc="Page title">Bilaketa aurreratua</msg>
+    <msg name="MSG_advsearch_example" desc="Advanced Search: See http://www.google.com/advanced_search  example domains">ad: google.com, .org</msg>
+    <msg name="MSG_advsearch_file_format" desc="Advanced Search: See http://www.google.com/advanced_search  label to select desired file formats">Fitxategi formatua</msg>
+    <msg name="MSG_advsearch_return_files" desc="Advanced Search: Prefixed with &quot;Only&quot; or &quot;Don't&quot;">formatu honetako fitxategiak bilatu</msg>
+    <msg name="MSG_alerts">Alertak</msg>
+    <msg name="MSG_all_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>hitz hauek <ph name="START_BOLD">&lt;b></ph>guztiak<ph name="END_BOLD">&lt;/b></ph> barne direla</msg>
+    <msg name="MSG_any_format" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any file format">edozein formatu</msg>
+    <msg name="MSG_any_language" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any language">edozein hizkuntza</msg>
+    <msg name="MSG_any_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>hitz hauetako <ph name="START_BOLD">&lt;b></ph>edozein<ph name="END_BOLD">&lt;/b></ph> barne dela</msg>
+    <msg name="MSG_anywhere_on_page" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Return results where my terms occur"'>orrian edonon</msg>
+    <msg name="MSG_ar">Arabieraz</msg>
+    <msg name="MSG_cache" desc="Link to cached copy of document">Katxean</msg>
+    <msg name="MSG_cached_copy" desc="Followed by URL">Fitxategiaren cacheko kopia:</msg>
+    <msg name="MSG_correct_credentials_help">Ziurtatu segurtasun egiaztagiriak zuzenak direla.</msg>
+    <msg name="MSG_correct_spelling_help">Adi ea hitz guztiak zuzen idatzi dituzun.</msg>
+    <msg name="MSG_cs" desc="Language">Txekieraz</msg>
+    <msg name="MSG_da" desc="Language">Danieraz</msg>
+    <msg name="MSG_de" desc="Language">Alemanieraz</msg>
+    <msg name="MSG_different_keywords_help">Saiatu beste gako-hitzekin.</msg>
+    <msg name="MSG_do_not" desc='Advanced search: See       http://www.google.com/advanced_search  dropdown, followed by "return results of the file format..."'>Ez</msg>
+    <msg name="MSG_domains" desc="Advanced Search: See http://www.google.com/advanced_search - Domain is .com, .org, etc.">Domeinua</msg>
+    <msg name="MSG_egds_appliance_tab_label" desc="Label on search tab: Google Search Appliance">Tresna</msg>
+    <msg name="MSG_el" desc="Language">Grekeraz</msg>
+    <msg name="MSG_en" desc="Language">Ingelesez</msg>
+    <msg name="MSG_err_description">Deskribapena:</msg>
+    <msg name="MSG_err_details">Xehetasunak:</msg>
+    <msg name="MSG_err_message">Mezua:</msg>
+    <msg name="MSG_error" desc="Title for Error Page">Errorea</msg>
+    <msg name="MSG_es" desc="Language">Gazteleraz</msg>
+    <msg name="MSG_et" desc="Language">Estonieraz</msg>
+    <msg name="MSG_exact_phrase" desc='Advanced Search: See http://www.google.com/advanced_search  prefixed by "Find results"'><ph name="START_BOLD">&lt;b></ph>esaldi zehatz<ph name="END_BOLD">&lt;/b></ph> hau barne dela</msg>
+    <msg name="MSG_fi" desc="Language">Suomieraz</msg>
+    <msg name="MSG_file_doc">Microsoft Word (.doc)</msg>
+    <msg name="MSG_file_pdf">Adobe Acrobat PDF (.pdf)</msg>
+    <msg name="MSG_file_ppt">Microsoft Powerpoint (.ppt)</msg>
+    <msg name="MSG_file_ps">Adobe Postscript (.ps)</msg>
+    <msg name="MSG_file_rtf">Rich Text Format (.rtf)</msg>
+    <msg name="MSG_file_xls">Microsoft Excel (.xls)</msg>
+    <msg name="MSG_filtered_results">Emaitza esanguratsuneak erakusteko asmoz, orain erakusten dizkizigun <ph name="NUM">%1$d</ph> emaitza hauen oso antzekoak diren zenbait orri ezkutatu egin ditugu.<ph name="BREAK">&lt;br/></ph> Nahi baduzu, <ph name="START_LINK">&lt;a href="%2$s"></ph> bilaketa errepika dezakezu ezkutaturiko emaitzak erakutsiz<ph name="END_LINK">&lt;/a></ph>.</msg>
+    <msg name="MSG_find_pages_linking_to" desc="Text to find pages that have a link to this page">Aurkitu hurrengo orrira estekatuak dauden orriak:</msg>
+    <msg name="MSG_find_results" desc='Advanced Search: See http://www.google.com/advanced_search - Followed by "with all of the words ..."'>Aurkitu emaitzak</msg>
+    <msg name="MSG_fr" desc="Language">Frantsesez</msg>
+    <msg name="MSG_general_keywords_help">Saiatu gako-hitz orokorragoekin.</msg>
+    <msg name="MSG_gmail_tab" desc="Label for the tab on the homepage or search results page that leads to Gmail.  Should match http://google.com">Gmail</msg>
+    <msg name="MSG_go_to_google_home">Joan Googlen Hasiera Orrira</msg>
+    <msg name="MSG_groups_tab" desc="Label for the tab on the homepage or search results page that leads to Google Groups (usenet) search.  Should match http://google.com">Taldeak</msg>
+    <msg name="MSG_help" desc="Link that gives tips on how to search">Bilatu Motak</msg>
+    <msg name="MSG_homepage_search_label">Bilatu:</msg>
+    <msg name="MSG_hu" desc="Language">Hungarieraz</msg>
+    <msg name="MSG_images_tab" desc="Label for the tab on the homepage or search results page that leads to image search.  Should match http://google.com">Irudiak</msg>
+    <msg name="MSG_in_title" desc='Advanced Search: See       http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>orriaren izenburuan</msg>
+    <msg name="MSG_in_url" desc='Advanced Search: See http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>orriaren URL helbidean</msg>
+    <msg name="MSG_is" desc="Language">Islandieraz</msg>
+    <msg name="MSG_it" desc="Language">Italieraz</msg>
+    <msg name="MSG_iw" desc="Language">Hebraieraz</msg>
+    <msg name="MSG_ja" desc="Language">Japonieraz</msg>
+    <msg name="MSG_ko" desc="Language">Koreeraz</msg>
+    <msg name="MSG_links" desc="Advanced Search: See http://www.google.com/advanced_search - This is the label on the form section to find pages with links to other pages">Estekak</msg>
+    <msg name="MSG_local_tab" desc="Label for the tab on the homepage or search results page that leads to search on map.  Should match http://google.com">Tokikoa</msg>
+    <msg name="MSG_lt" desc="Language">Lituanieraz</msg>
+    <msg name="MSG_lv" desc="Language">Letonieraz</msg>
+    <msg name="MSG_maps_tab" desc="Label for the tab on the homepage or search results page that leads to Maps.  Should match http://google.com">Google Maps</msg>
+    <msg name="MSG_more_from_host" desc="Label on a link to get more results from a host machine"><ph name="HOSTNAME">%1$s</ph> domeinuan emaitza gehiago</msg>
+    <msg name="MSG_my_alerts">Nire alertak</msg>
+    <msg name="MSG_navbar_header">Emaitza Orriak</msg>
+    <msg name="MSG_navbar_next">&lt;b&gt;Hurrengoa&lt;/b&gt;</msg>
+    <msg name="MSG_navbar_previous">&lt;b&gt;Aurrekoa&lt;/b&gt;</msg>
+    <msg name="MSG_news_tab" desc="Label for the tab on the homepage or search results page that leads to Google News search.  Should match http://google.com">Albisteak</msg>
+    <msg name="MSG_news_lite_version" desc="Link to get a text version of a document">Testu bertsioa</msg>
+    <msg name="MSG_nl" desc="Language">Holanderaz</msg>
+    <msg name="MSG_no" desc="Language">Norvegieraz</msg>
+    <msg name="MSG_no_results">Ez dugu aurkitu zure bilaketarekin - <ph name="SEARCH_TERM">&lt;b>%1$s&lt;/b></ph> - bat datorren dokumenturik.</msg>
+    <msg name="MSG_not_indexed">Indexatu gabe:</msg>
+    <msg name="MSG_noword_warning"><ph name="SEARCH_TERM">&lt;b>"%2$.*1$s"&lt;/b></ph> jasotzen duen orririk ez dugu aurkitu.</msg>
+    <msg name="MSG_occurrences" desc="See http://www.google.com/advanced_search - Section label for selecting if results occur anywhere or in title">Hitzak non</msg>
+    <msg name="MSG_only" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown, followed by 'return results from the site'">Bakarrik</msg>
+    <msg name="MSG_page_specific_search">Orri Zehatz Bilaketa</msg>
+    <msg name="MSG_pl" desc="Language">Polonieraz</msg>
+    <msg name="MSG_powered_by_GSA" desc="Page footer">Google Bilaketa Tresnak eskainia</msg>
+    <msg name="MSG_powered_by_GSAVDE" desc="Page footer: a virtualized edition for software developers">Google Bilaketa Tresnaren garapen birtualeko edizioak eskainia</msg>
+    <msg name="MSG_pt" desc="Language">Portugaleraz</msg>
+    <msg name="MSG_public_content" desc="Security radio button item.  Caption is 'Search:'">eduki publikoa</msg>
+    <msg name="MSG_public_secure_content" desc="Security radio button item.  Caption is 'Search:'">eduki publikoa eta segurua</msg>
+    <msg name="MSG_results" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown to specify how many search results to return.  Prefixed by 10, 20, etc.">emaitzak</msg>
+    <msg name="MSG_results_a_b_for_q"><ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph> bilaketaren <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> emaitzak.</msg>
+    <msg name="MSG_results_a_b_of_n_for_q"><ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph> bilaketaren <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> emaitzak. Guztira <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph>.</msg>
+    <msg name="MSG_results_page">Emaitzen orrialde</msg>
+    <msg name="MSG_return_domains" desc="Advanced Search: See http://www.google.com/advanced_search   Prefixed by 'Only', followed by e.g. '.com'">erakutsi webgune honetako emaitzak:</msg>
+    <msg name="MSG_return_occurrences" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'anywhere in the page'">Aukeratu bilaketa-hitzen kokapena:</msg>
+    <msg name="MSG_return_only_pages_in" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'any language'">Erakutsi hizkuntza honetako orriak</msg>
+    <msg name="MSG_ro" desc="Language">Errumanieraz</msg>
+    <msg name="MSG_ru" desc="Language">Errusieraz</msg>
+    <msg name="MSG_search">Google bilaketa tresna</msg>
+    <msg name="MSG_search_home" desc="Page title; home page for search">Etxea bilatu</msg>
+    <msg name="MSG_search_public_content" desc="Label on checkbox">Bilatu eduki publikoa bakarrik</msg>
+    <msg name="MSG_search_public_secure_content" desc="Label on checkbox">Bilatu eduki publikoa eta segurua (saioa hastea beharrezkoa da)</msg>
+    <msg name="MSG_search_results" desc="Results of search">Bilaketa emaitzak</msg>
+    <msg name="MSG_searchtime">Bilaketak <ph name="NUMBER">&lt;b>%1$.2f&lt;/b></ph> segundo iraun du.</msg>
+    <msg name="MSG_security" desc="Label for the selector of the security mode">Segurtasuna</msg>
+    <msg name="MSG_sep_bar_adv_text">Bilaketa aurreratua</msg>
+    <msg name="MSG_sep_bar_error_text" desc="Title for Error Page">Errorea</msg>
+    <msg name="MSG_sep_bar_std_text" desc="Tab label for doing a search">Bilatu</msg>
+    <msg name="MSG_server_error_des_text">Egiaztatu zerbitzariaren kodea Xehetasunetan.</msg>
+    <msg name="MSG_server_error_msg_text">Zerbitzarian errore bat gertatu da.</msg>
+    <msg name="MSG_server_error_title" desc="Heading on error page">Zerbitzariaren errorea</msg>
+    <msg name="MSG_sign_out">Saioa amaitu</msg>
+    <msg name="MSG_sort" desc="Label for the selector of 'Sort by Date/Relevance'">Sailkatu</msg>
+    <msg name="MSG_sort_by_date">Sailkatu dataren arabera</msg>
+    <msg name="MSG_sort_by_relevance">Sailkatu garrantziaren arabera</msg>
+    <msg name="MSG_spell_suggest" desc="Spelling suggestion">Esan nahi zenuen:</msg>
+    <msg name="MSG_suggest_help">Proposamenak:</msg>
+    <msg name="MSG_sv" desc="Language">Suedieraz</msg>
+    <msg name="MSG_swr_num_results_found"><ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> emaitza lortu dira <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph> bilaketarentzat.</msg>
+    <msg name="MSG_swr_page_title">Emaitzen artean bilatu</msg>
+    <msg name="MSG_swr_search_anchor_text">Emaitzen artean bilatu</msg>
+    <msg name="MSG_swr_search_within_these_results">Beheko bilaketa eremua erabili emaitzen artean bilatzeko.</msg>
+    <msg name="MSG_synonym_text" desc="Synonym suggestion">Aukera gehiago:</msg>
+    <msg name="MSG_the_word_language">Hizkuntza</msg>
+    <msg name="MSG_unknown_xml" desc="Error message">XML emaitza mota ezezaguna.</msg>
+    <msg name="MSG_video_tab" desc="Label for the tab on the homepage or search results page that leads to Video.  Should match http://google.com">Bideoak</msg>
+    <msg name="MSG_view_all_data">Datu guztiak ikusi</msg>
+    <msg name="MSG_view_xml" desc="'View page source' is a browser action">Orriaren iturria bistaratu arauz kanpoko XMLa ikusteko.</msg>
+    <msg name="MSG_web_tab" desc="Label for the tab on the homepage or search results page that leads to web search.  Should match http://google.com">Webgunea</msg>
+    <msg name="MSG_without_words" desc="Advanced Search: See http://www.google.com/advanced_search ">hitz hauek <ph name="START_BOLD">&lt;b></ph>gabe<ph name="END_BOLD">&lt;/b></ph></msg>
+    <msg name="MSG_zh_CN" desc="Language">Txineraz (Erraztua)</msg>
+    <msg name="MSG_zh_TW" desc="Language">Txineraz (Ohikoa)</msg>
+  </messages>
+</localizationbundle>

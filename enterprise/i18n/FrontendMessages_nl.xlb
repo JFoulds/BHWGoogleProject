@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="nl">
+  <messages>
+    <msg name="MSG_advanced_search" desc="Page title">Geavanceerd zoeken</msg>
+    <msg name="MSG_advsearch_example" desc="Advanced Search: See http://www.google.com/advanced_search  example domains">Voorbeelden: .org, google.com</msg>
+    <msg name="MSG_advsearch_file_format" desc="Advanced Search: See http://www.google.com/advanced_search  label to select desired file formats">Bestandsindeling</msg>
+    <msg name="MSG_advsearch_return_files" desc="Advanced Search: Prefixed with &quot;Only&quot; or &quot;Don't&quot;">resultaten opleveren met bestandsindeling</msg>
+    <msg name="MSG_alerts">Waarschuwingen</msg>
+    <msg name="MSG_all_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>met <ph name="START_BOLD">&lt;b></ph>alle<ph name="END_BOLD">&lt;/b></ph> woorden</msg>
+    <msg name="MSG_any_format" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any file format">elke indeling</msg>
+    <msg name="MSG_any_language" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any language">elke taal</msg>
+    <msg name="MSG_any_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>met <ph name="START_BOLD">&lt;b></ph>een van deze<ph name="END_BOLD">&lt;/b></ph> woorden</msg>
+    <msg name="MSG_anywhere_on_page" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Return results where my terms occur"'>in de pagina</msg>
+    <msg name="MSG_ar">Arabisch</msg>
+    <msg name="MSG_cache" desc="Link to cached copy of document">In cache</msg>
+    <msg name="MSG_cached_copy" desc="Followed by URL">Dit is de kopie in het cachegeheugen van</msg>
+    <msg name="MSG_correct_credentials_help">Controleer of uw beveiligingsidentificatie juist is.</msg>
+    <msg name="MSG_correct_spelling_help">Zorg ervoor dat alle woorden goed gespeld zijn.</msg>
+    <msg name="MSG_cs" desc="Language">Tsjechisch</msg>
+    <msg name="MSG_da" desc="Language">Deens</msg>
+    <msg name="MSG_de" desc="Language">Duits</msg>
+    <msg name="MSG_different_keywords_help">Probeer andere zoektermen.</msg>
+    <msg name="MSG_do_not" desc='Advanced search: See       http://www.google.com/advanced_search  dropdown, followed by "return results of the file format..."'>Geen</msg>
+    <msg name="MSG_domains" desc="Advanced Search: See http://www.google.com/advanced_search - Domain is .com, .org, etc.">Domein</msg>
+    <msg name="MSG_egds_appliance_tab_label" desc="Label on search tab: Google Search Appliance">Apparaat</msg>
+    <msg name="MSG_el" desc="Language">Grieks</msg>
+    <msg name="MSG_en" desc="Language">Engels</msg>
+    <msg name="MSG_err_description">Beschrijving:</msg>
+    <msg name="MSG_err_details">Details:</msg>
+    <msg name="MSG_err_message">Bericht:</msg>
+    <msg name="MSG_error" desc="Title for Error Page">Fout</msg>
+    <msg name="MSG_es" desc="Language">Spaans</msg>
+    <msg name="MSG_et" desc="Language">Ests</msg>
+    <msg name="MSG_exact_phrase" desc='Advanced Search: See http://www.google.com/advanced_search  prefixed by "Find results"'>met de <ph name="START_BOLD">&lt;b></ph>exacte woordcombinatie<ph name="END_BOLD">&lt;/b></ph></msg>
+    <msg name="MSG_fi" desc="Language">Fins</msg>
+    <msg name="MSG_file_doc">Microsoft Word (.doc)</msg>
+    <msg name="MSG_file_pdf">Adobe Acrobat PDF (.pdf)</msg>
+    <msg name="MSG_file_ppt">Microsoft Powerpoint (.ppt)</msg>
+    <msg name="MSG_file_ps">Adobe Postscript (.ps)</msg>
+    <msg name="MSG_file_rtf">Rich Text Format (.rtf)</msg>
+    <msg name="MSG_file_xls">Microsoft Excel (.xls)</msg>
+    <msg name="MSG_filtered_results">Om de meest relevante resultaten te tonen, hebben we er een aantal weggelaten die heel sterk lijken op de reeds weergegeven <ph name="NUM">%1$d</ph>. <ph name="BREAK">&lt;br/></ph>Indien gewenst kunt u <ph name="START_LINK">&lt;a href="%2$s"></ph> de zoekbewerking herhalen met de weggelaten resultaten<ph name="END_LINK">&lt;/a></ph>.</msg>
+    <msg name="MSG_find_pages_linking_to" desc="Text to find pages that have a link to this page">Zoek pagina's met koppeling naar de pagina</msg>
+    <msg name="MSG_find_results" desc='Advanced Search: See http://www.google.com/advanced_search - Followed by "with all of the words ..."'>Zoek resultaten</msg>
+    <msg name="MSG_fr" desc="Language">Frans</msg>
+    <msg name="MSG_general_keywords_help">Maak de zoektermen algemener.</msg>
+    <msg name="MSG_gmail_tab" desc="Label for the tab on the homepage or search results page that leads to Gmail.  Should match http://google.com">Gmail</msg>
+    <msg name="MSG_go_to_google_home">Ga naar de Google homepage</msg>
+    <msg name="MSG_groups_tab" desc="Label for the tab on the homepage or search results page that leads to Google Groups (usenet) search.  Should match http://google.com">Discussiegroepen</msg>
+    <msg name="MSG_help" desc="Link that gives tips on how to search">Zoektips</msg>
+    <msg name="MSG_homepage_search_label">Doorzoek:</msg>
+    <msg name="MSG_hu" desc="Language">Hongaars</msg>
+    <msg name="MSG_images_tab" desc="Label for the tab on the homepage or search results page that leads to image search.  Should match http://google.com">Afbeeldingen</msg>
+    <msg name="MSG_in_title" desc='Advanced Search: See       http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>in de titel van de pagina</msg>
+    <msg name="MSG_in_url" desc='Advanced Search: See http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>in de url van de pagina</msg>
+    <msg name="MSG_is" desc="Language">IJslands</msg>
+    <msg name="MSG_it" desc="Language">Italiaans</msg>
+    <msg name="MSG_iw" desc="Language">Hebreeuws</msg>
+    <msg name="MSG_ja" desc="Language">Japans</msg>
+    <msg name="MSG_ko" desc="Language">Koreaans</msg>
+    <msg name="MSG_links" desc="Advanced Search: See http://www.google.com/advanced_search - This is the label on the form section to find pages with links to other pages">Koppelingen</msg>
+    <msg name="MSG_local_tab" desc="Label for the tab on the homepage or search results page that leads to search on map.  Should match http://google.com">Lokaal</msg>
+    <msg name="MSG_lt" desc="Language">Litouws</msg>
+    <msg name="MSG_lv" desc="Language">Lets</msg>
+    <msg name="MSG_maps_tab" desc="Label for the tab on the homepage or search results page that leads to Maps.  Should match http://google.com">Maps</msg>
+    <msg name="MSG_more_from_host" desc="Label on a link to get more results from a host machine">Meer resultaten van <ph name="HOSTNAME">%1$s</ph></msg>
+    <msg name="MSG_my_alerts">Mijn meldingen</msg>
+    <msg name="MSG_navbar_header">Resultaatpagina</msg>
+    <msg name="MSG_navbar_next">&lt;b&gt;Volgende&lt;/b&gt;</msg>
+    <msg name="MSG_navbar_previous">&lt;b&gt;Vorige&lt;/b&gt;</msg>
+    <msg name="MSG_news_tab" desc="Label for the tab on the homepage or search results page that leads to Google News search.  Should match http://google.com">Nieuws</msg>
+    <msg name="MSG_news_lite_version" desc="Link to get a text version of a document">Tekstversie</msg>
+    <msg name="MSG_nl" desc="Language">Nederlands</msg>
+    <msg name="MSG_no" desc="Language">Noors</msg>
+    <msg name="MSG_no_results">Uw zoekbewerking - <ph name="SEARCH_TERM">&lt;b>%1$s&lt;/b></ph> - heeft geen overeenkomstige documenten opgeleverd</msg>
+    <msg name="MSG_not_indexed">Niet geïndexeerd:</msg>
+    <msg name="MSG_noword_warning">Geen resultaten voor <ph name="SEARCH_TERM">&lt;b>"%2$.*1$s"&lt;/b></ph>.</msg>
+    <msg name="MSG_occurrences" desc="See http://www.google.com/advanced_search - Section label for selecting if results occur anywhere or in title">Waar</msg>
+    <msg name="MSG_only" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown, followed by 'return results from the site'">Alleen</msg>
+    <msg name="MSG_page_specific_search">Pagina-specifiek zoeken</msg>
+    <msg name="MSG_pl" desc="Language">Pools</msg>
+    <msg name="MSG_powered_by_GSA" desc="Page footer">Mogelijk gemaakt door Google Search Appliance</msg>
+    <msg name="MSG_powered_by_GSAVDE" desc="Page footer: a virtualized edition for software developers">Powered by Google Search Appliance, Virtual Developer editie</msg>
+    <msg name="MSG_pt" desc="Language">Portugees</msg>
+    <msg name="MSG_public_content" desc="Security radio button item.  Caption is 'Search:'">openbare inhoud</msg>
+    <msg name="MSG_public_secure_content" desc="Security radio button item.  Caption is 'Search:'">openbare en beveiligde inhoud</msg>
+    <msg name="MSG_results" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown to specify how many search results to return.  Prefixed by 10, 20, etc.">resultaten</msg>
+    <msg name="MSG_results_a_b_for_q">Resultaten <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> voor <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_a_b_of_n_for_q">Resultaten <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> van ongeveer <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> voor <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_page">Resultatenpagina</msg>
+    <msg name="MSG_return_domains" desc="Advanced Search: See http://www.google.com/advanced_search   Prefixed by 'Only', followed by e.g. '.com'">resultaten weergeven van de site of het domein</msg>
+    <msg name="MSG_return_occurrences" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'anywhere in the page'">Geef resultaten weer als mijn zoekopdracht voorkomt</msg>
+    <msg name="MSG_return_only_pages_in" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'any language'">Alleen pagina's geschreven in het</msg>
+    <msg name="MSG_ro" desc="Language">Roemeens</msg>
+    <msg name="MSG_ru" desc="Language">Russisch</msg>
+    <msg name="MSG_search">Google zoeken</msg>
+    <msg name="MSG_search_home" desc="Page title; home page for search">Startpagina Zoeken</msg>
+    <msg name="MSG_search_public_content" desc="Label on checkbox">Alleen openbare inhoud doorzoeken</msg>
+    <msg name="MSG_search_public_secure_content" desc="Label on checkbox">Openbare en beveiligde inhoud doorzoeken (aanmelden vereist)</msg>
+    <msg name="MSG_search_results" desc="Results of search">Zoekresultaten</msg>
+    <msg name="MSG_searchtime">Zoekbewerking duurde <ph name="NUMBER">&lt;b>%1$.2f&lt;/b></ph> seconden.</msg>
+    <msg name="MSG_security" desc="Label for the selector of the security mode">Beveiliging</msg>
+    <msg name="MSG_sep_bar_adv_text">Geavanceerd zoeken</msg>
+    <msg name="MSG_sep_bar_error_text" desc="Title for Error Page">Fout</msg>
+    <msg name="MSG_sep_bar_std_text" desc="Tab label for doing a search">Zoeken</msg>
+    <msg name="MSG_server_error_des_text">Antwoordcode server in details controleren.</msg>
+    <msg name="MSG_server_error_msg_text">Er is een serverfout opgetreden.</msg>
+    <msg name="MSG_server_error_title" desc="Heading on error page">Serverfout</msg>
+    <msg name="MSG_sign_out">Afmelden</msg>
+    <msg name="MSG_sort" desc="Label for the selector of 'Sort by Date/Relevance'">Sorteren</msg>
+    <msg name="MSG_sort_by_date">Sorteer op datum</msg>
+    <msg name="MSG_sort_by_relevance">Sorteer op relevantie</msg>
+    <msg name="MSG_spell_suggest" desc="Spelling suggestion">Bedoelde u:</msg>
+    <msg name="MSG_suggest_help">Suggestie:</msg>
+    <msg name="MSG_sv" desc="Language">Zweeds</msg>
+    <msg name="MSG_swr_num_results_found">Er zijn ongeveer <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> resultaten voor <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_swr_page_title">Zoeken in resultaten</msg>
+    <msg name="MSG_swr_search_anchor_text">Zoeken in resultaten</msg>
+    <msg name="MSG_swr_search_within_these_results">Gebruik het onderstaande zoekvak om binnen deze resultaten te zoeken.</msg>
+    <msg name="MSG_synonym_text" desc="Synonym suggestion">U kunt ook het volgende proberen:</msg>
+    <msg name="MSG_the_word_language">Taal</msg>
+    <msg name="MSG_unknown_xml" desc="Error message">Onbekend XML-resultaattype.</msg>
+    <msg name="MSG_video_tab" desc="Label for the tab on the homepage or search results page that leads to Video.  Should match http://google.com">Video</msg>
+    <msg name="MSG_view_all_data">Alle gegevens weergeven</msg>
+    <msg name="MSG_view_xml" desc="'View page source' is a browser action">Paginabron weergeven om het XML-defect te bekijken.</msg>
+    <msg name="MSG_web_tab" desc="Label for the tab on the homepage or search results page that leads to web search.  Should match http://google.com">Het Internet</msg>
+    <msg name="MSG_without_words" desc="Advanced Search: See http://www.google.com/advanced_search "><ph name="START_BOLD">&lt;b></ph>zonder<ph name="END_BOLD">&lt;/b></ph> de woorden</msg>
+    <msg name="MSG_zh_CN" desc="Language">Chinees (Vereenvoudigd)</msg>
+    <msg name="MSG_zh_TW" desc="Language">Chinees (Traditioneel)</msg>
+  </messages>
+</localizationbundle>

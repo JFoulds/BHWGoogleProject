@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="ja">
+  <localizationbundle locale="ja">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">SSH を介したメンテナンス アクセスを無効にする場合は、
+次に表示される質問の回答を正しく入力してください。回答が正しければ、
+SSH ポートは無効に設定されます。</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">SSH を介したメンテナンス アクセスを有効にする場合は、
+次に表示される質問の回答を正しく入力してください。回答が正しければ、
+SSH ポートは有効に設定されます。</msg>
+    <msg name="ABOUT_TO_HALT" desc="">アプライアンスを停止する場合は、下に表示される質問の回答を正しく入力してください。回答が正しければ、シャットダウン プロセスが続行されます。</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">アプライアンスの検索サービスを再起動する場合は、下に表示される質問の回答を正しく入力してください。回答が正しければ、再起動プロセスが続行されます。</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">アプライアンスの自動消去を実行する場合は、
+下に表示される質問の回答について、
+Google カスタマー サポートまでお問い合わせください。この操作をやり直す
+ことはできません。自動消去後、コンピュータ上のデータは
+すべて削除されます。</msg>
+    <msg name="ACCEPT" desc="">[同意して続行] をクリックし、ステップ 1 に進む</msg>
+    <msg name="ACCOUNT_TYPE" desc="">アカウントの種類</msg>
+    <msg name="ADMIN" desc="">管理者</msg>
+    <msg name="ADMINISTRATOR" desc="">管理者</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc=""><ph name="START_BOLD">&lt;b></ph>管理者<ph name="END_BOLD">&lt;/b></ph> アカウントは、検索アプライアンスの管理アプリケーションである Admin Console と、ソフトウェア アップデートのインストールに使用するバージョン マネージャへのアクセスに使用します。</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">ログイン名とパスワードは大文字と小文字が区別されます。</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">このアカウントのパスワードを作成します。Admin Console やバージョン マネージャへのログイン時に参照できるよう、パスワードを書き留めておくことをお勧めします。</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">メール アドレスは、検索アプライアンスで通知や警告を送信する際や、  パスワードを忘れた場合に使用されます。手順 2/5 の SMTP メール サーバーの設定は、検索アプライアンスでメールを送信できるようにするためにも必要です。</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">管理者パスワードが一致しません</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">管理者パスワードを入力してください</msg>
+    <msg name="ADMIN_SETTINGS" desc="">"管理者" アカウント</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">重要: 検索アプライアンスでライセンス キーを有効にするには、有効な NTP サーバーが必要です。</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">IP アドレスとゲートウェイは同じネットワーク上にある必要があります</msg>
+    <msg name="ANGUILLA" desc="">アンギラ</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">アンティグアバブーダ</msg>
+    <msg name="ARGENTINA" desc="">アルゼンチン</msg>
+    <msg name="ARUBA" desc="">アルバ</msg>
+    <msg name="AUSTRALIA" desc="">オーストラリア</msg>
+    <msg name="AUSTRIA" desc="">オーストリア</msg>
+    <msg name="AUTONEGOTIATION" desc="">ロード バランサ オートネゴシエーション</msg>
+    <msg name="BACK" desc="">&lt;&lt; 戻る</msg>
+    <msg name="BANGLADESH" desc="">バングラディッシュ</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">基本的なネットワーク設定</msg>
+    <msg name="BELGIUM" desc="">ベルギー</msg>
+    <msg name="BERMUDA" desc="">バミューダ</msg>
+    <msg name="BRAZIL" desc="">ブラジル</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">ヴァージン諸島（イギリス領）</msg>
+    <msg name="BULGARIA" desc="">ブルガリア</msg>
+    <msg name="CANADA" desc="">カナダ</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">ケイマン諸島</msg>
+    <msg name="CHALLENGE" desc="">質問</msg>
+    <msg name="CHANGE_PASSWORD" desc="">パスワード</msg>
+    <msg name="CHILE" desc="">チリ</msg>
+    <msg name="CHINA" desc="">中国</msg>
+    <msg name="COLOMBIA" desc="">コロンビア</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Syslog サーバーを設定</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">"管理者" アカウントを設定</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">これで、
+アプライアンスの設定が完了しました。警告メッセージやエラーが表示されていない場合は、ノート コンピュータを外して、すぐにアプライアンスを使用できます。管理業務には Admin Console アプリケーションをお使いください。</msg>
+    <msg name="CONTINUE" desc="">続行 &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">コスタリカ</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>ようこそ! <ph name="END_BOLD">&lt;/b></ph> ネットワーク インストールを続行するには、まず最初にライセンス規約に同意していただく必要があります。 リストから国を選択して、[続行] をクリックしてください:</msg>
+    <msg name="CRAWL_IP" desc="">クロール IP</msg>
+    <msg name="CZECH_REPUBLIC" desc="">チェコ</msg>
+    <msg name="DENMARK" desc="">デンマーク</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">診断メッセージ</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">ネットワーク診断で、前のステップの設定に
+問題が見つかりました。このまま続行することも、前のステップに戻って設定を変更することもできます。</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">DNS サフィックス (DNS 検索パス)</msg>
+    <msg name="DNS_SERVERS" desc="">DNS サーバー</msg>
+    <msg name="DNS_SETTINGS" desc="">DNS とメールの設定</msg>
+    <msg name="ECUADOR" desc="">エクアドル</msg>
+    <msg name="EGYPT" desc="">エジプト</msg>
+    <msg name="EL_SALVADOR" desc="">エルサルバドル</msg>
+    <msg name="EMAIL_ADDRESS" desc="">メールアドレス</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">config ファイルの読み込み中にエラーが発生しました。やり直してください。</msg>
+    <msg name="EXAMPLE" desc="">サンプル</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">engineering.mycompany.com, corp.mycompany.com, company.com</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">フィンランド</msg>
+    <msg name="FRANCE" desc="">フランス</msg>
+    <msg name="FRENCH_GUIANA" desc="">フランス領ギニア</msg>
+    <msg name="GATEWAY" desc="">デフォルトのゲートウェイ</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">ゲートウェイには、他で使用されていない IP を指定してください</msg>
+    <msg name="GERMANY" desc="">ドイツ</msg>
+    <msg name="GREECE" desc="">ギリシャ</msg>
+    <msg name="GUADELOUPE" desc="">グアドループ (フランス領)</msg>
+    <msg name="GUATEMALA" desc="">グァテマラ</msg>
+    <msg name="HONDURAS" desc="">ホンジュラス</msg>
+    <msg name="HONG_KONG" desc="">香港</msg>
+    <msg name="HOSTNAME" desc="">ホスト名</msg>
+    <msg name="HUNGARY" desc="">ハンガリー</msg>
+    <msg name="ICELAND" desc="">アイスランド</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">指定されたオートネゴシエーションは無効です</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">クロール IP アドレスが無効または予約済みです</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">指定された DNS サーバーは無効です</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">指定されたゲートウェイは無効です</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">IP アドレスが無効または予約済みです</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">指定されたネットマスクは無効です</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">指定されたネットワーク速度は無効です</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">指定された NTP サーバーは無効です</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">指定された送信メールの
+送信元アドレスは無効です</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">指定された検索パスは無効です</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">指定された SMTP サーバーは無効です</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">スイッチ IP アドレスが無効または予約済みです</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">指定された Syslog サーバーは無効です</msg>
+    <msg name="INDIA" desc="">インド</msg>
+    <msg name="INDONESIA" desc="">インドネシア</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">管理者メール アドレスが無効です</msg>
+    <msg name="IP_ADDRESS" desc="">IP アドレス</msg>
+    <msg name="IRELAND" desc="">アイルランド</msg>
+    <msg name="ISRAEL" desc="">イスラエル</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">は、有効なタイムゾーンではありません。</msg>
+    <msg name="ITALY" desc="">イタリア</msg>
+    <msg name="JAPAN" desc="">日本</msg>
+    <msg name="LICENSE_ERROR" desc="">ライセンスについて Google サポートにお問い合わせください。</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">規約をすべてお読みいただいた上で、同意される場合は [[同意して続行] をクリックし、ステップ 1 に進む] をクリックしてください。次の手順に進みます。</msg>
+    <msg name="LICENSE_WELCOME" desc="">エンド ユーザー ライセンス規約</msg>
+    <msg name="LUXEMBOURG" desc="">ルクセンブルグ</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">メール サーバーの設定</msg>
+    <msg name="MALAYSIA" desc="">マレーシア</msg>
+    <msg name="MALTA" desc="">マルタ</msg>
+    <msg name="MARTINIQUE" desc="">マルティニーク (フランス領)</msg>
+    <msg name="MEXICO" desc="">メキシコ</msg>
+    <msg name="MODIFY" desc="">手順 1 へ戻る</msg>
+    <msg name="MONACO" desc="">モナコ</msg>
+    <msg name="MONTSERRAT" desc="">モントセラト島</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">管理者パスワードは 2 回入力してください</msg>
+    <msg name="NETHERLANDS" desc="">オランダ</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">オランダ領アンティル</msg>
+    <msg name="NETMASK" desc="">サブネット マスク</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">ネットワーク インストール</msg>
+    <msg name="NETWORK_SPEED" desc="">ネットワーク速度</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">オートネゴシエーション</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">10 Mbps (半二重通信)</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">10 Mbps (全二重通信)</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">100 Mbps (半二重通信)</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">100 Mbps (全二重通信)</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1,000 Mbps (二重設定は常にこの速度で判別されます)</msg>
+    <msg name="NEW_PASSWORD" desc="">新しいパスワード</msg>
+    <msg name="NEW_ZEALAND" desc="">ニュージーランド</msg>
+    <msg name="NICARAGUA" desc="">ニカラグア</msg>
+    <msg name="NORWAY" desc="">ノルウェー</msg>
+    <msg name="NOT_A_VALID_URL" desc="">有効な URL ではありません</msg>
+    <msg name="NTP_SERVERS" desc="">NTP サーバー</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">DNS 設定</msg>
+    <msg name="OPEN_LICENSE" desc="">新しいウィンドウでライセンスを開く</msg>
+    <msg name="OPTIONAL" desc="">オプション</msg>
+    <msg name="OTHER" desc="">その他</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">送信メールの送信元アドレス</msg>
+    <msg name="PANAMA" desc="">パナマ</msg>
+    <msg name="PARAGUAY" desc="">パラグアイ</msg>
+    <msg name="PERU" desc="">ペルー</msg>
+    <msg name="PHILIPPINES" desc="">フィリピン</msg>
+    <msg name="POLAND" desc="">ポーランド</msg>
+    <msg name="PORTUGAL" desc="">ポルトガル</msg>
+    <msg name="PUERTO_RICO" desc="">プエルトリコ</msg>
+    <msg name="REDIRECT" desc="">ネットワークを確認し、メイン ページにリダイレクトします。1 分経ってもリダイレクトされない場合は、PLACEHOLDER_LINKここPLACEHOLDER_ENDLINKをクリックしてください。</msg>
+    <msg name="REENTER" desc="">再入力</msg>
+    <msg name="REJECT" desc="">同意しない</msg>
+    <msg name="RESPONSE" desc="">応答</msg>
+    <msg name="RUSSIA" desc="">ロシア</msg>
+    <msg name="SAVE" desc="">保存</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">複数のエントリはカンマで区切ります。</msg>
+    <msg name="SINGAPORE" desc="">シンガポール</msg>
+    <msg name="SLOVAKIA" desc="">スロバキア</msg>
+    <msg name="SLOVENIA" desc="">スロベニア</msg>
+    <msg name="SMTP_SERVER" desc="">SMTP サーバー</msg>
+    <msg name="SOUTH_AFRICA" desc="">南アフリカ</msg>
+    <msg name="SOUTH_KOREA" desc="">韓国</msg>
+    <msg name="SPAIN" desc="">スペイン</msg>
+    <msg name="SRI_LANKA" desc="">スリランカ</msg>
+    <msg name="STEP_1_OF_5" desc="">ステップ 1/5</msg>
+    <msg name="STEP_2_OF_5" desc="">ステップ 2/5</msg>
+    <msg name="STEP_3_OF_5" desc="">ステップ 3/5</msg>
+    <msg name="STEP_4_OF_5" desc="">ステップ 4/5</msg>
+    <msg name="STEP_5_OF_5" desc="">ステップ 5/5</msg>
+    <msg name="SWEDEN" desc="">スウェーデン</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">スイッチ IP には、他で使用されていない IP を指定してください</msg>
+    <msg name="SWITCH_IP" desc="">スイッチ IP</msg>
+    <msg name="SWITZERLAND" desc="">スイス連邦</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Syslog サーバー</msg>
+    <msg name="TAIWAN" desc="">台湾</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">ウェブ サーバーおよび URL の接続とアクセス許可をテストしています</msg>
+    <msg name="TESTURLS" desc="">URL をテスト</msg>
+    <msg name="TESTURLS_BULLET1" desc="">検索アプライアンスでサイトにアクセスできるかどうかをテストするため、1 つまたは複数の URL を 1 行に 1 つずつ入力します。各 URL の末尾にはスラッシュを付けます。次はその一例です。</msg>
+    <msg name="TESTURLS_BULLET2" desc="">アクセス制御リスト (ACL) やネットワークのルート設定で、装置へのアクセスがブロックされていないことを確認します。「技術情報の付録」セクションの「トラブルシューティング」を参照してください。</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://corp.mycompany.com/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://corp.mycompany.com/products/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">ウェブ サーバーへのアクセスをチェック</msg>
+    <msg name="THAILAND" desc="">タイ</msg>
+    <msg name="TIME_SETTINGS" desc="">時刻設定</msg>
+    <msg name="TURKEY" desc="">トルコ</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">タークス諸島及びカイコス諸島</msg>
+    <msg name="UK" desc="">イギリス</msg>
+    <msg name="UKRAINE" desc="">ウクライナ</msg>
+    <msg name="UNITED_STATES" desc="">米国</msg>
+    <msg name="URUGUAY" desc="">ウルグアイ</msg>
+    <msg name="USERNAME" desc="">ユーザー名</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">ヴァージン諸島（アメリカ領）</msg>
+    <msg name="VENEZUELA" desc="">ベネズエラ</msg>
+    <msg name="VIETNAM" desc="">ベトナム</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">DHCP を使用してネットワーク設定を
+自動検出した結果、取得したデフォルトの値は
+次のとおりです。必要に応じて
+値を変更してください。</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">「管理者」アカウントは Admin Console へのアクセスに使用します。
+このアカウントで使用するパスワードとメール アドレスを次に入力してください。</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">すべてのデータ送信に使用する IP アドレスを指定します。たとえば、これを ACL やファイアウォールの定義として使用すると、
+アプライアンスでイントラネット内をクロールできるようになります。</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">アプライアンスが属するネットワークのデフォルトのゲートウェイを指定します。</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">不明なホスト名の解決パスを指定します。UNIX の場合は resolv.conf ファイルの「search」エントリ、Windows の場合は「DNS Suffix」エントリと同じ値を使用します。</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">1 つまたは複数の DNS サーバーを IP アドレスで指定します。 DNS サーバーでは、「www.google.co.jp」などのホスト名を IP アドレスに変換します。  問題が発生した場合に備えて、少なくとも 2 つの DNS サーバーを指定することをお勧めします。</msg>
+    <msg name="WHATIS_NETMASK" desc="">Google 検索アプライアンスが所属するネットワークのサブネット マスクを指定します。</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">アプライアンスでは、接続されているスイッチやルーターに応じてネットワーク速度と二重設定がオートネゴシエーションされます。必要な場合は、特定の回線速度と二重設定を常に使用するよう選択します。</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">正確な時刻を維持するため、最大 3 つのネットワーク タイム プロトコル (NTP) サーバーを指定します。NTP バージョン 3 が必要です。NTP サーバーがネットワーク上にない場合は、公開サーバーを使用できます。NTP サーバーには、第 2 階層以上の、使用前の通知が不要なサーバーを使用してください。</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">メール アドレスを指定します。検索アプライアンスで送信するメッセージの送信元は、このアドレスになります。</msg>
+    <msg name="WHATIS_SENDER" desc="">アプライアンスで通知や警告の送信に使用する送信者名を指定します。デフォルトの値は「nobody@localhost」です。</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">アプライアンスでは、接続されているスイッチやルーターに応じてネットワーク速度と二重設定がオートネゴシエーションされます。必要な場合は、チェックボックスをオンにして、アプライアンスで 100 Mbs の回線速度と完全二重通信を使用するよう指定し、負荷を分散することもできます。</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">検索アプライアンスに静的 IP アドレスを割り当てます。
+会社の DNS データベースには、「googlebox.mycompany.com」などのわかりやすい名前と、逆引きの DNS エントリも入力してください。</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">パスワードを忘れた場合などの通知や警告の送信に使用する、アプライアンスの SMTP メール サーバーを指定します。</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">serveriron の IP アドレスを指定します。</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">SYSLOG サーバーを指定して、
+外部システムのイベントやログを取得することができます。</msg>
+    <msg name="WHATIS_TESTURLS" desc="">既存のファイアウォールやセキュリティ設定によって、アプライアンスで検索対象のウェブ サーバーにアクセスできない場合があります。ウェブ サーバーにアクセスできるかどうかをテストするには、下のテキスト ボックスに完全な URL を入力し、[続行] をクリックします。アクセスできない URL がある場合は、警告メッセージが表示されます。</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">ログとホスト負荷のスケジュールに使用するタイムゾーンを指定します。</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">アプライアンスを再起動しています。使用できるようになるまで、約 2 分間お待ちください。</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">アプライアンスですべてのデータを削除しています。60 分待ってから電源を切ってください。</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">アプライアンスでは、今後 SSH を介したメンテナンス アクセスが許可されません。設定の変更が有効になるまで、約 30 秒お待ちください。</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">アプライアンスでは、今後 SSH を介したメンテナンス アクセスが許可されます。設定の変更が有効になるまで、約 30 秒お待ちください。</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">アプライアンスをシャットダウンしています。2 分待ってから電源を切ってください。</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">ローカル タイム ゾーン</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">変更が
+保存されていません。
+保存するには、ブラウザの [戻る] ボタンをクリックして前のページに戻り、
+[保存] ボタンをクリックしてください。</msg>
+  </localizationbundle>
+</localizationbundle>

@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="nl">
+  <localizationbundle locale="nl">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">Voer het juiste ANTWOORD in voor de onderstaande VRAAG als u onderhoudstoegang via SSH wilt uitschakelen. De SSH-poort wordt dan uitgeschakeld.</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">Voer het juiste ANTWOORD in voor de onderstaande VRAAG als u onderhoudstoegang via SSH wilt inschakelen. De SSH-poort wordt dan ingeschakeld.</msg>
+    <msg name="ABOUT_TO_HALT" desc="">Voer het juiste ANTWOORD in voor de onderstaande VRAAG als u het apparaat echt wilt stopzetten. Het apparaat zet dan de procedure voor uitschakelen in werking.</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">Voer het juiste ANTWOORD op de onderstaande VRAAG in als u de zoekservices op het apparaat echt opnieuw wilt opstarten. Het apparaat zet dan de procedure voor opnieuw opstarten in werking.</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">Als u het apparaat echt zichzelf wilt laten vernietigen, neemt u contact op met Google Klantenondersteuning en vraagt u om het juiste ANTWOORD op de onderstaande VRAAG. Deze stap kan niet ongedaan gemaakt worden. Zodra het vernietigen is begonnen, worden alle gegevens van de computer verwijderd.</msg>
+    <msg name="ACCEPT" desc="">Accepteren en doorgaan met stap 1</msg>
+    <msg name="ACCOUNT_TYPE" desc="">Accounttype</msg>
+    <msg name="ADMIN" desc="">beheerder</msg>
+    <msg name="ADMINISTRATOR" desc="">Beheerder</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc="">De <ph name="START_BOLD">&lt;b></ph>beheerders<ph name="END_BOLD">&lt;/b></ph>account wordt gebruikt om de Beheerdersconsole te openen. Hiermee kunt u de zoekmachine en de Versiemanager installeren die worden gebruikt voor de installatie van software-updates.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">De aanmeldgegevens en het wachtwoord zijn hoofdlettergevoelig.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">Maak een wachtwoord voor deze account. U kunt het wachtwoord het beste opschrijven zodat u dit kunt raadplegen tijdens de aanmelding bij de Beheerdersconsole (of Versiemanager).</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">Het e-mailadres wordt door de zoekmachine gebruikt voor het verzenden van meldingen. Het wordt ook gebruikt in geval van een vergeten wachtwoord. De SMTP-mailserver die is ingesteld in stap 2 van 5, wordt ook gebruikt door de zoekmachine voor het verzenden van e-mail.</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">De beheerderswachtwoorden komen niet overeen</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">Beheerderswachtwoord moet worden ingevoerd</msg>
+    <msg name="ADMIN_SETTINGS" desc="">Beheerdersaccount</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">Belangrijk:  de zoekmachine vereist een geldige NTP-server om de licentiesleutel te activeren.</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">Het IP-adres en de gateway moeten zich op hetzelfde netwerk bevinden</msg>
+    <msg name="ANGUILLA" desc="">Anguilla</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">Antigua en Barbuda</msg>
+    <msg name="ARGENTINA" desc="">Argentinië</msg>
+    <msg name="ARUBA" desc="">Aruba</msg>
+    <msg name="AUSTRALIA" desc="">Australië</msg>
+    <msg name="AUSTRIA" desc="">Oostenrijk</msg>
+    <msg name="AUTONEGOTIATION" desc="">Automatische onderhandeling load balancer</msg>
+    <msg name="BACK" desc="">&lt;&lt; Terug</msg>
+    <msg name="BANGLADESH" desc="">Bangladesh</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">Basis netwerkinstellingen</msg>
+    <msg name="BELGIUM" desc="">België</msg>
+    <msg name="BERMUDA" desc="">Bermuda</msg>
+    <msg name="BRAZIL" desc="">Brazilië</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">Britse Maagdeneilanden</msg>
+    <msg name="BULGARIA" desc="">Bulgarije</msg>
+    <msg name="CANADA" desc="">Canada</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">Caymaneilanden</msg>
+    <msg name="CHALLENGE" desc="">Vraag</msg>
+    <msg name="CHANGE_PASSWORD" desc="">Wachtwoord</msg>
+    <msg name="CHILE" desc="">Chili</msg>
+    <msg name="CHINA" desc="">China</msg>
+    <msg name="COLOMBIA" desc="">Colombia</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Syslog-server configureren</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">Beheerdersaccount configureren</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">Gefeliciteerd!
+U heeft het apparaat geconfigureerd. Als u geen waarschuwingen of foutmeldingen bent tegengekomen, kunt u nu uw laptop ontkoppelen en het apparaat gebruiken. De dagelijkse beheertaken kunt u met de Beheerdersconsole uitvoeren.</msg>
+    <msg name="CONTINUE" desc="">Doorgaan &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">Costa Rica</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>Welkom!<ph name="END_BOLD">&lt;/b></ph> Als u wilt doorgaan met de netwerkinstallatie, moet u eerst akkoord gaan met de licentieovereenkomst. Selecteer uw land in de lijst en klik op Doorgaan om door te gaan:</msg>
+    <msg name="CRAWL_IP" desc="">IP crawlen</msg>
+    <msg name="CZECH_REPUBLIC" desc="">Tsjechië</msg>
+    <msg name="DENMARK" desc="">Denemarken</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">Diagnostische berichten</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">Ons diagnostische programma voor het netwerk heeft een probleem gevonden met de instellingen uit de vorige stap. U kunt doorgaan, maar misschien kunt u beter teruggaan en uw instellingen wijzigen.</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">DNS-suffix (DNS-zoekpad)</msg>
+    <msg name="DNS_SERVERS" desc="">DNS-servers</msg>
+    <msg name="DNS_SETTINGS" desc="">DNS- en mailinstellingen</msg>
+    <msg name="ECUADOR" desc="">Ecuador</msg>
+    <msg name="EGYPT" desc="">Egypte</msg>
+    <msg name="EL_SALVADOR" desc="">El Salvador</msg>
+    <msg name="EMAIL_ADDRESS" desc="">E-mailadres</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">Fout bij laden van config-bestand. Probeer het opnieuw</msg>
+    <msg name="EXAMPLE" desc="">Voorbeeld</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">engineering.mijnbedrijf.nl, corp.mijnbedrijf.nl, bedrijf.nl</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">Finland</msg>
+    <msg name="FRANCE" desc="">Frankrijk</msg>
+    <msg name="FRENCH_GUIANA" desc="">Frans-Guyana</msg>
+    <msg name="GATEWAY" desc="">Standaardgateway</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Gateway mag niet botsen met een andere IP</msg>
+    <msg name="GERMANY" desc="">Duitsland</msg>
+    <msg name="GREECE" desc="">Griekenland</msg>
+    <msg name="GUADELOUPE" desc="">Guadeloupe (Frans)</msg>
+    <msg name="GUATEMALA" desc="">Guatemala</msg>
+    <msg name="HONDURAS" desc="">Honduras</msg>
+    <msg name="HONG_KONG" desc="">Hongkong</msg>
+    <msg name="HOSTNAME" desc="">Hostnaam</msg>
+    <msg name="HUNGARY" desc="">Hongarije</msg>
+    <msg name="ICELAND" desc="">IJsland</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">Ongeldige automatische onderhandeling opgegeven</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">Ongeldig of gereserveerd crawl-IP-adres</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">Ongeldige DNS-servers opgegeven</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">Ongeldige gateway opgegeven</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">Ongeldig of gereserveerd IP-adres</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">Ongeldige netmask opgegeven</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">Ongeldige netwerksnelheid opgegeven</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">Ongeldige NTP-servers opgegeven</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">Ongeldige verzender van uitgaande e-mail opgegeven</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">Opgegeven zoekpad is niet toegestaan</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">Ongeldige SMTP-server opgegeven</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">Ongeldig of gereserveerd switch-IP-adres</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">Ongeldige syslog-server opgegeven</msg>
+    <msg name="INDIA" desc="">India</msg>
+    <msg name="INDONESIA" desc="">Indonesië</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">Ongeldig e-mailadres voor beheerder</msg>
+    <msg name="IP_ADDRESS" desc="">IP-adres</msg>
+    <msg name="IRELAND" desc="">Ierland</msg>
+    <msg name="ISRAEL" desc="">Israël</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">is geen geldige tijdzone.</msg>
+    <msg name="ITALY" desc="">Italië</msg>
+    <msg name="JAPAN" desc="">Japan</msg>
+    <msg name="LICENSE_ERROR" desc="">Neem contact op met Google Ondersteuning voor uw licentie.</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">Lees de voorwaarden goed door en klik vervolgens op ‘Accepteren en doorgaan met stap 1’ om door te gaan.</msg>
+    <msg name="LICENSE_WELCOME" desc="">Licentieovereenkomst voor eindgebruikers</msg>
+    <msg name="LUXEMBOURG" desc="">Luxemburg</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">Mailserverinstellingen</msg>
+    <msg name="MALAYSIA" desc="">Maleisië</msg>
+    <msg name="MALTA" desc="">Malta</msg>
+    <msg name="MARTINIQUE" desc="">Martinique (Frans)</msg>
+    <msg name="MEXICO" desc="">Mexico</msg>
+    <msg name="MODIFY" desc="">Terug naar Stap 1</msg>
+    <msg name="MONACO" desc="">Monaco</msg>
+    <msg name="MONTSERRAT" desc="">Montserrat</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">Beheerderswachtwoord moet tweemaal worden ingevoerd</msg>
+    <msg name="NETHERLANDS" desc="">Nederland</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">Nederlandse Antillen</msg>
+    <msg name="NETMASK" desc="">Subnetmask</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">Netwerkinstallatie</msg>
+    <msg name="NETWORK_SPEED" desc="">Snelheid netwerk</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">automatisch onderhandelen</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">10 Mbps half duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">10 Mbps volledig duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">100 Mbps half duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">100 Mbps volledig duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1000 Mbps (duplex wordt bij deze snelheid altijd onderhandeld)</msg>
+    <msg name="NEW_PASSWORD" desc="">Nieuw wachtwoord</msg>
+    <msg name="NEW_ZEALAND" desc="">Nieuw-Zeeland</msg>
+    <msg name="NICARAGUA" desc="">Nicaragua</msg>
+    <msg name="NORWAY" desc="">Noorwegen</msg>
+    <msg name="NOT_A_VALID_URL" desc="">geen geldige URL</msg>
+    <msg name="NTP_SERVERS" desc="">NTP-servers</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">DNS-instellingen</msg>
+    <msg name="OPEN_LICENSE" desc="">Licentie openen in nieuw venster</msg>
+    <msg name="OPTIONAL" desc="">optioneel</msg>
+    <msg name="OTHER" desc="">Overig</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">Verzender van uitgaande e-mail</msg>
+    <msg name="PANAMA" desc="">Panama</msg>
+    <msg name="PARAGUAY" desc="">Paraguay</msg>
+    <msg name="PERU" desc="">Peru</msg>
+    <msg name="PHILIPPINES" desc="">Filippijnen</msg>
+    <msg name="POLAND" desc="">Polen</msg>
+    <msg name="PORTUGAL" desc="">Portugal</msg>
+    <msg name="PUERTO_RICO" desc="">Puerto Rico</msg>
+    <msg name="REDIRECT" desc="">Netwerk onderzoeken en verwijzen naar hoofdpagina. Klik PLACEHOLDER_LINK hier PLACEHOLDER_ENDLINK als het verwijzen niet binnen 1 minuut gelukt is.</msg>
+    <msg name="REENTER" desc="">Opnieuw invoeren</msg>
+    <msg name="REJECT" desc="">Niet accepteren</msg>
+    <msg name="RESPONSE" desc="">Antwoord</msg>
+    <msg name="RUSSIA" desc="">Rusland</msg>
+    <msg name="SAVE" desc="">Opslaan</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">Meerdere items moeten van elkaar worden gescheiden door een komma.</msg>
+    <msg name="SINGAPORE" desc="">Singapore</msg>
+    <msg name="SLOVAKIA" desc="">Slowakije</msg>
+    <msg name="SLOVENIA" desc="">Slovenië</msg>
+    <msg name="SMTP_SERVER" desc="">SMTP-server</msg>
+    <msg name="SOUTH_AFRICA" desc="">Zuid-Afrika</msg>
+    <msg name="SOUTH_KOREA" desc="">Zuid-Korea</msg>
+    <msg name="SPAIN" desc="">Spanje</msg>
+    <msg name="SRI_LANKA" desc="">Sri Lanka</msg>
+    <msg name="STEP_1_OF_5" desc="">Stap 1 van 5</msg>
+    <msg name="STEP_2_OF_5" desc="">Stap 2 van 5</msg>
+    <msg name="STEP_3_OF_5" desc="">Stap 3 van 5</msg>
+    <msg name="STEP_4_OF_5" desc="">Stap 4 van 5</msg>
+    <msg name="STEP_5_OF_5" desc="">Stap 5 van 5</msg>
+    <msg name="SWEDEN" desc="">Zweden</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">SwitchIP mag niet botsen met een andere IP</msg>
+    <msg name="SWITCH_IP" desc="">IP wijzigen</msg>
+    <msg name="SWITZERLAND" desc="">Zwitserland</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Syslog-servers</msg>
+    <msg name="TAIWAN" desc="">Taiwan</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">Connectiviteit en toegangsrechten van webservers en URL’s testen</msg>
+    <msg name="TESTURLS" desc="">Test-URL's</msg>
+    <msg name="TESTURLS_BULLET1" desc="">Geef een of meer URL's op (één per regel) om te testen of de zoekmachine deze sites kan openen. Voeg een schuine streep toe aan het einde van elke URL, bijvoorbeeld:</msg>
+    <msg name="TESTURLS_BULLET2" desc="">Zorg ervoor dat het apparaat niet wordt geblokkeerd door Toegangscontrolelijsten (ACL's) of verkeerde netwerkroutes. Raadpleeg &amp;ldquo;Problemen oplossen&amp;rdquo; in de Technische bijlage.</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://corp.mijnbedrijf.nl/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://corp.mijnbedrijf.nl/producten/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">Toegang tot webservers controleren</msg>
+    <msg name="THAILAND" desc="">Thailand</msg>
+    <msg name="TIME_SETTINGS" desc="">Tijdsinstellingen</msg>
+    <msg name="TURKEY" desc="">Turkije</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">Turks- en Caicoseilanden</msg>
+    <msg name="UK" desc="">Verenigd Koninkrijk</msg>
+    <msg name="UKRAINE" desc="">Oekraïne</msg>
+    <msg name="UNITED_STATES" desc="">Verenigde Staten</msg>
+    <msg name="URUGUAY" desc="">Uruguay</msg>
+    <msg name="USERNAME" desc="">Gebruikersnaam</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">Amerikaanse Maagdeneilanden</msg>
+    <msg name="VENEZUELA" desc="">Venezuela</msg>
+    <msg name="VIETNAM" desc="">Vietnam</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">We hebben geprobeerd uw netwerkinstellingen met behulp van DHCP automatisch te verkrijgen. Hieronder vindt u de standaardwaarden die we hebben gevonden. Bewerk de waarden waarvan u denkt dat ze gewijzigd moeten worden.</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">De beheerdersaccount geeft toegang tot de Beheerdersconsole.
+Voer hieronder een wachtwoord en e-mailadres voor deze account in.</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">Geef het IP-adres op voor al het uitgaande verkeer. U kunt dit bijvoorbeeld gebruiken om ACL- of firewall regels op te geven om uw apparaat in staat te stellen uw intranet te crawlen.</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">Geef de standaardgateway op van het netwerk waarop het apparaat zich bevindt.</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">Geef het resolutiepad voor niet-gekwalificeerde hostnamen op. Dit komt overeen met een vermelding 'zoeken' in een resolv.conf-bestand op UNIX-systemen of een vermelding 'DNS-suffix' op Windows-systemen.</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">Geef een of meer DNS-servers op aan de hand van hun IP-adres. DNS-servers helpen bij het vinden van hostnamen als 'www.google.nl' bij IP-adressen. Google raadt een minimum van twee DNS-servers aan voor redundantie.</msg>
+    <msg name="WHATIS_NETMASK" desc="">Geef het subnetmasker op van het netwerk waarop de Google Search Appliance zich bevindt.</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">Het apparaat onderhandelt automatisch met de aangesloten switch of router over de snelheid van het netwerk en de duplexinstellingen. Selecteer, indien nodig, de juiste vaste netwerksnelheid en duplexinstelling.</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">Geef maximaal drie NTP-servers (Network Time Protocol) op om de juiste tijd te handhaven. NTP-versie 3 is vereist. Als er geen NTP-server op uw netwerk aanwezig is, kunt u verbinding maken met een open-toegangsserver. Kies stratum 2-servers of hoger en vermijd servers die vóór gebruik notificatie vereisen.</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">Geef een e-mailadres op. Berichten die zijn verzonden door de zoekmachine, zullen dit adres als afzender hebben.</msg>
+    <msg name="WHATIS_SENDER" desc="">Geef de naam op van de auteur die het apparaat moet gebruiken bij het verzenden van meldingen of waarschuwingen. Een goede standaardwaarde is 'niemand@lokalehost'.</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">Het apparaat onderhandelt automatisch met de aangesloten switch of router over de snelheid van het netwerk en de duplexinstellingen. U kunt, indien nodig, ook op het selectievakje van uw keuze klikken, zodat het apparaat een lijnsnelheid van 100 Mbps en volledige duplexcommunicatie gebruikt voor load-balancing.</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">Ken een statisch IP-adres toe aan de zoekmachine.
+Geef ook een symbolische naam, zoals 'googlebox.mijnbedrijf.nl', en een omgekeerde DNS-vermelding op in de DNS-database van uw bedrijf.</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">Geef een SMTP-mailserver op die de toepassing kan gebruiken om meldingen (inclusief vergeten-wachtwoordmeldingen) naar u te verzenden.</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">Geef het IP-adres op voor de serveriron.</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">U kunt een syslog-server opgeven die systeemgebeurtenissen en logboeken op een externe computer vastlegt.</msg>
+    <msg name="WHATIS_TESTURLS" desc="">Soms heeft het apparaat als gevolg van reeds bestaande firewall- en beveiligingsinstellingen geen toegang tot webservers die u wilt doorzoeken. Geef in het onderstaande tekstvak de volledige URL’s op en klik op Doorgaan om te controleren of het apparaat uw webservers kan bereiken. Als een van de door u opgegeven URL’s niet bereikbaar is, krijgt u een waarschuwing.</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">Geef de tijdzone op die u wilt gebruiken voor logboeken en hostbelastingschema's.</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">Het apparaat wordt nu opnieuw opgestart. Even geduld; het apparaat is binnen ongeveer twee minuten gereed.</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">De toepassing is bezig alle gegevens te verwijderen. Wacht 60 minuten voordat u de toepassing afsluit.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">Het apparaat geeft nu geen toestemming voor onderhoudstoegang via SSH. Het kan 30 seconden duren voordat de wijzigingen in de configuratie van kracht worden.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">Het apparaat geeft nu toestemming voor onderhoudstoegang via SSH. Het kan 30 seconden duren voordat de wijzigingen in de configuratie van kracht worden.</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">De toepassing wordt nu beëindigd. Wacht twee minuten voordat u de toepassing afsluit.</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">Uw lokale tijdzone</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">U heeft uw wijzigingen niet opgeslagen. Druk op de knop ‘Vorige’ in uw browser om terug te gaan naar de vorige pagina en druk vervolgens op de knop ‘Opslaan’ om de wijzigingen op te slaan.</msg>
+  </localizationbundle>
+</localizationbundle>

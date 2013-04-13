@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="cs">
+  <messages>
+    <msg name="MSG_advanced_search" desc="Page title">Pokročilé vyhledávání</msg>
+    <msg name="MSG_advsearch_example" desc="Advanced Search: See http://www.google.com/advanced_search  example domains">např. google.com, .org</msg>
+    <msg name="MSG_advsearch_file_format" desc="Advanced Search: See http://www.google.com/advanced_search  label to select desired file formats">Formát souboru</msg>
+    <msg name="MSG_advsearch_return_files" desc="Advanced Search: Prefixed with &quot;Only&quot; or &quot;Don't&quot;">výsledky v daném formátu souborů</msg>
+    <msg name="MSG_alerts">Upozornění</msg>
+    <msg name="MSG_all_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>se <ph name="START_BOLD">&lt;b></ph>všemi<ph name="END_BOLD">&lt;/b></ph> slovy</msg>
+    <msg name="MSG_any_format" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any file format">libovolný formát</msg>
+    <msg name="MSG_any_language" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any language">v kterémkoli jazyce</msg>
+    <msg name="MSG_any_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>s <ph name="START_BOLD">&lt;b></ph>alespoň jedním<ph name="END_BOLD">&lt;/b></ph> ze slov</msg>
+    <msg name="MSG_anywhere_on_page" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Return results where my terms occur"'>kdekoli na stránce</msg>
+    <msg name="MSG_ar">arabsky</msg>
+    <msg name="MSG_cache" desc="Link to cached copy of document">Archiv</msg>
+    <msg name="MSG_cached_copy" desc="Followed by URL">Toto je archivovaná kopie stránky</msg>
+    <msg name="MSG_correct_credentials_help">Ujistěte se, že jsou vaše bezpečnostní ověřovací údaje správné.</msg>
+    <msg name="MSG_correct_spelling_help">Ujistěte se, že všechna slova jsou napsána správně.</msg>
+    <msg name="MSG_cs" desc="Language">česky</msg>
+    <msg name="MSG_da" desc="Language">dánsky</msg>
+    <msg name="MSG_de" desc="Language">německy</msg>
+    <msg name="MSG_different_keywords_help">Zkuste jiná klíčová slova.</msg>
+    <msg name="MSG_do_not" desc='Advanced search: See       http://www.google.com/advanced_search  dropdown, followed by "return results of the file format..."'>Nikoliv</msg>
+    <msg name="MSG_domains" desc="Advanced Search: See http://www.google.com/advanced_search - Domain is .com, .org, etc.">Doména</msg>
+    <msg name="MSG_egds_appliance_tab_label" desc="Label on search tab: Google Search Appliance">Zařízení</msg>
+    <msg name="MSG_el" desc="Language">řecky</msg>
+    <msg name="MSG_en" desc="Language">anglicky</msg>
+    <msg name="MSG_err_description">Popis:</msg>
+    <msg name="MSG_err_details">Podrobnosti:</msg>
+    <msg name="MSG_err_message">Zpráva:</msg>
+    <msg name="MSG_error" desc="Title for Error Page">Chyba</msg>
+    <msg name="MSG_es" desc="Language">španělsky</msg>
+    <msg name="MSG_et" desc="Language">estonsky</msg>
+    <msg name="MSG_exact_phrase" desc='Advanced Search: See http://www.google.com/advanced_search  prefixed by "Find results"'>s <ph name="START_BOLD">&lt;b></ph>přesnou frází<ph name="END_BOLD">&lt;/b></ph></msg>
+    <msg name="MSG_fi" desc="Language">finsky</msg>
+    <msg name="MSG_file_doc">Microsoft Word (.doc)</msg>
+    <msg name="MSG_file_pdf">Adobe Acrobat PDF (.pdf)</msg>
+    <msg name="MSG_file_ppt">Microsoft PowerPoint (.ppt)</msg>
+    <msg name="MSG_file_ps">Adobe Postscript (.ps)</msg>
+    <msg name="MSG_file_rtf">Rich Text Format (.rtf)</msg>
+    <msg name="MSG_file_xls">Microsoft Excel (.xls)</msg>
+    <msg name="MSG_filtered_results">Abychom zobrazovali ty nejrelevantnější výsledky, vynecháváme některé záznamy, které jsou velmi podobné <ph name="NUM">%1$d</ph> již zobrazeným. <ph name="BREAK">&lt;br/></ph> Přejete-li si, můžete <ph name="START_LINK">&lt;a href="%2$s"></ph> zopakovat vyhledávání se zobrazením vynechaných položek<ph name="END_LINK">&lt;/a></ph>.</msg>
+    <msg name="MSG_find_pages_linking_to" desc="Text to find pages that have a link to this page">Najít stránky, které odkazují na tuto stránku:</msg>
+    <msg name="MSG_find_results" desc='Advanced Search: See http://www.google.com/advanced_search - Followed by "with all of the words ..."'>Najít výsledky</msg>
+    <msg name="MSG_fr" desc="Language">francouzsky</msg>
+    <msg name="MSG_general_keywords_help">Zkuste obecnější klíčová slova.</msg>
+    <msg name="MSG_gmail_tab" desc="Label for the tab on the homepage or search results page that leads to Gmail.  Should match http://google.com">Gmail</msg>
+    <msg name="MSG_go_to_google_home">Jít na hlavní stránku Google</msg>
+    <msg name="MSG_groups_tab" desc="Label for the tab on the homepage or search results page that leads to Google Groups (usenet) search.  Should match http://google.com">Skupiny</msg>
+    <msg name="MSG_help" desc="Link that gives tips on how to search">Tipy pro hledání</msg>
+    <msg name="MSG_homepage_search_label">Prohledat:</msg>
+    <msg name="MSG_hu" desc="Language">maďarsky</msg>
+    <msg name="MSG_images_tab" desc="Label for the tab on the homepage or search results page that leads to image search.  Should match http://google.com">Obrázky</msg>
+    <msg name="MSG_in_title" desc='Advanced Search: See       http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>v názvu stránky</msg>
+    <msg name="MSG_in_url" desc='Advanced Search: See http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>v URL adrese stránky</msg>
+    <msg name="MSG_is" desc="Language">islandsky</msg>
+    <msg name="MSG_it" desc="Language">italsky</msg>
+    <msg name="MSG_iw" desc="Language">hebrejsky</msg>
+    <msg name="MSG_ja" desc="Language">japonsky</msg>
+    <msg name="MSG_ko" desc="Language">korejsky</msg>
+    <msg name="MSG_links" desc="Advanced Search: See http://www.google.com/advanced_search - This is the label on the form section to find pages with links to other pages">Odkazy</msg>
+    <msg name="MSG_local_tab" desc="Label for the tab on the homepage or search results page that leads to search on map.  Should match http://google.com">Místní</msg>
+    <msg name="MSG_lt" desc="Language">litevsky</msg>
+    <msg name="MSG_lv" desc="Language">lotyšsky</msg>
+    <msg name="MSG_maps_tab" desc="Label for the tab on the homepage or search results page that leads to Maps.  Should match http://google.com">Mapy</msg>
+    <msg name="MSG_more_from_host" desc="Label on a link to get more results from a host machine">Další výsledky z <ph name="HOSTNAME">%1$s</ph></msg>
+    <msg name="MSG_my_alerts">Má upozornění</msg>
+    <msg name="MSG_navbar_header">Stránka s výsledky</msg>
+    <msg name="MSG_navbar_next">&lt;b&gt;Další&lt;/b&gt;</msg>
+    <msg name="MSG_navbar_previous">&lt;b&gt;Předchozí&lt;/b&gt;</msg>
+    <msg name="MSG_news_tab" desc="Label for the tab on the homepage or search results page that leads to Google News search.  Should match http://google.com">Zprávy</msg>
+    <msg name="MSG_news_lite_version" desc="Link to get a text version of a document">Textová verze</msg>
+    <msg name="MSG_nl" desc="Language">holandsky</msg>
+    <msg name="MSG_no" desc="Language">norsky</msg>
+    <msg name="MSG_no_results">Na váš předmět vyhledávání - <ph name="SEARCH_TERM">&lt;b>%1$s&lt;/b></ph> - nebyl nalezen žádný odkaz.</msg>
+    <msg name="MSG_not_indexed">Neindexováno:</msg>
+    <msg name="MSG_noword_warning">Nebyly nalezeny žádné stránky obsahující <ph name="SEARCH_TERM">&lt;b>"%2$.*1$s"&lt;/b></ph>.</msg>
+    <msg name="MSG_occurrences" desc="See http://www.google.com/advanced_search - Section label for selecting if results occur anywhere or in title">Výskyt</msg>
+    <msg name="MSG_only" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown, followed by 'return results from the site'">Pouze</msg>
+    <msg name="MSG_page_specific_search">Vyhledávání týkající se konkrétní stránky</msg>
+    <msg name="MSG_pl" desc="Language">polsky</msg>
+    <msg name="MSG_powered_by_GSA" desc="Page footer">Přináší Vyhledávací zařízení Google</msg>
+    <msg name="MSG_powered_by_GSAVDE" desc="Page footer: a virtualized edition for software developers">Přináší Vyhledávací zařízení Google, edice Virtual Developer</msg>
+    <msg name="MSG_pt" desc="Language">portugalsky</msg>
+    <msg name="MSG_public_content" desc="Security radio button item.  Caption is 'Search:'">veřejný obsah</msg>
+    <msg name="MSG_public_secure_content" desc="Security radio button item.  Caption is 'Search:'">veřejný a zabezpečený obsah</msg>
+    <msg name="MSG_results" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown to specify how many search results to return.  Prefixed by 10, 20, etc.">výsledků hledání</msg>
+    <msg name="MSG_results_a_b_for_q">Výsledky <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> – <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> na dotaz <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_a_b_of_n_for_q">Výsledky <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> – <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> z asi <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> na dotaz <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_page">Stránka výsledků</msg>
+    <msg name="MSG_return_domains" desc="Advanced Search: See http://www.google.com/advanced_search   Prefixed by 'Only', followed by e.g. '.com'">zobrazit výsledky ze stránek nebo domény</msg>
+    <msg name="MSG_return_occurrences" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'anywhere in the page'">Zobrazit výsledky, kde se mé termíny vyskytují</msg>
+    <msg name="MSG_return_only_pages_in" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'any language'">Zobrazit stránky napsané</msg>
+    <msg name="MSG_ro" desc="Language">rumunsky</msg>
+    <msg name="MSG_ru" desc="Language">rusky</msg>
+    <msg name="MSG_search">Vyhledávání Google</msg>
+    <msg name="MSG_search_home" desc="Page title; home page for search">Domovská stránka vyhledávání</msg>
+    <msg name="MSG_search_public_content" desc="Label on checkbox">Prohledat pouze veřejný obsah</msg>
+    <msg name="MSG_search_public_secure_content" desc="Label on checkbox">Prohledat veřejný a zabezpečený obsah (vyžadováno přihlášení)</msg>
+    <msg name="MSG_search_results" desc="Results of search">Výsledky vyhledávání</msg>
+    <msg name="MSG_searchtime">Hledání trvalo <ph name="NUMBER">&lt;b>%1$.2f&lt;/b></ph> sekund.</msg>
+    <msg name="MSG_security" desc="Label for the selector of the security mode">Zabezpečení</msg>
+    <msg name="MSG_sep_bar_adv_text">Pokročilé vyhledávání</msg>
+    <msg name="MSG_sep_bar_error_text" desc="Title for Error Page">Chyba</msg>
+    <msg name="MSG_sep_bar_std_text" desc="Tab label for doing a search">Vyhledávání</msg>
+    <msg name="MSG_server_error_des_text">Zkontrolujte podrobně kód odezvy serveru.</msg>
+    <msg name="MSG_server_error_msg_text">Došlo k chybě serveru.</msg>
+    <msg name="MSG_server_error_title" desc="Heading on error page">Chyba serveru</msg>
+    <msg name="MSG_sign_out">Odhlásit se</msg>
+    <msg name="MSG_sort" desc="Label for the selector of 'Sort by Date/Relevance'">Seřadit</msg>
+    <msg name="MSG_sort_by_date">Řadit podle data</msg>
+    <msg name="MSG_sort_by_relevance">Řadit podle relevantnosti</msg>
+    <msg name="MSG_spell_suggest" desc="Spelling suggestion">Měli jste na mysli:</msg>
+    <msg name="MSG_suggest_help">Návrhy:</msg>
+    <msg name="MSG_sv" desc="Language">švédsky</msg>
+    <msg name="MSG_swr_num_results_found">Bylo nalezeno asi <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> výsledků na dotaz <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_swr_page_title">Hledat ve výsledcích</msg>
+    <msg name="MSG_swr_search_anchor_text">Hledat ve výsledcích</msg>
+    <msg name="MSG_swr_search_within_these_results">Chcete-li hledat v těchto výsledcích, použijte níže umístěné vyhledávací pole.</msg>
+    <msg name="MSG_synonym_text" desc="Synonym suggestion">Můžete také zkusit:</msg>
+    <msg name="MSG_the_word_language">Jazyk</msg>
+    <msg name="MSG_unknown_xml" desc="Error message">Neznámý typ výsledku XML.</msg>
+    <msg name="MSG_video_tab" desc="Label for the tab on the homepage or search results page that leads to Video.  Should match http://google.com">Video</msg>
+    <msg name="MSG_view_all_data">Zobrazit všechna data</msg>
+    <msg name="MSG_view_xml" desc="'View page source' is a browser action">Chcete-li si prohlédnout závadný kód XML, zobrazte si zdrojový kód stránky.</msg>
+    <msg name="MSG_web_tab" desc="Label for the tab on the homepage or search results page that leads to web search.  Should match http://google.com">Web</msg>
+    <msg name="MSG_without_words" desc="Advanced Search: See http://www.google.com/advanced_search "><ph name="START_BOLD">&lt;b></ph>neobsahující<ph name="END_BOLD">&lt;/b></ph> slova</msg>
+    <msg name="MSG_zh_CN" desc="Language">čínsky (zjednodušeně)</msg>
+    <msg name="MSG_zh_TW" desc="Language">čínsky (tradičně)</msg>
+  </messages>
+</localizationbundle>

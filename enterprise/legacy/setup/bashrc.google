@@ -1,0 +1,25 @@
+#!/bin/sh
+# 
+# Base setup script for Google production machines. It is sourced
+# automatically via /etc/profile
+#
+# $Id: //depot/branches/gsa_0806_release_branch/google3/enterprise/legacy/setup/bashrc.google#1 $
+# Last update: 4/2/02 by Bogdan
+
+# Minimal path setup for our binaries and scripts
+export PATH=$PATH:/root/google/bin:/root/google3/enterprise/legacy/setup
+
+# This is needed so Python can find sitecustomize.py module which will
+# prepare the full import path order.
+export PYTHONPATH=/root/google3/enterprise/legacy/setup
+
+# convenience aliases
+alias ll="ls -l"
+
+# special stuff for interactive shells
+if expr index "$-" i > /dev/null; then
+    # load content of /etc/clusters into variables
+    if [ -f /etc/clusters ]; then
+        eval `cat /etc/clusters | grep -v '^[	 ]*$' | sed -e 's/[	 ]/="/' -e 's/$/"/' -e 's/*/$/g'`
+    fi
+fi

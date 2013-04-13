@@ -1,0 +1,149 @@
+#!/bin/sh
+
+# Uses ssh to send a file from the current machine to all the other
+# google machines.  There must be a list of google-machine hostnames
+# (or better yet, IP addresses).
+# Updates are done in parallel, unless the -s option is passed.
+#    We get the machines from /etc/clusters.  This file format is
+# as follows: <nickname><whitespace><machine name|*nickname>.  We
+# let sh interpret this for us, making nicknames variables and
+# turning *s into $s.
+
+clustersfile=/etc/clusters         # default clusters file
+
+ulimit -c 0
+
+help() {
+   cat <<EOF
+FORMAT: $0 [-s|-q|-p<procs>|-b|-f<clusterfile>|-c<cluster>...|-m<host>...|-h] <absfile> ...
+   -s           Run on each machine sequentially.  Normal behavior is
+                to run each command in the background, 1 sec apart.
+   -a<delay>    Wrap the rsync in an alarm with the specified timeout.
+   -q           Do not print "Updating XXX" for each host.
+   -rq          Run rsync in quiet mode.
+   -p<procs>    Do not run more than <procs> processes at once.
+   -b           Barrier. Wait for children to finish before returning (default).
+   --nobarrier  No barrier.  Return immediately after spawning children.
+   -f<file>     Use this file instead of $clustersfile.  It must be in
+                the same format as $clustersfile.
+   -c<cluster>  Cluster of machines to run the command on.  Can be
+                specified more than once.
+   -m<machine>  A single machine -- or a list of machines in quotes -- to
+                distribute files to.  Can be specified more than once.
+   -u<user>     User to ssh as.
+   -sudo        Wrap rsync daemon in sudo (implies -uprodadmin).
+   -pswdok      It's OK if a password/passphrase is required for ssh.
+   -h           This help.
+
+Use $0 to distribute a file (using rsync) to many machines.
+For safety reasons, and due to ambiguities in rsync's arguments,
+you *must* specify all files as absolute files: "/home/file", not "file"
+
+Typical use is to specify one or more clusters (from $clustersfile),
+and some files.  You must always specify at least one -c or -m command.
+EOF
+}
+
+#'          # to make font-lock mode happy
+
+ssh="ssh"
+batchmode="-o BatchMode=yes"
+verbose="-v"
+sshargs="-x -P -q -c none"
+
+while [ true ]; do
+    case $1 in
+	-s|-sequential|--sequential) seq=1; shift;;
+	-q|-quiet|--quiet) quiet=1; shift;;
+        -rq|-rquiet|--rquiet) verbose=""; shift;;
+	-a*) alarmcmd="alarm `echo $1 | sed s/-a//`"; shift;;
+	-b|-barrier|--barrier) shift;;    # do nothing: this is the default
+        -nobarrier|--nobarrier) nobarrier=1; shift;;
+	-pswdok|--pswdok) batchmode="-o BatchMode=no"; shift;;  # before -p*!
+        -p*) procs="`echo $1 | sed s/-p//`"; shift;;
+	-f*) clustersfile=`echo $1 | sed s/-f//`; shift;;
+	-c*) clusters="$clusters `echo $1 | sed s/-c//`"; shift;;   # everything after the -c
+	-m*) machlist="$machlist `echo $1 | sed s/-m//`"; shift;;
+	-u*) user="`echo $1 | sed s/-u//`"; shift;;
+	-sudo) ssh="ssh_sudo.py"; user="prodadmin"; shift;;
+	-h|--help) help; exit 1;;
+	-*|/*) break;;                    # other flags passed to rsync
+	*) echo "ERROR: relative pathname used, or illegal option";
+	   echo "Type $0 --help for help";
+	   exit;;
+    esac
+done
+
+if [ -n "$user" ]; then
+  userprefix="$user@"
+fi
+
+if [ -n "$clusters" ]; then        # turn each cluster into a list of machines
+    eval `cat $clustersfile | grep -v '^[	 ]*$' | sed -e 's/[	 ]/="/' -e 's/$/"/' -e 's/*/$/g'`
+    for cluster in $clusters; do
+    	machlist="$machlist `eval echo \\$$cluster`" # reads from /etc/clusters
+    done
+fi
+
+if [ -z "$machlist" ]; then        # no machines to work on?
+    echo "ERROR: you need to use at least one -c or -m argument"
+    echo "Type $0 --help for help"
+    exit
+fi
+
+
+# collect self PGID
+pgid=`ps axo pid,pgid | awk -v mypid=$$ '$1==mypid { print $2; }'`
+
+# process the file patterns. For safety reasons, we /-terminate
+# patterns that point to directories. This is so we can enforce
+# dir-like behavior in rsync (vs file-like which is default)
+filepatterns=''
+for filepat in "$*"; do
+    [ -d $filepat ] 2>/dev/null && filepat="${filepat}/"
+    filepatterns="$filepatterns $filepat"
+done
+if [ -z "$filepatterns" ]; then 
+    echo "Nothing to do. Exiting."
+    exit 1
+fi
+
+for mach in $machlist; do
+    if [ -n "$seq" ]; then
+        [ -z "$quiet" ] && echo "Updating $mach"
+	$alarmcmd rsync -v -aH -R -e "$ssh $sshargs $batchmode" --delete $filepatterns $userprefix$mach:/
+        retv=$?
+        [ 0 -ne $retv ] && { status=$retv; echo "ERROR copying data to $mach"; }
+    else
+        if [ -n "$procs" ]; then
+            # make sure you are not running more that the specified
+            # num of ssh connections at once (count all immediate
+            # children in our own process group)
+            while [ true ]; do
+                crtnum=`ps axo pgid,args | awk -v mygpid=$pgid '$1==mygpid' | grep "ssh" | grep -v grep | wc -l`
+                if [ ${crtnum:-0} -lt $procs ]; then
+                    break
+                else
+                    sleep 5
+                fi
+            done
+        fi
+
+        [ -z "$quiet" ] && echo "Syncing '$filepatterns' to $mach"
+
+        # NOTE: in "parallel" mode, the return status of the remote
+        # commands is lost! This is because backgrounded commands only
+        # return status to "wait <pid>" and *only* if the command is
+        # still running when we "wait" (children are reaped by bash
+        # directly). The result is that the status can't be fetched
+        # reliably and, in "parallel" mode, it will *always* be 0.
+	$alarmcmd rsync $verbose -aH -R -e "$ssh $sshargs $batchmode" --delete $filepatterns $userprefix$mach:/ 2>&1 || echo "ERROR copying data to $mach" | sed -e "s/^/$mach: /g" &
+	if [ -z "$procs" ]; then
+            sleep 1           # to keep from having too many rsync's at once
+        fi
+    fi
+done
+
+if [ -z "$nobarrier" ]; then wait; status=$?; fi
+
+exit ${status:-0}

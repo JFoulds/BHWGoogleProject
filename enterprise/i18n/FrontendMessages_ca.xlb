@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="ca">
+  <messages>
+    <msg name="MSG_advanced_search" desc="Page title">Cerca avançada</msg>
+    <msg name="MSG_advsearch_example" desc="Advanced Search: See http://www.google.com/advanced_search  example domains">p. ex. google.com, .org</msg>
+    <msg name="MSG_advsearch_file_format" desc="Advanced Search: See http://www.google.com/advanced_search  label to select desired file formats">Format de fitxer</msg>
+    <msg name="MSG_advsearch_return_files" desc="Advanced Search: Prefixed with &quot;Only&quot; or &quot;Don't&quot;">mostra resultats del format de fitxer</msg>
+    <msg name="MSG_alerts">Avisos</msg>
+    <msg name="MSG_all_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>amb <ph name="START_BOLD">&lt;b></ph>totes<ph name="END_BOLD">&lt;/b></ph> les paraules</msg>
+    <msg name="MSG_any_format" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any file format">qualsevol format</msg>
+    <msg name="MSG_any_language" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any language">qualsevol idioma</msg>
+    <msg name="MSG_any_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>amb <ph name="START_BOLD">&lt;b></ph>qualsevol<ph name="END_BOLD">&lt;/b></ph> de les paraules</msg>
+    <msg name="MSG_anywhere_on_page" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Return results where my terms occur"'>a qualsevol lloc de la pàgina</msg>
+    <msg name="MSG_ar">Àrab</msg>
+    <msg name="MSG_cache" desc="Link to cached copy of document">Còpia en memòria</msg>
+    <msg name="MSG_cached_copy" desc="Followed by URL">Aquesta és la còpia emmagatzemada a la memòria cau de</msg>
+    <msg name="MSG_correct_credentials_help">Assegureu-vos que les credencials de seguretat són correctes.</msg>
+    <msg name="MSG_correct_spelling_help">Assegureu-vos que heu escrit correctament totes les paraules</msg>
+    <msg name="MSG_cs" desc="Language">Txec</msg>
+    <msg name="MSG_da" desc="Language">Danès</msg>
+    <msg name="MSG_de" desc="Language">Alemany</msg>
+    <msg name="MSG_different_keywords_help">Proveu altres paraules clau</msg>
+    <msg name="MSG_do_not" desc='Advanced search: See       http://www.google.com/advanced_search  dropdown, followed by "return results of the file format..."'>No mostris</msg>
+    <msg name="MSG_domains" desc="Advanced Search: See http://www.google.com/advanced_search - Domain is .com, .org, etc.">Domini</msg>
+    <msg name="MSG_egds_appliance_tab_label" desc="Label on search tab: Google Search Appliance">Aplicació</msg>
+    <msg name="MSG_el" desc="Language">Grec</msg>
+    <msg name="MSG_en" desc="Language">Anglès</msg>
+    <msg name="MSG_err_description">Descripció:</msg>
+    <msg name="MSG_err_details">Detalls:</msg>
+    <msg name="MSG_err_message">Missatge:</msg>
+    <msg name="MSG_error" desc="Title for Error Page">Error</msg>
+    <msg name="MSG_es" desc="Language">Espanyol</msg>
+    <msg name="MSG_et" desc="Language">Estonià</msg>
+    <msg name="MSG_exact_phrase" desc='Advanced Search: See http://www.google.com/advanced_search  prefixed by "Find results"'>amb la <ph name="START_BOLD">&lt;b></ph>frase exacta<ph name="END_BOLD">&lt;/b></ph></msg>
+    <msg name="MSG_fi" desc="Language">Finès</msg>
+    <msg name="MSG_file_doc">Microsoft Word (.doc)</msg>
+    <msg name="MSG_file_pdf">Adobe Acrobat PDF (.pdf)</msg>
+    <msg name="MSG_file_ppt">Microsoft Powerpoint (.ppt)</msg>
+    <msg name="MSG_file_ps">Adobe Postscript (.ps)</msg>
+    <msg name="MSG_file_rtf">Format de text enriquit (.rtf)</msg>
+    <msg name="MSG_file_xls">Microsoft Excel (.xls)</msg>
+    <msg name="MSG_filtered_results">Per tal de mostrar-vos els resultats més rellevants, hem omès algunes entrades molt semblants a les <ph name="NUM">%1$d</ph> ja mostrades.<ph name="BREAK">&lt;br/></ph>Si voleu, podeu <ph name="START_LINK">&lt;a href="%2$s"></ph> repetir la cerca incloent els resultats omesos<ph name="END_LINK">&lt;/a></ph>.</msg>
+    <msg name="MSG_find_pages_linking_to" desc="Text to find pages that have a link to this page">Cerca pàgines amb enllaços a la pàgina</msg>
+    <msg name="MSG_find_results" desc='Advanced Search: See http://www.google.com/advanced_search - Followed by "with all of the words ..."'>Cerca els resultats</msg>
+    <msg name="MSG_fr" desc="Language">Francès</msg>
+    <msg name="MSG_general_keywords_help">Proveu paraules clau més generals</msg>
+    <msg name="MSG_gmail_tab" desc="Label for the tab on the homepage or search results page that leads to Gmail.  Should match http://google.com">Gmail</msg>
+    <msg name="MSG_go_to_google_home">Vés a la pàgina inicial de Google</msg>
+    <msg name="MSG_groups_tab" desc="Label for the tab on the homepage or search results page that leads to Google Groups (usenet) search.  Should match http://google.com">Grups</msg>
+    <msg name="MSG_help" desc="Link that gives tips on how to search">Consells de cerca</msg>
+    <msg name="MSG_homepage_search_label">Cerca:</msg>
+    <msg name="MSG_hu" desc="Language">Hongarès</msg>
+    <msg name="MSG_images_tab" desc="Label for the tab on the homepage or search results page that leads to image search.  Should match http://google.com">Imatges</msg>
+    <msg name="MSG_in_title" desc='Advanced Search: See       http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>al títol de la pàgina</msg>
+    <msg name="MSG_in_url" desc='Advanced Search: See http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>a l'URL de la pàgina</msg>
+    <msg name="MSG_is" desc="Language">Islandès</msg>
+    <msg name="MSG_it" desc="Language">Italià</msg>
+    <msg name="MSG_iw" desc="Language">Hebreu</msg>
+    <msg name="MSG_ja" desc="Language">Japonès</msg>
+    <msg name="MSG_ko" desc="Language">Coreà</msg>
+    <msg name="MSG_links" desc="Advanced Search: See http://www.google.com/advanced_search - This is the label on the form section to find pages with links to other pages">Enllaços</msg>
+    <msg name="MSG_local_tab" desc="Label for the tab on the homepage or search results page that leads to search on map.  Should match http://google.com">Local</msg>
+    <msg name="MSG_lt" desc="Language">Lituà</msg>
+    <msg name="MSG_lv" desc="Language">Letó</msg>
+    <msg name="MSG_maps_tab" desc="Label for the tab on the homepage or search results page that leads to Maps.  Should match http://google.com">Mapes</msg>
+    <msg name="MSG_more_from_host" desc="Label on a link to get more results from a host machine">Més resultats des de <ph name="HOSTNAME">%1$s</ph></msg>
+    <msg name="MSG_my_alerts">Els meus avisos</msg>
+    <msg name="MSG_navbar_header">Pàgina de resultats</msg>
+    <msg name="MSG_navbar_next">&lt;b&gt;Següent&lt;/b&gt;</msg>
+    <msg name="MSG_navbar_previous">&lt;b&gt;Anterior&lt;/b&gt;</msg>
+    <msg name="MSG_news_tab" desc="Label for the tab on the homepage or search results page that leads to Google News search.  Should match http://google.com">Notícies</msg>
+    <msg name="MSG_news_lite_version" desc="Link to get a text version of a document">Versió de text</msg>
+    <msg name="MSG_nl" desc="Language">Neerlandès</msg>
+    <msg name="MSG_no" desc="Language">Noruec</msg>
+    <msg name="MSG_no_results">La cerca - <ph name="SEARCH_TERM">&lt;b>%1$s&lt;/b></ph> - no concorda amb cap document.</msg>
+    <msg name="MSG_not_indexed">No està indexat:</msg>
+    <msg name="MSG_noword_warning">No s'han trobat pàgines que continguin <ph name="SEARCH_TERM">&lt;b>"%2$.*1$s"&lt;/b></ph>.</msg>
+    <msg name="MSG_occurrences" desc="See http://www.google.com/advanced_search - Section label for selecting if results occur anywhere or in title">Aparicions</msg>
+    <msg name="MSG_only" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown, followed by 'return results from the site'">Mostra només</msg>
+    <msg name="MSG_page_specific_search">Cerca de pàgines concretes</msg>
+    <msg name="MSG_pl" desc="Language">Polonès</msg>
+    <msg name="MSG_powered_by_GSA" desc="Page footer">Funciona amb l’Aplicació de cerca de Google</msg>
+    <msg name="MSG_powered_by_GSAVDE" desc="Page footer: a virtualized edition for software developers">Funciona amb l’Aplicació de cerca de Google, Virtual Developer Edition</msg>
+    <msg name="MSG_pt" desc="Language">Portuguès</msg>
+    <msg name="MSG_public_content" desc="Security radio button item.  Caption is 'Search:'">contingut públic</msg>
+    <msg name="MSG_public_secure_content" desc="Security radio button item.  Caption is 'Search:'">contingut públic i segur</msg>
+    <msg name="MSG_results" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown to specify how many search results to return.  Prefixed by 10, 20, etc.">resultats</msg>
+    <msg name="MSG_results_a_b_for_q">Resultats <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> a <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> de <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_a_b_of_n_for_q">Resultats <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> a <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> d'aproximadament <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> per a <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_page">Pàgina de resultats</msg>
+    <msg name="MSG_return_domains" desc="Advanced Search: See http://www.google.com/advanced_search   Prefixed by 'Only', followed by e.g. '.com'">els resultats del lloc o domini</msg>
+    <msg name="MSG_return_occurrences" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'anywhere in the page'">Torna els resultats en què apareguin els meus termes</msg>
+    <msg name="MSG_return_only_pages_in" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'any language'">Mostra les pàgines escrites en</msg>
+    <msg name="MSG_ro" desc="Language">Romanès</msg>
+    <msg name="MSG_ru" desc="Language">Rus</msg>
+    <msg name="MSG_search">Cerca de Google</msg>
+    <msg name="MSG_search_home" desc="Page title; home page for search">Pàgina principal de cerca</msg>
+    <msg name="MSG_search_public_content" desc="Label on checkbox">Cerca només el contingut públic</msg>
+    <msg name="MSG_search_public_secure_content" desc="Label on checkbox">Cerca contingut públic i segur (cal iniciar la sessió)</msg>
+    <msg name="MSG_search_results" desc="Results of search">Resultats de la cerca</msg>
+    <msg name="MSG_searchtime">La cerca s'ha realitzat en <ph name="NUMBER">&lt;b>%1$.2f&lt;/b></ph> segons.</msg>
+    <msg name="MSG_security" desc="Label for the selector of the security mode">Seguretat</msg>
+    <msg name="MSG_sep_bar_adv_text">Cerca avançada</msg>
+    <msg name="MSG_sep_bar_error_text" desc="Title for Error Page">Error</msg>
+    <msg name="MSG_sep_bar_std_text" desc="Tab label for doing a search">Cerca</msg>
+    <msg name="MSG_server_error_des_text">Comproveu el codi de resposta del servidor en els detalls.</msg>
+    <msg name="MSG_server_error_msg_text">S’ha produït un error de servidor.</msg>
+    <msg name="MSG_server_error_title" desc="Heading on error page">Error del servidor</msg>
+    <msg name="MSG_sign_out">Surt</msg>
+    <msg name="MSG_sort" desc="Label for the selector of 'Sort by Date/Relevance'">Ordena</msg>
+    <msg name="MSG_sort_by_date">Ordena'ls per data</msg>
+    <msg name="MSG_sort_by_relevance">Ordena'ls per importància</msg>
+    <msg name="MSG_spell_suggest" desc="Spelling suggestion">Volíeu dir:</msg>
+    <msg name="MSG_suggest_help">Suggeriments:</msg>
+    <msg name="MSG_sv" desc="Language">Suec</msg>
+    <msg name="MSG_swr_num_results_found">Hi ha hagut <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> resultats aproximadament per a la consulta <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_swr_page_title">Cerca entre els resultats</msg>
+    <msg name="MSG_swr_search_anchor_text">Cerca entre els resultats</msg>
+    <msg name="MSG_swr_search_within_these_results">Utilitzeu el quadre de cerca que apareix a continuació per cercar entre els resultats.</msg>
+    <msg name="MSG_synonym_text" desc="Synonym suggestion">També podeu provar:</msg>
+    <msg name="MSG_the_word_language">Idioma</msg>
+    <msg name="MSG_unknown_xml" desc="Error message">Tipus de resultat XML desconegut.</msg>
+    <msg name="MSG_video_tab" desc="Label for the tab on the homepage or search results page that leads to Video.  Should match http://google.com">Vídeo</msg>
+    <msg name="MSG_view_all_data">Visualitza totes les dades</msg>
+    <msg name="MSG_view_xml" desc="'View page source' is a browser action">Mostra el codi font de la pàgina per veure l’XML que dóna error.</msg>
+    <msg name="MSG_web_tab" desc="Label for the tab on the homepage or search results page that leads to web search.  Should match http://google.com">Web</msg>
+    <msg name="MSG_without_words" desc="Advanced Search: See http://www.google.com/advanced_search "><ph name="START_BOLD">&lt;b></ph>sense<ph name="END_BOLD">&lt;/b></ph> les paraules</msg>
+    <msg name="MSG_zh_CN" desc="Language">Xinès (simplificat)</msg>
+    <msg name="MSG_zh_TW" desc="Language">Xinès (tradicional)</msg>
+  </messages>
+</localizationbundle>

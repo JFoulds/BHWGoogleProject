@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="ca">
+  <localizationbundle locale="ca">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">Si voleu inhabilitar l’accés al manteniment a través de SSH, introduïu la RESPOSTA correcta a la PREGUNTA que es planteja a continuació. A continuació s’inhabilitarà el port SSH.</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">Si voleu habilitar l’accés al manteniment a través de SSH, introduïu la RESPOSTA correcta a la PREGUNTA que es planteja a continuació. A continuació s’habilitarà el port SSH.</msg>
+    <msg name="ABOUT_TO_HALT" desc="">Introduïu la RESPOSTA correcta a la PREGUNTA que es planteja a continuació si voleu aturar l’aplicació. L’aplicació prosseguirà amb la seqüència de tancament.</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">Si esteu segur que voleu reiniciar els serveis de cerca en l’aplicació, introduïu la RESPOSTA correcta a la PREGUNTA que es planteja a continuació. L’aplicació prosseguirà amb la seqüència de reinici.</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">Si de veritat voleu autodestruir l’
+aplicació, poseu-vos en contacte amb el servei d’atenció al client de Google i demaneu la
+RESPOSTA correcta a la PREGUNTA que apareix a continuació. Recordeu que aquest pas
+no es pot desfer. Un cop comenci l’autodestrucció, totes les dades del
+dispositiu se suprimiran.</msg>
+    <msg name="ACCEPT" desc="">Accepta i continua al pas 1</msg>
+    <msg name="ACCOUNT_TYPE" desc="">Tipus de compte</msg>
+    <msg name="ADMIN" desc="">admin</msg>
+    <msg name="ADMINISTRATOR" desc="">Administrador</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc="">El compte d’<ph name="START_BOLD">&lt;b></ph>administrador<ph name="END_BOLD">&lt;/b></ph> s’utilitza per accedir a la Consola d’administració, una aplicació per administrar l’aplicació de cerca i el gestor de versions, que instal·la les actualitzacions del programari.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">La informació d’accés i la contrasenya distingeixen entre majúscules i minúscules.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">Creeu una contrasenya per a aquest compte.  Us suggerim que escriviu aquesta contrasenya per poder-la consultar quan accediu a la Consola d’administració (o al gestor de versions).</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">L’aplicació de cerca utilitza l’adreça de correu electrònic per enviar notificacions i avisos. També s’utilitza en cas que s’oblidi la contrasenya.  L’aplicació també necessita el servidor SMTP de correu electrònic configurat en el Pas 2 de 5 per poder enviar missatges de correu electrònic.</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">Les contrasenyes d’administrador no coincideixen</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">Heu d’introduir la contrasenya d’administrador</msg>
+    <msg name="ADMIN_SETTINGS" desc="">Compte “admin”</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">IMPORTANT:  l’aplicació de cerca requereix un servidor NTP vàlid
+per activar la clau de llicència.</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">L’adreça IP i la passarel·la han d’estar a la mateixa xarxa</msg>
+    <msg name="ANGUILLA" desc="">Anguilla</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">Antigua i Barbuda</msg>
+    <msg name="ARGENTINA" desc="">Argentina</msg>
+    <msg name="ARUBA" desc="">Aruba</msg>
+    <msg name="AUSTRALIA" desc="">Austràlia</msg>
+    <msg name="AUSTRIA" desc="">Àustria</msg>
+    <msg name="AUTONEGOTIATION" desc="">Autonegociació del balancejador de càrrega</msg>
+    <msg name="BACK" desc="">&lt;&lt; Enrere</msg>
+    <msg name="BANGLADESH" desc="">Bangladesh</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">Configuració bàsica de la xarxa</msg>
+    <msg name="BELGIUM" desc="">Bèlgica</msg>
+    <msg name="BERMUDA" desc="">Bermuda</msg>
+    <msg name="BRAZIL" desc="">Brasil</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">Illes Verges Britàniques</msg>
+    <msg name="BULGARIA" desc="">Bulgària</msg>
+    <msg name="CANADA" desc="">Canadà</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">Illes Caiman</msg>
+    <msg name="CHALLENGE" desc="">Repte</msg>
+    <msg name="CHANGE_PASSWORD" desc="">Contrasenya</msg>
+    <msg name="CHILE" desc="">Xile</msg>
+    <msg name="CHINA" desc="">Xina</msg>
+    <msg name="COLOMBIA" desc="">Colòmbia</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Configura el servidor Syslog</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">Configureu el compte d’administrador</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">Enhorabona.
+Heu configurat l’aplicació. Si no ha aparegut cap error ni advertència, ara podreu desconnectar l’ordinador portàtil i utilitzar l’aplicació.  Utilitzeu la Consola d’administració per a gestions diàries.</msg>
+    <msg name="CONTINUE" desc="">Continua &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">Costa Rica</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>Benvingut/da.<ph name="END_BOLD">&lt;/b></ph> Per continuar amb la instal·lació de xarxa, primer heu d’acceptar l’acord de llicència. Seleccioneu el país a la llista següent i, a continuació, feu clic a “Continua” per prosseguir:</msg>
+    <msg name="CRAWL_IP" desc="">Explora IP</msg>
+    <msg name="CZECH_REPUBLIC" desc="">República Txeca</msg>
+    <msg name="DENMARK" desc="">Dinamarca</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">Missatges de diagnòstic</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">El diagnòstic de la nostra xarxa ha detectat un problema amb la configuració del pas anterior. Malgrat que podeu continuar, potser voleu tornar enrere i modificar la configuració.</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">Sufix DNS (camí de cerca de DNS)</msg>
+    <msg name="DNS_SERVERS" desc="">Servidors DNS</msg>
+    <msg name="DNS_SETTINGS" desc="">Configuració de correu i DNS</msg>
+    <msg name="ECUADOR" desc="">Equador</msg>
+    <msg name="EGYPT" desc="">Egipte</msg>
+    <msg name="EL_SALVADOR" desc="">El Salvador</msg>
+    <msg name="EMAIL_ADDRESS" desc="">Adreça electrònica</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">S’ha produït un error en carregar el fitxer de configuració. Torneu a provar-ho</msg>
+    <msg name="EXAMPLE" desc="">Exemple</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">enginyeria.lamevaempresa.com, corp.lamevaempresa.com,
+ empresa.com</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">Finlàndia</msg>
+    <msg name="FRANCE" desc="">França</msg>
+    <msg name="FRENCH_GUIANA" desc="">Guaiana Francesa</msg>
+    <msg name="GATEWAY" desc="">Passarel·la predeterminada</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">La passarel·la no pot topar amb cap altra IP</msg>
+    <msg name="GERMANY" desc="">Alemanya</msg>
+    <msg name="GREECE" desc="">Grècia</msg>
+    <msg name="GUADELOUPE" desc="">Guadaloupe (Francesa)</msg>
+    <msg name="GUATEMALA" desc="">Guatemala</msg>
+    <msg name="HONDURAS" desc="">Hondures</msg>
+    <msg name="HONG_KONG" desc="">Hong Kong</msg>
+    <msg name="HOSTNAME" desc="">Nom d’amfitrió</msg>
+    <msg name="HUNGARY" desc="">Hongria</msg>
+    <msg name="ICELAND" desc="">Islàndia</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">S’ha especificat una autonegociació il·legal</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">Adreça IP d’exploració no vàlida o reservada</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">Heu especificat servidors DNS il·legals</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">Heu especificat una passarel·la il·legal</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">Adreça IP no vàlida o reservada</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">Heu especificat una màscara de xarxa il·legal</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">S’ha especificat una velocitat de xarxa il·legal</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">Heu especificat servidors NTP il·legals</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">S’ha especificat un remitent de correu electrònic de sortida il·legal</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">Heu especificat un camí de cerca il·legal</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">Heu especificat un servidor SMTP il·legal</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">Adreça IP de commutador no vàlida o reservada</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">Heu especificat un servidor Syslog il·legal</msg>
+    <msg name="INDIA" desc="">Índia</msg>
+    <msg name="INDONESIA" desc="">Indonèsia</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">Adreça de correu electrònic d’administrador no vàlida</msg>
+    <msg name="IP_ADDRESS" desc="">Adreça IP</msg>
+    <msg name="IRELAND" desc="">Irlanda</msg>
+    <msg name="ISRAEL" desc="">Israel</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">no és una zona horària vàlida.</msg>
+    <msg name="ITALY" desc="">Itàlia</msg>
+    <msg name="JAPAN" desc="">Japó</msg>
+    <msg name="LICENSE_ERROR" desc="">Poseu-vos en contacte amb el servei d’atenció al client de Google per a la llicència.</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">Llegiu detingudament aquests termes i feu clic a “Accepta i vés al Pas 1” per continuar.</msg>
+    <msg name="LICENSE_WELCOME" desc="">Acord de llicència de l’usuari final</msg>
+    <msg name="LUXEMBOURG" desc="">Luxemburg</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">Configuració del servidor de correu</msg>
+    <msg name="MALAYSIA" desc="">Malàisia</msg>
+    <msg name="MALTA" desc="">Malta</msg>
+    <msg name="MARTINIQUE" desc="">Martinica (Francesa)</msg>
+    <msg name="MEXICO" desc="">Mèxic</msg>
+    <msg name="MODIFY" desc="">Torna al Pas 1</msg>
+    <msg name="MONACO" desc="">Mònaco</msg>
+    <msg name="MONTSERRAT" desc="">Montserrat</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">Heu d’escriure la contrasenya d’administrador dos cops</msg>
+    <msg name="NETHERLANDS" desc="">Països Baixos</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">Antilles Holandeses</msg>
+    <msg name="NETMASK" desc="">Màscara de subxarxa:</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">Instal·lació de la xarxa</msg>
+    <msg name="NETWORK_SPEED" desc="">Velocitat de la xarxa</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">autonegocia</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">Semidúplex a 10 Mbps</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">Dúplex complet a 10 Mbps</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">Semidúplex a 100 Mbps</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">Dúplex complet a 100 Mbps</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1000 Mbps (el dúplex sempre es negocia a aquesta velocitat)</msg>
+    <msg name="NEW_PASSWORD" desc="">Contrasenya nova</msg>
+    <msg name="NEW_ZEALAND" desc="">Nova Zelanda</msg>
+    <msg name="NICARAGUA" desc="">Nicaragua</msg>
+    <msg name="NORWAY" desc="">Noruega</msg>
+    <msg name="NOT_A_VALID_URL" desc="">no és un URL vàlid</msg>
+    <msg name="NTP_SERVERS" desc="">Servidors NTP</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">Configuració de DNS</msg>
+    <msg name="OPEN_LICENSE" desc="">Obre la llicència en una finestra nova</msg>
+    <msg name="OPTIONAL" desc="">opcional</msg>
+    <msg name="OTHER" desc="">Altres</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">Remitent de correu electrònic de sortida</msg>
+    <msg name="PANAMA" desc="">Panamà</msg>
+    <msg name="PARAGUAY" desc="">Paraguai</msg>
+    <msg name="PERU" desc="">Perú</msg>
+    <msg name="PHILIPPINES" desc="">Filipines</msg>
+    <msg name="POLAND" desc="">Polònia</msg>
+    <msg name="PORTUGAL" desc="">Portugal</msg>
+    <msg name="PUERTO_RICO" desc="">Puerto Rico</msg>
+    <msg name="REDIRECT" desc="">S’està sondejant la xarxa i redirigint a la pàgina principal. Feu clic PLACEHOLDER_LINK aquí PLACEHOLDER_ENDLINK si no s’ha redirigit la pàgina en un minut.</msg>
+    <msg name="REENTER" desc="">Torneu a escriure-ho</msg>
+    <msg name="REJECT" desc="">No acceptis</msg>
+    <msg name="RESPONSE" desc="">Resposta</msg>
+    <msg name="RUSSIA" desc="">Rússia</msg>
+    <msg name="SAVE" desc="">Desa</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">Separeu les diverses entrades amb una coma.</msg>
+    <msg name="SINGAPORE" desc="">Singapur</msg>
+    <msg name="SLOVAKIA" desc="">Eslovàquia</msg>
+    <msg name="SLOVENIA" desc="">Eslovènia</msg>
+    <msg name="SMTP_SERVER" desc="">Servidor SMTP</msg>
+    <msg name="SOUTH_AFRICA" desc="">Sudàfrica</msg>
+    <msg name="SOUTH_KOREA" desc="">Corea del Sud</msg>
+    <msg name="SPAIN" desc="">Espanya</msg>
+    <msg name="SRI_LANKA" desc="">Sri Lanka</msg>
+    <msg name="STEP_1_OF_5" desc="">Pas 1 de 5</msg>
+    <msg name="STEP_2_OF_5" desc="">Pas 2 de 5</msg>
+    <msg name="STEP_3_OF_5" desc="">Pas 3 de 5</msg>
+    <msg name="STEP_4_OF_5" desc="">Pas 4 de 5</msg>
+    <msg name="STEP_5_OF_5" desc="">Pas 5 de 5</msg>
+    <msg name="SWEDEN" desc="">Suècia</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">La IP de commutador no pot topar amb cap altra IP</msg>
+    <msg name="SWITCH_IP" desc="">IP de commutador</msg>
+    <msg name="SWITZERLAND" desc="">Suïssa</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Servidors Syslog</msg>
+    <msg name="TAIWAN" desc="">Taiwan</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">S’estan provant els servidors web i els URL per comprovar la connectivitat i els permisos d’accés</msg>
+    <msg name="TESTURLS" desc="">URL de prova</msg>
+    <msg name="TESTURLS_BULLET1" desc="">Introduïu un o diversos URL (un per línia) per comprovar si l’aplicació de cerca pot accedir a aquests llocs.  Afegiu una barra diagonal al final de tots els URL com, per exemple:</msg>
+    <msg name="TESTURLS_BULLET2" desc="">Comproveu que el dispositiu no estigui blocat per una llista de control d’accés (LCA) o per rutes de xarxa defectuoses.  Consulteu l’apartat &amp;ldquo;Solució de problemes&amp;rdquo; a la secció “Annex tècnic".</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://corp.lamevaempresa.com/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://corp.lamevaempresa.com/productes/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">Comproveu l’accés als servidors web</msg>
+    <msg name="THAILAND" desc="">Tailàndia</msg>
+    <msg name="TIME_SETTINGS" desc="">Configuració de l’hora</msg>
+    <msg name="TURKEY" desc="">Turquia</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">Illes Turks i Caicos</msg>
+    <msg name="UK" desc="">Regne Unit</msg>
+    <msg name="UKRAINE" desc="">Ucraïna</msg>
+    <msg name="UNITED_STATES" desc="">Estats Units</msg>
+    <msg name="URUGUAY" desc="">Uruguai</msg>
+    <msg name="USERNAME" desc="">Nom d'usuari</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">Illes Verges Americanes</msg>
+    <msg name="VENEZUELA" desc="">Veneçuela</msg>
+    <msg name="VIETNAM" desc="">Vietnam</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">Hem intentat obtenir la vostra configuració de xarxa de manera automàtica mitjançant DHCP. A continuació s’indiquen els valors predeterminats que hem obtingut. Editeu els valors que considereu que s’han de modificar.</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">El compte “administrador” s’utilitza per accedir a la Consola d’administració.
+Introduïu una contrasenya i una adreça de correu electrònic de contacte per al compte que s’indica a continuació.</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">Especifiqueu l’adreça IP de tot el trànsit de sortida. Podeu utilitzar-la, per exemple, per especificar les regles de la llista de control d’accés o del tallafoc a fi de permetre que l’aplicació explori la vostra intranet.</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">Especifiqueu la passarel·la de la xarxa on es troba l’aplicació.</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">Especifiqueu el camí de resolució dels noms d’amfitrió no qualificats. Aquesta es correspon amb una entrada de “cerca” en un fitxer resolv.conf dels sistemes UNIX i amb una entrada "Sufix DNS" en els sistemes Windows.</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">Especifiqueu un o més servidors DNS mitjançant les seves adreces IP. Els servidors DNS ajuden a resoldre els noms d’amfitrió com ara &amp;ldquo;www.google.es/ca&amp;rdquo;a adreces IP.  Es recomana utilitzar un mínim de dos servidors DNS per garantir la redundància.</msg>
+    <msg name="WHATIS_NETMASK" desc="">Especifiqueu la màscara de subxarxa de la xarxa on es troba l’aplicació de cerca de Google.</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">L’aplicació escull automàticament la velocitat de la xarxa i la configuració de dúplex en funció del commutador o l’encaminador al qual està connectada. Si és necessari, seleccioneu una velocitat de línia i una configuració de dúplex fixes.</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">Especifiqueu fins a un màxim de tres servidors Network Time Protocol (NTP) per mantenir l’hora correcta. Es requereix la versió 3 de NTP.  Si no disposeu de cap servidor NTP a la vostra xarxa, no podreu connectar-vos a un servidor d’accés obert. Escolliu un servidor Stratum 2 o superior i eviteu els servidors que requereixen una notificació abans de la seva utilització.</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">Introduïu una adreça de correu electrònic.  Aquesta adreça apareixerà com a remitent dels missatges que enviï l’aplicació de cerca.</msg>
+    <msg name="WHATIS_SENDER" desc="">Especifiqueu el nom d’autor que hauria d’utilitzar l’aplicació en enviar notificacions o avisos. Un valor predeterminat correcte seria &amp;ldquo;ningu@amfitriolocal&amp;rdquo;.</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">L’aplicació escull automàticament la velocitat de la xarxa i la configuració de dúplex en funció del commutador o l’encaminador al qual està connectada. Si és necessari, feu clic a la casella de selecció perquè l’aplicació utilitzi una línia de 100 Mbps i comunicació de dúplex complet per al balanceig de càrrega.</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">Assigneu una adreça IP estàtica a l’aplicació de cerca.
+Recordeu-vos també d’introduir un nom significatiu com ara &amp;ldquo;googlebox.lamevaempresa.cat&amp;rdquo; i una entrada DNS de retorn a la base de dades de la vostra empresa.</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">Especifiqueu un servidor de correu SMTP perquè l’aplicació l’utilitzi per enviar les vostres notificacions i avisos, incloses les notificacions de contrasenya oblidada.</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">Especifiqueu l’adreça IP del ServerIron.</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">Podeu especificar un servidor SYSLOG per capturar els esdeveniments i registres del sistema en un equip extern.</msg>
+    <msg name="WHATIS_TESTURLS" desc="">De vegades la configuració predeterminada del tallafoc i de la seguretat pot impedir l’accés de l‘aplicació als servidors web on voleu cercar. Podeu comprovar si l’aplicació pot accedir als vostres servidors web especificant els URL complets al quadre de cerca següent i fent clic a “Continua”. Si no es pot accedir a algun dels URL especificats, us ho comunicarem.</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">Especifiqueu una zona horària per als registres i per a la planificació de càrrega de l’amfitrió.</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">L’aplicació s’està reiniciant. Espereu, l’aplicació es podrà utilitzar d’aquí a uns dos minuts.</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">La vostra aplicació està esborrant totes les seves dades. Espereu 60 minuts abans de desconnectar la màquina amb seguretat.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">El dispositiu desautoritzarà l’accés via SSH per a tasques de manteniment. Espereu 30 segons perquè el canvi de la configuració es faci efectiu.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">L’aplicació autoritzarà l’accés a través de SSH per a tasques de manteniment. Espereu 30 segons perquè el canvi de la configuració es faci efectiu.</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">L’aplicació s’està apagant. Espereu dos minuts abans d'apagar l'equip amb seguretat.</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">La vostra zona horària local</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">No heu desat els canvis.
+Per fer-ho, premeu el botó “Enrere” del vostre navegador per tornar a la pàgina anterior i feu clic al botó “Desa”.</msg>
+  </localizationbundle>
+</localizationbundle>

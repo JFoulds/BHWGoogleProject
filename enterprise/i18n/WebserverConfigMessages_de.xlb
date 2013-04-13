@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="de">
+  <localizationbundle locale="de">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">Wenn Sie den Wartungszugang über SSH deaktivieren wollen,
+geben Sie bitte für die unten angezeigte AUFGABE die richtige ANTWORT ein. Der SSH-Port wird
+anschließend deaktiviert.</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">Wenn Sie den Wartungszugang über SSH aktivieren wollen, geben Sie
+für die unten angezeigte AUFGABE bitte die richtige ANTWORT ein. Der SSH-Port wird
+anschließend aktiviert.</msg>
+    <msg name="ABOUT_TO_HALT" desc="">Wenn Sie die Appliance wirklich anhalten möchten, geben Sie für die unten angezeigte AUFGABE die richtige ANTWORT ein. Die Appliance leitet anschließend die Sequenz zum Herunterfahren ein.</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">Wenn Sie den Suchdienst der Appliance wirklich neu starten möchten, geben Sie für die unten angezeigte AUFGABE bitte die richtige ANTWORT ein. Die Appliance leitet anschließend die Sequenz für den Neustart ein.</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">Wenn Sie wirklich wollen, dass sich die
+Appliance selbst zerstört, wenden Sie sich an den Kundendienst von
+Google und fragen Sie nach der richtigen ANTWORT für die unten angezeigte AUFGABE. Vorsicht, dieser Schritt
+kann nicht mehr rückgängig gemacht werden. Nach dem Start der Selbstzerstörung werden
+alle in der Maschine enthaltenen Daten zerstört.</msg>
+    <msg name="ACCEPT" desc="">Annehmen &amp; weiter mit Schritt 1</msg>
+    <msg name="ACCOUNT_TYPE" desc="">Kontoart</msg>
+    <msg name="ADMIN" desc="">admin</msg>
+    <msg name="ADMINISTRATOR" desc="">Administrator</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc="">Das Konto <ph name="START_BOLD">&lt;b></ph>admin<ph name="END_BOLD">&lt;/b></ph> wird verwendet, um auf die Admin-Konsole, die Anwendung, die die Search Appliance verwaltet, und den Versionsmanager, der zur Installation von Software-Updates verwendet wird, zuzugreifen.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">Beim Login und beim Passwort wird zwischen Groß- und Kleinschreibung unterschieden.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">Legen Sie ein Passwort für dieses Konto fest. Es empfiehlt sich, dieses Passwort aufzuschreiben, damit Sie es bei der Anmeldung an der Admin-Konsole (oder im Versionsmanager) griffbereit haben.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">Diese E-Mail-Adresse wird von der Search Appliance verwendet, um Benachrichtigungen und Alerts zu senden. Sie wird außerdem gebraucht, wenn Sie Ihr Passwort vergessen haben. Der von Ihnen im Schritt 2 von 5 eingerichtete SMTP-Mailserver ist außerdem erforderlich, damit die Search Appliance E-Mails senden kann.</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">Administratorpasswörter stimmen nicht überein</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">Administratorpasswort muss eingegeben werden</msg>
+    <msg name="ADMIN_SETTINGS" desc="">Konto "admin"</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">WICHTIG: Die Search Appliance benötigt einen gültigen NTP-Server, damit der Lizenzschlüssel aktiviert werden kann.</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">Die IP-Adresse und das Gateway müssen sich in demselben Netzwerk befinden.</msg>
+    <msg name="ANGUILLA" desc="">Anguilla</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">Antigua und Barbuda</msg>
+    <msg name="ARGENTINA" desc="">Argentinien</msg>
+    <msg name="ARUBA" desc="">Aruba</msg>
+    <msg name="AUSTRALIA" desc="">Australien</msg>
+    <msg name="AUSTRIA" desc="">Österreich</msg>
+    <msg name="AUTONEGOTIATION" desc="">Load Balancer Autonegotiation</msg>
+    <msg name="BACK" desc="">Zurück</msg>
+    <msg name="BANGLADESH" desc="">Bangladesch</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">Grundlegende Netzwerkeinstellungen</msg>
+    <msg name="BELGIUM" desc="">Belgien</msg>
+    <msg name="BERMUDA" desc="">Bermudas</msg>
+    <msg name="BRAZIL" desc="">Brasilien</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">Jungfern-Inseln (Britisch)</msg>
+    <msg name="BULGARIA" desc="">Bulgarien</msg>
+    <msg name="CANADA" desc="">Kanada</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">Cayman-Inseln</msg>
+    <msg name="CHALLENGE" desc="">Aufgabe</msg>
+    <msg name="CHANGE_PASSWORD" desc="">Passwort</msg>
+    <msg name="CHILE" desc="">Chile</msg>
+    <msg name="CHINA" desc="">China</msg>
+    <msg name="COLOMBIA" desc="">Kolumbien</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Konfigurieren des Syslog-Servers</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">Das Konto "admin" konfigurieren</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">Herzlichen Glückwunsch!
+Sie haben die Appliance konfiguriert. Wenn keine Warnungen oder Fehler angezeigt werden, können Sie die Verbindung zu Ihrem Laptop trennen und die Appliance einsetzen. Verwenden Sie die Admin-Konsole für die tägliche Administration.</msg>
+    <msg name="CONTINUE" desc="">Weiter &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">Costa Rica</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>Willkommen!<ph name="END_BOLD">&lt;/b></ph> Wenn Sie mit der Netzwerkinstallation fortfahren möchten, müssen Sie zunächst die Lizenzvereinbarung akzeptieren. Wählen Sie bitte Ihr Land aus der folgenden Liste aus und klicken Sie dann zum Fortfahren auf "Weiter":</msg>
+    <msg name="CRAWL_IP" desc="">Crawling-IP</msg>
+    <msg name="CZECH_REPUBLIC" desc="">Tschechien</msg>
+    <msg name="DENMARK" desc="">Dänemark</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">Diagnosemeldungen</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">Unsere Netzwerkdiagnose hat ein Problem mit den im vorherigen Schritt vorgenommenen Einstellungen
+festgestellt. Sie können fortfahren. Vielleicht wollen Sie aber zurückkehren und Ihre Einstellungen ändern.</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">DNS-Suffix (DNS-Suchpfad)</msg>
+    <msg name="DNS_SERVERS" desc="">DNS-Server</msg>
+    <msg name="DNS_SETTINGS" desc="">DNS- und Maileinstellungen</msg>
+    <msg name="ECUADOR" desc="">Ecuador</msg>
+    <msg name="EGYPT" desc="">Ägypten</msg>
+    <msg name="EL_SALVADOR" desc="">El Salvador</msg>
+    <msg name="EMAIL_ADDRESS" desc="">E-Mail-Adresse</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">Fehler beim Laden der Konfigurationsdatei. Bitte versuchen Sie es erneut</msg>
+    <msg name="EXAMPLE" desc="">Beispiel</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">technik.meinunternehmen.de, gesellschaft.meinunternehmen.de, unternehmen.de</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">Finnland</msg>
+    <msg name="FRANCE" desc="">Frankreich</msg>
+    <msg name="FRENCH_GUIANA" desc="">Französisch-Guayana</msg>
+    <msg name="GATEWAY" desc="">Standard-Gateway</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Gateway darf nicht mit einer anderen IP kollidieren</msg>
+    <msg name="GERMANY" desc="">Deutschland</msg>
+    <msg name="GREECE" desc="">Griechenland</msg>
+    <msg name="GUADELOUPE" desc="">Guadeloupe (Französisch)</msg>
+    <msg name="GUATEMALA" desc="">Guatemala</msg>
+    <msg name="HONDURAS" desc="">Honduras</msg>
+    <msg name="HONG_KONG" desc="">Hongkong</msg>
+    <msg name="HOSTNAME" desc="">Hostname</msg>
+    <msg name="HUNGARY" desc="">Ungarn</msg>
+    <msg name="ICELAND" desc="">Island</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">Unzulässige Autonegotiation angegeben</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">Ungültige oder reservierte Crawling-IP-Adresse</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">Unzulässiger DNS-Server angegeben</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">Unzulässiges Gateway angegeben</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">Ungültige oder reservierte IP-Adresse</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">Unzulässige Netzmaske angegeben</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">Unzulässige Netzwerkgeschwindigkeit angegeben</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">Unzulässiger NTP-Server angegeben</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">Unzulässiger Absender für ausgehende
+E-Mail angegeben</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">Unzulässiger Suchpfad angegeben</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">Unzulässiger SMTP-Server angegeben</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">Ungültige oder reservierte Switch IP-Adresse</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">Unzulässiger Syslog-Server angegeben</msg>
+    <msg name="INDIA" desc="">Indien</msg>
+    <msg name="INDONESIA" desc="">Indonesien</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">Ungültige E-Mail-Adresse für Administrator</msg>
+    <msg name="IP_ADDRESS" desc="">IP-Adresse</msg>
+    <msg name="IRELAND" desc="">Irland</msg>
+    <msg name="ISRAEL" desc="">Israel</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">ist keine gültige Zeitzone.</msg>
+    <msg name="ITALY" desc="">Italien</msg>
+    <msg name="JAPAN" desc="">Japan</msg>
+    <msg name="LICENSE_ERROR" desc="">Bitte setzen Sie sich bezüglich Ihrer Lizenz mit dem Google-Support in Verbindung.</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">Lesen Sie die Bedingungen bitte sorgfältig durch und klicken Sie dann auf "Annehmen &amp;amp; Weiter mit Schritt 1", um fortzufahren.</msg>
+    <msg name="LICENSE_WELCOME" desc="">Endnutzerlizenzvertrag</msg>
+    <msg name="LUXEMBOURG" desc="">Luxemburg</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">Mailservereinstellungen</msg>
+    <msg name="MALAYSIA" desc="">Malaysien</msg>
+    <msg name="MALTA" desc="">Malta</msg>
+    <msg name="MARTINIQUE" desc="">Martinique (Französisch)</msg>
+    <msg name="MEXICO" desc="">Mexiko</msg>
+    <msg name="MODIFY" desc="">Zurück zu Schritt 1.</msg>
+    <msg name="MONACO" desc="">Monaco</msg>
+    <msg name="MONTSERRAT" desc="">Montserrat</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">Das Administratorpasswort muss 2 Mal eingegeben werden</msg>
+    <msg name="NETHERLANDS" desc="">Niederlande</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">Niederländische Antillen</msg>
+    <msg name="NETMASK" desc="">Subnet Mask:</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">Netzwerkinstallation</msg>
+    <msg name="NETWORK_SPEED" desc="">Netzwerkgeschwindigkeit</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">automatisch aushandeln</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">10 MB/s Halbduplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">10 MB/s Vollduplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">100 MB/s Halbduplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">100 MB/s Vollduplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1000 MB/s (Duplex wird immer mit dieser Geschwindigkeit vereinbart)</msg>
+    <msg name="NEW_PASSWORD" desc="">Neues Passwort</msg>
+    <msg name="NEW_ZEALAND" desc="">Neuseeland</msg>
+    <msg name="NICARAGUA" desc="">Nikaragua</msg>
+    <msg name="NORWAY" desc="">Norwegen</msg>
+    <msg name="NOT_A_VALID_URL" desc="">keine gültige URL</msg>
+    <msg name="NTP_SERVERS" desc="">NTP-Server</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">DNS-Einstellungen</msg>
+    <msg name="OPEN_LICENSE" desc="">Lizenz in neuem Fenster öffnen</msg>
+    <msg name="OPTIONAL" desc="">optional</msg>
+    <msg name="OTHER" desc="">Sonstiges</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">Absender ausgehender E-Mails</msg>
+    <msg name="PANAMA" desc="">Panama</msg>
+    <msg name="PARAGUAY" desc="">Paraguay</msg>
+    <msg name="PERU" desc="">Peru</msg>
+    <msg name="PHILIPPINES" desc="">Philippinen</msg>
+    <msg name="POLAND" desc="">Polen</msg>
+    <msg name="PORTUGAL" desc="">Portugal</msg>
+    <msg name="PUERTO_RICO" desc="">Puerto Rico</msg>
+    <msg name="REDIRECT" desc="">Netzwerk wird untersucht und Umleitung zur Hauptseite vorgenommen. Klicken Sie PLACEHOLDER_LINK hierPLACEHOLDER_ENDLINK, wenn die Umleitung nicht innerhalb einer Minute erfolgt.</msg>
+    <msg name="REENTER" desc="">Erneute Eingabe</msg>
+    <msg name="REJECT" desc="">Ablehnen</msg>
+    <msg name="RESPONSE" desc="">Antwort</msg>
+    <msg name="RUSSIA" desc="">Russland</msg>
+    <msg name="SAVE" desc="">Speichern</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">Trennen Sie mehrere Einträge durch Kommas.</msg>
+    <msg name="SINGAPORE" desc="">Singapur</msg>
+    <msg name="SLOVAKIA" desc="">Slowakei</msg>
+    <msg name="SLOVENIA" desc="">Slowenien</msg>
+    <msg name="SMTP_SERVER" desc="">SMTP-Server</msg>
+    <msg name="SOUTH_AFRICA" desc="">Südafrika</msg>
+    <msg name="SOUTH_KOREA" desc="">Südkorea</msg>
+    <msg name="SPAIN" desc="">Spanien</msg>
+    <msg name="SRI_LANKA" desc="">Sri Lanka</msg>
+    <msg name="STEP_1_OF_5" desc="">Schritt 1 von 5</msg>
+    <msg name="STEP_2_OF_5" desc="">Schritt 2 von 5</msg>
+    <msg name="STEP_3_OF_5" desc="">Schritt 3 von 5</msg>
+    <msg name="STEP_4_OF_5" desc="">Schritt 4 von 5</msg>
+    <msg name="STEP_5_OF_5" desc="">Schritt 5 von 5</msg>
+    <msg name="SWEDEN" desc="">Schweden</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Switch-IP darf nicht mit einer anderen IP kollidieren</msg>
+    <msg name="SWITCH_IP" desc="">Switch-IP</msg>
+    <msg name="SWITZERLAND" desc="">Schweiz</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Syslog-Server</msg>
+    <msg name="TAIWAN" desc="">Taiwan</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">Testen der Webserver und URLs hinsichtlich der Verbindungen und Zugriffberechtigungen</msg>
+    <msg name="TESTURLS" desc="">URLs testen</msg>
+    <msg name="TESTURLS_BULLET1" desc="">Geben Sie eine oder mehrere URLs (eine pro Zeile) ein, um zu prüfen, ob die Search Appliance auf diese Websites zugreifen kann. Fügen Sie jeder URL einen nachstehenden Schrägstrich hinzu. Beispiel:</msg>
+    <msg name="TESTURLS_BULLET2" desc="">Stellen Sie sicher, dass das Gerät nicht durch Access Control Lists (ACLs) oder fehlerhafte Netzwerkrouten gesperrt wird. Weitere Informationen erhalten Sie unter &amp;ldquo;Fehlerbehebung&amp;rdquo; im Abschnitt "Technischer Anhang".</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://gesellschaft.meinunternehmen.com/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://gesellschaft.meinunternehmen.de/produkte/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">Zugang zu Webservern prüfen</msg>
+    <msg name="THAILAND" desc="">Thailand</msg>
+    <msg name="TIME_SETTINGS" desc="">Zeiteinstellungen</msg>
+    <msg name="TURKEY" desc="">Türkei</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">Turks- und Caicos-Inseln</msg>
+    <msg name="UK" desc="">Großbritannien</msg>
+    <msg name="UKRAINE" desc="">Ukraine</msg>
+    <msg name="UNITED_STATES" desc="">USA</msg>
+    <msg name="URUGUAY" desc="">Uruguay</msg>
+    <msg name="USERNAME" desc="">Nutzername</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">Jungfern-Inseln (USA)</msg>
+    <msg name="VENEZUELA" desc="">Venezuela</msg>
+    <msg name="VIETNAM" desc="">Vietnam</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">Wir haben versucht, Ihre
+Netzwerkeinstellungen mittels DHCP automatisch zu ermitteln. Unten sehen Sie
+die erhaltenen Standardwerte. Bearbeiten Sie bitte alle Werte,
+die anders als hier dargestellt konfiguriert werden sollen.</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">Der Zugriff auf die Admin-Konsole erfolgt über das Konto "admin".
+Geben Sie für das unten angegebene Konto ein Passwort und eine E-Mail-Adresse zum Kontaktieren ein.</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">Geben Sie die IP-Adresse für den gesamten
+ausgehenden Datenverkehr an. Sie können dies nutzen, um ACL- oder Firewall-Regeln
+festzulegen, über die die Appliance Ihr Intranet crawlen kann.</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">Geben Sie das Standard-Gateway des Netzwerks an, in dem sich die Appliance befindet.</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">Legen Sie den Pfad für die Auflösung unqualifizierter Hostnamen fest. Dies entspricht dem "Such"-Eintrag einer "resolv.conf"-Datei auf UNIX-Systemen sowie dem "DNS Suffix"-Eintrag auf Windows-Systemen.</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">Geben Sie die IP-Adresse von mindestens einem DNS-Server an. DNS-Server helfen bei der Auflösung von Hostnamen wie &amp;ldquo;www.google.de&amp;rdquo; in IP-Adressen. Zu Redundanzzwecken wird der Einsatz von mindestens zwei DNS-Servern empfohlen.</msg>
+    <msg name="WHATIS_NETMASK" desc="">Geben Sie den Wert für die Subnet Mask des Netzwerks an, in dem sich die Google Search Appliance befindet.</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">Die Appliance ermittelt die Netzwerkgeschwindigkeit und die Duplexeinstellungen per Autonegotiation mit dem Switch oder Router, an den sie angeschlossen ist. Wählen Sie bei Bedarf die entsprechende feste Leitungsgeschwindigkeit und die Duplexeinstellung aus.</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">Geben Sie zur Pflege der korrekten Zeit bis zu drei Network Time Protocol (NTP)-Server an. Sie benötigen NTP Version 3. Falls in Ihrem Netzwerk kein NTP-Server vorhanden ist, können Sie eine Verbindung zu einem Open-Access-Server herstellen. Wählen Sie Stratum-2-Server (oder höher) aus und vermeiden Sie Server, die vor der Verwendung eine Benachrichtigung anfordern.</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">Geben Sie eine E-Mail-Adresse an. Nachrichten, die von der Search Appliance gesendet werden, stammen von dieser Adresse.</msg>
+    <msg name="WHATIS_SENDER" desc="">Geben Sie den Namen des Autors an, den die Appliance beim Senden von Benachrichtigungen oder Alerts verwenden soll. Ein geeigneter Standardwert wäre &amp;ldquo;nobody@localhost&amp;rdquo;.</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">Die Appliance ermittelt die Netzwerkgeschwindigkeit und die Duplexeinstellungen per Autonegotiation mit dem Switch oder Router, an den sie angeschlossen ist. Aktivieren Sie das Kontrollkästchen, wenn die Appliance für den Lastausgleich eine Leitungsgeschwindigkeit von 100 MB/s im Vollduplexmodus nutzen soll.</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">Weisen Sie der Search Appliance eine statische IP-Adresse zu.
+Denken Sie auch daran, in der DNS-Datenbank Ihres Unternehmens einen symbolischen Namen einzutragen, wie &amp;ldquo;googlebox.meinunternehmen.de&amp;rdquo;, und einen Reverse-DNS-Eintrag festzulegen.</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">Geben Sie den Namen eines SMTP-Mailservers ein, über den die Appliance Sie im Falle von Benachrichtigungen und Alerts kontaktieren kann (einschließlich Benachrichtigungen bei vergessenem Passwort).</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">Geben Sie die IP-Adresse für ServerIron an.</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">Sie können einen SYSLOG-Server angeben, der Systemereignisse erhalt und auf einer externen Maschine protokolliert.</msg>
+    <msg name="WHATIS_TESTURLS" desc="">Es kommt vor, dass bereits bestehende Firewall- und Sicherheitseinstellungendie die Appliance daran hindern, auf Webserver zuzugreifen, auf Webserver zuzugreifen, die Sie durchsuchen möchten. Sie können prüfen, ob die Appliance auf Ihre Webserver zugreifen kann, indem Sie unten im Textfeld die vollständigen URLs angeben und dann auf "Weiter" klicken. Sie werden gewarnt, wenn eine der von Ihnen angegebenen URLs nicht erreicht werden kann.</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">Geben Sie eine Zeitzone für Protokolle und die Planung der Hostlast an.</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">Die Appliance wird jetzt neu gestartet. Bitte warten – die Appliance wird in etwa 2 Minuten einsatzbereit sein.</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">Ihre Appliance löscht die gesamten Daten. Bitte warten Sie 60 Minuten, um den Computer sicher vom Stromnetz zu trennen.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">Die Appliance wird den Wartungszugang über SSH jetzt untersagen. Die Konfigurationsänderungen werden erst nach 30 Sekunden wirksam.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">Die Appliance ermöglicht jetzt den Wartungszugang über SSH. Die Konfigurationsänderungen werden erst nach 30 Sekunden wirksam.</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">Die Appliance wird jetzt heruntergefahren. Bitte warten Sie zwei Minuten, um die Appliance sicher herunterzufahren.</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">Ihre lokale Zeitzone</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">Sie haben Ihre Änderungen
+nicht gespeichert.
+Klicken Sie zum Speichern in Ihrem Browser auf die Schaltfläche "Zurück" und dann auf der vorherigen Seite auf "Speichern".</msg>
+  </localizationbundle>
+</localizationbundle>

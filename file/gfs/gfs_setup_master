@@ -1,0 +1,276 @@
+#!/bin/sh
+#
+# Setup master data directory: used to initialize a new GFS instance, 
+# (should be needed rarely).  Run this on the master machine.  Run this 
+# on an existing master with '-p' to update -email, -gfsuser, or -gfsgroup.
+# An old master can be DESTRUCTIVELY cleaned up by using the '-wipe-old-data'
+# flag.
+#
+# TODO: Should we setup a bigfile data directory for the master?
+# Probably not necessary: by the time we hit the 2GB limit, master
+# startup time will be really bad and we will need snapshot support.
+#
+# Creates the master directory: complains if it already exists and '-p'
+# is not specified. The master directory name must have the form:
+#	.../<cellid>.gfsmaster
+
+#### Argument parsing
+
+usage() {
+  echo "Usage: [-empty] [-p] [-wipe-old-data] [-email=addr] [-gfsuser=user] [-gfsgroup=group] <dir>" 1>&2
+  echo ""
+  echo "Arguments for production only:"
+  echo ""
+  echo "  -empty        Create a new, initially empty cluster."
+  echo ""
+  echo "  -email=addr   Required.  If addr="none", nothing is done"
+  echo "                Otherwise, a DO_NOT_WIPE_GFS file is created "
+  echo "                to protect from accidental wipes and addr is "
+  echo "                recorded as the notification address"
+  echo ""
+  echo "  -workqueue_test  For using the workqueue to test GFS.  Allows "
+  echo "                   relative directory names and does not chown "
+  echo "                   directory. Also, allows existing data to be "
+  echo "                   retained on the borglet, in conjunction with -p "
+  echo ""
+  echo "  -gfsuser=user Make specified user own all created GFS files and"
+  echo "                directories.  Default is prodbin2."
+  echo ""
+  echo "  -gfsgroup=grp Make all created GFS files and directories belong "
+  echo "                to specified group.  Default is prod."
+  echo ""
+  echo "Other arguments:" 
+  echo "   -p reuse existing directories if they exist. create parents " 
+  echo "      if needed" 
+  echo "" 
+  echo "   -wipe-old-data Delete any existing data and subdirectories in "
+  echo "                  the master directories. "
+  echo "      WARNING: Inadvertent use of this flag will cause data loss."
+  echo "" 
+  exit 1
+}
+
+mkdir_p="0"
+mkdir_flag=""
+force_deletion="0"
+is_empty="0"
+notify_addr=""
+gfs_user="prodbin2"
+gfs_group="prod"
+workqueue_test="0"
+
+#### Flag parsing
+while [ $# -gt 0 ]
+  do 
+  case "$1"
+    in
+      -p | --parent ) mkdir_p="1"
+        mkdir_flag="-p"
+	shift
+	;;
+      -wipe-old-data | --wipe-old-data ) force_deletion="1"
+        shift
+	;;
+      -empty | --empty ) is_empty="1"
+	shift
+	;;
+      -email=* ) notify_addr="${1#-email=}"
+        shift
+	;; # Record the email notification address    
+      --email=* ) notify_addr="${1#--email=}"
+        shift
+	;; # Record the email notification address 
+      -gfsuser=* ) gfs_user="${1#-gfsuser=}"
+	shift
+	;; # Record the user name to use for gfs
+      --gfsuser=* ) gfs_user="${1#--gfsuser=}"
+	shift
+	;; # Record the user name to use for gfs
+      -gfsgroup=* ) gfs_group="${1#-gfsgroup=}"
+	shift
+        ;; # Record the group name to use for gfs
+      --gfsgroup=* ) gfs_group="${1#--gfsgroup=}"
+	shift
+	;; # Record the group name to use for gfs
+      -workqueue_test | --workqueue_test ) workqueue_test="1"
+	shift
+	;;      
+      -* | --*       ) usage
+        ;; # Unknown argument
+      *        ) break
+        ;; # end of options
+  esac
+done     
+
+# Only require -email, allow -gfsuser and -gfsgroup if we are on something
+# that looks like a production machine.
+if test -d "/export/hda3" -a \( ! -L "/export/hda3" \) -a "$workqueue_test" -eq 0; then
+  is_production="1"
+else
+  is_production="0"
+fi
+
+if test "$is_production" -eq 1 ; then 
+  # production machine
+  if test -z "$notify_addr"; then
+    echo "must specify a -email=addr or -email=none on production machines"
+    usage
+  fi
+  if ! id -u "${gfs_user}" >/dev/null 2>&1; then
+    echo "user $gfs_user does not exist"
+    usage  
+  elif test "$gfs_user" = "root"; then
+    echo "root cannot own GFS files and directories"
+    usage  
+  fi
+  # Check that $gfs_user belongs to $gfs_group
+  belong="0"
+  for temp in `id -nG "$gfs_user"`; do
+    if test "$gfs_group" = "$temp" ; then
+      belong="1"
+      break
+    fi
+  done
+  if test "$belong" -eq 0 ; then
+    echo "User $gfs_user does not belong to group $gfs_group"
+    usage
+  fi
+else
+  # Non production machine
+  if test -n "$notify_addr" ; then
+    echo "Ignoring notification address $notify_addr on non-production machine"
+  fi
+  if test -n "$gfs_user" ; then
+    echo "Ignoring gfs user $gfs_user on non-production machine"
+  fi
+  notify_addr="none"
+fi
+
+if test $# -eq 1; then 
+  dir="$1"
+else
+  usage
+fi
+
+C="[a-zA-Z0-9.-]"
+expr match "$dir" "/.*" > /dev/null || {
+  echo "$dir: must start with '/'" 1>&2
+  exit 1
+}
+expr match "$dir" ".*/$C$C*.gfsmaster" >/dev/null || {
+  echo "$dir: must end in '/<cellid>.gfsmaster'" 1>&2
+  exit 1
+}
+
+cellid="`basename "$dir" .gfsmaster`"
+
+# Find out the parent of $dir so that the config dir can be setup
+# as a peer of $dir
+parentdir="`dirname "$dir"`"
+
+# Should be kept consistent with gfs_setup_chunkserver to make pushing
+# config files a bit simpler
+configdir="$parentdir/$cellid.gfsconfig"
+
+# If the user has asked us to wipe the data, then delete dir and configdir,
+# along with all of their contents
+if test "$force_deletion" -eq 1; then
+  for tempdir in "$dir" "$configdir"; do
+    if test -e "$tempdir"; then
+      echo "WARNING: -wipe-old-data flag caused deletion of old $tempdir"
+    fi
+    rm -rf "$tempdir"
+  done
+fi
+
+if test -e "$dir/DISABLED" ; then
+  echo "This master is DISABLED."
+  echo "See $dir/DISABLED for the reasons."
+  echo "After investigation, you can reenable by removing that file."
+  exit 1
+fi
+
+# configdir used to be checked here, but the assertion isn't true when you have
+# chunkservers on master.
+for tempdir in "$dir"; do
+  if test -e "$tempdir" -a "${mkdir_p}" -eq 0; then
+    echo "$tempdir: already exists and '-p' not specified" 1>&2
+    exit 1
+  fi
+done
+
+# If the user specifies -empty, verify that no master log file already exists
+logs="`ls -1d $dir/GFS_MASTER_LOG.* 2> /dev/null`"
+if test "$logs" -a "$is_empty" -eq 1; then
+  echo "master log files exist and '-empty' specified" 1>&2
+  exit 1
+fi
+
+if test "$notify_addr" != "none"; then
+  # Create a DO_NOT_WIPE_GFS file to protect the directories
+  # from accidental wipe
+  partition="`echo "$dir" |  sed 's/\(\/export\/hd.3\/\).*/\1/' `"
+  do_not_wipe_file="$partition/DO_NOT_WIPE_GFS"
+  if test -e $do_not_wipe_file; then
+    if test "${mkdir_p}" -eq 0; then
+      echo "$do_not_wipe_file: already exists and '-p' not specified" 1>&2
+      exit 1
+    fi
+    current_addr=`cat $do_not_wipe_file`
+    if test "$notify_addr" != "$current_addr"; then
+      echo "Updating notification address: $current_addr -> $notify_addr"
+      echo "$notify_addr" > $do_not_wipe_file || exit 1
+    fi
+  else
+    echo "$notify_addr" > $do_not_wipe_file || exit 1
+  fi
+fi  
+
+#### Creation
+
+echo "GFS masterdir for '$cellid': '$dir'"
+mkdir ${mkdir_flag} "$configdir" || exit 1
+mkdir ${mkdir_flag} "$dir" || exit 1
+
+if (test "$is_empty" -eq 1) || (test "${workqueue_test}" -eq 1); then
+  touch "$dir/GFS_MASTER_LOG.0000000000.delta" || exit 1
+fi
+
+#### Chown files to $gfs_user.$gfs_group if necessary (probably
+#### production).  If we are not permitted to chown, this will fail with a
+#### reasonably clear message like "chown: changing ownership of ... :
+#### Operation not permitted" The files/directories will be left alone,
+#### which seems reasonable.  So, all we do in this case is to fail.
+if test "$is_production" -eq 1 ; then
+  # There must be a less ugly way to get user and group ....  stat
+  # --format is nice but not all production machines have stat command
+  # that supports --format.  Parsing stat -t is no better than this, and
+  # it gives us only uid and gid.
+  user="`ls -l "$dir" | awk '{ print \$3; }' | sort | uniq | grep -v ^$`"
+  if test "$user" != "$gfs_user"; then
+    echo "chowning data dirs: $user -> $gfs_user"
+  fi
+  group="`ls -l "$dir" | awk '{ print \$4; }' | sort | uniq | grep -v ^$`"
+  if test "$group" != "$gfs_group"; then
+    echo "chgrouping data dirs: $group -> $gfs_group"
+  fi
+  if test "$user" != "$gfs_user" || test "$group" != "$gfs_group"; then
+    chown -R "$gfs_user.$gfs_group" "$dir" || exit 1
+    chown -R "$gfs_user.$gfs_group" "$configdir" || exit 1
+  fi
+fi
+
+if ( test "${is_empty}" -eq 0 ) && (test "${workqueue_test}" -eq 0) && \
+  ( test ! "${logs}" ); then
+  echo Setup incomplete.  Only relevant directories have been set up.
+  echo If you are creating a brand new cluster, specify -empty.
+  echo In this case, you can rerun this script with -p.
+  echo 
+  echo You should NOT use this script to set up a machine as target
+  echo of a master or master log replica  relocation.  Use tools
+  echo like googledist to copy the entire directory tree containing
+  echo master state.
+  exit 1
+fi
+
+exit 0

@@ -1,0 +1,203 @@
+#!/usr/bin/python2.4
+#
+# Copyright (C) 2000 by Google
+# Original version by Craig Silverstein
+# Additions by Chad Lester
+
+"""
+Usage: alarm [options] <timeout in seconds> <command> [command arguments]
+
+This program tries to run a command and, if we reach the timeout,
+kills the process.  Otherwise, the error code of the command is returned.
+
+options:
+ -w         warn, but do not kill.
+ -g         kill all processes in command's process group (default)
+ -s         kill ONLY the main process (ie. leave the spawned procs alone)
+ -m <addr>  send email to <addr> if the command times out
+ -f         with the -m option, also send mail if the command fails
+ -l         print timestamped log lines marking when the command
+            starts and stops, with exit status
+ -h         print this help
+"""
+
+DEBUG=0
+
+import sys, os, signal, time, string, getopt, socket, pipes
+
+def log(msg):
+  """
+  print a timestamped log line to stdout
+  """
+  print "[%s] %s" % (time.ctime(time.time()), msg)
+  sys.stdout.flush()    # force the line to be written
+
+
+def KillPG(pid):
+  """
+  give me a pid and I'll kill all processes from its group
+  Unfortunately, killpg(2) is not mapped under os module so we have to
+  go through bash to do it.
+  """
+
+  command = \
+   ( # get process group for pid
+     "gpid=`ps --no-headers axj | " +
+     "awk -v pid=%s '$2==pid { print $3; exit; }'`; " % (pid) +
+     # kill the group. Try doing it nicely at first
+     '[ -n "$gpid" ] && { kill -15 -$gpid; sleep 1; kill -9 -$gpid; }'
+   )
+  os.system("%s" % (command))
+
+def AlarmHandler(signum, frame):
+  raise RuntimeError, "Alarm triggered"
+
+childpid = -1      # default to bogus pid
+def CleanupHandler(signum, frame):
+  global childpid
+  log("Caught signal %s. Cleaning up." % signum)
+
+  # we were killed ourselves so make sure child dies too
+  if childpid > 0:
+    KillPG(childpid)
+
+  raise RuntimeError, "Cleanup triggered"
+
+
+# sshargs should be eg ("ssh", "a1", "id")
+def alarm(command, args, timeout, killpg = 0, warnOnly = 0):
+  """
+This routine tries to run a command and, if we reach the timeout, returns -1
+Otherwise we return the exit status of the command.  It would be wonderful
+to use an alarm, but apparently alarms don't work with sytem() or popen()
+  """
+  global childpid
+  childpid = os.fork()
+  if childpid == 0:                   # child
+    if os.setsid() == -1:             # detach from parent's process group
+      log("Unable to detach children. Aborting.")
+      return -1
+
+    os.execvp(command, args)          # execvp uses my path to find command
+  else:
+    try:
+      # make sure child dies too if we get killed ourselves.
+      # Only the parent should do this, of course.
+      signal.signal(signal.SIGTERM, CleanupHandler)
+      
+      signal.alarm(int(timeout))                   # schedule an alarm
+      (pid, status) = os.waitpid(childpid, 0) # blocking wait 
+      signal.alarm(5)         # reschedule a 5s alarm to ensure we *DO* finish
+
+      assert pid == childpid, "Confused: childpid not returned by wait()?"
+
+      # Exited normally?
+      if os.WIFEXITED(status):
+        # decode and return exit status
+        status = os.WEXITSTATUS(status)
+      else: # exited via signal
+        # this formula is a Unix shell convention
+        status = 128 + os.WTERMSIG(status) 
+    except (RuntimeError, KeyboardInterrupt):
+      # alarm triggered (or Ctrl-C hit)
+      signal.alarm(5)         # reschedule a 5s alarm to ensure we *DO* finish
+      if not warnOnly:
+        if killpg:
+          KillPG(childpid)
+        else:
+          os.kill(childpid, signal.SIGTERM) # never finished, so kill it
+          time.sleep(0.1)
+          os.kill(childpid, signal.SIGKILL) # better safe than sorry...
+        os.wait()               # reap the child
+      # set return status for failure
+      status = -1
+
+  return status
+
+def Main(argv):
+  # Default values overridden by command line arguments
+  killpg = 1
+  mailOnErr = 0
+  logging = 0
+  email = None
+  warnOnly = 0
+
+  options, argv = getopt.getopt(argv[1:],'m:gsflhw')
+
+  for (opt, val) in options:
+    if (opt == '-m'): email = val
+    elif (opt == '-g'): killpg = 1
+    elif (opt == '-s'): killpg = 0
+    elif (opt == '-f'): mailOnErr = 1
+    elif (opt == '-l'): logging = 1
+    elif (opt == '-w'): warnOnly = 1
+    elif (opt == '-h'):
+      print __doc__
+      sys.exit(0)
+
+  if len(argv) >= 2:
+    timeout = float(argv[0])
+    command = argv[1]
+    command_args = argv[1:]
+
+    if logging:
+      log("running %s %s" % (command, string.join(command_args[1:])))
+
+    # setup the alarm handler
+    signal.signal(signal.SIGALRM, AlarmHandler)
+
+    try:
+      # exec the command
+      retcode = -1   # init. Just in case we trigger an alarm at a bad time
+      retcode = alarm(command, command_args, timeout, killpg, warnOnly)
+
+      if logging:
+        if retcode == -1:
+          reasonStr = "TIMED OUT"
+        else:
+          reasonStr = "exit status = %d" % retcode
+        log("finished %s %s, %s" % 
+            (command, string.join(command_args[1:]), reasonStr))
+
+      if email and retcode:
+        reason = None
+        if (retcode == -1):
+          reason = "command did not complete within the timeout"
+        elif (mailOnErr):
+          reason = "command exited with a non-zero exit status = %d" % retcode
+        if reason:
+          msg = []
+          msg.append("From: %s" % argv[0])
+          msg.append("To: %s" % email)
+          msg.append("Reply-To: %s" % email)
+          msg.append("Subject: alarm failed on %s " % socket.gethostname())
+          msg.append("")
+          msg.append("An alarm failed!")
+          msg.append("host: %s" % socket.gethostname())
+          msg.append("command: %s %s" % (command, 
+                                         string.join(command_args[1:])))
+          msg.append("timeout: %s seconds" % timeout)
+          msg.append("reason: %s" % reason)
+
+          mail_template = pipes.Template()
+          mail_template.append("/usr/sbin/sendmail -oem -t -i","-.")
+          mail_handle = mail_template.open('/dev/null','w')
+          mail_handle.write(string.join(msg,'\n'))
+          mail_handle.close()
+
+      try:  # reap the child (if it hasn't already been reaped!)
+        os.wait()
+      except:
+        pass   # ignore "No child processes" errors
+
+      signal.alarm(0)   # shutdown the alarm
+    except (RuntimeError, KeyboardInterrupt):
+      # "ensure we get out" alarm triggered (or Ctrl-C hit)
+      pass
+    sys.exit(retcode)
+  else:
+    print __doc__
+    sys.exit(-1)
+
+if __name__ == '__main__':
+  Main(sys.argv)

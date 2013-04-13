@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="eu">
+  <localizationbundle locale="eu">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">SSH bidezko mantenamendu sarrera desgaitu nahi baduzu, 
+ERANTZUN zuzena idatzi ondorengo GALDERArentzako. SSH ataka
+desgaituko da.</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">SSH bidezko mantenamendu sarrera gaitu nahi baduzu, 
+ERANTZUN zuzena idatzi ondorengo GALDERArentzako. SSH ataka
+gaituko da.</msg>
+    <msg name="ABOUT_TO_HALT" desc="">Google Search Appliance benetan gelditu nahi baduzu, idatzi
+ERANTZUN zuzena ondorengo GALDERArentzako. Google Search Appliance tresnak
+itzaltzeko sekuentzia abiatuko du.</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">Bilaketa zerbitzuak Google Search Appliance tresnan berrabiarazi nahi badituzu
+idatzi
+ERANTZUN zuzena ondorengo GALDERArentzako. Honela, Google Search Appliance tresnak
+berrabiarazteko sekuentzia hasiko da.</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">Google Search Appliance  suntsitu nahi baduzu,
+jar zaitez Google bezeroaren laguntza zerbitzuarekin harremanetan eta
+ondorengo GALDERArentzako ERANTZUN zuzena eskatu. Kontutan izan pauso hau
+ezin dela desegin. Behin suntsipena hasitakoan, makinako datu
+guztiak ezabatuko dira.</msg>
+    <msg name="ACCEPT" desc="">Onartu eta Jarraitu 1. pausora</msg>
+    <msg name="ACCOUNT_TYPE" desc="">Kontu mota</msg>
+    <msg name="ADMIN" desc="">admin</msg>
+    <msg name="ADMINISTRATOR" desc="">Administratzailea</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc=""><ph name="START_BOLD">&lt;b></ph>Admin<ph name="END_BOLD">&lt;/b></ph> kontua
+Admin kontsolara sartzeko erabiltzen da, hots, bilaketa kudeatzen duen aplikaziora.
+Era berean, kontu honekin Bertsio kudeatzailera sartzen da, hau da, software eguneratzeak instalatzeko aplikaziora sartzeko.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">Saio hasieran eta pasahitzetan hitz larriak eta xeheak
+bereizten dira.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">Pasahitz bat sortu kontu honentzako.  Gomendagarria
+pasa hitz hau nonbait idaztea, Admin kontsolan saioa hasteko
+behar izango duzu eta (edo bertsio kudeatzailea).</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">Google Search Appliance tresnak helbide elektronikoa erabiltzen du
+abisuak eta alertak bidaltzeko.  Pasahitza galdu baduzu
+ere erabiltzen da.  SMTP posta zerbitzariaren konfigurazioa ere beharrezkoa da
+5etik 2. pausoan bilaketa tresnak mezu elektronikoak bidali ahal izateko.</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">Administratzailearen pasahitzak ez datoz bat</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">Administratzailearen pasahitza idatzi behar da</msg>
+    <msg name="ADMIN_SETTINGS" desc="">'admin' kontua</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">GARRANTZITSUA:  Google Search Appliance tresnak NTP zerbitzari zuzena behar du
+lizentzia gakoa aktibatzeko.</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">IP helbideak eta atebideak sare berdinean egon behar dute</msg>
+    <msg name="ANGUILLA" desc="">Anguilla</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">Antigua eta Barbuda</msg>
+    <msg name="ARGENTINA" desc="">Argentina</msg>
+    <msg name="ARUBA" desc="">Aruba</msg>
+    <msg name="AUSTRALIA" desc="">Australia</msg>
+    <msg name="AUSTRIA" desc="">Austria</msg>
+    <msg name="AUTONEGOTIATION" desc="">Auto-negoziazio orekatzailea kargatu</msg>
+    <msg name="BACK" desc="">&lt;&lt; Itzuli</msg>
+    <msg name="BANGLADESH" desc="">Bangladesh</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">Oinarrizko sare ezarpenak</msg>
+    <msg name="BELGIUM" desc="">Belgika</msg>
+    <msg name="BERMUDA" desc="">Bermudak</msg>
+    <msg name="BRAZIL" desc="">Brasil</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">Birjina Uharteak (Britainiarrak)</msg>
+    <msg name="BULGARIA" desc="">Bulgaria</msg>
+    <msg name="CANADA" desc="">Kanada</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">Kaiman Uharteak</msg>
+    <msg name="CHALLENGE" desc="">Galdera</msg>
+    <msg name="CHANGE_PASSWORD" desc="">Pasahitza</msg>
+    <msg name="CHILE" desc="">Txile</msg>
+    <msg name="CHINA" desc="">Txina</msg>
+    <msg name="COLOMBIA" desc="">Kolonbia</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Syslog zerbitzaria konfiguratu</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">'admin' kontua konfiguratu</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">Zorionak!
+Google Search Appliance konfiguratu duzu. Ez baldin bada
+errore edo jakinarazpenik azaldu, ordenagailu eramangarria deskonektatu eta 
+Google Search Appliance erabil dezakezu.  Admin kontsola aplikazioa erabili eguneroko
+kudeaketetarako.</msg>
+    <msg name="CONTINUE" desc="">Jarraitu &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">Costa Rica</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>Ongi etorri.<ph name="END_BOLD">&lt;/b></ph> Lizentzia Hitzarmena onartu behar duzu sarea instalatu ahal izateko: Aukeratu zure herrialdea ondorengo zerrendatik eta 'Jarraitu' aukeran klik egin jarraitzeko:</msg>
+    <msg name="CRAWL_IP" desc="">Arakatze IPa</msg>
+    <msg name="CZECH_REPUBLIC" desc="">Txekiar Errepublika</msg>
+    <msg name="DENMARK" desc="">Danimarka</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">Diagnostiko mezuak</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">Gure sare diagnostikoek arazo bat aurkitu dute aurreko pausoaren ezarpenetan
+. Jarrai dezakezun arren, baliteke itzuli eta ezarpenak aldatu nahi izatea.</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">DNS atzizkia (DNS bilaketa bidea)</msg>
+    <msg name="DNS_SERVERS" desc="">DNS zerbitzariak</msg>
+    <msg name="DNS_SETTINGS" desc="">DNS eta Mail ezarpenak</msg>
+    <msg name="ECUADOR" desc="">Ekuador</msg>
+    <msg name="EGYPT" desc="">Egipto</msg>
+    <msg name="EL_SALVADOR" desc="">El Salvador</msg>
+    <msg name="EMAIL_ADDRESS" desc="">Helbide elektronikoa</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">Errorea config fitxategia kargatzerakoan. Berriro saiatu</msg>
+    <msg name="EXAMPLE" desc="">Adibidez:</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">engineering.mycompany.com, corp.mycompany.com,
+ company.com</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">Finlandia</msg>
+    <msg name="FRANCE" desc="">Frantzia</msg>
+    <msg name="FRENCH_GUIANA" desc="">Guyana Frantsesa</msg>
+    <msg name="GATEWAY" desc="">Atebide lehenetsia</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Atebideak ezin du beste IP batekin talka egin</msg>
+    <msg name="GERMANY" desc="">Alemania</msg>
+    <msg name="GREECE" desc="">Grezia</msg>
+    <msg name="GUADELOUPE" desc="">Guadalupe (Frantsesa)</msg>
+    <msg name="GUATEMALA" desc="">Guatemala</msg>
+    <msg name="HONDURAS" desc="">Honduras</msg>
+    <msg name="HONG_KONG" desc="">Hong Kong</msg>
+    <msg name="HOSTNAME" desc="">Ostalari izena</msg>
+    <msg name="HUNGARY" desc="">Hungaria</msg>
+    <msg name="ICELAND" desc="">Islandia</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">Legez kanpoko auto-negozioazio bat zehaztu da</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">Crawl-IP helbide okerra edo erreserbatua</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">DNS zerbitzari ez onartuak zehaztuta</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">Legez kanpoko atebide bat zehaztu da</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">IP helbide okerra edo erreserbatua</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">Sare markara ez onartu bat zehaztu da</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">Legez kanpoko sare-abiadura zehaztu da</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">Legez kanpoko NTP zerbitzariak zehaztuta</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">Igorle ez onartua zehaztu da
+irteerako emaileentzako</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">Legez kanpoko bilaketa bide bat zehaztu da</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">SMTP hornitzaile ez onartua zehaztu da</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">Switch-IP helbide baliogabea edo erreserbatua</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">Syslog hornitzaile ez onartua zehaztu da</msg>
+    <msg name="INDIA" desc="">India</msg>
+    <msg name="INDONESIA" desc="">Indonesia</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">Administratzailearen helbide elektroniko baliogabea</msg>
+    <msg name="IP_ADDRESS" desc="">IP helbidea</msg>
+    <msg name="IRELAND" desc="">Irlanda</msg>
+    <msg name="ISRAEL" desc="">Israel</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">hau ez da ordu-zona zuzen bat.</msg>
+    <msg name="ITALY" desc="">Italia</msg>
+    <msg name="JAPAN" desc="">Japonia</msg>
+    <msg name="LICENSE_ERROR" desc="">Jar zaitez Google Support-ekin harremanetan lizentzia lortzeko.</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">Terminoak kontuz berrikusi eta 'Onartu eta 2. pausora jarraitu' aukeran klik egin jarraitzeko.</msg>
+    <msg name="LICENSE_WELCOME" desc="">Azken erabiltzaile lizentzia hitzarmena</msg>
+    <msg name="LUXEMBOURG" desc="">Luxenburgo</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">Posta zerbitzariaren ezarpenak</msg>
+    <msg name="MALAYSIA" desc="">Malaysia</msg>
+    <msg name="MALTA" desc="">Malta</msg>
+    <msg name="MARTINIQUE" desc="">Martinika (Frantsesa)</msg>
+    <msg name="MEXICO" desc="">Mexiko</msg>
+    <msg name="MODIFY" desc="">1. pausora itzuli</msg>
+    <msg name="MONACO" desc="">Monako</msg>
+    <msg name="MONTSERRAT" desc="">Montserrat</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">Administratzailearen pasahitza bi aldiz idatzi behar da</msg>
+    <msg name="NETHERLANDS" desc="">Herbehereak</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">Nederlandar Antillak</msg>
+    <msg name="NETMASK" desc="">Azpisare maskara</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">Sare instalazioa</msg>
+    <msg name="NETWORK_SPEED" desc="">Sare abiadura</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">auto-negoziatu</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">10 Mbps erdi duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">10 Mbps erabateko duplexa</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">100 Mbps erdi-duplex</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">100 Mbps erabateko duplexa</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1000 Mbps (duplex beti abiadura honetan negoziatzen da)</msg>
+    <msg name="NEW_PASSWORD" desc="">Pasahitz berria</msg>
+    <msg name="NEW_ZEALAND" desc="">Zeelanda Berria</msg>
+    <msg name="NICARAGUA" desc="">Nikaragua</msg>
+    <msg name="NORWAY" desc="">Norvegia</msg>
+    <msg name="NOT_A_VALID_URL" desc="">ez da URL zuzena</msg>
+    <msg name="NTP_SERVERS" desc="">NTP zerbitzariak</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">DNS ezarpenak</msg>
+    <msg name="OPEN_LICENSE" desc="">Lizentzia beste leiho batean ireki</msg>
+    <msg name="OPTIONAL" desc="">aukerakoa</msg>
+    <msg name="OTHER" desc="">Bestelakoak</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">Irteerako mezu elektronikoaren igorlea:</msg>
+    <msg name="PANAMA" desc="">Panama</msg>
+    <msg name="PARAGUAY" desc="">Paraguay</msg>
+    <msg name="PERU" desc="">Peru</msg>
+    <msg name="PHILIPPINES" desc="">Filipinak</msg>
+    <msg name="POLAND" desc="">Polonia</msg>
+    <msg name="PORTUGAL" desc="">Portugal</msg>
+    <msg name="PUERTO_RICO" desc="">Puerto Rico</msg>
+    <msg name="REDIRECT" desc="">Sarea egiaztatzen eta orri nagusira desbideratzen. PLACEHOLDER_LINK estekan klik egin hemen PLACEHOLDER_ENDLINK desbideratzea ez bada minutu batetan gertatzen.</msg>
+    <msg name="REENTER" desc="">Berriro idatzi</msg>
+    <msg name="REJECT" desc="">Ez onartu</msg>
+    <msg name="RESPONSE" desc="">Erantzuna</msg>
+    <msg name="RUSSIA" desc="">Errusia</msg>
+    <msg name="SAVE" desc="">Gorde</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">Sarrera anitzak koma batekin banatu.</msg>
+    <msg name="SINGAPORE" desc="">Singapur</msg>
+    <msg name="SLOVAKIA" desc="">Eslovakia</msg>
+    <msg name="SLOVENIA" desc="">Eslovenia</msg>
+    <msg name="SMTP_SERVER" desc="">SMTP hornitzailea</msg>
+    <msg name="SOUTH_AFRICA" desc="">Hego Afrika</msg>
+    <msg name="SOUTH_KOREA" desc="">Hego Korea</msg>
+    <msg name="SPAIN" desc="">Espainia</msg>
+    <msg name="SRI_LANKA" desc="">Sri Lanka</msg>
+    <msg name="STEP_1_OF_5" desc="">5etik 1. pausoa</msg>
+    <msg name="STEP_2_OF_5" desc="">5etik 2. pausoa</msg>
+    <msg name="STEP_3_OF_5" desc="">5etik 3. pausoa</msg>
+    <msg name="STEP_4_OF_5" desc="">5etik 4. pausoa</msg>
+    <msg name="STEP_5_OF_5" desc="">5etik 5. pausoa</msg>
+    <msg name="SWEDEN" desc="">Suedia</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">SwitchIP aginduak ezin du bete IP batekin talka egin</msg>
+    <msg name="SWITCH_IP" desc="">IPa aldatu</msg>
+    <msg name="SWITZERLAND" desc="">Suitza</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Syslog hornitzaileak</msg>
+    <msg name="TAIWAN" desc="">Taiwan</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">Web hornitzaileak eta URLak egiaztatzen konektibitate eta sarrera baimenentzako</msg>
+    <msg name="TESTURLS" desc="">URLak egiaztatu</msg>
+    <msg name="TESTURLS_BULLET1" desc="">URL bat edo gehiago idatzi (lerro bakoitzeko bat) bilaketa tresnak
+gune hauetara sar daitekeen egiaztatzeko.  URL bakoitzaren amaieran
+"/" ikurra gehitu, adibidez:</msg>
+    <msg name="TESTURLS_BULLET2" desc="">Egiaztatu tresna ez dagoela sarbide kontrol zerrenden (ACL) bidez 
+edo sare bide okerren bidez blokeatuta.  Ikusi
+&amp;ldquo;Arazoak konpontzen&amp;rdquo; eranskin teknikoaren atalean.</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://corp.mycompany.com/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://corp.mycompany.com/products/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">Web hornitzaileetara sarrera egiaztatu</msg>
+    <msg name="THAILAND" desc="">Thailandia</msg>
+    <msg name="TIME_SETTINGS" desc="">Denbora ezarpenak</msg>
+    <msg name="TURKEY" desc="">Turkia</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">Turk eta Caico uharteak</msg>
+    <msg name="UK" desc="">Erresuma Batua</msg>
+    <msg name="UKRAINE" desc="">Ukraina</msg>
+    <msg name="UNITED_STATES" desc="">Estatu Batuak</msg>
+    <msg name="URUGUAY" desc="">Uruguai</msg>
+    <msg name="USERNAME" desc="">Erabiltzaile izena</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">Birjina Uharteak (AEB)</msg>
+    <msg name="VENEZUELA" desc="">Venezuela</msg>
+    <msg name="VIETNAM" desc="">Vietnam</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">DHCP bidez sare
+ezarpenak automatikoki lortzen saiatu gara. Ondorengo
+balio lehenetsiak jaso ditugu. Editatu zuzenak ez diren
+balio guztiak.</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">'admin' kontua admin kontsolara sartzeko erabiltzen da.
+Ondorengo kontuarentzako pasahitza eta harremanetarako helbide elektronikoa idatzi.</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">Irteten den trafikoaren IP helbidea
+adierazi. Hau, ACL edo suebaki arauak zehazteko erabil dezakezu adibidez
+tresnak zure intraneta arakatu dezan.</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">Google Search Appliance aurkitzen den sareko  
+atebide lehenetsia zehaztu.</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">Ebazpen bidea zehaztu gai ez diren
+ostalarien izenentzako. Hau "bilaketa" sarrera bati dagokio UNIX sistemako resolv.conf fitxategian
+edo "DNS atzizki" sarrera bati Windows sisteman.</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">DNS zerbitzari bat edo gehiago IDaren
+bidez zehaztu. DNS zerbitzariek &amp;ldquo;www.google.es&amp;rdquo; bezalako ostalari izenak 
+IP helbide bihurtzen dituzte.  Gutxienez bi DNS zerbitzari gomendatzen dira
+erredundantziarako.</msg>
+    <msg name="WHATIS_NETMASK" desc="">Google bilaketa tresna aurkitzen den sarearen 
+azpisare maskara zehaztu.</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">Google Search Appliance tresnak sarearen abiadura
+eta duplex ezarpenak auto-negoziatzen ditu konektatuta dagoen router edo kommutadorearen
+bidez. Beharrezkoa bada, aukeratu egokitzen diren
+linea abiadura finkoa eta duplex ezarpena.</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">Gehienez hiru  zehaztu
+Network Time Protocol (NTP) zerbitzariak, ordua eguneratuta izateko. NTP 3 bertsioa behar da.  Zure sarean 
+NTP zerbitzaririk ez badago, sarrera libreko zerbitzari 
+batera konekta zaitezke. 2. geruza edo altuagoa duten zerbitzariak aukeratu, jakinarazpena eskatzen
+duten zerbitzariak saihesteko.</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">Helbide elektroniko bat zehaztu.  Bilaketa tresnak
+bidalitako mezuetan igorle hau azalduko da.</msg>
+    <msg name="WHATIS_SENDER" desc="">Zehaztu ezazu zer egileren izena erabili behar duen Google Search Appliance tresnak 
+abisuak eta alertak bidaltzerakoan. Balio lehenetsi
+on bat&amp;ldquo;nobody@localhost&amp;rdquo;litzateke.</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">Tresnak
+sare abiadura eta duplex ezarpenak auto-negoziatzen ditu konektatuta dagoen
+switch edo router gailuekin. Beharrezkoa bada, kontrol kutxatilan klik egin
+tresnak 100Mbs-eko abiadura linea eta komunikazio erabateko duplexa erabil ditzan
+karga orekatzeko.</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">IP helbide egonkorra zehaztu Google Search Appliance tresnari.
+Gogoratu &amp;ldquo;googlebox.mycompany.com&amp;rdquo; bezalako izen sinboliko bat
+eta alderantzizko DNS sarrera bat ere zure enpresako DNS datu basean idatzi behar dituzula.</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">Zehaztu SMTP posta zerbitzari bat tresnak
+zuri abisuak eta alertak bidaltzeko, ahaztutako pasahitz
+jakinarazpenak barne.</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">Zerbitzariarentzako IP helbidea adierazi behar duzu.</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">SYSLOG hornitzaile bat aukera dezakezu
+sistemako gertaerak eta erregistroak kanpoko makina batetan eskuratzeko.</msg>
+    <msg name="WHATIS_TESTURLS" desc="">Batzuetan, aurreko suebaki edo segurtasun ezarpen batek tresnaren sarrera 
+sarrera bilatu zuk nahi dituzun web hornitzaileetara galera
+dezake. Tresnak zuk bilatu nahi dituzun web hornitzaileetara
+sarrera duen jakiteko, hauen URL osoa idatzi ondorengo testu kutxatilan
+'Jarraitu' aukeran klik egin. Zuk adierazitako URL bat ezin bada eskuratu
+guk abisatuko zaitugu.</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">Zehaztu ordu zona bat erregistroentzako eta ostalariaren karga
+antolatzeko.</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">Google Search Appliance berrabiarazten ari da orain. Itxaron mesedez, 
+Google Search Appliance bi minutu inguru barru prest egongo da.</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">Google Search Appliance datu guztiak ezabatzen ari da. Itxaron 60 minutu makina segurtasunez desentxufatu aurretik.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">Google Search Appliance tresnak SSH bidezko mantenamendu zerbitzua desgaituko
+du. 30 segundo itxaron konfigurazio aldaketa eraginkorra izan
+arte.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">Google Search Appliance tresnak SSH bidezko mantenamendu zerbitzua gaituko
+du. 30 segundo itxaron konfigurazio aldaketa eraginkorra izan
+arte.</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">Google Search Appliance itzaltzen ari da. Itxaron bi minutu segurtasunez itzali aurretik.</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">Zure ordu-zona lokala</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">Ez dituzu zure aldaketak
+gorde.
+Gordetzeko, zure arakatzailearen 'Itzuli' botoia sakatu
+aurreko orrira itzultzeko eta Gorde botoian klik egin.</msg>
+  </localizationbundle>
+</localizationbundle>

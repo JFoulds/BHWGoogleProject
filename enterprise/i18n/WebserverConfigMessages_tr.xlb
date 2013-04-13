@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="tr">
+  <localizationbundle locale="tr">
+    <msg name="ABOUT_TO_DISABLESSHD" desc="">SSH üzerinden bakım erişimini devre dışı bırakmak istiyorsanız aşağıda gösterilen CHALLENGE için lütfen doğru RESPONSE'u girin. Ardından SSH bağlantı noktası devre dışı bırakılır.</msg>
+    <msg name="ABOUT_TO_ENABLESSHD" desc="">SSH üzerinden bakım erişimini etkinleştirmek istiyorsanız aşağıda gösterilen CHALLENGE için lütfen doğru RESPONSE'u girin. Ardından SSH bağlantı noktası etkinleştirilir.</msg>
+    <msg name="ABOUT_TO_HALT" desc="">Cihazı gerçekten durdurmak istiyorsanız lütfen aşağıda gösterilen CHALLENGE için doğru RESPONSE'u girin. Ardından, Cihaz kapatma işlemini gerçekleştirecektir.</msg>
+    <msg name="ABOUT_TO_RESTART_SERVICES" desc="">Cihaz üzerindeki arama hizmetlerini gerçekten yeniden başlatmak istiyorsanız aşağıda gösterilen CHALLENGE için lütfen doğru RESPONSE'u girin. Bunu yaptığınızda, cihaz yeniden başlatma işlemini gerçekleştirecektir.</msg>
+    <msg name="ABOUT_TO_SELFDESTRUCT" desc="">Cihazın gerçekten kendi kendisini yok etmesini istiyorsanız lütfen Google müşteri desteği ile bağlantı kurun ve aşağıda gösterilen CHALLENGE için doğru RESPONSE'u girin. Bu adımın geri alınamayacağını unutmayın. Kendi kendini yok etme başladıktan sonra makinedeki verilerin tümü silinir.</msg>
+    <msg name="ACCEPT" desc="">Kabul Et ve 1. Adıma Geç</msg>
+    <msg name="ACCOUNT_TYPE" desc="">Hesap Türü</msg>
+    <msg name="ADMIN" desc="">yönetici</msg>
+    <msg name="ADMINISTRATOR" desc="">Yönetici</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET1" desc="">Arama cihazını yönetmek için kullanılan Yönetici Konsolu'na ve yazılım güncellemelerini yüklemek için kullanılan Sürüm Yöneticisi'ne erişmek için <ph name="START_BOLD">&lt;b></ph>yönetici<ph name="END_BOLD">&lt;/b></ph> hesabı kullanılır.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET2" desc="">Giriş ve parola büyük/küçük harfe duyarlıdır.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET3" desc="">Bu hesap için parola oluşturun. Yönetici Konsolu'na (veya Sürüm Yöneticisi'ne) giriş yaparken gerektiğinde bakmak için bu parolayı not etmenizi öneririz.</msg>
+    <msg name="ADMIN_ACCOUNT_BULLET4" desc="">E-posta adresi, arama cihazı tarafından bildirim ve uyarı göndermek için kullanılır. Ayrıca parola unutulduğunda da kullanılır. SMTP posta sunucusu, beş adımdan ikincisinde kurulur ve arama cihazının e-posta gönderebilmesi için de gereklidir.</msg>
+    <msg name="ADMIN_PASSWORDS_DONT_MATCH" desc="">Yönetici parolaları eşleşmiyor</msg>
+    <msg name="ADMIN_PASSWORDS_MUST_ENTER" desc="">Yönetici parolası girmelisiniz</msg>
+    <msg name="ADMIN_SETTINGS" desc="">'yönetici' Hesabı</msg>
+    <msg name="ALERT_NTP_SERVER" desc="">ÖNEMLİ: Arama cihazının lisans anahtarını etkinleştirmesi için geçerli bir NTP sunucusu gerekir.</msg>
+    <msg name="ALL_IPS_AND_GATEWAY_MUST_BE_ON_SAME_NETWORK" desc="">IP adresi ve ağ geçidi aynı ağ üzerinde olmalıdır</msg>
+    <msg name="ANGUILLA" desc="">Anguilla</msg>
+    <msg name="ANTIGUA_AND_BARBUDA" desc="">Antigua ve Barbuda</msg>
+    <msg name="ARGENTINA" desc="">Arjantin</msg>
+    <msg name="ARUBA" desc="">Aruba</msg>
+    <msg name="AUSTRALIA" desc="">Avustralya</msg>
+    <msg name="AUSTRIA" desc="">Avusturya</msg>
+    <msg name="AUTONEGOTIATION" desc="">Yük Dengeleme Otomatik Anlaşması</msg>
+    <msg name="BACK" desc="">&amp;lt;&amp;lt; Geri</msg>
+    <msg name="BANGLADESH" desc="">Bangladeş</msg>
+    <msg name="BASIC_NETWORK_SETTINGS" desc="">Temel Ağ Ayarları</msg>
+    <msg name="BELGIUM" desc="">Belçika</msg>
+    <msg name="BERMUDA" desc="">Bermuda</msg>
+    <msg name="BRAZIL" desc="">Brezilya</msg>
+    <msg name="BRITISH_VIRGIN_ISLANDS" desc="">Virgin Adaları (İngiltere)</msg>
+    <msg name="BULGARIA" desc="">Bulgaristan</msg>
+    <msg name="CANADA" desc="">Kanada</msg>
+    <msg name="CAYMAN_ISLANDS" desc="">Cayman Adaları</msg>
+    <msg name="CHALLENGE" desc="">Zorluk</msg>
+    <msg name="CHANGE_PASSWORD" desc="">Parola</msg>
+    <msg name="CHILE" desc="">Şili</msg>
+    <msg name="CHINA" desc="">Çin</msg>
+    <msg name="COLOMBIA" desc="">Kolombiya</msg>
+    <msg name="CONFIGURE_SYSLOG_SERVER" desc="">Sistem Günlüğü Sunucusunu yapılandır</msg>
+    <msg name="CONFIG_ADMIN_ACCOUNT" desc="">'Yönetici' Hesabını yapılandırın</msg>
+    <msg name="CONGRATULATIONS_YOUR_APPLIANCE_IS_CONFIGURED" desc="">Tebrikler! Cihazı yapılandırdınız. Herhangi bir uyarı veya hata görüntülenmediyse, dizüstü bilgisayarınızın bağlantısını kesip cihazı kullanabilirsiniz. Günlük yönetim için Yönetici Konsolu uygulamasını kullanın.</msg>
+    <msg name="CONTINUE" desc="">Devam Et &gt;&gt;</msg>
+    <msg name="COSTA_RICA" desc="">Kosta Rika</msg>
+    <msg name="COUNTRY_TEMPLATE_HEADER" desc=""><ph name="START_BOLD">&lt;b></ph>Hoş geldiniz!<ph name="END_BOLD">&lt;/b></ph> Ağ Yüklemesi gerçekleştirmek için önce lisans sözleşmesini kabul etmelisiniz. Lütfen aşağıdaki listeden ülkenizi seçin ve ardından devam etmek için 'Devam'ı tıklayın.</msg>
+    <msg name="CRAWL_IP" desc="">Tarama IP'si</msg>
+    <msg name="CZECH_REPUBLIC" desc="">Çek Cumhuriyeti</msg>
+    <msg name="DENMARK" desc="">Danimarka</msg>
+    <msg name="DIAGNOSTIC_MESSAGES" desc="">Rapor İletileri</msg>
+    <msg name="DIAGNOSTIC_MESSAGES_DETAIL" desc="">Ağ raporumuz, önceki adımın ayarlarına ilişkin bir sorun buldu. Devam edebilir veya geri dönüp ayarlarınızı değiştirebilirsiniz.</msg>
+    <msg name="DNS_SEARCH_PATH" desc="">DNS Soneki (DNS Arama Yolu)</msg>
+    <msg name="DNS_SERVERS" desc="">DNS Sunucuları</msg>
+    <msg name="DNS_SETTINGS" desc="">DNS ve Posta Ayarları</msg>
+    <msg name="ECUADOR" desc="">Ekvador</msg>
+    <msg name="EGYPT" desc="">Mısır</msg>
+    <msg name="EL_SALVADOR" desc="">El Salvador</msg>
+    <msg name="EMAIL_ADDRESS" desc="">E-posta Adresi</msg>
+    <msg name="ERROR_LOADING_CONFIG_FILE" desc="">Yapılandırma dosyası yüklenirken hata oluştu. Lütfen tekrar deneyin</msg>
+    <msg name="EXAMPLE" desc="">Örnek</msg>
+    <msg name="EXAMPLE_DEFAULT_GATEWAY" desc="">192.168.13.254</msg>
+    <msg name="EXAMPLE_DNS_SEARCH_PATH" desc="">muhendislik.sirketim.com, corp.sirketim.com, sirketim.com</msg>
+    <msg name="EXAMPLE_DNS_SERVER" desc="">192.168.0.7,192.168.0.8</msg>
+    <msg name="EXAMPLE_NETMASK" desc="">255.255.255.0</msg>
+    <msg name="EXAMPLE_NTP_SERVER" desc="">pool.ntp.org, time.nist.gov</msg>
+    <msg name="EXAMPLE_SERVE_IP" desc="">192.168.13.42</msg>
+    <msg name="FINLAND" desc="">Finlandiya</msg>
+    <msg name="FRANCE" desc="">Fransa</msg>
+    <msg name="FRENCH_GUIANA" desc="">Fransız Ginesi</msg>
+    <msg name="GATEWAY" desc="">Varsayılan Ağ Geçidi</msg>
+    <msg name="GATEWAY_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">Ağ Geçidi, başka bir IP ile çakışmamalıdır</msg>
+    <msg name="GERMANY" desc="">Almanya</msg>
+    <msg name="GREECE" desc="">Yunanistan</msg>
+    <msg name="GUADELOUPE" desc="">Guadeloupe (Fransız)</msg>
+    <msg name="GUATEMALA" desc="">Guatemala</msg>
+    <msg name="HONDURAS" desc="">Honduras</msg>
+    <msg name="HONG_KONG" desc="">Hong Kong</msg>
+    <msg name="HOSTNAME" desc="">Ana bilgisayar adı</msg>
+    <msg name="HUNGARY" desc="">Macaristan</msg>
+    <msg name="ICELAND" desc="">İzlanda</msg>
+    <msg name="ILLEGAL_AUTONEGOTIATION_SPECIFIED" desc="">Belirtilen Otomatik Anlaşma Geçersiz</msg>
+    <msg name="ILLEGAL_CRAWL_IP_SPECIFIED" desc="">Geçersiz veya ayrılmış Tarama IP adresi</msg>
+    <msg name="ILLEGAL_DNS_SERVERS_SPECIFIED" desc="">Belirtilen DNS sunucuları geçersiz</msg>
+    <msg name="ILLEGAL_GATEWAY_SPECIFIED" desc="">Belirtilen Ağ Geçidi geçersiz</msg>
+    <msg name="ILLEGAL_IP_ADDRESS_SPECIFIED" desc="">Geçersiz veya ayrılmış IP adresi</msg>
+    <msg name="ILLEGAL_NETMASK_SPECIFIED" desc="">Geçersiz Ağ maskesi belirtildi</msg>
+    <msg name="ILLEGAL_NETWORKSPEED_SPECIFIED" desc="">Belirtilen ağ hızı geçersiz</msg>
+    <msg name="ILLEGAL_NTPSERVER_SPECIFIED" desc="">Belirtilen NTP sunucuları geçersiz</msg>
+    <msg name="ILLEGAL_OUTGOING_EMAIL_SENDER_SPECIFIED" desc="">Giden e-posta için belirtilen gönderen geçersiz</msg>
+    <msg name="ILLEGAL_SEARCH_PATH_SPECIFIED" desc="">Geçersiz arama yolu belirtildi</msg>
+    <msg name="ILLEGAL_SMTPSERVER_SPECIFIED" desc="">Belirtilen SMTP sunucusu geçersiz</msg>
+    <msg name="ILLEGAL_SWITCH_IP_SPECIFIED" desc="">Geçersiz veya ayrılmış Geçiş IP adresi</msg>
+    <msg name="ILLEGAL_SYSLOGSERVER_SPECIFIED" desc="">Belirtilen Sistem günlüğü sunucusu geçersiz</msg>
+    <msg name="INDIA" desc="">Hindistan</msg>
+    <msg name="INDONESIA" desc="">Endonezya</msg>
+    <msg name="INVALID_ADMIN_EMAIL_ADDRESS" desc="">Geçersiz Yönetici e-posta adresi</msg>
+    <msg name="IP_ADDRESS" desc="">IP Adresi</msg>
+    <msg name="IRELAND" desc="">İrlanda</msg>
+    <msg name="ISRAEL" desc="">İsrail</msg>
+    <msg name="IS_NOT_A_VALID_TIMEZONE" desc="">geçerli bir saat dilimi değil.</msg>
+    <msg name="ITALY" desc="">İtalya</msg>
+    <msg name="JAPAN" desc="">Japonya</msg>
+    <msg name="LICENSE_ERROR" desc="">Lisansınız için lütfen Google Destek ile bağlantı kurun.</msg>
+    <msg name="LICENSE_TEMPLATE_HEADER" desc="">Lütfen bu şartları dikkatli bir şekilde inceleyin ve devam etmek için 'Kabul Et ve Devam Et' seçeneğini tıklayın.</msg>
+    <msg name="LICENSE_WELCOME" desc="">Son Kullanıcı Lisans Sözleşmesi</msg>
+    <msg name="LUXEMBOURG" desc="">Lüksemburg</msg>
+    <msg name="MAIL_SERVER_SETTINGS" desc="">Posta Sunucusu Ayarları</msg>
+    <msg name="MALAYSIA" desc="">Malezya</msg>
+    <msg name="MALTA" desc="">Malta</msg>
+    <msg name="MARTINIQUE" desc="">Martinik (Fransız)</msg>
+    <msg name="MEXICO" desc="">Meksika</msg>
+    <msg name="MODIFY" desc="">1. Adıma Geri Dön</msg>
+    <msg name="MONACO" desc="">Monako</msg>
+    <msg name="MONTSERRAT" desc="">Montserrat</msg>
+    <msg name="MUST_REPEAT_ADMIN_PASSWORD" desc="">Yönetici parolası iki kez girilmelidir</msg>
+    <msg name="NETHERLANDS" desc="">Hollanda</msg>
+    <msg name="NETHERLANDS_ANTILLES" desc="">Hollanda Antilleri</msg>
+    <msg name="NETMASK" desc="">Alt Ağ Maskesi</msg>
+    <msg name="NETWORK_INSTALLATION" desc="">Ağ Yüklemesi</msg>
+    <msg name="NETWORK_SPEED" desc="">Ağ Hızı</msg>
+    <msg name="NETWORK_SPEED_OPTION_0" desc="">otomatik anlaşma</msg>
+    <msg name="NETWORK_SPEED_OPTION_1" desc="">10 Mb/s yarı çift yönlü</msg>
+    <msg name="NETWORK_SPEED_OPTION_2" desc="">10 Mb/s tam çift yönlü</msg>
+    <msg name="NETWORK_SPEED_OPTION_3" desc="">100 Mb/s yarı çift yönlü</msg>
+    <msg name="NETWORK_SPEED_OPTION_4" desc="">100 Mb/s tam çift yönlü</msg>
+    <msg name="NETWORK_SPEED_OPTION_5" desc="">1000 Mb/s (çift yönlü özelliği bu hızdan her zaman olumsuz yönde etkilenir)</msg>
+    <msg name="NEW_PASSWORD" desc="">Yeni Parola</msg>
+    <msg name="NEW_ZEALAND" desc="">Yeni Zelanda</msg>
+    <msg name="NICARAGUA" desc="">Nikaragua</msg>
+    <msg name="NORWAY" desc="">Norveç</msg>
+    <msg name="NOT_A_VALID_URL" desc="">geçerli bir URL değil</msg>
+    <msg name="NTP_SERVERS" desc="">NTP Sunucuları</msg>
+    <msg name="ONLY_DNS_SETTINGS" desc="">DNS Ayarları</msg>
+    <msg name="OPEN_LICENSE" desc="">Lisansı yeni pencerede aç</msg>
+    <msg name="OPTIONAL" desc="">isteğe bağlı</msg>
+    <msg name="OTHER" desc="">Diğer</msg>
+    <msg name="OUTGOING_EMAIL_SENDER" desc="">Giden E-postayı Gönderen</msg>
+    <msg name="PANAMA" desc="">Panama</msg>
+    <msg name="PARAGUAY" desc="">Paraguay</msg>
+    <msg name="PERU" desc="">Peru</msg>
+    <msg name="PHILIPPINES" desc="">Filipinler</msg>
+    <msg name="POLAND" desc="">Polonya</msg>
+    <msg name="PORTUGAL" desc="">Portekiz</msg>
+    <msg name="PUERTO_RICO" desc="">Porto Riko</msg>
+    <msg name="REDIRECT" desc="">Ağ algılanıyor ve ana sayfaya yeniden yönlendiriliyor. 1 dakika içinde yeniden yönlendirme gerçekleştirilmezse PLACEHOLDER_LINK burayı PLACEHOLDER_ENDLINK tıklayın.</msg>
+    <msg name="REENTER" desc="">Tekrar girin</msg>
+    <msg name="REJECT" desc="">Kabul etme</msg>
+    <msg name="RESPONSE" desc="">Yanıt</msg>
+    <msg name="RUSSIA" desc="">Rusya</msg>
+    <msg name="SAVE" desc="">Kaydet</msg>
+    <msg name="SEPARATE_BY_COMMAS" desc="">Birden çok girişi virgülle ayırın.</msg>
+    <msg name="SINGAPORE" desc="">Singapur</msg>
+    <msg name="SLOVAKIA" desc="">Slovakya</msg>
+    <msg name="SLOVENIA" desc="">Slovenya</msg>
+    <msg name="SMTP_SERVER" desc="">SMTP Sunucusu</msg>
+    <msg name="SOUTH_AFRICA" desc="">Güney Afrika</msg>
+    <msg name="SOUTH_KOREA" desc="">Güney Kore</msg>
+    <msg name="SPAIN" desc="">İspanya</msg>
+    <msg name="SRI_LANKA" desc="">Sri Lanka</msg>
+    <msg name="STEP_1_OF_5" desc="">Adım 1 / 5</msg>
+    <msg name="STEP_2_OF_5" desc="">Adım 2 / 5</msg>
+    <msg name="STEP_3_OF_5" desc="">Adım 3 / 5</msg>
+    <msg name="STEP_4_OF_5" desc="">Adım 4 / 5</msg>
+    <msg name="STEP_5_OF_5" desc="">Adım 5 / 5</msg>
+    <msg name="SWEDEN" desc="">İsveç</msg>
+    <msg name="SWITCHIP_MUST_NOT_COLLIDE_WITH_OTHER_IPS" desc="">SwitchIP, başka bir IP ile çakışmamalıdır</msg>
+    <msg name="SWITCH_IP" desc="">Geçiş IP</msg>
+    <msg name="SWITZERLAND" desc="">İsviçre</msg>
+    <msg name="SYSLOG_SERVERS" desc="">Sistem Günlüğü Sunucuları</msg>
+    <msg name="TAIWAN" desc="">Tayvan</msg>
+    <msg name="TESTING_WEBSERVERS_AND_URLS" desc="">Bağlantı ve erişim izinleri için web sunucuları ve URL'ler test ediliyor</msg>
+    <msg name="TESTURLS" desc="">URL'leri sına</msg>
+    <msg name="TESTURLS_BULLET1" desc="">Arama cihazının bu sitelere erişip erişemediğini test etmek için her satıra bir tane gelecek şekilde bir veya daha fazla URL girin. Her URL'nin sonuna bir eğik çizgi ekleyin, örneğin:</msg>
+    <msg name="TESTURLS_BULLET2" desc="">Cihazın Erişim Kontrol Listeleri (EKL'ler) veya hatalı ağ yolları tarafından engellenmediğinden emin olun. Teknik Ek bölümündeki &amp;amp;ldquo;Sorun Giderme&amp;amp;rdquo; konusuna bakın.</msg>
+    <msg name="TESTURLS_EXAMPLE1" desc="">http://corp.sirketim.com/</msg>
+    <msg name="TESTURLS_EXAMPLE2" desc="">http://corp.sirketim.com/products/</msg>
+    <msg name="TESTURL_SETTINGS" desc="">Web Sunucularına Erişimi Kontrol Et</msg>
+    <msg name="THAILAND" desc="">Tayland</msg>
+    <msg name="TIME_SETTINGS" desc="">Zaman Ayarları</msg>
+    <msg name="TURKEY" desc="">Türkiye</msg>
+    <msg name="TURKS_AND_CAICOS_ISLANDS" desc="">Turks ve Caicos Adaları</msg>
+    <msg name="UK" desc="">İngiltere</msg>
+    <msg name="UKRAINE" desc="">Ukrayna</msg>
+    <msg name="UNITED_STATES" desc="">Amerika Birleşik Devletleri</msg>
+    <msg name="URUGUAY" desc="">Uruguay</msg>
+    <msg name="USERNAME" desc="">Kullanıcı Adı</msg>
+    <msg name="US_VIRGIN_ISLANDS" desc="">Virgin Adaları (ABD)</msg>
+    <msg name="VENEZUELA" desc="">Venezuela</msg>
+    <msg name="VIETNAM" desc="">Vietnam</msg>
+    <msg name="WE_HAVE_ACQUIRED_YOUR_NETWORK_SETTINGS" desc="">DHCP kullanarak ağ ayarlarınızı otomatik olarak almayı denedik. Elde ettiğimiz varsayılan değerleri aşağıda görebilirsiniz. Lütfen değişmesi gerektiğini düşündüğünüz değerleri düzenleyin.</msg>
+    <msg name="WHATIS_ADMIN_ACCOUNT" desc="">Yönetici Konsolu'na erişmek için 'yönetici' hesabı kullanılır. Aşağıdaki hesap için bir parola ve iletişim e-posta adresi girin.</msg>
+    <msg name="WHATIS_CRAWL_IP" desc="">Tüm giden trafik için IP adresini belirt. Cihazın intranetinizi taramasına izin vermek üzere EKL veya güvenlik duvarı kuralları belirtmek için bunu kullanabilirsiniz.</msg>
+    <msg name="WHATIS_DEFAULT_GATEWAY" desc="">Cihazın bulunduğu ağın varsayılan ağ geçidini belirtin.</msg>
+    <msg name="WHATIS_DNS_SEARCH_PATH" desc="">Tam niteleyici olmayan ana bilgisayar adları için çözünürlük yolunu belirtin. Bu, UNIX sistemlerinde bir resolv.conf dosyasında "arama" girişine, Windows sistemlerindeyse "DNS Soneki" girişine karşılık gelir.</msg>
+    <msg name="WHATIS_DNS_SERVER" desc="">IP adresleriyle bir veya daha fazla DNS sunucusu belirtin. DNS sunucuları, &amp;amp;ldquo;www.google.com&amp;amp;rdquo; gibi ana bilgisayar adlarını IP adreslerine çözmeye yardımcı olur. Artık veriler için en az iki DNS sunucusu önerilir.</msg>
+    <msg name="WHATIS_NETMASK" desc="">Google Arama Cihazının bulunduğu ağın alt ağ maskesini belirtin.</msg>
+    <msg name="WHATIS_NETWORK_SPEED" desc="">Cihaz, bağlı olduğu anahtar veya yönlendiriciyle ağ hızı ve çift yönlü ayarları için otomatik olarak anlaşır. Gerekirse, uygun sabit hat hızını ve çift yönlü ayarını seçin.</msg>
+    <msg name="WHATIS_NTP_SERVER" desc="">Doğru saati korumak için en fazla üç Ağ Saati Protokolü (NTP) sunucusu belirtin. NTP Sürüm 3 gerekiyor. Ağınızda hiç NTP sunucusu yoksa, bir açık erişim sunucusuna bağlanabilirsiniz. Katman 2 veya daha yüksek sunucuları seçin ve kullanımdan önce bildirim gerektiren sunuculardan kaçının.</msg>
+    <msg name="WHATIS_OUTGOING_EMAIL_SENDER" desc="">E-posta adresi belirtin. Arama cihazı tarafından gönderilen iletiler bu adresten gelmiş gibi görünür.</msg>
+    <msg name="WHATIS_SENDER" desc="">Bildirim veya uyarı gönderirken cihaz tarafından kullanılması gereken yazarın adını belirtin. İyi bir varsayılan değer &amp;amp;ldquo;nobody@localhost&amp;amp;rdquo; olmalıdır.</msg>
+    <msg name="WHATIS_SERVERIRON_AUTONEGOTIATION" desc="">Cihaz, bağlı olduğu anahtar veya yönlendiriciyle ağ hızı ve çift yönlü ayarları için otomatik olarak anlaşır. Gerekirse, yük dengeleme için cihazın 100 Mb/s hat hızı ve tam çift yönlü iletişimi kullanması için onay kutusunu işaretleyin.</msg>
+    <msg name="WHATIS_SERVE_IP" desc="">Arama cihazına statik bir IP adresi atayın. Şirketinizin DNS veritabanına ayrıca &amp;amp;ldquo;googlebox.sirketim.com&amp;amp;rdquo; gibi sembolik bir ad girin ve ters bir DNS girdisi ekleyin.</msg>
+    <msg name="WHATIS_SMTP_SERVER" desc="">Unutulmuş parola bildirimleri dahil olmak üzere bildirim ve uyarılar için sizinle bağlantı kurmak amacıyla cihaz tarafından kullanılabilecek bir SMTP posta sunucusu belirtin.</msg>
+    <msg name="WHATIS_SWITCH_IP" desc="">Serveriron için IP adresini belirtin.</msg>
+    <msg name="WHATIS_SYSLOG_SERVER" desc="">Sistem olaylarını ve günlükleri harici bir makineye kaydetmek için bir sistem günlüğü sunucusu belirtebilirsiniz.</msg>
+    <msg name="WHATIS_TESTURLS" desc="">Bazen, önceden var olan güvenlik duvarı ve güvenlik ayarları, cihazın aramak istediğiniz Web sunucularına erişmesini engelleyebilir. Aşağıdaki metin kutusunda tam URL'leri belirterek ve 'Devam'ı tıklayarak cihazın Web sunucularınıza erişip erişemediğini kontrol edebilirsiniz. Belirttiğiniz URL'lerden erişilemeyen varsa sizi uyarırız.</msg>
+    <msg name="WHATIS_TIME_ZONE" desc="">Günlükler ve ana bilgisayar zamanlaması için kullanmak üzere bir saat dilimi belirtin.</msg>
+    <msg name="YOUR_APPLIANCE_IS_RESTARTING" desc="">Cihaz şimdi yeniden başlatılıyor. Lütfen bekleyin; cihaz yaklaşık iki dakika içinde hazır olacak.</msg>
+    <msg name="YOUR_APPLIANCE_IS_TOAST" desc="">Cihazınız, tüm verilerini siliyor. Makinenizi güvenli bir şekilde fişten çekebilmek için, lütfen 60 dakika bekleyin.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_DISABLED" desc="">Cihaz şimdi SSH üzerinden bakım erişimine izin vermeyecek. Yapılandırma değişikliğinin geçerlilik kazanması 30 saniye kadar sürebilir.</msg>
+    <msg name="YOUR_APPLIANCE_SSHD_IS_NOW_ENABLED" desc="">Cihaz şimdi SSH üzerinden bakım erişimine izin verecek. Yapılandırma değişikliğinin geçerlilik kazanması 30 saniye kadar sürebilir.</msg>
+    <msg name="YOUR_APPLIANCE_WILL_BE_HALTED_SOON" desc="">Cihazınız şimdi kapatılıyor. Sisteminizi güvenli bir şekilde kapatabilmek için, lütfen 2 dakika bekleyin.</msg>
+    <msg name="YOUR_LOCAL_TIMEZONE" desc="">Yerel Saat Diliminiz</msg>
+    <msg name="YOU_HAVE_NOT_SAVED_YOUR_CHANGES" desc="">Değişikliklerinizi kaydetmediniz. Kaydetmek için tarayıcınızın 'Geri' düğmesine basarak önceki sayfaya dönün ve Kaydet düğmesini tıklayın.</msg>
+  </localizationbundle>
+</localizationbundle>

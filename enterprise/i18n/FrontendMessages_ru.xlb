@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<localizationbundle locale="ru">
+  <messages>
+    <msg name="MSG_advanced_search" desc="Page title">Расширенный поиск</msg>
+    <msg name="MSG_advsearch_example" desc="Advanced Search: See http://www.google.com/advanced_search  example domains">например, google.ru, .org</msg>
+    <msg name="MSG_advsearch_file_format" desc="Advanced Search: See http://www.google.com/advanced_search  label to select desired file formats">Формат файла</msg>
+    <msg name="MSG_advsearch_return_files" desc="Advanced Search: Prefixed with &quot;Only&quot; or &quot;Don't&quot;">возвращает результаты данного формата файлов</msg>
+    <msg name="MSG_alerts">Оповещения</msg>
+    <msg name="MSG_all_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>со <ph name="START_BOLD">&lt;b></ph>всеми<ph name="END_BOLD">&lt;/b></ph> словами</msg>
+    <msg name="MSG_any_format" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any file format">любой формат</msg>
+    <msg name="MSG_any_language" desc="Advanced Search: See http://www.google.com/advanced_search  option to allow any language">любом языке</msg>
+    <msg name="MSG_any_words" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Find results"'>c <ph name="START_BOLD">&lt;b></ph>любым<ph name="END_BOLD">&lt;/b></ph> из слов</msg>
+    <msg name="MSG_anywhere_on_page" desc='Advanced Search: See http://www.google.com/advanced_search  Prefixed with "Return results where my terms occur"'>где угодно на странице</msg>
+    <msg name="MSG_ar">арабском</msg>
+    <msg name="MSG_cache" desc="Link to cached copy of document">Сохранено в кэше</msg>
+    <msg name="MSG_cached_copy" desc="Followed by URL">Это копия страницы в кэше</msg>
+    <msg name="MSG_correct_credentials_help">Убедитесь, что удостоверения безопасности правильны.</msg>
+    <msg name="MSG_correct_spelling_help">Убедитесь, что все слова написаны без ошибок.</msg>
+    <msg name="MSG_cs" desc="Language">чешском</msg>
+    <msg name="MSG_da" desc="Language">датском</msg>
+    <msg name="MSG_de" desc="Language">немецком</msg>
+    <msg name="MSG_different_keywords_help">Попробуйте использовать другие ключевые слова.</msg>
+    <msg name="MSG_do_not" desc='Advanced search: See       http://www.google.com/advanced_search  dropdown, followed by "return results of the file format..."'>Не</msg>
+    <msg name="MSG_domains" desc="Advanced Search: See http://www.google.com/advanced_search - Domain is .com, .org, etc.">Домен</msg>
+    <msg name="MSG_egds_appliance_tab_label" desc="Label on search tab: Google Search Appliance">Устройство</msg>
+    <msg name="MSG_el" desc="Language">греческом</msg>
+    <msg name="MSG_en" desc="Language">английском</msg>
+    <msg name="MSG_err_description">Описание:</msg>
+    <msg name="MSG_err_details">Подробные сведения:</msg>
+    <msg name="MSG_err_message">Сообщение:</msg>
+    <msg name="MSG_error" desc="Title for Error Page">Ошибка</msg>
+    <msg name="MSG_es" desc="Language">испанском</msg>
+    <msg name="MSG_et" desc="Language">эстонском</msg>
+    <msg name="MSG_exact_phrase" desc='Advanced Search: See http://www.google.com/advanced_search  prefixed by "Find results"'>с <ph name="START_BOLD">&lt;b></ph>точной фразой<ph name="END_BOLD">&lt;/b></ph></msg>
+    <msg name="MSG_fi" desc="Language">финском</msg>
+    <msg name="MSG_file_doc">Microsoft Word (.doc)</msg>
+    <msg name="MSG_file_pdf">Adobe Acrobat PDF (.pdf)</msg>
+    <msg name="MSG_file_ppt">Microsoft Powerpoint (.ppt)</msg>
+    <msg name="MSG_file_ps">Adobe Postscript (.ps)</msg>
+    <msg name="MSG_file_rtf">Rich Text Format (.rtf)</msg>
+    <msg name="MSG_file_xls">Microsoft Excel (.xls)</msg>
+    <msg name="MSG_filtered_results">Чтобы показать наиболее значимые результаты, мы опустили некоторые, очень похожие на <ph name="NUM">%1$d</ph> уже показанных.<ph name="BREAK">&lt;br/></ph>Если вы хотите, можно <ph name="START_LINK">&lt;a href="%2$s"></ph>повторить поиск, включив опущенные результаты<ph name="END_LINK">&lt;/a></ph>.</msg>
+    <msg name="MSG_find_pages_linking_to" desc="Text to find pages that have a link to this page">Найти страницы, ссылающиеся на эту</msg>
+    <msg name="MSG_find_results" desc='Advanced Search: See http://www.google.com/advanced_search - Followed by "with all of the words ..."'>Найти результаты</msg>
+    <msg name="MSG_fr" desc="Language">французском</msg>
+    <msg name="MSG_general_keywords_help">Попробуйте использовать более популярные ключевые слова.</msg>
+    <msg name="MSG_gmail_tab" desc="Label for the tab on the homepage or search results page that leads to Gmail.  Should match http://google.com">Почта Gmail</msg>
+    <msg name="MSG_go_to_google_home">Главная страница Google</msg>
+    <msg name="MSG_groups_tab" desc="Label for the tab on the homepage or search results page that leads to Google Groups (usenet) search.  Should match http://google.com">Группы</msg>
+    <msg name="MSG_help" desc="Link that gives tips on how to search">Советы по поиску</msg>
+    <msg name="MSG_homepage_search_label">Искать:</msg>
+    <msg name="MSG_hu" desc="Language">венгерском</msg>
+    <msg name="MSG_images_tab" desc="Label for the tab on the homepage or search results page that leads to image search.  Should match http://google.com">Картинки</msg>
+    <msg name="MSG_in_title" desc='Advanced Search: See       http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>в заголовке страницы</msg>
+    <msg name="MSG_in_url" desc='Advanced Search: See http://www.google.com/advanced_search - dropdown that follows "Return results where my terms occur"'>в адресе страницы</msg>
+    <msg name="MSG_is" desc="Language">исландском</msg>
+    <msg name="MSG_it" desc="Language">итальянском</msg>
+    <msg name="MSG_iw" desc="Language">иврите</msg>
+    <msg name="MSG_ja" desc="Language">японском</msg>
+    <msg name="MSG_ko" desc="Language">корейском</msg>
+    <msg name="MSG_links" desc="Advanced Search: See http://www.google.com/advanced_search - This is the label on the form section to find pages with links to other pages">Ссылки</msg>
+    <msg name="MSG_local_tab" desc="Label for the tab on the homepage or search results page that leads to search on map.  Should match http://google.com">Карты</msg>
+    <msg name="MSG_lt" desc="Language">литовском</msg>
+    <msg name="MSG_lv" desc="Language">латышском</msg>
+    <msg name="MSG_maps_tab" desc="Label for the tab on the homepage or search results page that leads to Maps.  Should match http://google.com">Карты</msg>
+    <msg name="MSG_more_from_host" desc="Label on a link to get more results from a host machine">Дополнительные результаты с <ph name="HOSTNAME">%1$s</ph></msg>
+    <msg name="MSG_my_alerts">Мои оповещения</msg>
+    <msg name="MSG_navbar_header">Страница результатов</msg>
+    <msg name="MSG_navbar_next">Следующая</msg>
+    <msg name="MSG_navbar_previous">Предыдущая</msg>
+    <msg name="MSG_news_tab" desc="Label for the tab on the homepage or search results page that leads to Google News search.  Should match http://google.com">Новости</msg>
+    <msg name="MSG_news_lite_version" desc="Link to get a text version of a document">Текстовая версия</msg>
+    <msg name="MSG_nl" desc="Language">голландском</msg>
+    <msg name="MSG_no" desc="Language">норвежском</msg>
+    <msg name="MSG_no_results">Не найдено ни одного документа, соответствующего запросу <ph name="SEARCH_TERM">&lt;b>%1$s&lt;/b></ph>.</msg>
+    <msg name="MSG_not_indexed">Не проиндексировано:</msg>
+    <msg name="MSG_noword_warning">Не найдено ни одной страницы, содержащей <ph name="SEARCH_TERM">&lt;b>"%2$.*1$s"&lt;/b></ph>.</msg>
+    <msg name="MSG_occurrences" desc="See http://www.google.com/advanced_search - Section label for selecting if results occur anywhere or in title">Упоминание</msg>
+    <msg name="MSG_only" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown, followed by 'return results from the site'">Только</msg>
+    <msg name="MSG_page_specific_search">Поиск по странице</msg>
+    <msg name="MSG_pl" desc="Language">польском</msg>
+    <msg name="MSG_powered_by_GSA" desc="Page footer">Технология Google Search Appliance</msg>
+    <msg name="MSG_powered_by_GSAVDE" desc="Page footer: a virtualized edition for software developers">На базе Google Search Appliance, "виртуальная" версия для разработчиков ПО</msg>
+    <msg name="MSG_pt" desc="Language">португальском</msg>
+    <msg name="MSG_public_content" desc="Security radio button item.  Caption is 'Search:'">в общедоступном содержании</msg>
+    <msg name="MSG_public_secure_content" desc="Security radio button item.  Caption is 'Search:'">в общедоступном и защищенном содержании</msg>
+    <msg name="MSG_results" desc="Advanced Search: See http://www.google.com/advanced_search - dropdown to specify how many search results to return.  Prefixed by 10, 20, etc.">результатов</msg>
+    <msg name="MSG_results_a_b_for_q">Результаты <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> по запросу <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_a_b_of_n_for_q">Результаты <ph name="START_NUM">&lt;b>PLACEHOLDER_START_NUM&lt;/b></ph> - <ph name="END_NUM">&lt;b>PLACEHOLDER_END_NUM&lt;/b></ph> из почти <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> по запросу <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_results_page">Страница результатов</msg>
+    <msg name="MSG_return_domains" desc="Advanced Search: See http://www.google.com/advanced_search   Prefixed by 'Only', followed by e.g. '.com'">с сайта или домена</msg>
+    <msg name="MSG_return_occurrences" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'anywhere in the page'">Показывать результаты, содержащие эти слова</msg>
+    <msg name="MSG_return_only_pages_in" desc="Advanced Search: See http://www.google.com/advanced_search - followed by 'any language'">Показывать страницы на</msg>
+    <msg name="MSG_ro" desc="Language">румынском</msg>
+    <msg name="MSG_ru" desc="Language">русском</msg>
+    <msg name="MSG_search">Поиск в Google</msg>
+    <msg name="MSG_search_home" desc="Page title; home page for search">Главная страница поиска</msg>
+    <msg name="MSG_search_public_content" desc="Label on checkbox">Искать только в общедоступном содержании</msg>
+    <msg name="MSG_search_public_secure_content" desc="Label on checkbox">Искать в общедоступном и защищенном содержании (требующем вход)</msg>
+    <msg name="MSG_search_results" desc="Results of search">Результаты поиска</msg>
+    <msg name="MSG_searchtime">Время поиска: <ph name="NUMBER">&lt;b>%1$.2f&lt;/b></ph> сек.</msg>
+    <msg name="MSG_security" desc="Label for the selector of the security mode">Безопасность</msg>
+    <msg name="MSG_sep_bar_adv_text">Расширенный поиск</msg>
+    <msg name="MSG_sep_bar_error_text" desc="Title for Error Page">Ошибка</msg>
+    <msg name="MSG_sep_bar_std_text" desc="Tab label for doing a search">Поиск</msg>
+    <msg name="MSG_server_error_des_text">Проверьте код ответа сервера в подробных сведениях.</msg>
+    <msg name="MSG_server_error_msg_text">Произошла ошибка на сервере.</msg>
+    <msg name="MSG_server_error_title" desc="Heading on error page">Ошибка сервера</msg>
+    <msg name="MSG_sign_out">Выйти</msg>
+    <msg name="MSG_sort" desc="Label for the selector of 'Sort by Date/Relevance'">Упорядочить</msg>
+    <msg name="MSG_sort_by_date">Упорядочить по дате</msg>
+    <msg name="MSG_sort_by_relevance">Упорядочить по значимости</msg>
+    <msg name="MSG_spell_suggest" desc="Spelling suggestion">Возможно, вы имели в виду:</msg>
+    <msg name="MSG_suggest_help">Рекомендации:</msg>
+    <msg name="MSG_sv" desc="Language">шведском</msg>
+    <msg name="MSG_swr_num_results_found">Найдено около <ph name="TOTAL_NUM">&lt;b>PLACEHOLDER_TOTAL_NUM&lt;/b></ph> результата(ов) по запросу <ph name="QUERY">&lt;b>PLACEHOLDER_QUERY&lt;/b></ph>.</msg>
+    <msg name="MSG_swr_page_title">Искать в результатах</msg>
+    <msg name="MSG_swr_search_anchor_text">Искать в результатах</msg>
+    <msg name="MSG_swr_search_within_these_results">Используйте расположенное ниже окно для поиска в этих результатах</msg>
+    <msg name="MSG_synonym_text" desc="Synonym suggestion">Кроме того, можно:</msg>
+    <msg name="MSG_the_word_language">Язык</msg>
+    <msg name="MSG_unknown_xml" desc="Error message">Неизвестный тип результатов XML.</msg>
+    <msg name="MSG_video_tab" desc="Label for the tab on the homepage or search results page that leads to Video.  Should match http://google.com">Видео</msg>
+    <msg name="MSG_view_all_data">Просмотреть все данные</msg>
+    <msg name="MSG_view_xml" desc="'View page source' is a browser action">Просмотреть источник страницы на предмет излишнего использования XML.</msg>
+    <msg name="MSG_web_tab" desc="Label for the tab on the homepage or search results page that leads to web search.  Should match http://google.com">Веб</msg>
+    <msg name="MSG_without_words" desc="Advanced Search: See http://www.google.com/advanced_search "><ph name="START_BOLD">&lt;b></ph>без<ph name="END_BOLD">&lt;/b></ph> слов</msg>
+    <msg name="MSG_zh_CN" desc="Language">китайском (упрощенном)</msg>
+    <msg name="MSG_zh_TW" desc="Language">китайском (традиционном)</msg>
+  </messages>
+</localizationbundle>
