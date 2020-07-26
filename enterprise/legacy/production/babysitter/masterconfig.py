@@ -2,7 +2,7 @@
 #
 # Copyright 2002 onwards Google Inc
 #
-# The masterconfig object encapsulates the data stored in the services.??
+# The mainconfig object encapsulates the data stored in the services.??
 # files - service names and babysat config files.
 #
 # There is a services config file for every datacenter (usually called
@@ -45,7 +45,7 @@ import traceback
 
 # Hack to enable circular imports
 import google3.enterprise.legacy.production.babysitter
-google3.enterprise.legacy.production.babysitter.masterconfig = \
+google3.enterprise.legacy.production.babysitter.mainconfig = \
     sys.modules[__name__]
 
 from google3.enterprise.legacy.production.babysitter import configutil
@@ -97,7 +97,7 @@ def AddCache(key, data, fnames):
   _CONFIG_CACHE[key] = (data, fnames, map(os.path.getmtime, fnames))
 
 
-# Initialize the master factory object for the specified coloc based
+# Initialize the main factory object for the specified coloc based
 # on data from the corresponding "services" config file.
 def Init(coloc, config_dir = None, services_file = None):
   scope = {}
@@ -170,7 +170,7 @@ def GetServers(service_name, server_type, port = -1, colos=None):
   all_servers.sort()
   return all_servers
 
-# The master factory holds various info about the configuration files
+# The main factory holds various info about the configuration files
 # and all necessary accessors to get to this data.
 #
 # We define methods to get all configs for a given colocation, and to

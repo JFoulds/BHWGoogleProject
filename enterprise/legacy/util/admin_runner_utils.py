@@ -6,7 +6,7 @@
 #
 # some utility functions that are useful when talking to admin runner
 import string
-from google3.enterprise.legacy.util import find_master
+from google3.enterprise.legacy.util import find_main
 from google3.enterprise.legacy.adminrunner import adminrunner_client
 from google3.enterprise.legacy.install import install_utilities
 from google3.enterprise.legacy.util import C
@@ -39,24 +39,24 @@ def ReadSysconfigParam(param_name):
 
 # This returns adminrunner client and global_configs in a tuple
 # It will raise an exception if anything is wrong
-def GetARClientAndGlobalConfig(master_machine=None):
-  if master_machine == None:
+def GetARClientAndGlobalConfig(main_machine=None):
+  if main_machine == None:
     machine_list = ReadSysconfigParam('MACHINES')
     if type(machine_list) == type(""):
       machine_list = map(string.strip, string.split(machine_list, ","))
     ver = install_utilities.extract_version_from_dir(E.getEnterpriseHome())
-    master_machine = find_master.FindMasterUsingChubby(ver)
-    if master_machine is None:
-      raise "Could not find master."
+    main_machine = find_main.FindMainUsingChubby(ver)
+    if main_machine is None:
+      raise "Could not find main."
 
-  ar = adminrunner_client.AdminRunnerClient(master_machine, 2100)
+  ar = adminrunner_client.AdminRunnerClient(main_machine, 2100)
   if not ar.IsAlive():
-    raise "AdminRunner on machine %s:%d is not alive" % (master_machine, 2100)
+    raise "AdminRunner on machine %s:%d is not alive" % (main_machine, 2100)
 
   google_config = {}
   ok, response = ar.GetAllParamsIntoDict(google_config)
   if not ok:
-    raise "Can not get all global params from %s:%d" % (master_machine, 2100)
+    raise "Can not get all global params from %s:%d" % (main_machine, 2100)
   return (ar, google_config)
 
 

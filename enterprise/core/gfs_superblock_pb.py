@@ -576,7 +576,7 @@ class GFS_SuperBlock(ProtocolBuffer.ProtocolMessage):
   def __init__(self, contents=None):
     self.version_ = 0
     self.cellname_ = ""
-    self.last_master_ = ""
+    self.last_main_ = ""
     self.logical_timestamp_ = 0
     self.replicas_ = []
     self.snapshot_serial_ = 0
@@ -586,7 +586,7 @@ class GFS_SuperBlock(ProtocolBuffer.ProtocolMessage):
     self.old_primaries_ = []
     self.has_version_ = 0
     self.has_cellname_ = 0
-    self.has_last_master_ = 0
+    self.has_last_main_ = 0
     self.has_logical_timestamp_ = 0
     self.has_snapshot_serial_ = 0
     self.has_delta_serial_ = 0
@@ -617,17 +617,17 @@ class GFS_SuperBlock(ProtocolBuffer.ProtocolMessage):
 
   def has_cellname(self): return self.has_cellname_
 
-  def last_master(self): return self.last_master_
+  def last_main(self): return self.last_main_
 
-  def set_last_master(self, x):
-    self.has_last_master_ = 1
-    self.last_master_ = x
+  def set_last_main(self, x):
+    self.has_last_main_ = 1
+    self.last_main_ = x
 
-  def clear_last_master(self):
-    self.has_last_master_ = 0
-    self.last_master_ = ""
+  def clear_last_main(self):
+    self.has_last_main_ = 0
+    self.last_main_ = ""
 
-  def has_last_master(self): return self.has_last_master_
+  def has_last_main(self): return self.has_last_main_
 
   def logical_timestamp(self): return self.logical_timestamp_
 
@@ -729,7 +729,7 @@ class GFS_SuperBlock(ProtocolBuffer.ProtocolMessage):
     assert x is not self
     if (x.has_version()): self.set_version(x.version())
     if (x.has_cellname()): self.set_cellname(x.cellname())
-    if (x.has_last_master()): self.set_last_master(x.last_master())
+    if (x.has_last_main()): self.set_last_main(x.last_main())
     if (x.has_logical_timestamp()): self.set_logical_timestamp(x.logical_timestamp())
     for i in xrange(x.replicas_size()): self.add_replicas().CopyFrom(x.replicas(i))
     if (x.has_snapshot_serial()): self.set_snapshot_serial(x.snapshot_serial())
@@ -762,8 +762,8 @@ class GFS_SuperBlock(ProtocolBuffer.ProtocolMessage):
     if self.has_version_ and self.version_ != x.version_: return 0
     if self.has_cellname_ != x.has_cellname_: return 0
     if self.has_cellname_ and self.cellname_ != x.cellname_: return 0
-    if self.has_last_master_ != x.has_last_master_: return 0
-    if self.has_last_master_ and self.last_master_ != x.last_master_: return 0
+    if self.has_last_main_ != x.has_last_main_: return 0
+    if self.has_last_main_ and self.last_main_ != x.last_main_: return 0
     if self.has_logical_timestamp_ != x.has_logical_timestamp_: return 0
     if self.has_logical_timestamp_ and self.logical_timestamp_ != x.logical_timestamp_: return 0
     if len(self.replicas_) != len(x.replicas_): return 0
@@ -795,10 +795,10 @@ class GFS_SuperBlock(ProtocolBuffer.ProtocolMessage):
       initialized = 0
       if debug_strs is not None:
         debug_strs.append('Required field: cellname not set.')
-    if (not self.has_last_master_):
+    if (not self.has_last_main_):
       initialized = 0
       if debug_strs is not None:
-        debug_strs.append('Required field: last_master not set.')
+        debug_strs.append('Required field: last_main not set.')
     if (not self.has_logical_timestamp_):
       initialized = 0
       if debug_strs is not None:
@@ -825,7 +825,7 @@ class GFS_SuperBlock(ProtocolBuffer.ProtocolMessage):
     n = 0
     if (self.has_version_): n += 1 + self.lengthVarInt64(self.version_)
     n += self.lengthString(len(self.cellname_))
-    n += self.lengthString(len(self.last_master_))
+    n += self.lengthString(len(self.last_main_))
     n += self.lengthVarInt64(self.logical_timestamp_)
     n += 1 * len(self.replicas_)
     for i in xrange(len(self.replicas_)): n += self.lengthString(self.replicas_[i].ByteSize())
@@ -841,7 +841,7 @@ class GFS_SuperBlock(ProtocolBuffer.ProtocolMessage):
   def Clear(self):
     self.clear_version()
     self.clear_cellname()
-    self.clear_last_master()
+    self.clear_last_main()
     self.clear_logical_timestamp()
     self.clear_replicas()
     self.clear_snapshot_serial()
@@ -854,7 +854,7 @@ class GFS_SuperBlock(ProtocolBuffer.ProtocolMessage):
     out.putVarInt32(10)
     out.putPrefixedString(self.cellname_)
     out.putVarInt32(18)
-    out.putPrefixedString(self.last_master_)
+    out.putPrefixedString(self.last_main_)
     out.putVarInt32(24)
     out.putVarInt64(self.logical_timestamp_)
     for i in xrange(len(self.replicas_)):
@@ -885,7 +885,7 @@ class GFS_SuperBlock(ProtocolBuffer.ProtocolMessage):
         self.set_cellname(d.getPrefixedString())
         continue
       if tt == 18:
-        self.set_last_master(d.getPrefixedString())
+        self.set_last_main(d.getPrefixedString())
         continue
       if tt == 24:
         self.set_logical_timestamp(d.getVarInt64())
@@ -927,7 +927,7 @@ class GFS_SuperBlock(ProtocolBuffer.ProtocolMessage):
     res=""
     if self.has_version_: res+=prefix+("version: %s\n" % self.DebugFormatInt32(self.version_))
     if self.has_cellname_: res+=prefix+("cellname: %s\n" % self.DebugFormatString(self.cellname_))
-    if self.has_last_master_: res+=prefix+("last_master: %s\n" % self.DebugFormatString(self.last_master_))
+    if self.has_last_main_: res+=prefix+("last_main: %s\n" % self.DebugFormatString(self.last_main_))
     if self.has_logical_timestamp_: res+=prefix+("logical_timestamp: %s\n" % self.DebugFormatInt64(self.logical_timestamp_))
     cnt=0
     for e in self.replicas_:
@@ -958,7 +958,7 @@ class GFS_SuperBlock(ProtocolBuffer.ProtocolMessage):
 
   kversion = 10
   kcellname = 1
-  klast_master = 2
+  klast_main = 2
   klogical_timestamp = 3
   kreplicas = 4
   ksnapshot_serial = 5
@@ -970,7 +970,7 @@ class GFS_SuperBlock(ProtocolBuffer.ProtocolMessage):
   _TEXT = (
    "ErrorCode",  #   0
    "cellname",  #   1
-   "last_master",  #   2
+   "last_main",  #   2
    "logical_timestamp",  #   3
    "replicas",  #   4
    "snapshot_serial",  #   5

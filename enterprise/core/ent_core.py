@@ -39,9 +39,9 @@ Operations (only to be specified one at a time):
      --info       Print information.
      --clear_gfs  Clear GFS data files and GFS related files in chubby
      --test_gfs   Test if GFS is operational
-     --start_gfs  Start GFS(gfs_chunkserver, gfs_master, sremote_server)
-     --init_gfs   Init GFS in chubby. Create gfs master and gfs chunkserver dirs
-     --stop_gfs   Stop GFS(gfs_chunkserver, gfs_master, sremote_server)
+     --start_gfs  Start GFS(gfs_chunkserver, gfs_main, sremote_server)
+     --init_gfs   Init GFS in chubby. Create gfs main and gfs chunkserver dirs
+     --stop_gfs   Stop GFS(gfs_chunkserver, gfs_main, sremote_server)
 
 Misc Operations:
      --activate   Activates the cluster and brings it to running state.
@@ -84,9 +84,9 @@ from google3.pyglib import logging
 LB_DIR             = '/etc/localbabysitter.d'
 LB_PID_DIR         = '/var/run'
 LS_BIN             = 'lockserver'
-GSA_MASTER_BIN     = 'gsa-master'
+GSA_MASTER_BIN     = 'gsa-main'
 CHUBBY_DNS_BIN     = 'chubbydnsserver'
-GFS_MASTER_BIN     = 'gfs_master'
+GFS_MASTER_BIN     = 'gfs_main'
 GFS_CHUNKSERVER_BIN= 'gfs_chunkserver'
 SESSIONMANAGER_BIN = 'sessionmanagerserver'
 SREMOTE_SERVER_BIN = 'sremote_server'
@@ -199,7 +199,7 @@ class CoreOps:
                             '--entry=gsa-%(entcell)s-test '
                             '--lockservice_port=%(lsport)s ' % vars)
     self.DNS_TEST_RESULT = ('%s has address 216.239.43.1' % self.GSA_TEST_ENTRY)
-    self.GSA_MASTER_LOCK = '/ls/%(entcell)s/gsa-masterlock' % vars
+    self.GSA_MASTER_LOCK = '/ls/%(entcell)s/gsa-mainlock' % vars
 
   def ConfigSessionManagerScript(self):
     """Configures the script used by the local babysitter for session manager.
@@ -239,7 +239,7 @@ class CoreOps:
               '--lockservice_port=%(lsport)s '
               '--lockserver_rep_port=%(lsrepport)s '
               '--nolockserver_autoreplace '
-              '--nolockserver_mirror_slave '
+              '--nolockserver_mirror_subordinate '
               '--lockserver_check_svs=false '
               '--lockserver_num_ports=2 '
               '--bnsresolver_use_svelte=false '
@@ -269,31 +269,31 @@ class CoreOps:
     script_file = '%(homedir)s/bin/lockserver-%(ver)s.sh' % self.vars_
     AtomicSaveFileWBackup(script_file, script)
 
-  def ConfigGFSMasterScript(self):
-    """ Config gfs_master script
+  def ConfigGFSMainScript(self):
+    """ Config gfs_main script
 
-    Configures the script used by the local babysitter to start gfs_master.
+    Configures the script used by the local babysitter to start gfs_main.
     """
-    cmdline = ('%(homedir)s/local/google/bin/gfs_master '
-               '--port=%(gfsmasterport)s '
+    cmdline = ('%(homedir)s/local/google/bin/gfs_main '
+               '--port=%(gfsmainport)s '
                '--log_dir=/export/hda3/%(ver)s/logs '
-               '--gfs_master_directory=/managedreplicated%(gfsmaster_dir)s '
+               '--gfs_main_directory=/managedreplicated%(gfsmain_dir)s '
                '--gfs_chunkservers_from_superblock=1 '
                '--gfs_global_reserved_GB=10 '
                '--trusted_clients='
                '127.0.0.1,216.239.43.0/24,10.0.0.0/8,172.16.0.0/12 '
                '--gfs_fileattr=%(gfsconfig_dir)s/gfs_fileattr.ent '
-               '--gfs_masterlog_replica_use_sremote '
+               '--gfs_mainlog_replica_use_sremote '
                '--sremote_server_port=%(sremoteserverport)s '
-               '--gfs_masterlog_replica_machines='
-               '%(gfs_master_replica_machines)s '
+               '--gfs_mainlog_replica_machines='
+               '%(gfs_main_replica_machines)s '
                '--gfs_deleted_fileversion_lifetime_secs=0 '
-               '--gfs_enable_master_failover=true '
+               '--gfs_enable_main_failover=true '
                '--gfs_log_sync_on_write=true '
-               '--gfs_master_chubby_cell=%(gfschubbycell)s '
+               '--gfs_main_chubby_cell=%(gfschubbycell)s '
                '--localmachine_use_sremote=true '
-               '--gfs_master_peers=%(gfs_master_peers)s '
-               '--gfs_primary_master_affinity_secs=60 '
+               '--gfs_main_peers=%(gfs_main_peers)s '
+               '--gfs_primary_main_affinity_secs=60 '
                '--lockservice_port=%(lsport)s '
                '--bnsresolver_use_svelte=false '
                '--svelte_servers=localhost:6297 '
@@ -302,7 +302,7 @@ class CoreOps:
                 % self.vars_)
 
     script = '#!/bin/bash\n%s' %  cmdline
-    script_file = '%(homedir)s/bin/gfs_master-%(ver)s.sh' % self.vars_
+    script_file = '%(homedir)s/bin/gfs_main-%(ver)s.sh' % self.vars_
     AtomicSaveFileWBackup(script_file, script)
 
   def ConfigGFSChunkserverScript(self):
@@ -340,7 +340,7 @@ class CoreOps:
                '--trusted_clients='
                '127.0.0.1,216.239.43.0/24,10.0.0.0/8,172.16.0.0/12 '
                '--sremote_restrict_lock='
-               '/ls/%(datacenter)s/gfs/%(gfscell)s/master-lock '
+               '/ls/%(datacenter)s/gfs/%(gfscell)s/main-lock '
                '--lockservice_port=%(lsport)s '
                '--nobinarylog '
                 % self.vars_)
@@ -404,9 +404,9 @@ class CoreOps:
     Check if gfs has been initialized in chubby. If not, run gfs_setup_chubby.
     chubby has to be up when this function is called.
     """
-    # checking if /ls/gfschubbycell/gfs/ent/master-lock exists
+    # checking if /ls/gfschubbycell/gfs/ent/main-lock exists
     try:
-      core_utils.ExecCmd('%s ls /ls/%s/gfs/%s/master-lock' % (self.LS_CLIENT,
+      core_utils.ExecCmd('%s ls /ls/%s/gfs/%s/main-lock' % (self.LS_CLIENT,
                          self.vars_['entcell'], self.vars_['gfscell']),
                          'Checking GFS is initialized in Chubby')
     except core_utils.CommandExecError:
@@ -416,43 +416,43 @@ class CoreOps:
                         '--lockservice_port=%(lsport)s '
                         '--logtostderr=false '
                         '--wipe_old_data '
-                        '--gfs_uptodate_master=%(gfs_master_replica_machines)s'
+                        '--gfs_uptodate_main=%(gfs_main_replica_machines)s'
                         % self.vars_)
       core_utils.ExecCmd(gfs_setup_cmd, "Running gfs_setup_chubby")
     else:
       logging.info('Chubby has already been initialized for GFS')
 
-  def CreateGFSMasterDir(self):
-    """ Creates dirs for gfs_master
+  def CreateGFSMainDir(self):
+    """ Creates dirs for gfs_main
 
-    If gfs master dirs have not been created:
-    1. creating the following dirs for gfs_master:
-          /export/hda3/<ver>/data/gfs_master/ent.gfsmaster
-          /export/hda3/<ver>/data/gfs_master/ent.gfsconfig
-    2. running gfs_setup_master
+    If gfs main dirs have not been created:
+    1. creating the following dirs for gfs_main:
+          /export/hda3/<ver>/data/gfs_main/ent.gfsmain
+          /export/hda3/<ver>/data/gfs_main/ent.gfsconfig
+    2. running gfs_setup_main
     3. add gfs_fileattr.ent to ent.gfsconfig dir
     """
-    if self.vars_['node_name'] not in self.vars_['gfs_master_nodes']:
-      logging.info('No need to create gfs master dirs on this node')
+    if self.vars_['node_name'] not in self.vars_['gfs_main_nodes']:
+      logging.info('No need to create gfs main dirs on this node')
       logging.flush()
       return
 
     try:
       core_utils.ExecCmd('ls %(gfsconfig_dir)s/gfs_fileattr.%(gfscell)s' %
                          self.vars_,
-                         'Checking GFS master dirs created on this node')
+                         'Checking GFS main dirs created on this node')
     except core_utils.CommandExecError:
       pass
     else:
-      logging.info('gfs master dirs already exist')
+      logging.info('gfs main dirs already exist')
       logging.flush()
       return
 
-    logging.info('Creating gfs master dirs...')
-    gfs_setup_master_cmd = (
-      '%(homedir)s/local/google3/file/gfs/gfs_setup_master '
-      '%(gfs_setup_args)s %(gfsmaster_dir)s' % self.vars_)
-    core_utils.ExecCmd(gfs_setup_master_cmd, "Running gfs_setup_master")
+    logging.info('Creating gfs main dirs...')
+    gfs_setup_main_cmd = (
+      '%(homedir)s/local/google3/file/gfs/gfs_setup_main '
+      '%(gfs_setup_args)s %(gfsmain_dir)s' % self.vars_)
+    core_utils.ExecCmd(gfs_setup_main_cmd, "Running gfs_setup_main")
 
     # Add gfs_fileattr.<cell> file to <cell>.gfsconfig directory.
     # eg: "cp /export/hda3/4.0.0/local/conf/defaults/gfs_fileattr
@@ -526,19 +526,19 @@ class CoreOps:
     """ Init GFS """
     logging.info('Init GFS.')
     self.InitGFSInChubby()
-    self.CreateGFSMasterDir()
+    self.CreateGFSMainDir()
     self.CreateGFSChunkServerDir()
 
   def AddGFSChunkservers(self):
     """ Add GFS chunkservers
 
-    With --gfs_chunkservers_from_superblock=1 for gfs_master, gfs_master has to
+    With --gfs_chunkservers_from_superblock=1 for gfs_main, gfs_main has to
     be informed what are the chunkservers. It is OK to add the same chunkserver
     multiple times.
     """
     sleep_time = 30
     for i in range(5):
-      if gfs_utils.CheckLocalGFSMasterHealthz(self.vars_['testver']):
+      if gfs_utils.CheckLocalGFSMainHealthz(self.vars_['testver']):
         logging.info("Adding the following GFS chunkservers: %s" %
                      self.vars_['gfs_chunkservers'])
         gfs_utils.AddGFSChunkservers(self.vars_['ver'], self.vars_['testver'],
@@ -546,19 +546,19 @@ class CoreOps:
         if gfs_utils.CurrentChunkservers(self.vars_['ver'],
                                          self.vars_['testver']) is not None:
           return
-      # wait for GFS Master to come up, wait a little longer each time
+      # wait for GFS Main to come up, wait a little longer each time
       time.sleep(sleep_time * i)
     logging.info("Failed to add GFS chunkservers")
 
   def DeleteGFSChunkservers(self):
     """ Delete GFS chunkservers
 
-    Assuming gfs_master is up.
+    Assuming gfs_main is up.
 
     Note:
-    With --gfs_chunkservers_from_superblock=1 for gfs_master, the set of
+    With --gfs_chunkservers_from_superblock=1 for gfs_main, the set of
     chunkservers in use and their port numbers are remembered in the
-    superblock. The next time gfs_master starts, it will get the info
+    superblock. The next time gfs_main starts, it will get the info
     from the superblock. If there are changes in chunkservers or their port
     numbers, we should delete the current chunkservers before stop GFS.
     (bug 237191)
@@ -577,7 +577,7 @@ class CoreOps:
   def StartSessionManager(self):
     """Start the SessionManager service through localbabysitter.
 
-    We do this after Chubby has started, as the master selection for session
+    We do this after Chubby has started, as the main selection for session
     manager needs chubby. The function would be called as part of the activate
     step.
 
@@ -596,13 +596,13 @@ class CoreOps:
     self.lb_util_.StartLBService('gfs chunkserver',
                                  GFS_CHUNKSERVER_BIN,
                                  self.vars_)
-    if self.vars_['node_name'] in self.vars_['gfs_master_nodes']:
+    if self.vars_['node_name'] in self.vars_['gfs_main_nodes']:
       self.ConfigSremoteserverScript()
-      self.ConfigGFSMasterScript()
+      self.ConfigGFSMainScript()
       self.lb_util_.StartLBService('sremote server',
                                    SREMOTE_SERVER_BIN,
                                    self.vars_)
-      self.lb_util_.StartLBService('gfs master',
+      self.lb_util_.StartLBService('gfs main',
                                    GFS_MASTER_BIN,
                                    self.vars_)
       # no need to have all nodes trying to add chunkservers
@@ -642,20 +642,20 @@ class CoreOps:
   def StopGFS(self):
     """stop GFS
 
-    Just stops localbabysitter from running gfs_master, gfs_chunkserver,
+    Just stops localbabysitter from running gfs_main, gfs_chunkserver,
     and sremote_server.
     """
     # If this is in test mode, delete the chunkservers
     # it is possible we run ent_core --stop_gfs on one node. We don't
     # want to remove all the chunkservers in that case. On the other hand,
     # we cannot just remove the chunkserver on this node, as the primary
-    # master may have been killed already.
+    # main may have been killed already.
     if self.vars_['testver']:
       self.DeleteGFSChunkservers()
     self.lb_util_.KillLBService('gfs chunkserver', GFS_CHUNKSERVER_BIN)
-    if self.vars_['node_name'] in self.vars_['gfs_master_nodes']:
+    if self.vars_['node_name'] in self.vars_['gfs_main_nodes']:
       self.lb_util_.KillLBService('sremote server', SREMOTE_SERVER_BIN)
-      self.lb_util_.KillLBService('gfs master', GFS_MASTER_BIN)
+      self.lb_util_.KillLBService('gfs main', GFS_MASTER_BIN)
     # one time config reload for the local babysitter
     self.lb_util_.ForceLocalBabysitterConfigReload()
     logging.info('stop GFS successful.')
@@ -680,10 +680,10 @@ class CoreOps:
   def ClearGFSData(self):
     """ cleans up GFS on disk data.
 
-    Since the wipe-old-data flag is used for gfs_setup_master and
+    Since the wipe-old-data flag is used for gfs_setup_main and
     gfs_setup_chunkserver, it not really necessary to remove all the
     dirs and files. Just remove the files that CreateGFSChunkServerDir()
-    and CreateGFSMasterDir() checks.
+    and CreateGFSMainDir() checks.
     """
     core_utils.ExecCmd(
         'rm -f %(homedir)s/data/%(gfscell)s.gfsdata/GFS_CS_DIRECTORIES' %
@@ -691,7 +691,7 @@ class CoreOps:
         'Make sure GFS chunkserver dirs will be recreated on this node')
     core_utils.ExecCmd('rm -f %(gfsconfig_dir)s/gfs_fileattr.%(gfscell)s' %
         self.vars_,
-        'Make sure GFS master dirs will be recreated on this node')
+        'Make sure GFS main dirs will be recreated on this node')
 
   def ClearLockserverDir(self, directory, ignore_errors=1):
     """ Create a lockserver dir
@@ -796,7 +796,7 @@ class CoreOps:
     return 0
 
   def StartInfra(self):
-    """Starts lockserver, chubby DNS and GSA Master processes.
+    """Starts lockserver, chubby DNS and GSA Main processes.
     """
     # generate new lockserver_cmd script if I am a replica
     core_utils.ExecCmd('echo %(dnsip)s > %(cellfile)s' % self.vars_,
@@ -808,7 +808,7 @@ class CoreOps:
       self.lb_util_.StartLBService('Lockserver', LS_BIN, self.vars_)
     if core_utils.UseChubbyDNS(self.vars_['nodes']):
       self.lb_util_.StartLBService('Chubby DNS', CHUBBY_DNS_BIN, self.vars_)
-    self.lb_util_.StartLBService('GSA Master', GSA_MASTER_BIN, self.vars_)
+    self.lb_util_.StartLBService('GSA Main', GSA_MASTER_BIN, self.vars_)
     self.lb_util_.ForceLocalBabysitterConfigReload()
     logging.info('Activation complete. It may take sometime before services'
                  ' are up.')
@@ -820,7 +820,7 @@ class CoreOps:
   def StopInfra(self):
     """stops infrastructure but doesn't remove any data.
     """
-    self.lb_util_.KillLBService('GSA Master', GSA_MASTER_BIN)
+    self.lb_util_.KillLBService('GSA Main', GSA_MASTER_BIN)
     self.StopGFS()
     if core_utils.UseChubbyDNS(self.vars_['nodes']):
       self.lb_util_.KillLBService('Chubby DNS', CHUBBY_DNS_BIN)
@@ -871,7 +871,7 @@ def CreateCoreOps(ver, nodes, failures, test=0):
   lsrepport = core_utils.GetLSRepPort(ver, test)
   gsaport = core_utils.GSA_MASTER_PORT
   chubbydnsip = core_utils.CHUBBY_DNS_IP
-  gfsmasterport = core_utils.GFSMASTER_BASE_PORT
+  gfsmainport = core_utils.GFSMASTER_BASE_PORT
   gfschunkserverport = core_utils.GFSCHUNKSERVER_BASE_PORT
   sremoteserverport = core_utils.SREMOTESERVER_BASE_PORT
   homedir = '/export/hda3/%s' % ver
@@ -880,28 +880,28 @@ def CreateCoreOps(ver, nodes, failures, test=0):
   if test:
     gsaport = core_utils.GSA_MASTER_TEST_PORT
     chubbydnsip = core_utils.CHUBBY_DNS_TEST_IP
-    gfsmasterport = core_utils.GFSMASTER_TEST_PORT
+    gfsmainport = core_utils.GFSMASTER_TEST_PORT
     gfschunkserverport = core_utils.GFSCHUNKSERVER_TEST_PORT
     sremoteserverport = core_utils.SREMOTESERVER_TEST_PORT
   # unique string identifying version that can be used in variable names
   unq = re.sub(r'\.', '_', ver)
-  if core_utils.CanRunGSAMaster(core_utils.GetNode()):
+  if core_utils.CanRunGSAMain(core_utils.GetNode()):
     svsonlyflag = ''
   else:
     svsonlyflag = '--svs_monitoring_only=true'
-  (all_gfs_masters, shadow_gfs_masters) = core_utils.GFSMasterNodes()
+  (all_gfs_mains, shadow_gfs_mains) = core_utils.GFSMainNodes()
   node_name = core_utils.GetNode()
   gfscell = 'ent'
-  gfsmaster_root_dir = os.path.join(homedir, 'data/gfs_master')
-  gfsmaster_dir = os.path.join(gfsmaster_root_dir, '%s.gfsmaster' % gfscell)
-  gfsconfig_dir = os.path.join(gfsmaster_root_dir, '%s.gfsconfig' % gfscell)
+  gfsmain_root_dir = os.path.join(homedir, 'data/gfs_main')
+  gfsmain_dir = os.path.join(gfsmain_root_dir, '%s.gfsmain' % gfscell)
+  gfsconfig_dir = os.path.join(gfsmain_root_dir, '%s.gfsconfig' % gfscell)
   gfs_setup_args = "-p -empty -gfsuser=nobody -gfsgroup=nobody " \
                    "-email=none -wipe-old-data"
   live_nodes = core_utils.GetLiveNodes(logging)
   gfs_chunkservers = live_nodes
-  gfs_master_replica_machines = ",".join(all_gfs_masters)
-  gfs_master_peers = ",".join(
-    map(lambda x,y=gfsmasterport: x + ":%s" % y, all_gfs_masters))
+  gfs_main_replica_machines = ",".join(all_gfs_mains)
+  gfs_main_peers = ",".join(
+    map(lambda x,y=gfsmainport: x + ":%s" % y, all_gfs_mains))
   vars = {'ver': ver,
           'homedir':                 homedir,
           'nodes':                   nodes,
@@ -917,10 +917,10 @@ def CreateCoreOps(ver, nodes, failures, test=0):
           'lsrepport':               lsrepport,
           'smport':                  smport,
           'gsaport':                 gsaport,
-          'gfsmasterport':           gfsmasterport,
+          'gfsmainport':           gfsmainport,
           'gfschunkserverport':      gfschunkserverport,
           'sremoteserverport':       sremoteserverport,
-          'gfsmasterpath':           core_utils.MakeGFSMasterPath(ver),
+          'gfsmainpath':           core_utils.MakeGFSMainPath(ver),
           'dnsip':                   chubbydnsip,
           'logdir':                  '%s/logs' % homedir,
           'lsdir':                   '%s/data/lockserver' % homedir,
@@ -929,15 +929,15 @@ def CreateCoreOps(ver, nodes, failures, test=0):
           'unq':                     unq,
           'dnspath':                 core_utils.GetDNSPath(ver),
           'svsonlyflag':             svsonlyflag,
-          'gfs_master_nodes':        all_gfs_masters,
-          'gfsmaster_dir':           gfsmaster_dir,
+          'gfs_main_nodes':        all_gfs_mains,
+          'gfsmain_dir':           gfsmain_dir,
           'gfsconfig_dir':           gfsconfig_dir,
           'gfs_setup_args':          gfs_setup_args,
           'gfs_chunkservers':        gfs_chunkservers,
-          'gfs_master_peers':        gfs_master_peers,
+          'gfs_main_peers':        gfs_main_peers,
           'node_name':               node_name,
           'google_config':           google_config,
-          'gfs_master_replica_machines': gfs_master_replica_machines,
+          'gfs_main_replica_machines': gfs_main_replica_machines,
         }
   obj = CoreOps(vars)
   return obj
@@ -1184,7 +1184,7 @@ class EntCoreStateMach:
     self.__doOp('init_gfs')
 
   def Start_gfs(self):
-    """ Start gfs_master, gfs_chunkserver, and sremote_server
+    """ Start gfs_main, gfs_chunkserver, and sremote_server
     """
     obj = self.__checkOpOrDie('start_gfs')
     obj.StartGFS()

@@ -60,7 +60,7 @@ PREFIXES = [
   "cookieserver",
   "crawlchecker",
   "pageranker",
-  "pagerankmaster",
+  "pagerankmain",
   "urlserver",
   "storeserver",
   "anchormerge",
@@ -121,7 +121,7 @@ PREFIXES = [
   "pr_main",
   "rtserver",
   "filesyncer",
-  "filesyncmaster",
+  "filesyncmain",
   "compute_sums",
   "feeder",
   "feedergate",
@@ -130,12 +130,12 @@ PREFIXES = [
   "collector_main.py",
   "log_analyzer_alerter_",
   "analyzer_alerter.py",
-  "gfs_master",
+  "gfs_main",
   "gfs_chunkserver",
   "concentrator",
   "pyserverizer",
-  "workqueue-master",
-  "workqueue-slave",
+  "workqueue-main",
+  "workqueue-subordinate",
   "workschedulerserver",
   "urlscheduler",
   "urlmanager",
@@ -145,7 +145,7 @@ PREFIXES = [
   "crawlmanager",
   "crawlscheduler",
   "chubbydnsserver",
-  "gsa-master",
+  "gsa-main",
   "lockserver",
   "py.ent_core",
   "lockserv",
@@ -249,7 +249,7 @@ FILES_IN_ROOTTMPDIR = [
   ( '^@', 0, 60 ),                               # unknown origin (some python script probably)
   ( '^network-[0-9]{8,8}_[0-9]{6,6}$', 10, 60 ),         # tmp /etc/sysconfig/network files
   ( '^resolv.conf-[0-9]{8,8}_[0-9]{6,6}$', 10, 60 ),     # tmp /etc/resolve.conf files
-  ( '^ntp.conf-[0-9]{8,8}_[0-9]{6,6}$', 10, 60),         # created by ntp syncs to master
+  ( '^ntp.conf-[0-9]{8,8}_[0-9]{6,6}$', 10, 60),         # created by ntp syncs to main
   ( '^step-tickers-[0-9]{8,8}_[0-9]{6,6}$', 10, 60 ),    # Name of machine for xntpd to sync with
   ( '^gse_multipart', 0, 60 ),                           # Files from a form post
   ( '^ENT_CORE_STATE-[0-9]{8,8}_[0-9]{6,6}$', 10, 60 ),  # ENT_CORE_STATE files

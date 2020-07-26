@@ -768,8 +768,8 @@ def LoadConfigData(config_file,
     if type(source) == types.TupleType:
       colo = source[0]
       source = source[1]
-      from google3.enterprise.legacy.production.babysitter import masterconfig
-      factory = masterconfig.Factory(colo, config_dir = config_load_dir)
+      from google3.enterprise.legacy.production.babysitter import mainconfig
+      factory = mainconfig.Factory(colo, config_dir = config_load_dir)
       source = factory.GetConfigFiles(source)[0]
 
     # Load the included data and remove servers.

@@ -53,7 +53,7 @@ BORGMON_CONFIG_PATH_FMT = \
     "/export/hda3/%s/local/googledata/enterprise/borgmon/borgmon_%dway%s.cfg"
 BORGMON_CONFIG_PATH_SUPERGSA_FMT = \
     "/export/hda3/%s/local/googledata/enterprise/borgmon/borgmon_supergsa%s.cfg"
-BORGMON_MASTER_PREFIX = "borgmon-master"
+BORGMON_MASTER_PREFIX = "borgmon-main"
 BORGMON_GFS_CHECKPOINT_PATH = "/gfs/ent/borgmon_checkpoint"
 BORGMON_NO_GFS_CHECKPOINT_PATH_FMT = \
     "/export/hda3/%s/data/enterprise-data/borgmon_checkpoint"
@@ -113,9 +113,9 @@ class BorgmonUtil:
 
 
   def GetBorgmonHostname(self):
-    """Get the Borgmon Master hostname.
+    """Get the Borgmon Main hostname.
     For a oneway this is 'ent1'. For a cluster it is a Chubby DNS address,
-    for example 'borgmon-master.ent4_6_4.ls.google.com'.
+    for example 'borgmon-main.ent4_6_4.ls.google.com'.
 
     Returns:
       String - hostname
@@ -244,9 +244,9 @@ class BorgmonUtil:
     args += '--svelte_servers=localhost:6297 '
     args += '--svelte_retry_interval_ms=2147483647 '
     if core_utils.UseGFS(self.__total_nodes):
-      gfs_port = core_utils.GetGFSMasterPort(self.__mode == TEST)
+      gfs_port = core_utils.GetGFSMainPort(self.__mode == TEST)
       args += '--gfs_aliases=ent=%s:%d ' % (
-              core_utils.MakeGFSMasterPath(self.__ver), gfs_port)
+              core_utils.MakeGFSMainPath(self.__ver), gfs_port)
     if core_utils.UseLockservice(self.__total_nodes):
       # enable election commissar failover in borgmon
       args += ('--use_commissar_failover --commissar_chubby_cell %s'

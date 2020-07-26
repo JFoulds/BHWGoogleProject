@@ -4,7 +4,7 @@
 # cpopescu@google.com
 #
 
-'A script that finds where the master is.'
+'A script that finds where the main is.'
 
 import signal
 import urllib
@@ -25,16 +25,16 @@ def FindMachinesAlive(port, machines, cmd):
   Finds the machines that answer on a port to a command.
   '''
 
-  master = []
+  main = []
 
-  # Looking for a master.
+  # Looking for a main.
 
   for machine in machines:
     response = port_talker.TCPTalk(machine, port, 40, cmd, max_len=sys.maxint)
     if 0 == response[0]:
-      master.append(machine)
+      main.append(machine)
 
-  return master
+  return main
 
 def GetConfigVersion(machine, port, timeout):
   signal.signal(signal.SIGALRM, AlarmHandler)
@@ -53,58 +53,58 @@ def GetConfigVersion(machine, port, timeout):
   return (False, None)
 
 #TODO(nshah): Eventually, we need to phase this one out with
-# FindMasterUsingChubby. Unfortunately, there
+# FindMainUsingChubby. Unfortunately, there
 # are quite a few scripts that use this just to get a machine on which
 # adminrunner is currently running. Hence, not quite straightforward to just
-# replace those usages with FindMasterUsingChubby
-def FindMaster(port, machines):
+# replace those usages with FindMainUsingChubby
+def FindMain(port, machines):
   '''
-  Find the master machines. Return a list of machines.
+  Find the main machines. Return a list of machines.
 
   Args:
   machines: [ 'ent1', 'ent2', ... ]
   '''
-  master = []
+  main = []
   for machine in machines:
     ok, response = GetConfigVersion(machine, port, 40)
     if ok:
-      master.append(machine)
+      main.append(machine)
 
-  return master
+  return main
 
-def FindMasterAndVersion(port, machines):
+def FindMainAndVersion(port, machines):
   '''
-  Find the master machines. Return a list of tuples of config version and
+  Find the main machines. Return a list of tuples of config version and
   machine.
   '''
 
-  master = []
+  main = []
   for machine in machines:
     ok, response = GetConfigVersion(machine, port, 40)
     if ok:
       try:
-        master.append((response, machine))
+        main.append((response, machine))
       except ValueError:
-        master.append((0, machine))
-  master.sort()
-  return master
+        main.append((0, machine))
+  main.sort()
+  return main
 
-def FindMasterUsingChubby(ver):
+def FindMainUsingChubby(ver):
   """
-  Find the master using chubby based master election.
+  Find the main using chubby based main election.
   """
-  return core_utils.GetGSAMaster(ver, install_utilities.is_test(ver))
+  return core_utils.GetGSAMain(ver, install_utilities.is_test(ver))
 
-def ForceMaster(node, is_testver):
-  """ Force a node to become GSA master
+def ForceMain(node, is_testver):
+  """ Force a node to become GSA main
 
   Arguments:
     node: 'ent2'
     is_testver: 0
   """
-  gsaport = core_utils.GSAMasterPort(is_testver)
-  # ignore the result of forcemaster
-  port_talker.TCPTalk(node, gsaport, 30, command='GET /forcemaster\n')
+  gsaport = core_utils.GSAMainPort(is_testver)
+  # ignore the result of forcemain
+  port_talker.TCPTalk(node, gsaport, 30, command='GET /forcemain\n')
 
 if __name__ == '__main__':
   import sys

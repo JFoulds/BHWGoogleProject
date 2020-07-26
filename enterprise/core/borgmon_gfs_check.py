@@ -5,7 +5,7 @@
 """borgmon_gfs_check checks if GFS is in good shape so we can start borgmon.
 
 Borgmon has a dependency on GFS for the logio checkpoint reading. This script
-is meant to provide a check that GFS is up and master election is done, so when
+is meant to provide a check that GFS is up and main election is done, so when
 we start borgmon, it comes up with proper checkpoint data.
 The script could have involved a wait and check in while loop but we changed
 this to a simpler logic to just return 0 if the GFS is good and 1 otherwise and
@@ -24,7 +24,7 @@ from google3.enterprise.core import gfs_utils
 from google3.enterprise.core import core_utils
 
 def CheckGFSState(ver, testver, nodes=None, gfs_status_set=0, gfs_status=None):
-  """Checks the GFS Master Election Status.
+  """Checks the GFS Main Election Status.
 
   Args:
     ver: GSA version
@@ -34,7 +34,7 @@ def CheckGFSState(ver, testver, nodes=None, gfs_status_set=0, gfs_status=None):
     gfs_status: Unit test only, the GFS status.
 
   Return:
-    1 if State is not good (Master election hasn't happened yet). 0 otherwise.
+    1 if State is not good (Main election hasn't happened yet). 0 otherwise.
     Always returns 0 for oneways.
   """
   if not nodes:
@@ -44,7 +44,7 @@ def CheckGFSState(ver, testver, nodes=None, gfs_status_set=0, gfs_status=None):
 
   if not gfs_status_set:
     # print 'finding gfs_status for ver=%s testver=%s' % (ver, testver)
-    gfs_status = gfs_utils.CheckNoMasterUsingElectionStatus(ver, testver)
+    gfs_status = gfs_utils.CheckNoMainUsingElectionStatus(ver, testver)
 
   if gfs_status == 0:
     return 0
@@ -74,7 +74,7 @@ def main(argv):
     argv.append(0)
   testver = int(argv[2])
 
-  # Check the GFS master election status
+  # Check the GFS main election status
   status = CheckGFSState(ver, testver, nodes, 0, None)
   if status == 0:
     logging.info('GFS status is good, exiting')

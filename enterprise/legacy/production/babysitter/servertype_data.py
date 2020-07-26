@@ -36,9 +36,9 @@ _SERVER_TYPE_PORTS_ = {
   'imagedoc':                (3500, 3800),
   # the following ports for the GFS components are stil needed for
   # the GSAs and cannot be reused.
-  'gfs_master':              (3830, 3836),
-  'gfs_master_shadow':       (3836, 3838),
-  'gfs_master_replica':      (3838, 3840), # temporary hack
+  'gfs_main':              (3830, 3836),
+  'gfs_main_shadow':       (3836, 3838),
+  'gfs_main_replica':      (3838, 3840), # temporary hack
   'gfs_chunkserver':         (3840, 3850),
   'rfserver':                (3851, 3900),
   # Don't reuse concentrator ports until configurator.RemoveLegacyComponents()
@@ -98,8 +98,8 @@ _SERVER_TYPE_PORTS_ = {
   'anchorserver':            (9409, 9410),
   'ancestordupsserver':      (9410, 9411),
   'ffe':                     (9412, 9413), # and also port 80
-  'workqueue-master' :       (9413, 9414),
-  'workqueue-slave' :        (9414, 9415),
+  'workqueue-main' :       (9413, 9414),
+  'workqueue-subordinate' :        (9414, 9415),
   'evaldupidserver':         (9415, 9416),
   'mergeserver_status':      (9417, 9418),
   'simple_httpd':            (9418, 9420), # web server for testing
@@ -167,8 +167,8 @@ _SERVER_TYPE_PORTS_ = {
   'base_indexer' :           (30700, 30800),
   'daily_indexer' :          (30800, 30900),
   'rt_indexer' :             (30900, 31000),
-  'rtmaster':                (31000, 31300),
-  'rtslave':                 (31300, 31600),
+  'rtmain':                (31000, 31300),
+  'rtsubordinate':                 (31300, 31600),
   'global_link' :            (32000, 32100),
   'global_anchor' :          (32100, 32200),
   'microsharder':            (32400, 32500),
@@ -193,7 +193,7 @@ _SERVER_TYPE_PORTS_ = {
   'fixer_prod'  :            (80001, 80002),
   'babysitter'  :            (80002, 80003),
   'mcp'         :            (80003, 80004),
-  'coloc_master' :           (80004, 80005),
+  'coloc_main' :           (80004, 80005),
   'gemsrelay'   :            (80005, 80006),
 
   'crawlchecker'  :          (90000, 90500),
@@ -204,8 +204,8 @@ _SERVER_TYPE_PORTS_ = {
   'genurl'        :          (101500, 102000),
 
 
-  # ripperslaves need a very big port range
-  'ripperslave'   :          (200000, 202000), # For distributed ripping
+  # rippersubordinates need a very big port range
+  'rippersubordinate'   :          (200000, 202000), # For distributed ripping
 
   # history info for enterprise
   'enthist'               :  (325500, 326000),
@@ -388,7 +388,7 @@ _SERVER_TYPE_DEFAULTS_ = {
   # shard will be returned as backends (i.e. index -> hostid).
   #
   # Serve_as is for serves which masquerade as other types
-  # such as rtslaves and rtmasters.  When referenced as a backend
+  # such as rtsubordinates and rtmains.  When referenced as a backend
   # the server_as type will be used in constructing the backend
   # argument string.  Serve_as can also be used to masquerade
   # as another C++ servertype defined in serverflags.py but not
@@ -533,7 +533,7 @@ _SERVER_TYPE_DEFAULTS_ = {
 
   # The setup operations that are to be performed on this server. Ops are:
   #
-  #   'datadir' : only setup empty datadir (i.e. filesyncer, rtslave, cache)
+  #   'datadir' : only setup empty datadir (i.e. filesyncer, rtsubordinate, cache)
   #   'setup_prod' : run setup production (i.e. mixer, onebox)
   #
   # These can be set together in a list variable if more than one op is desired.
@@ -583,7 +583,7 @@ _SERVER_TYPE_DEFAULTS_ = {
   # ]
   #
   # where,
-  #    'srcpath':     relative source path for the master.  Default value ''.
+  #    'srcpath':     relative source path for the main.  Default value ''.
   #                   This path is relative to GOOGLEBASE
   #    'targetpath':  relative destination path for servers. Default value ''.
   #                   For crawl, this path is relative to DATADIR.
@@ -779,21 +779,21 @@ _SERVER_TYPE_PROPERTIES_ = {
     'kill_delay' : 3,  # how long to wait between kill and kill -9
   },
 
-  'workqueue-master' : {
+  'workqueue-main' : {
     'request_info' : "GET /healthz HTTP/1.0\r\n\r\n",
     'response_len' : 2,
     'has_datadir' : 1,
     'backends' : [
-      { 'set' : 'workqueue-slave' },
+      { 'set' : 'workqueue-subordinate' },
     ],
   },
 
-  'workqueue-slave' : {
+  'workqueue-subordinate' : {
     'request_info' : "GET /healthz HTTP/1.0\r\n\r\n",
     'response_len' : 2,
     'has_datadir' : 1,
     'backends' : [
-      { 'set' : 'workqueue-master' },
+      { 'set' : 'workqueue-main' },
     ],
   },
 
@@ -803,7 +803,7 @@ _SERVER_TYPE_PROPERTIES_ = {
     'binary_files' : ["workschedulerserver", "logtweak",
                       "froogle_doc_collector"],
     'backends' : [
-      { 'set' : 'workqueue-master' },
+      { 'set' : 'workqueue-main' },
     ],
   },
 
@@ -838,8 +838,8 @@ _SERVER_TYPE_PROPERTIES_ = {
     'supports_uptime_check' : 1,
     'inter_set_delay' : 40,
     'backends' : [
-      { 'tag' : 'rtnews_idx', 'set' : 'rtslave', 'serve_as' : 'index' },
-      { 'tag' : 'rtnews_doc', 'set' : 'rtslave', 'serve_as' : 'doc' },
+      { 'tag' : 'rtnews_idx', 'set' : 'rtsubordinate', 'serve_as' : 'index' },
+      { 'tag' : 'rtnews_doc', 'set' : 'rtsubordinate', 'serve_as' : 'doc' },
       { 'set' : 'oneboxenterprise', 'protocol' : 'rpc' },
       { 'set' : 'oneboxwpres' },
       { 'set' : 'oneboxwpbiz' },
@@ -940,10 +940,10 @@ _SERVER_TYPE_PROPERTIES_ = {
       { 'set' : 'lcaserver', },
       { 'set' : 'forwardmap', },
       { 'set' : 'imagedoc', },
-      { 'set' : 'rtslave', 'serve_as' : 'index' },
-      { 'set' : 'rtslave', 'serve_as' : 'doc' },
-      { 'set' : 'rtmaster', 'serve_as' : 'index' },
-      { 'set' : 'rtmaster', 'serve_as' : 'doc' },
+      { 'set' : 'rtsubordinate', 'serve_as' : 'index' },
+      { 'set' : 'rtsubordinate', 'serve_as' : 'doc' },
+      { 'set' : 'rtmain', 'serve_as' : 'index' },
+      { 'set' : 'rtmain', 'serve_as' : 'doc' },
       { 'set' : 'base_indexer', 'serve_as' : 'index', 'level' : 0 },
       { 'set' : 'base_indexer', 'serve_as' : 'doc', 'level' : 0 },
       { 'set' : 'daily_indexer', 'serve_as' : 'index', 'level' : 1 },
@@ -973,10 +973,10 @@ _SERVER_TYPE_PROPERTIES_ = {
       { 'set' : 'lcaserver', },
       { 'set' : 'forwardmap', },
       { 'set' : 'imagedoc', },
-      { 'set' : 'rtslave', 'serve_as' : 'index' },
-      { 'set' : 'rtslave', 'serve_as' : 'doc' },
-      { 'set' : 'rtmaster', 'serve_as' : 'index' },
-      { 'set' : 'rtmaster', 'serve_as' : 'doc' },
+      { 'set' : 'rtsubordinate', 'serve_as' : 'index' },
+      { 'set' : 'rtsubordinate', 'serve_as' : 'doc' },
+      { 'set' : 'rtmain', 'serve_as' : 'index' },
+      { 'set' : 'rtmain', 'serve_as' : 'doc' },
       { 'set' : 'base_indexer', 'serve_as' : 'index', 'level' : 0 },
       { 'set' : 'base_indexer', 'serve_as' : 'doc', 'level' : 0 },
       { 'set' : 'daily_indexer', 'serve_as' : 'index', 'level' : 1 },
@@ -1076,7 +1076,7 @@ _SERVER_TYPE_PROPERTIES_ = {
     'test_timeouts' : (10, 15, 40),
   },
 
-  'rtmaster' : {
+  'rtmain' : {
     'is_sharded' : 1,
     'is_leveled' : 1,
     'request_info' : "v\n",
@@ -1085,7 +1085,7 @@ _SERVER_TYPE_PROPERTIES_ = {
     'datadir_has_port' : 1,
   },
 
-  'rtslave' : {
+  'rtsubordinate' : {
     'is_sharded' : 1,
     'is_leveled' : 1,
     'request_info' : "v\n",
@@ -1373,7 +1373,7 @@ _SERVER_TYPE_PROPERTIES_ = {
     'binary_name' : 'testserver.py',
   },
 
-  'ripperslave' : {
+  'rippersubordinate' : {
     'is_sharded' : 1,
   },
 

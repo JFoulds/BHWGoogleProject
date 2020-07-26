@@ -68,7 +68,7 @@ class serve_service(ent_service.ent_service):
       self.components = string.split(FLAGS.components, ",")
 
     # Did we force execution ?
-    self.performs_only_on_master = not FLAGS.force
+    self.performs_only_on_main = not FLAGS.force
     self.ignore_init_state = FLAGS.ignore_init_state
 
   # Operations overrides
@@ -116,7 +116,7 @@ class serve_service(ent_service.ent_service):
     self.kill_babysitter()
     self.start_babysitter()
 
-    # Cleanup ramdir - babysit() is only called on master whereas nop() is
+    # Cleanup ramdir - babysit() is only called on main whereas nop() is
     # only called on others.  By calling cleanup_ramdir() from both places
     # we ensure that we cleanup on ALL machines.
     self.cleanup_ramdir()
@@ -169,7 +169,7 @@ class serve_service(ent_service.ent_service):
   #
   def cleanup_ramdir(self):
     '''
-    Rtslave would delete a cached index file when it is done with it.  But if
+    Rtsubordinate would delete a cached index file when it is done with it.  But if
     it crashes and restarts, it might miss a file.  Also, if the assigner moves
     it to another machine then it would never get a chance to to remove them.
     So we periodically clean up this directory and remove all files that aren't
@@ -178,7 +178,7 @@ class serve_service(ent_service.ent_service):
     It really doesn't pose a problem even if we delete a file that is
     still in use because, in Linux, once a file is opened by a process in
     read-only mode, other processes can remove it and it would still be available
-    for the original process that opened it.  Should the rtslave die and restart,
+    for the original process that opened it.  Should the rtsubordinate die and restart,
     it will again cache files that have been deleted.
     '''
 
@@ -192,7 +192,7 @@ class serve_service(ent_service.ent_service):
                                            '%s/fileutil' % self.bin_dir,
                                            3 * 60)  # X = 3 minutes
     # We can be much less aggressive with file cache - it is not as precious
-    # a resource and avoids the need for rtslave to copy it all over again
+    # a resource and avoids the need for rtsubordinate to copy it all over again
     # if/when it dies and restarts.
     if self.rt_local_cache_dir:
       cleanup_directory.remove_unused_from(self.rt_local_cache_dir,
@@ -221,7 +221,7 @@ class serve_service(ent_service.ent_service):
         if not self.components:
           ## HACK:
           # all:0,all:1 means all in level 1 / level 2
-          # In testing mode the rtslaves are on 31400 which
+          # In testing mode the rtsubordinates are on 31400 which
           # makes the babysitter think they are level 1
           # which in fect they are not ..
           components = ["all:0,all:1"]

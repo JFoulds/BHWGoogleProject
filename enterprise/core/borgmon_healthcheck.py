@@ -2,7 +2,7 @@
 #
 # Copyright 2007 Google Inc. All Rights Reserved.
 
-"""Print RESTART on stdout if this is the borgmon master node and borgmon
+"""Print RESTART on stdout if this is the borgmon main node and borgmon
 needs to be restarted. Exit without printing otherwise.
 
 Usage:
@@ -46,7 +46,7 @@ def main(argv):
     mode = borgmon_util.ACTIVE
   borgmonUtil = borgmon_util.BorgmonUtil(ver, mode=mode)
 
-  # First check if we are a cluster and this is not borgmon master node.
+  # First check if we are a cluster and this is not borgmon main node.
   # If so, exit.
   if (core_utils.GetTotalNodes() > 1 and
       (socket.gethostbyname(borgmonUtil.GetBorgmonHostname()) !=
@@ -57,7 +57,7 @@ def main(argv):
   if check_healthz.CheckHealthz(borgmonUtil.GetBorgmonPort()):
     sys.exit(0)
 
-  # This is the borgmon master and /healthz failed. print RESTART
+  # This is the borgmon main and /healthz failed. print RESTART
   print 'RESTART'
 
 

@@ -1021,22 +1021,22 @@ def DNSLookup(name):
   return (fullname, aliaslist, ipaddrlist)
 
 
-# Determine if we are the master machine, given a dns extension
-# for example, given "con.prodz.google.com", AmIMaster will prepend
+# Determine if we are the main machine, given a dns extension
+# for example, given "con.prodz.google.com", AmIMain will prepend
 # the coloc, perform the lookup, and return 1 if this resolves to
 # the local machine.  If prefix is not None, we will use prefix in lieu
 # of LocalColoc()
-def AmIMaster(dns_extension, prefix=None):
+def AmIMain(dns_extension, prefix=None):
   if prefix is None:
     prefix = LocalColoc()
 
   dns_alias = "%s%s" % (prefix, dns_extension)
-  (master_mach, _, _) = DNSLookup(dns_alias)
+  (main_mach, _, _) = DNSLookup(dns_alias)
   our_hostname = socket.gethostname()
   (our_mach, _, _) = DNSLookup(our_hostname)
-  return master_mach == our_mach
+  return main_mach == our_mach
 
-# Locate the master babysitter machine based on DNS alias (<coloc>baby.prodz)
+# Locate the main babysitter machine based on DNS alias (<coloc>baby.prodz)
 # If the babyalias is only two letters then we assume it is a coloc
 # specification only and we append the standard suffix.
 def FindBabysitterMach(babyalias):

@@ -33,7 +33,7 @@ import string
 
 from google3.enterprise.legacy.adminrunner import entconfig
 from google3.enterprise.legacy.install import install_utilities
-from google3.enterprise.legacy.util import find_master
+from google3.enterprise.legacy.util import find_main
 from google3.enterprise.legacy.util import E
 from google3.pyglib import logging
 
@@ -42,15 +42,15 @@ from google3.enterprise.core import core_utils
 
 class ent_service:
 
-  def __init__(self, service_name, performs_only_on_master, service_cron_time,
+  def __init__(self, service_name, performs_only_on_main, service_cron_time,
                check_previous_cron_job=0, secs_to_kill_previous_job=1800):
     """
     Initializes the service. The children have to call this in order to
     initialize some basic facts about the service:
 
     service_name -- the name of the service ('serve'/'crawl' etc)
-    performs_only_on_master -- if the service performs other operations
-                               than activet/deactivate only on master machine
+    performs_only_on_main -- if the service performs other operations
+                               than activet/deactivate only on main machine
     service_cron_time -- the dir where the cron script kicks in
                          (5minly/2minly etc)
     check_previous_cron_job -- if the previous cron job is running, don't
@@ -61,7 +61,7 @@ class ent_service:
                                  is true)
     """
     self.service_name = service_name
-    self.performs_only_on_master = performs_only_on_master
+    self.performs_only_on_main = performs_only_on_main
     self.service_cron_time = service_cron_time
     self.flags = None  # extra flags for this
     self.check_previous_cron_job = check_previous_cron_job
@@ -97,10 +97,10 @@ class ent_service:
       logging.error('I am disabled.')
       sys.exit(-1)
 
-    if (self.performs_only_on_master and
+    if (self.performs_only_on_main and
         self.task not in ("activate", "deactivate")):
-      if not self.local_machine_is_master:
-        logging.error('I am not the master')
+      if not self.local_machine_is_main:
+        logging.error('I am not the main')
         self.nop()
         sys.exit(0)
 
@@ -163,8 +163,8 @@ class ent_service:
                           self.ent_home)
     self.machines      = self.cp.var("MACHINES")
 
-    # The master depends on the install state : for active / test / install
-    # we have the adminrunner on the master, else we get it from MASTER
+    # The main depends on the install state : for active / test / install
+    # we have the adminrunner on the main, else we get it from MASTER
     # parameter
     self.install_state = install_utilities.install_state(
       self.version, rootdir = self.cp.var('ENT_DISK_ROOT'))
@@ -172,16 +172,16 @@ class ent_service:
     testver = install_utilities.is_test(self.version)
     if self.install_state in ["ACTIVE", "TEST", "INSTALL"]:
       try:
-        self.master_machine = find_master.FindMasterUsingChubby(self.cp.var('VERSION'))
-      except core_utils.EntMasterError, e:
+        self.main_machine = find_main.FindMainUsingChubby(self.cp.var('VERSION'))
+      except core_utils.EntMainError, e:
         # Something is seriously wrong.
-        logging.error("ERROR: Couldn't determine master")
-        # Assume we aren't master, so we can at least do inactivate
-        self.master_machine = None
+        logging.error("ERROR: Couldn't determine main")
+        # Assume we aren't main, so we can at least do inactivate
+        self.main_machine = None
     else:
-      self.master_machine = self.cp.var("MASTER")
+      self.main_machine = self.cp.var("MASTER")
 
-    self.local_machine_is_master = (self.local_machine == self.master_machine)
+    self.local_machine_is_main = (self.local_machine == self.main_machine)
 
   def service_to_be_up(self):
     """
@@ -225,7 +225,7 @@ class ent_service:
   def nop(self):
     """
     Runs when the script is not supposed to run because the machine
-    is not the master machine
+    is not the main machine
     """
     return
 

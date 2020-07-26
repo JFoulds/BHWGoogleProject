@@ -5,7 +5,7 @@
 #
 # This script cleanups up a directory.  It removes all Files in the directory
 # that aren't currently opened by any process.  This is currenlty used to
-# cleanup the ramfs/tmpfs system that is used by rtslave to cache index files.
+# cleanup the ramfs/tmpfs system that is used by rtsubordinate to cache index files.
 #
 #
 ###############################################################################

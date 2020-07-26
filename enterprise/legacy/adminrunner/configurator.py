@@ -252,7 +252,7 @@ class configurator:
       out = []
       cmd = "mkdir -p %s; test -d %s" % (d,d)
       if E.ERR_OK != E.execute(machines, cmd, out, false):
-        logging.error("Error creating cache directory for rtslave: %s" % out)
+        logging.error("Error creating cache directory for rtsubordinate: %s" % out)
         return false
 
     # Ram cache directory is the mount point itself, so we don't need to create it.
@@ -283,7 +283,7 @@ class configurator:
       machines):
       return false
 
-    # Don't delete GFS master and chunkserver dirs
+    # Don't delete GFS main and chunkserver dirs
 
     return true
 
@@ -334,7 +334,7 @@ class configurator:
     namespace_prefix = self.getGlobalParam('NAMESPACE_PREFIX')
     pr_namespace_prefix = self.getGlobalParam('OUTPUT_NAMESPACE_PREFIX')['pr_main']
 
-    # This also waits for the gfs master to come up.
+    # This also waits for the gfs main to come up.
     if not execMultiTimes(self, "mkdir -p %s" % E.normpath(
       "%s/tmp" % namespace_prefix), 30):
       return false
@@ -506,7 +506,7 @@ class configurator:
   #############################################################################
   def CheckMachineMemory(self):
     """
-    This checks/sets MEMORY_TOTAL_PER_MACHINE, which is used by rtslave
+    This checks/sets MEMORY_TOTAL_PER_MACHINE, which is used by rtsubordinate
     to set RTSLAVE_MAX_MMAP_MEMORY. This function used to set
     GFS_GLOBAL_RESERVED_GB. But since GFS is now part of the core services,
     it does not need to set GFS_GLOBAL_RESERVED_GB.
@@ -541,7 +541,7 @@ class configurator:
     """ This allocates the machines in the cluster
 
     Arguments:
-      serversets: ['workqueue-slave'] or None (allocate all servers)
+      serversets: ['workqueue-subordinate'] or None (allocate all servers)
 
     Returns:
       1 - successful. 0 - otherwise.
@@ -613,7 +613,7 @@ class configurator:
       servers_map: SERVERS = {3970: ['ent2'], 21000: ['ent5', 'ent4'], ...}
     """
 
-    legacy_components = ['gfs_master', 'gfs_chunkserver', 'sremote_server',
+    legacy_components = ['gfs_main', 'gfs_chunkserver', 'sremote_server',
                          'concentrator', 'gemsalerter', 'gemscollector',
                          'gemsreporter', 'fixer']
     for srv in legacy_components:
@@ -669,7 +669,7 @@ class configurator:
 
   def AllocateServersToNewMachine(self, new_machine):
     srvr_mgr = self.globalParams.GetServerManager()
-    excluded_servertypes = ['workqueue-slave', 'workqueue-master',
+    excluded_servertypes = ['workqueue-subordinate', 'workqueue-main',
                             'config_manager', 'workschedulerserver']
     excluded_servers = []
     for servertype in excluded_servertypes:

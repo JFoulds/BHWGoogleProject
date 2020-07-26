@@ -21,7 +21,7 @@ SERVE_SERVICE_COMMAND = ('. %(bashrc)s && '
 
 # serve service command suffix
 SERVE_SERVICE_COMPONENTS = '--components=%s'
-GFS_COMPONENTS = 'gfs_master,gfs_chunkserver,sremote_server'
+GFS_COMPONENTS = 'gfs_main,gfs_chunkserver,sremote_server'
 
 # From LogHandler.java:
 SEARCH_ALL_COLLECTIONS = 'all.collections'

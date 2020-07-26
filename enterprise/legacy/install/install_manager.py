@@ -53,7 +53,7 @@ from google3.enterprise.legacy.install import install_utilities
 from google3.enterprise.legacy.install import version_utilities
 from google3.enterprise.legacy.production.babysitter import config_factory
 from google3.enterprise.legacy.util import E
-from google3.enterprise.legacy.util import find_master
+from google3.enterprise.legacy.util import find_main
 from google3.enterprise.legacy.util import reconfigurenet_util
 from google3.enterprise.legacy.util import svs_utilities
 from google3.enterprise.util import borgmon_util
@@ -197,15 +197,15 @@ class NodeInstallManager(threading.Thread):
     logging.info("NODE STATUS: %s:  Stopped: %s" %
                   (self.machine_, self.stopped_))
 
-def verify_master(ver, testver):
-  """Once GSA master has been elected, it will update chubby DNS to indicate the
-  new master. This routine checks the DNS entry and makes sure the master is up.
+def verify_main(ver, testver):
+  """Once GSA main has been elected, it will update chubby DNS to indicate the
+  new main. This routine checks the DNS entry and makes sure the main is up.
   """
-  master = core_utils.GetGSAMaster(ver, testver)
-  if not master:
-    logging.error('Error getting current GSA master from chubby.')
+  main = core_utils.GetGSAMain(ver, testver)
+  if not main:
+    logging.error('Error getting current GSA main from chubby.')
     return 0
-  logging.info('%s is current GSA master.' % master)
+  logging.info('%s is current GSA main.' % main)
   return 1
 
 def intersection(l1, l2):
@@ -322,7 +322,7 @@ class InstallManager:
       3. In case there is something to start
           a. reconfigure's net on all nodes after verifying quorum
           b. starts core servics
-      4. Verifies there is a master elected.
+      4. Verifies there is a main elected.
       5. Starts thread for each node to start and stop the needed services
       6. Waits for output from each thread
       7. Calculates success of failure based on thread results
@@ -422,7 +422,7 @@ class InstallManager:
 
     # start core services if needed
     if startcore and success:
-      # Retry 3 times for master verification failures
+      # Retry 3 times for main verification failures
       num_retry = 3
       # it is always OK to reinit core services if the version is in
       # INSTALLED state
@@ -453,17 +453,17 @@ class InstallManager:
           else:
             logging.error('Error activating core services.')
         else:
-          # Make sure a master has been elected. If we go ahead without
-          # verifying the master then it will take very long time for
-          # services to be started. Making sure master is elected by now
+          # Make sure a main has been elected. If we go ahead without
+          # verifying the main then it will take very long time for
+          # services to be started. Making sure main is elected by now
           # results in very quick adminrunner startup.
-          success = verify_master(ver, testver)
+          success = verify_main(ver, testver)
           if success:
             if not core_utils.InitDeadNodes(ver, testver, logging) == 0:
               logging.fatal('Error updating dead nodes to the lockserver.')
             break
           if i <= num_retry:
-            logging.error('Error verifying the master. Retrying...')
+            logging.error('Error verifying the main. Retrying...')
           elif self.reinitok_:
             # it is OK to ignore errors when trying to re-init core services
             install_utilities.reinit_core(ver, home, active_nodes, ignore=1,
@@ -471,24 +471,24 @@ class InstallManager:
             i = 1
             self.reinitok_ = None
           else:
-            raise core_utils.EntMasterError, ('Error getting current GSA master'
+            raise core_utils.EntMainError, ('Error getting current GSA main'
                                               ' from chubby.')
-      # force gsa master on the desired node
-      desired_gsa_master_node = core_utils.DesiredMasterNode()
-      if desired_gsa_master_node is None:
-        logging.fatal('No suitable node to run GSA master')
-      logging.info('Forcing %s to become GSA master' % desired_gsa_master_node)
-      find_master.ForceMaster(desired_gsa_master_node, testver)
+      # force gsa main on the desired node
+      desired_gsa_main_node = core_utils.DesiredMainNode()
+      if desired_gsa_main_node is None:
+        logging.fatal('No suitable node to run GSA main')
+      logging.info('Forcing %s to become GSA main' % desired_gsa_main_node)
+      find_main.ForceMain(desired_gsa_main_node, testver)
 
       # make sure the transaction logs are in sync and start gfs
       success = install_utilities.start_gfs(ver, home, active_nodes,
                                             ignore=ignore,
                                             testver=testver)
 
-      # make sure gfs master is not the GSA master node
-      logging.info('Ensuring %s not to become GFS master' %
-                   desired_gsa_master_node)
-      gfs_utils.AvoidGFSMasterOnNode(ver, testver, desired_gsa_master_node)
+      # make sure gfs main is not the GSA main node
+      logging.info('Ensuring %s not to become GFS main' %
+                   desired_gsa_main_node)
+      gfs_utils.AvoidGFSMainOnNode(ver, testver, desired_gsa_main_node)
 
     if doservices and success:
       node_threads = {}

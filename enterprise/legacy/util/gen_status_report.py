@@ -21,8 +21,8 @@ from google3.enterprise.legacy.adminrunner import adminrunner_client
 ###############################################################################
 
 def GenerateStatusReport(config):
-  master = config.var('MASTER')
-  ar = adminrunner_client.AdminRunnerClient(master, 2100)
+  main = config.var('MASTER')
+  ar = adminrunner_client.AdminRunnerClient(main, 2100)
   return ar.GenStatusReport()
 
 

@@ -268,7 +268,7 @@ class MachinesHandler(admin_handler.ar_handler):
 
     # Reconfigure net on the target machine
     if not reconfigurenet_util.doReconfigureNet(self.cfg.globalParams,
-                                                [machine], i_am_master=0):
+                                                [machine], i_am_main=0):
       logging.error('reconfigurenet failed for %s' % machine)
       return 1
 
@@ -281,7 +281,7 @@ class MachinesHandler(admin_handler.ar_handler):
 
     # first we need to do Machine allocation.
     # this will assign things that will satisfy the constraints
-    if not self.cfg.DoMachineAllocation(serversets=['workqueue-slave']):
+    if not self.cfg.DoMachineAllocation(serversets=['workqueue-subordinate']):
       logging.error("ERROR doing machine allocation")
       return 1
 

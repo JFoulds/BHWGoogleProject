@@ -67,7 +67,7 @@ def StartupWork(cfg, state):
       # This is a best effort mechanism. We try upto 6 times to update the
       # files. We assume that we'll get the files to all alive machines. If
       # a machine can't get the files then we assume that it is dead and won't
-      # become a master with missing default files.
+      # become a main with missing default files.
       cfg.saveParams(retry=6)
       logging.flush()
       install_utilities.SetInitState(cfg, C.CONFIG_FILES_INITIALIZED)

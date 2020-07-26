@@ -15,7 +15,7 @@ from google3.enterprise.legacy.util import E
 from google3.pyglib import logging
 
 from google3.enterprise.legacy.util import port_talker
-from google3.enterprise.legacy.util import find_master
+from google3.enterprise.legacy.util import find_main
 from google3.enterprise.legacy.util import python_kill
 from google3.enterprise.legacy.install import install_utilities
 from google3.enterprise.core import core_utils
@@ -29,7 +29,7 @@ class web_service(ent_service.ent_service):
 
   def __init__(self):
     # Run web_service on all nodes, but it will only run Admin Console
-    # on the master
+    # on the main
     ent_service.ent_service.__init__(self, "web", 0, "2minly", 1, 3600)
 
   # Override init_service to set some members
@@ -57,17 +57,17 @@ class web_service(ent_service.ent_service):
 
 
   def babysit(self):
-    if self.local_machine_is_master:
+    if self.local_machine_is_main:
       if self.is_time_to_restart():
         self.record_restart()
         self._stop(op="babysit")
-        # adjust gsa master node. This only applies to clusters, as
-        # desired_gsa_master_node will be None for one-way.
-        desired_gsa_master_node = core_utils.DesiredMasterNode()
-        if (desired_gsa_master_node != None and
-            desired_gsa_master_node != self.local_machine):
+        # adjust gsa main node. This only applies to clusters, as
+        # desired_gsa_main_node will be None for one-way.
+        desired_gsa_main_node = core_utils.DesiredMainNode()
+        if (desired_gsa_main_node != None and
+            desired_gsa_main_node != self.local_machine):
           is_testver = install_utilities.is_test(self.version)
-          find_master.ForceMaster(desired_gsa_master_node, is_testver)
+          find_main.ForceMain(desired_gsa_main_node, is_testver)
           return 1
       return self._start(op="babysit")
     else:
@@ -75,9 +75,9 @@ class web_service(ent_service.ent_service):
 
   def start(self):
     logging.info(" -- starting web service -- ")
-    if self.local_machine_is_master:
-      logging.info("(%s) I am the master restarting loop_AdminConsole.py" % (
-        self.master_machine))
+    if self.local_machine_is_main:
+      logging.info("(%s) I am the main restarting loop_AdminConsole.py" % (
+        self.main_machine))
       self._start(op="start")
     return 1
 
@@ -174,10 +174,10 @@ class web_service(ent_service.ent_service):
     """ Called by both babysit and stop operations:
     Args:
         op:
-            On Master: if op == "stop", kill the adminconsole also.
+            On Main: if op == "stop", kill the adminconsole also.
             If op is babysit, just restart the loop. The loop will overwrite
             the pid file.
-            On non-masters: If pid file exists, kill entire process group (include loop and admin console)
+            On non-mains: If pid file exists, kill entire process group (include loop and admin console)
             Remove pid file.
     Returns:
         1 always (legacy reasons. TODO(vish): fix later)
@@ -189,7 +189,7 @@ class web_service(ent_service.ent_service):
     try:
       loopAdminConsole_pid_str = open(self.loopAdminConsole_pid_file,
                                       "r").read()
-      if not self.local_machine_is_master:
+      if not self.local_machine_is_main:
         logging.info('Killing admin console and loop')
       try:
         while 1:
@@ -209,7 +209,7 @@ class web_service(ent_service.ent_service):
     except IOError:                        # the pid file does not exist
       pass
 
-    if self.local_machine_is_master:
+    if self.local_machine_is_main:
       try:
         if op == 'stop':
           self.find_and_kill_loop_adminconsole()
@@ -219,7 +219,7 @@ class web_service(ent_service.ent_service):
         logging.error("Stopping loop admin console failed. Exception: %s" % str(sys.exc_info()[:2]))
         return 1
     else:
-      # this machine is not master.
+      # this machine is not main.
       # Just be doubly sure, kill any rogue loops and the admin console using ps
       # even though we have the pid
       # Make really really sure that admin console is dead for 5 s

@@ -349,7 +349,7 @@ def short_type_map():
     "urlfp2siteid_server" : "u2ss",
     "normalhttp" : "nhttp",
     "mysql" : 'sq',
-    "filesyncmaster" : "fsm",
+    "filesyncmain" : "fsm",
     "qrewrite" : "qr",
     "geomap" : "gm",
     "twiddleserver" : "tw",
@@ -405,10 +405,10 @@ def short_type_map():
 def ShortType(longtype):
   SERVER_TYPE_MAP = short_type_map()
 
-  # rtmasters & rtslaves are just rtservers.  cpp end has no notion of these
+  # rtmains & rtsubordinates are just rtservers.  cpp end has no notion of these
   # babysitter types that essentially wrap rtservers.
-  SERVER_TYPE_MAP["rtmaster"] = SERVER_TYPE_MAP["rtserver"]
-  SERVER_TYPE_MAP["rtslave"] = SERVER_TYPE_MAP["rtserver"]
+  SERVER_TYPE_MAP["rtmain"] = SERVER_TYPE_MAP["rtserver"]
+  SERVER_TYPE_MAP["rtsubordinate"] = SERVER_TYPE_MAP["rtserver"]
 
   return SERVER_TYPE_MAP.get(longtype, None)
 

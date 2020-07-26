@@ -331,10 +331,10 @@ def start_gfs(ver, home, nodes, ignore=0, testver=None, sync_log=1):
       vm_dir = "/export/hda3/versionmanager"
       bashrc_file = "%s/local/conf/ent_bashrc" % ent_home
       entcore_dir = "%s/google3/enterprise/core" % vm_dir
-      handle_gfs_no_master_cmd = (". %s && cd %s && ./handle_gfs_no_master.py "
+      handle_gfs_no_main_cmd = (". %s && cd %s && ./handle_gfs_no_main.py "
             "%s %s %s") % (bashrc_file, entcore_dir, ver, testver, "force_sync")
       output= []
-      E.execute([E.LOCALHOST], handle_gfs_no_master_cmd, output, None,
+      E.execute([E.LOCALHOST], handle_gfs_no_main_cmd, output, None,
                 enthome=ent_home)
     except Exception, e:
       (t, v, tb) = sys.exc_info()

@@ -2818,7 +2818,7 @@ class AbstractDirItem:
 
     # Distribute all files within this directory to all cluster nodes.
     # Because these newly created files and directory may not be residing
-    # on the GSA master node, hence it will be deleted by the rsync process.
+    # on the GSA main node, hence it will be deleted by the rsync process.
     machines = cfg.getGlobalParam('MACHINES')
     if len(machines) > 1 and files:
       E.distribute(machines, ' '.join(files), 1)

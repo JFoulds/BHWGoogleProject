@@ -70,7 +70,7 @@ class crawl_service(ent_service.ent_service):
   def do_start(self):
     logging.info(" -- starting crawl service -- ")
     # sourcing /etc/profile is okay here because crawl-service is run
-    # only on master-machine in active/test mode..
+    # only on main-machine in active/test mode..
     os.system(""". /etc/profile; . %s; \
     cd %s; %s ./periodic_script.py %s >> \
     /%s/periodic_scriptOut_%s 2>&1 """ % (
