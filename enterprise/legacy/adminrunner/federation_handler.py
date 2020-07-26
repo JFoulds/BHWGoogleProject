@@ -8,17 +8,17 @@ This handler responds to the following command:
 
   1. reconnect
 
-     It reconnects all the client(slave) sessions first and then
+     It reconnects all the client(subordinate) sessions first and then
      stop the server (which would come up automatically) so that
      it will read the modified configuration.
   
   2. statusall
 
-     It fetches and returns the status of all the connected slaves.
+     It fetches and returns the status of all the connected subordinates.
      It returns connection status as name-value pair of <appliance-id>=<status>
      where <status> can be one of these values:
-     OK : Connection successfully established with the slave.
-     ERROR: Connection could not be established with the slave.
+     OK : Connection successfully established with the subordinate.
+     ERROR: Connection could not be established with the subordinate.
 """
 
 __author__ = 'pshroff@google.com (Prakash Shroff)'
@@ -88,7 +88,7 @@ class FederationHandler(admin_handler.ar_handler):
       return '1'
   
   def StatusAll(self):
-    """Fetches connection status of all slaves."""
+    """Fetches connection status of all subordinates."""
     fed_client_statusall_cmd = (
         '%s/local/google3/enterprise/legacy/scripts/'
         'fed_network_client_service.py --command=STATUS --appliance_id=ALL' % (
@@ -98,7 +98,7 @@ class FederationHandler(admin_handler.ar_handler):
         fed_client_statusall_cmd))
     (status, message) = commands.getstatusoutput(fed_client_statusall_cmd)
     if status:
-      logging.error('Failed while getting status of all slaves')
+      logging.error('Failed while getting status of all subordinates')
     else:
-      logging.info('Successfully fetched slave status')
+      logging.info('Successfully fetched subordinate status')
     return message

@@ -82,7 +82,7 @@ def AddDefaultNTPServer(ntp_server_list):
     if default_ntp_server not in ntp_server_list:
       ntp_server_list.append(default_ntp_server)
 
-def doReconfigureNet(config, machines=None, i_am_master=1,
+def doReconfigureNet(config, machines=None, i_am_main=1,
                      force_ntp_reconfig=0):
   """ reconfigure serveriron, DNS, NTPs, iptables, timezone as needed.
   Force NTP server reconfiguration if force_ntp_reconfig=1
@@ -185,15 +185,15 @@ def doReconfigureNet(config, machines=None, i_am_master=1,
           ),  None, 600, num_tries = tries)
       logging.info("setting DNS mode to DHCP: %s" % ret8)
 
-    # NTP is special: all machines but the master must set their
-    # NTP server to the master, the master to the external one.
-    # However, It can take 3 minutes for the stratum level of the master
-    # node to be set. Before that, non-master nodes using the master
+    # NTP is special: all machines but the main must set their
+    # NTP server to the main, the main to the external one.
+    # However, It can take 3 minutes for the stratum level of the main
+    # node to be set. Before that, non-main nodes using the main
     # node to do "ntpdate" may return "no server suitable for synchronization
     # found" error.
     # To fix the problem, we just use the external ntp servers for all nodes.
-    # Later, periodic script will set the non-master nodes to use the master
-    # node. (periodic script will only set it once as long as master does
+    # Later, periodic script will set the non-main nodes to use the main
+    # node. (periodic script will only set it once as long as main does
     # not switch)
     ntpServers = "\"\""
     if config.var('NTP_SERVERS') != None:
@@ -201,7 +201,7 @@ def doReconfigureNet(config, machines=None, i_am_master=1,
       AddDefaultNTPServer(ntp_server_list)
       ntpServers = string.join(ntp_server_list, ",")
 
-    if i_am_master:
+    if i_am_main:
       ret4 = ExecuteWrapper(
         machines,
         "%s NTP %d %s" % (

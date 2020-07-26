@@ -106,7 +106,7 @@ import copy
 import math
 import types
 import re
-from google3.enterprise.legacy.production.babysitter import masterconfig
+from google3.enterprise.legacy.production.babysitter import mainconfig
 from google3.enterprise.legacy.production.common import cachelib
 from google3.enterprise.legacy.production.babysitter import serverlib
 from google3.enterprise.legacy.production.machinedb import machinelib
@@ -462,10 +462,10 @@ class SharingConstraint(Constraint):
   def VerifyHost(self, srv_mgr, host, servers, constraints=None):
 
     # Get list of all ports that this server listens on.  Currently
-    # just used to handle the hacky rtslaves that listen on 3 different ports.
+    # just used to handle the hacky rtsubordinates that listen on 3 different ports.
     def used_ports(srv_mgr, server):
       ports = [server.port()]
-      if server.servertype() == 'rtslave':
+      if server.servertype() == 'rtsubordinate':
         base_ports = srv_mgr.config().var('RT_BASE_PORTS')
         if base_ports:
           for (mtype, port) in base_ports.items():
@@ -573,7 +573,7 @@ class SharingConstraint(Constraint):
         seen_srvsets[(srvset, service)] = 1
         if service and service != srv_mgr.config().GetServiceName():
           # The server set is in an external set.
-          servers = masterconfig.GetServers(service, srvset, colos=[coloc])
+          servers = mainconfig.GetServers(service, srvset, colos=[coloc])
         else:
           # The server set is in the local set.
           set = srv_mgr.Set(srvset)
@@ -1030,8 +1030,8 @@ class ConstraintManager:
           self.Constraint(cnstr_type).AddConstraint(set, cnstr_desc)
 
     # Add in sharing constraints for auto assigned sets.
-    for (master_set, slave_sets) in auto_assign_sets.items():
-      shared_sets = string.join([master_set] + slave_sets, ',')
+    for (main_set, subordinate_sets) in auto_assign_sets.items():
+      shared_sets = string.join([main_set] + subordinate_sets, ',')
       self.Constraint('sharing').AddConstraint(shared_sets, [])
 
   # Test if any constraints were defined.

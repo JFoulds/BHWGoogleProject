@@ -114,7 +114,7 @@ def main(argv):
 
   # replicate config including per collection/frontend stuff
   # some dirs in conf don't need to be rsync'ed
-  if core_utils.CanRunGSAMaster(E.getCrtHostName()):
+  if core_utils.CanRunGSAMain(E.getCrtHostName()):
     exclude_patterns = ['cmr_working/failure/', 'cmr_working/success/',
                         'cmr_working/statusz/']
   else:
@@ -125,8 +125,8 @@ def main(argv):
   # to replicate per frontend gws stuff (keymatches, gws bad urls)
   ReplicateDirectory(machine, "%s/gws/" % config.var('GOOGLEDATA'))
 
-  # need to adjust NTP if master has changed
-  # assumption : this machine is not the master
+  # need to adjust NTP if main has changed
+  # assumption : this machine is not the main
   if 'PILE' != config.var('ENT_CONFIG_TYPE'):
     ent_home = E.getEnterpriseHome()
 

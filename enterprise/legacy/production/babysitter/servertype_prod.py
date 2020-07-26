@@ -94,7 +94,7 @@ def CommandLineExtend(command_line, arguments):
 #
 # binary_override can be used to overrided the binary used.  This
 # is for cases where we have shared servertypes (i.e. scanjpg types
-# call rtmaster methods) and servertypes that have multiple binaries
+# call rtmain methods) and servertypes that have multiple binaries
 # (i.e. rpcbalancer v. balancer).
 def ServerExecutablePrefix(config, setname, args="", binary_override=""):
 
@@ -641,14 +641,14 @@ servertype.RegisterRestartFunction('cache', restart_cache)
 # GLOBAL WORKQUEUE MASTER
 #------------------------------------------------------------------------------
 
-def restart_workqueue_master(config, host, port):
+def restart_workqueue_main(config, host, port):
   srv_mngr = config.GetServerManager()
-  slaves = srv_mngr.Set('workqueue-master').BackendHostPorts('workqueue-slave')
-  slavestring = serverflags.MakeHostPortsArg(slaves)
+  subordinates = srv_mngr.Set('workqueue-main').BackendHostPorts('workqueue-subordinate')
+  subordinatestring = serverflags.MakeHostPortsArg(subordinates)
 
   command_line = cli.CommandLine()
   command_line.Add(UlimitPrefix(config))
-  command_line.Add(ServerExecutablePrefix(config, "workqueue-master"))
+  command_line.Add(ServerExecutablePrefix(config, "workqueue-main"))
   command_line.Add("--port=%d" % servertype.GetServingPort(port))
   command_line.Add("--checkpoint=%s" % config.var('WORKQUEUE_MASTER_CHECKPOINT'))
   command_line.Add("--cluster_name=%s" % config.var('WORKQUEUE_MASTER_CLUSTER_NAME'))
@@ -656,7 +656,7 @@ def restart_workqueue_master(config, host, port):
   command_line.Add("--ideal_load=%d" % config.var('WORKQUEUE_MASTER_IDEAL_LOAD'))
 
   if config.var('WORKQUEUE_MASTER_SLAVES_FLAG'):
-    command_line.Add("--slaves=%s" % slavestring)
+    command_line.Add("--subordinates=%s" % subordinatestring)
   command_line.Add(config.var('WORKQUEUE_MASTER_OTHER_OPTIONS'));
 
   if config.var('WORKQUEUE_MASTER_RESERVE_BY_TIMEOUT'):
@@ -669,7 +669,7 @@ def restart_workqueue_master(config, host, port):
     command_line.Add('--uid=%s' % config.var('WORKQUEUE_MASTER_UID'))
 
   if config.var('WORKQUEUE_MASTER_SLAVE_TIMEOUT_SECS'):#
-    command_line.Add("--slave_timeout=%s" %
+    command_line.Add("--subordinate_timeout=%s" %
                      config.var('WORKQUEUE_MASTER_SLAVE_TIMEOUT_SECS'))
 
   if config.var('WORKQUEUE_MASTER_NAMED_PID_FILE'):#
@@ -698,28 +698,28 @@ def restart_workqueue_master(config, host, port):
 
   return command_line.ToString()
 
-servertype.RegisterRestartFunction('workqueue-master',
-                                   restart_workqueue_master)
+servertype.RegisterRestartFunction('workqueue-main',
+                                   restart_workqueue_main)
 
 #------------------------------------------------------------------------------
 # GLOBAL WORKQUEUE SLAVE
 #------------------------------------------------------------------------------
 
-def restart_workqueue_slave(config, host, port):
+def restart_workqueue_subordinate(config, host, port):
   command_line = cli.CommandLine()
   srv_mngr = config.GetServerManager()
-  servers = srv_mngr.Set('workqueue-slave').BackendHostPorts('workqueue-master')
+  servers = srv_mngr.Set('workqueue-subordinate').BackendHostPorts('workqueue-main')
 
   if len(servers) != 1:
-    raise RuntimeError("workqueue slave requires exactly one master")
+    raise RuntimeError("workqueue subordinate requires exactly one main")
 
-  (master, master_port) = servers[0]
-  master = config.var('GSA_MASTER')
+  (main, main_port) = servers[0]
+  main = config.var('GSA_MASTER')
   command_line.Add(UlimitPrefix(config))
-  command_line.Add(ServerExecutablePrefix(config, "workqueue-slave"))
+  command_line.Add(ServerExecutablePrefix(config, "workqueue-subordinate"))
   command_line.Add("--port=%d" % servertype.GetServingPort(port))
-  command_line.Add("--workqueue_master=%s:%d" % (master, master_port))
-  command_line.Add("--slavedir=%s" % config.var('WORKQUEUE_SLAVE_SLAVEDIR'))
+  command_line.Add("--workqueue_main=%s:%d" % (main, main_port))
+  command_line.Add("--subordinatedir=%s" % config.var('WORKQUEUE_SLAVE_SLAVEDIR'))
   command_line.Add("--reserved_memory=%d" % config.var('WORKQUEUE_SLAVE_RESERVED_MEMORY'));
   command_line.Add("--reserved_disk=%d" % config.var('WORKQUEUE_SLAVE_RESERVED_DISK'));
   command_line.Add(config.var('WORKQUEUE_SLAVE_OTHER_OPTIONS'));
@@ -762,7 +762,7 @@ def restart_workqueue_slave(config, host, port):
 
   return command_line.ToString()
 
-servertype.RegisterRestartFunction('workqueue-slave', restart_workqueue_slave)
+servertype.RegisterRestartFunction('workqueue-subordinate', restart_workqueue_subordinate)
 
 #------------------------------------------------------------------------------
 # WORKSCHEDULER SERVER
@@ -807,17 +807,17 @@ def restart_workschedulerserver(config, host, port):
   command_line = cli.CommandLine()
   srv_mngr = config.GetServerManager()
   set = srv_mngr.Set('workschedulerserver')
-  servers = set.BackendHostPorts('workqueue-master')
+  servers = set.BackendHostPorts('workqueue-main')
 
   if len(servers) != 1:
-    raise RuntimeError("workqueue slave requires exactly one master")
+    raise RuntimeError("workqueue subordinate requires exactly one main")
 
-  (master, master_port) = servers[0]
+  (main, main_port) = servers[0]
   my_data_dir = config.GetDataDir(port)
   command_line.Add(UlimitPrefix(config))
   command_line.Add(ServerExecutablePrefix(config, "workschedulerserver"))
   command_line.Add("--port=%d" % servertype.GetServingPort(port))
-  command_line.Add("--workqueue_master=%s:%d" % (master, master_port))
+  command_line.Add("--workqueue_main=%s:%d" % (main, main_port))
   command_line.Add("--datadir=%s" % my_data_dir)
 
   if config.var('NAMESPACE_PREFIX'):
@@ -1012,7 +1012,7 @@ def restart_workschedulerserver(config, host, port):
       namespaces = []
       filesets = []
       for shard in xrange(0, num_doc_shards):
-        namespace = servertype.GenNamespacePrefix(config, "rtmaster",
+        namespace = servertype.GenNamespacePrefix(config, "rtmain",
                                                   shard, num_doc_shards)
         namespaces.append(namespace)
         filesets.append("%sFILESET_rt%s_%d" % \
@@ -1064,11 +1064,11 @@ def restart_workschedulerserver(config, host, port):
   # workscheduler and chubby has been broken.
   CommandLineExtend(command_line, LOCK_SERVICE_FLAGS)
 
-  # TODO(tianyu): Below code only passes one shard of rtslave for now.
-  rtslave_servers = srv_mngr.Set('rtslave').Servers()
-  if len(rtslave_servers):
-    command_line.Add('--rtslave_host_port=%s:%d' % (rtslave_servers[0].host(),
-                                                    rtslave_servers[0].port()))
+  # TODO(tianyu): Below code only passes one shard of rtsubordinate for now.
+  rtsubordinate_servers = srv_mngr.Set('rtsubordinate').Servers()
+  if len(rtsubordinate_servers):
+    command_line.Add('--rtsubordinate_host_port=%s:%d' % (rtsubordinate_servers[0].host(),
+                                                    rtsubordinate_servers[0].port()))
 
   return command_line.ToString()
 
@@ -1835,19 +1835,19 @@ def get_ent_mixerargs(config, mixhost, mixport):
   set = srv_mngr.Set('mixer')
   port_shift = 100 * (set.PortBase() - servertype.GetPortBase('mixer'))
 
-  if 'rtslave' in map(lambda x: x.name(), srv_mngr.Sets()):
+  if 'rtsubordinate' in map(lambda x: x.name(), srv_mngr.Sets()):
     rt_backends = [
-      { 'set' : 'rtslave', 'serve_as' : 'index', 'numconn' :
+      { 'set' : 'rtsubordinate', 'serve_as' : 'index', 'numconn' :
           config.var('MIXER_INDEX_NUMCONN'), 'level' : 0 },
-      { 'set' : 'rtslave', 'serve_as' : 'doc', 'numconn' :
+      { 'set' : 'rtsubordinate', 'serve_as' : 'doc', 'numconn' :
           config.var('MIXER_DOC_NUMCONN'), 'level' : 0 },
-      { 'set' : 'rtslave', 'serve_as' : 'link', 'numconn' :
+      { 'set' : 'rtsubordinate', 'serve_as' : 'link', 'numconn' :
           config.var('MIXER_LINK_NUMCONN'), 'level' : 0 },
       { 'set' : 'cache',
         'level' : 0, 'protocol' : 'http' },
     ]
   else:
-    # We talk to base_indexer only if we don't have any rtslaves left
+    # We talk to base_indexer only if we don't have any rtsubordinates left
     rt_backends = [
       { 'set' : 'base_indexer', 'serve_as' : 'index', 'numconn' : 3,
         'level' : 0, 'port_shift' : port_shift },
@@ -1896,14 +1896,14 @@ def get_ent_mixerargs(config, mixhost, mixport):
             string.join(config.var('HTTPSERVER_TRUSTED_CLIENTS'), ','))
 
   # Set proper mixer retry count at ClientRPCID::CLONESET_LEVEL.
-  # In case of failures, we will retry (number of RTSlave clones - 1) times.
+  # In case of failures, we will retry (number of RTSubordinate clones - 1) times.
   tmp_entconfig = entconfig.EntConfig(ent_home = None, writable = 0)
-  num_retries = tmp_entconfig.GetNumRTSlaveClones(len(srv_mngr.Hosts())) - 1
+  num_retries = tmp_entconfig.GetNumRTSubordinateClones(len(srv_mngr.Hosts())) - 1
   cmdline.Add("--ent_cloneset_num_retries_on_timeout=%d" % num_retries)
   cmdline.Add("--ent_cloneset_num_retries_on_error=%d" % num_retries)
 
-  # Set Enterprise specific timeout values for RTSlave index server and
-  # RTSlave doc server, so that the above retries will be meaningful.
+  # Set Enterprise specific timeout values for RTSubordinate index server and
+  # RTSubordinate doc server, so that the above retries will be meaningful.
   if len(srv_mngr.Hosts()) > 1:
     # Set shorter timeouts on cluster, because we can retry on clones
     cmdline.Add("--ent_index_server_timeout_in_ms=%d" % 5000)
@@ -2478,7 +2478,7 @@ def restart_entfrontend(config, host, port):
                                       config.var('CONNECTOR_CONFIGDIR')))
 
   if config.var('GSA_MASTER'):
-    cl.Add('--gsa_master=%s' % config.var('GSA_MASTER'))
+    cl.Add('--gsa_main=%s' % config.var('GSA_MASTER'))
 
   if config.var('SESSIONMANAGER_ALIASES'):
     cl.Add('--sessionmanager_server=%s' %
@@ -2497,7 +2497,7 @@ servertype.RegisterRestartFunction('entfrontend', restart_entfrontend)
 # RT_BASE_PORTS.
 #
 # Returns a dictionary of type->port.
-# Example, given port=31402 (rtslave, level 1, shard 2) and
+# Example, given port=31402 (rtsubordinate, level 1, shard 2) and
 # RT_BASE_PORTS={'index':4000, 'doc':5000})
 # Result is type_port_dict = {'index':4102, 'doc':5102, 'link':0}
 #
@@ -2536,9 +2536,9 @@ def get_rt_genericargs(config, host, port):
 
   if servertype.GetPortType(port) in ('scanjpg2', 'scanjpg3', 'scanjpg6',
                                       'scanjpg20', 'scandjvu', 'scaninfo',
-                                      'scanjpg2master', 'scanjpg3master',
-                                      'scanjpg6master', 'scanjpg20master',
-                                      'scandjvumaster', 'scaninfomaster'):
+                                      'scanjpg2main', 'scanjpg3main',
+                                      'scanjpg6main', 'scanjpg20main',
+                                      'scandjvumain', 'scaninfomain'):
     # if scanning rtserver, respond _only_ as a docserver on that port
     args.append('--docserver_port=%d' % servertype.GetServingPort(port))
     # Also, don't do any indexing, don't run index or link,
@@ -2725,13 +2725,13 @@ def result_biasing_feature_enabled(config):
 # RTSLAVE
 #------------------------------------------------------------------------------
 
-def get_rt_slaveargs(config, host, port):
+def get_rt_subordinateargs(config, host, port):
 
   args = []
-  args.append('--slave')
+  args.append('--subordinate')
 
   machtype = servertype.GetPortType(port)
-  if machtype not in ['rtslave',
+  if machtype not in ['rtsubordinate',
                       'scanjpg3', 'scanjpg2', 'scanjpg6',
                       'scanjpg20', 'scaninfo', 'scandjvu']:
     raise ValueError, "Wrong machine type %s" % machtype
@@ -2750,7 +2750,7 @@ def get_rt_slaveargs(config, host, port):
   if config.var('RTSERVER_SERVING_MAPS_ALWAYS_MMAP'):
     maps = config.var('RTSERVER_SERVING_MAPS_ALWAYS_MMAP')
     # If result biasing feature is enabled, we want to mmap entscoringmetadata
-    # map files for rtslave to improve serve latency.
+    # map files for rtsubordinate to improve serve latency.
     if result_biasing_feature_enabled(config):
       maps = maps + ',entscoringmetadata'
     args.append('--maps_always_mmap=%s' % maps)
@@ -2758,7 +2758,7 @@ def get_rt_slaveargs(config, host, port):
   if config.var('RTSERVER_SERVING_MAPS_PRELOAD'):
     maps = config.var('RTSERVER_SERVING_MAPS_PRELOAD')
     # If result biasing feature is enabled, we want to preload
-    # entscoringmetadata map files for rtslave to improve serve latency.
+    # entscoringmetadata map files for rtsubordinate to improve serve latency.
     if result_biasing_feature_enabled(config):
       maps = maps + ',entscoringmetadata'
     args.append('--maps_preload=%s' % maps)
@@ -2901,7 +2901,7 @@ def get_rt_slaveargs(config, host, port):
     args.append('--gfs_cell_args=%s' % config.var('RTSLAVE_GFS_CELL_ARGS'))
 
   # Set the checksum verification threshold. (This is not in the common
-  # section because masters and slaves want to do this differently -
+  # section because mains and subordinates want to do this differently -
   # verifying can hurt for serving, but it may be ok for indexing)
   if config.var('RTSLAVE_VERIFY_THRESHOLD') != None:
     args.append('--verify_threshold=%d' %\
@@ -2930,29 +2930,29 @@ def get_rt_slaveargs(config, host, port):
 
     # Only pass in additional --base_indexer_host_port flag when
     # --check_base_indexer_committed_position is enabled.
-    rtslave_shard = servertype.GetPortShard(port)
+    rtsubordinate_shard = servertype.GetPortShard(port)
     for rtserver in config.GetServerManager().Set('base_indexer').Servers():
-      if servertype.GetPortShard(rtserver.port()) == rtslave_shard:
+      if servertype.GetPortShard(rtserver.port()) == rtsubordinate_shard:
         args.append('--base_indexer_host_port=%s:%d' % (rtserver.host(),
                                                         rtserver.port()))
         break
 
   return string.join(args)
 
-def restart_rt_slave(config, host, port, server_type="rtslave"):
+def restart_rt_subordinate(config, host, port, server_type="rtsubordinate"):
   command_line = cli.CommandLine()
   command_line.Add(UlimitPrefix(config))
-  rt_args = get_rt_slaveargs(config, host, port)
+  rt_args = get_rt_subordinateargs(config, host, port)
   command_line.Add(ServerExecutablePrefix(config, server_type))
   command_line.Add(rt_args)
 
-  # TODO: remove this when the dependency between the rtslave server
+  # TODO: remove this when the dependency between the rtsubordinate server
   # and chubby has been broken.
   CommandLineExtend(command_line, LOCK_SERVICE_FLAGS)
 
   return command_line.ToString()
 
-servertype.RegisterRestartFunction('rtslave', restart_rt_slave)
+servertype.RegisterRestartFunction('rtsubordinate', restart_rt_subordinate)
 
 #-----------------------------------------------------------------------------
 # CONFIG MANAGER
@@ -3522,19 +3522,19 @@ def restart_ent_fedroot(config, host, port):
   srv_mngr = config.GetServerManager()
   set = srv_mngr.Set('ent_fedroot')
 
-  if 'rtslave' in map(lambda x: x.name(), srv_mngr.Sets()):
+  if 'rtsubordinate' in map(lambda x: x.name(), srv_mngr.Sets()):
     rt_backends = [
-      { 'set' : 'rtslave',
+      { 'set' : 'rtsubordinate',
         'serve_as' : 'index',
         'numconn' : 3,
         'level' : 0
       },
-      { 'set' : 'rtslave',
+      { 'set' : 'rtsubordinate',
         'serve_as' : 'doc',
         'numconn' : 3,
         'level' : 0
       },
-      { 'set' : 'rtslave',
+      { 'set' : 'rtsubordinate',
         'serve_as' : 'link',
         'numconn' : 3,
         'level' : 0
@@ -3545,7 +3545,7 @@ def restart_ent_fedroot(config, host, port):
       },
     ]
   else:
-    # We talk to base_indexer only if we don't have any rtslaves left
+    # We talk to base_indexer only if we don't have any rtsubordinates left
     rt_backends = [
       { 'set' : 'base_indexer',
         'serve_as' : 'index',

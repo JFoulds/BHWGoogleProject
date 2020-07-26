@@ -3,10 +3,10 @@
 # Copyright 2006 Google Inc. All Rights Reserved.
 #
 
-""" print RESTART if gfs_master needs to be restarted.
+""" print RESTART if gfs_main needs to be restarted.
 
-Usage:   gfs_master_healthcheck.py [gfs_master_port] [ver]
-Example: gfs_master_healthcheck.py 3830 '4.6.5'
+Usage:   gfs_main_healthcheck.py [gfs_main_port] [ver]
+Example: gfs_main_healthcheck.py 3830 '4.6.5'
 
 """
 
@@ -19,7 +19,7 @@ import os
 from google3.enterprise.legacy.scripts import check_healthz
 
 def GetLogDir(ver):
-  """ returns the log dir of gfs_master
+  """ returns the log dir of gfs_main
 
   Arguments:
     ver: '4.6.5'
@@ -29,7 +29,7 @@ def GetLogDir(ver):
   return '/export/hda3/%s/logs' % ver
 
 def GetLogEtime(ver, logtype):
-  """ if a type of gfs_master log exists, return the # of seconds
+  """ if a type of gfs_main log exists, return the # of seconds
   since last modification. Otherwise, return time().
 
   Arguments:
@@ -39,7 +39,7 @@ def GetLogEtime(ver, logtype):
     300
   """
 
-  log_name = '%s/gfs_master.%s' % (GetLogDir(ver), logtype)
+  log_name = '%s/gfs_main.%s' % (GetLogDir(ver), logtype)
   if os.path.exists(log_name):
     mtime = os.path.getmtime(log_name)
   else:
@@ -47,20 +47,20 @@ def GetLogEtime(ver, logtype):
   return int(time.time() - mtime)
 
 def SearchStringInLogs(ver, logtype, string_to_search, mmin=None):
-  """ find out the number of gfs_master logs of a particular type
+  """ find out the number of gfs_main logs of a particular type
   contains a particular string
 
   Arguments:
     ver: '4.6.5'
     logtype: 'INFO', 'FATAL', or 'ERROR'
-    string_to_search: 'Acquired master lock but can not control logs'
+    string_to_search: 'Acquired main lock but can not control logs'
     mmin: only look at files modified within since mmin minutes ago
           None if don't care about the time
   Returns:
     3
   """
 
-  find_cmd = 'find %s -name "gfs_master*.%s.*"' % (GetLogDir(ver), logtype)
+  find_cmd = 'find %s -name "gfs_main*.%s.*"' % (GetLogDir(ver), logtype)
   if mmin:
     find_cmd = '%s -mmin -%d' % (find_cmd, mmin)
   find_cmd = '%s |xargs grep -l "%s"' % (find_cmd, string_to_search)
@@ -86,7 +86,7 @@ def main(argv):
   # if there are processes listening on the port, check
   # if there is any recent fatal errros. If the last FATAL log
   # was 30 minutes ago, and the last INFO log is pretty new,
-  # gfs_master is probably still restarting and cannot answer
+  # gfs_main is probably still restarting and cannot answer
   # healthz check (bug 234769)
   if (GetLogEtime(ver, 'FATAL') > 1800 and GetLogEtime(ver, 'INFO') < 300):
     sys.exit(0)

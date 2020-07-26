@@ -14,10 +14,10 @@ from google3.enterprise.legacy.util import stunnel_jail
 
 
 class CorpusRootStunnelService(object):
-  """This class provides the wrapper to start and stop a slave fed server.
+  """This class provides the wrapper to start and stop a subordinate fed server.
   
   The utility class that can creates and helps maintain a corpus root service.
-  Corpus Root service is used by Master GSA to connect to over stunnel and then
+  Corpus Root service is used by Main GSA to connect to over stunnel and then
   wrap PPP over the secure tunnel, to create a pseudo Secure network interface
   /export/hda3/tmp/fed is the chroot that we use for the corpus root server
   where the stunnel server runs with the configuration available in
@@ -134,7 +134,7 @@ class CorpusRootStunnelService(object):
 
         
 class SuperRootStunnelService(object):
-  """This class provides the wrapper for a SuperRoot Master launch script."""
+  """This class provides the wrapper for a SuperRoot Main launch script."""
   
   def __init__(self, sys_abstraction, config=None, config_file=None, ec=None):
     self.__os = sys_abstraction
@@ -153,7 +153,7 @@ class SuperRootStunnelService(object):
         self.__ec.ENT_CONFIG_NAME)
       
   def Start(self):
-    """Start the connect to all Slaves or Corpus Roots."""
+    """Start the connect to all Subordinates or Corpus Roots."""
     
     corpus_roots = self.__super_root.GetCorpusRoots()
     # stop all connections
@@ -177,7 +177,7 @@ class SuperRootStunnelService(object):
     return (status_start, message_start)
     
   def Stop(self):
-    """Disconnect from all the slaves or corpus roots."""
+    """Disconnect from all the subordinates or corpus roots."""
     corpus_roots = self.__super_root.GetCorpusRoots()
     status_stop = 0
     message_stop = 'Success'
@@ -193,10 +193,10 @@ class SuperRootStunnelService(object):
     return (status_stop, message_stop)
     
   def Connect(self, appliance_id):
-    """Connect to a specific Slave appliance.
+    """Connect to a specific Subordinate appliance.
     
     Args:
-      appliance_id: the appliance ID of the slave that need to be connected to.
+      appliance_id: the appliance ID of the subordinate that need to be connected to.
       
     Returns:
       (0,message) if success and (non_zero_error, message) if failed.
@@ -241,10 +241,10 @@ class SuperRootStunnelService(object):
       return (status_configure, message)
     
   def Disconnect(self, appliance_id):
-    """Disconnect from a specific Slave appliance.
+    """Disconnect from a specific Subordinate appliance.
     
     Args:
-      appliance_id: the appliance ID of the slave, to be disconnected from.
+      appliance_id: the appliance ID of the subordinate, to be disconnected from.
       
     Returns:
       (0,message) if success and (non_zero_error, message) if failed.
@@ -268,7 +268,7 @@ class SuperRootStunnelService(object):
         return (-1, '')
 
   def Status(self, appliance_id):
-    """Checks if the slave can be reached over the connection.
+    """Checks if the subordinate can be reached over the connection.
     
     Args:
       appliance_id: The appliance that the status need to be checked with.

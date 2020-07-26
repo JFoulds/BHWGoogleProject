@@ -84,11 +84,11 @@ sorttempdir .
     except IOError:
       ok = 0
 
-    # set up link in workqueue slave binary directory (bin) to workqueue-slave
-    # binary so that workqueue-slave can checksum/update itself
+    # set up link in workqueue subordinate binary directory (bin) to workqueue-subordinate
+    # binary so that workqueue-subordinate can checksum/update itself
     for d in chunkDisks:
       if not E.ln([machine],
-                  '%s/workqueue-slave' % binDir['workqueue-slave'],
+                  '%s/workqueue-subordinate' % binDir['workqueue-subordinate'],
                   '%s/%s/workqueue/bin/current' % (d, chunkPrefix)):
         ok = 0
 

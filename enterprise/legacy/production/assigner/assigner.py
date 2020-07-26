@@ -674,7 +674,7 @@ class Assigner:
   #   desired shardlength. [Easy]
   #
   #   TODO: Also add the ablility to balance shards per server bases.
-  #   There is not point in having 3 rtslaves on shard 1 and 2 on shard 0.
+  #   There is not point in having 3 rtsubordinates on shard 1 and 2 on shard 0.
   #   [Difficult]
   #
   def AddSets(self, srv_mgrs, srvsetnums, do_min=0):
@@ -1182,10 +1182,10 @@ def Usage(msg=''):
       sets.  This will allow you to add machines evenly between the
       sets.  For example:
 
-      "config.a config.b" addsets "rtslave:30"
+      "config.a config.b" addsets "rtsubordinate:30"
 
       Will take free machines and distribute them evenly between
-      the two configs to try and reach up to 30 rtslaves.
+      the two configs to try and reach up to 30 rtsubordinates.
 
   Examples:
 

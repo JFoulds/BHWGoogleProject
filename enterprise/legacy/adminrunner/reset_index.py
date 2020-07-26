@@ -358,7 +358,7 @@ def _IsRecoverable(dir, unrecoverable_dirs):
 def _ComposeFileutilArgs(gfs_aliases=None, datadir=None):
   """ compose fileutil args
   Args:
-    gfs_aliases: 'ent=master.ent.gfs.ent4-6-0-G-27.ls.google.com:3830'
+    gfs_aliases: 'ent=main.ent.gfs.ent4-6-0-G-27.ls.google.com:3830'
                   -- for gfs only
     datadir: '/export/hda3/4.6.0.G.27/data/enterprise-data'
              -- for bigfile only
@@ -390,7 +390,7 @@ def _TopLevelDirsToRemove(cfg, dir_root, gfs_aliases=None, datadir=None,
   Parameters:
     cfg: entconfig.EntConfig(entHome, 1)
     dir_root: '/gfs/ent/'
-    gfs_aliases: 'ent=master.ent.gfs.ent4-6-0-G-27.ls.google.com:3830'
+    gfs_aliases: 'ent=main.ent.gfs.ent4-6-0-G-27.ls.google.com:3830'
                   -- for gfs only
     datadir: '/export/hda3/4.6.0.G.27/data/enterprise-data'
              -- for bigfile only
@@ -443,7 +443,7 @@ def _RemoveTopLevelDirs(cfg, dir_root, gfs_aliases=None, datadir=None,
   Parameters:
     cfg: entconfig.EntConfig(entHome, 1)
     dir_root: '/gfs/ent/'
-    gfs_aliases: 'ent=master.ent.gfs.ent4-6-0-G-27.ls.google.com:3830'
+    gfs_aliases: 'ent=main.ent.gfs.ent4-6-0-G-27.ls.google.com:3830'
                   -- for gfs only
     datadir: '/export/hda3/4.6.0.G.27/data/enterprise-data'
              -- for bigfile only
@@ -460,7 +460,7 @@ def _RemoveTopLevelDirs(cfg, dir_root, gfs_aliases=None, datadir=None,
     work, try the "-a" flag.
     Args:
       dir: '/gfs/ent/base-indexer000-of-003/global-anchor000-of-003'
-      cmd_args: '--gfs_aliases=ent=master.ent.gfs.ent4-6-0-G-27.ls.'
+      cmd_args: '--gfs_aliases=ent=main.ent.gfs.ent4-6-0-G-27.ls.'
                 'google.com:3830'
     Return:
       1 - removed successfully
@@ -571,7 +571,7 @@ def _Reactivate(cfg, version):
   result = ''
   if _RunServeCmd(cfg, version, 'start'):
     result = 'Startup failed.'
-  # Need to activate on all nodes; if we switched masters, we may have
+  # Need to activate on all nodes; if we switched mains, we may have
   # deactivated multiple nodes.
   if _RunServeCmd(cfg, version, 'activate', allnodes=1):
     result = 'Activate failed.'

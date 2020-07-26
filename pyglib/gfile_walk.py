@@ -212,7 +212,7 @@ def _DiscardStatFunc(entry):
 
 def _WalkHelper(entry, topdown, onerror, report_stats, statfunc):
   """Small recursive helper to emulate old walk behavior with new _Walk way
-  of abusing GFS master.
+  of abusing GFS main.
   For an overall description, see _Walk.
   This function tries to use as little memory as possible.
 
@@ -315,7 +315,7 @@ def _Walk(top, topdown, onerror, report_stats, statfunc):
   This function works N times faster than fileutil ls -la -R, where N is at
   least 2.5.
 
-  Here we use the property of GFS master to do multilevel ExtendedMatch, like
+  Here we use the property of GFS main to do multilevel ExtendedMatch, like
   ExtendedMatch('.../*/*'). We're adding asterisks to the right and accumulate
   entries until we reach bottom or we exceed MAX_ENTRIES_READ. Then, we're
   doung BulkStat at once, and using _WalkHelper to recursively walk over the

@@ -281,7 +281,7 @@ class DiagnoseHandler(admin_handler.ar_handler):
     The passed in global DocID is the fingerprint of the URI.
     """
 
-    srvr_set = self.cfg.globalParams.GetServerManager().Set('rtslave')
+    srvr_set = self.cfg.globalParams.GetServerManager().Set('rtsubordinate')
 
     shard_id = self.GetShardId(DocID, srvr_set)
 
@@ -316,7 +316,7 @@ class DiagnoseHandler(admin_handler.ar_handler):
     The passed in global DocID is the fingerprint of the URI.
     """
 
-    srvr_set = self.cfg.globalParams.GetServerManager().Set('rtslave')
+    srvr_set = self.cfg.globalParams.GetServerManager().Set('rtsubordinate')
 
     shard_id = self.GetShardId(DocID, srvr_set)
 
@@ -350,7 +350,7 @@ class DiagnoseHandler(admin_handler.ar_handler):
     The passed in global DocID is the fingerprint of the URI.
     """
 
-    srvr_set = self.cfg.globalParams.GetServerManager().Set('rtslave')
+    srvr_set = self.cfg.globalParams.GetServerManager().Set('rtsubordinate')
 
     shard_id = self.GetShardId(DocID, srvr_set)
 

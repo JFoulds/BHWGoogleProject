@@ -810,11 +810,11 @@ def GWQStatusMessage(msg):
   """
   dir = os.getenv('GOOGLE_STATUS_DIR')
   if dir is None:
-    # not running under borglet or WQ slave
+    # not running under borglet or WQ subordinate
     if os.getenv('WORKQUEUE_SLAVE_PROCESS_TAG') is not None:
       # running under GSA workqueue
       dir = '.'
-    elif os.getcwd().find('/workqueue-slave/') != -1:
+    elif os.getcwd().find('/workqueue-subordinate/') != -1:
       dir = '.'
     else:
       # we don't appear to be running under either borg or GWQ

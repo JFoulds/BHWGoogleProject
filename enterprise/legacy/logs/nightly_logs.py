@@ -19,7 +19,7 @@ import commands
 
 from google3.enterprise.legacy.util import E
 from google3.pyglib import logging
-from google3.enterprise.legacy.util import find_master
+from google3.enterprise.legacy.util import find_main
 from google3.enterprise.legacy.adminrunner import entconfig
 from google3.enterprise.legacy.adminrunner import adminrunner_client
 
@@ -35,13 +35,13 @@ def main(argv):
     sys.exit(__doc__)
 
   machines = config.var('MACHINES')
-  master = find_master.FindMaster(port, machines)
+  main = find_main.FindMain(port, machines)
 
   # The name of this machine
   crt_machine = E.getCrtHostName()
 
-  if len(master) != 1 or master[0] != crt_machine:
-    logging.info("I am not the master")
+  if len(main) != 1 or main[0] != crt_machine:
+    logging.info("I am not the main")
     sys.exit(0) # not a problem
 
   # find out the date 24 hours ago

@@ -494,8 +494,8 @@ def ApplyAndSaveSettings(cfg):
   configuration object as a parameter."""
   SaveScoringPolicies(cfg, MakeScoringConfig(cfg))
 
-  # Restart babysitter, so that it will check for possible rtslave argv changes
-  # and restart rtslave process if neccessary.
+  # Restart babysitter, so that it will check for possible rtsubordinate argv changes
+  # and restart rtsubordinate process if neccessary.
   os.system("/etc/rc.d/init.d/serve_%s babysit &" %
             cfg.getGlobalParam('VERSION'))
 

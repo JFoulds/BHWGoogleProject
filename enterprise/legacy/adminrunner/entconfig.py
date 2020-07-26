@@ -55,7 +55,7 @@ MAX_MMAP_MEMORY_CACHE = None
 # be started in "ACTIVE", "TEST", and "SERVE" states.
 #
 SERVERS_PROCESS_DATA = {
-  'gfs_master':              1,
+  'gfs_main':              1,
   'sremote_server':          1,
   'gfs_chunkserver':         1,
   'clustering_server':       1,
@@ -70,7 +70,7 @@ SERVERS_PROCESS_DATA = {
   'spellmixer':              1,
   'headrequestor':           1,
   'authzchecker':            2,
-  'rtslave':                 100,
+  'rtsubordinate':                 100,
   'fsgw':                    10,
   'connectormgr':            1,
   'ent_fedroot':             1,
@@ -721,7 +721,7 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
       # read the current allocation
       servers = self.var_copy('SERVERS')
       machines = self.var('MACHINES')
-      master = self.var('MASTER')
+      main = self.var('MASTER')
       gfs_cell = self.var('GFS_CELL')
 
       # checks if the ports are shifted -- and if it is, then it
@@ -729,15 +729,15 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
       if self.is_shifted_server_map(servers):
         servers = self.testing_servers_conversion(servers, -1)
 
-      # TODO remove work* things from master
-      master_servers = ['config_manager']
+      # TODO remove work* things from main
+      main_servers = ['config_manager']
 
       # Now override some servers according to these rules
       # Note: SERVERS enteries can be assigned as lists or strings, but
       # while reading any entry, it is always a list.
-      if master:
-        for srvr in master_servers:
-          servers[servertype.GetPortBase(srvr)] = master
+      if main:
+        for srvr in main_servers:
+          servers[servertype.GetPortBase(srvr)] = main
 
       license_info = self.var('ENT_LICENSE_INFORMATION')
 
@@ -772,7 +772,7 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
         srvs = constraint_general.keys()
         srvs.remove('default')
         for srv in srvs:
-          if srv in master_servers:
+          if srv in main_servers:
             continue
           # TODO remove this once we have a way to override SEVERTYPE
           # properties.
@@ -961,14 +961,14 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
     """
     Returns a modified copy of servers that work for the serving state
     """
-    # First we don't allow base indexers. If no rtslaves are available,
-    # we make base_indexers rt slaves
-    min_port = servertype.GetPortMin('rtslave')
-    max_port = servertype.GetPortMax('rtslave')
-    rtslave_ports = filter(
+    # First we don't allow base indexers. If no rtsubordinates are available,
+    # we make base_indexers rt subordinates
+    min_port = servertype.GetPortMin('rtsubordinate')
+    max_port = servertype.GetPortMax('rtsubordinate')
+    rtsubordinate_ports = filter(
       lambda p, m = min_port, M = max_port: p >= m and p < M,
       servers.keys())
-    base_indexers_slaves = len(rtslave_ports) == 0
+    base_indexers_subordinates = len(rtsubordinate_ports) == 0
 
     # Now, go and do the transformation
     ret = {}
@@ -978,8 +978,8 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
       if SERVERS_PROCESS_DATA.has_key(mtype):
         ret[port] = val
       else:
-        # One more chance - is base_indexer and we have no rtslaves
-        if base_indexers_slaves and mtype == 'base_indexer':
+        # One more chance - is base_indexer and we have no rtsubordinates
+        if base_indexers_subordinates and mtype == 'base_indexer':
           ret[min_port + port - servertype.GetPortMin('base_indexer')] = val
 
     return ret
@@ -1095,10 +1095,10 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
     if E.ERR_OK == status and output.startswith('x86_64'):
       address_space = 4L << 30
       if self.var('ENT_CONFIG_TYPE') == 'SUPER':
-        # On SuperGSA platform, give rtslave 12GB of MAX_MMAP_MEMORY_CACHE.
+        # On SuperGSA platform, give rtsubordinate 12GB of MAX_MMAP_MEMORY_CACHE.
         MAX_MMAP_MEMORY_CACHE = 12L << 30
       else:
-        # On Dell oneway platform, give rtslave 4GB of MAX_MMAP_MEMORY_CACHE.
+        # On Dell oneway platform, give rtsubordinate 4GB of MAX_MMAP_MEMORY_CACHE.
         MAX_MMAP_MEMORY_CACHE = 4L << 30
 
     logging.info('Assigning address_space: %s' % address_space)
@@ -1142,7 +1142,7 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
     ent_num_shards = self.var('ENT_NUM_SHARDS')
     urlserver_default_hostload = self.var('URLSERVER_DEFAULT_HOSTLOAD')
     ent_disk_root = self.var('ENT_DISK_ROOT')
-    master = self.var('MASTER')
+    main = self.var('MASTER')
     servers = self.var('SERVERS')
     ent_all_machines = self.var('ENT_ALL_MACHINES')
     datachunkdisks = self.var('DATACHUNKDISKS')
@@ -1187,7 +1187,7 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
     log_dir = None
     data_dirs = {}  # DATADIRS will get filled out in a lot of places
     rt_ram_dir = None
-    max_rtslaves_per_node = 1
+    max_rtsubordinates_per_node = 1
 
     if ent_disk_root != None:
       self.set_var('VMANAGER_PASSWD_FILE',
@@ -1209,7 +1209,7 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
 
     # Check to see if ramfs_root is really mounted.  If not, ignore it.
     # We are only checking on the machine that this script runs on and
-    # rtslave could be running on any other machine in the cluster, but
+    # rtsubordinate could be running on any other machine in the cluster, but
     # we have the same  configuration on all machines in a cluster, so that
     # isn't a problem.
     ramfs_is_mounted = 0
@@ -1272,14 +1272,14 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
                                                                    is_cluster)
 
     if ent_all_machines and len(ent_all_machines) > 1:  # cluster
-      master = core_utils.MakeGSAMasterPath(version)
-      self.set_var('GSA_MASTER', master)
+      main = core_utils.MakeGSAMainPath(version)
+      self.set_var('GSA_MASTER', main)
       self.set_var('ENT_DASH_VER_NAME', core_utils.GetCellName(version))
 
       # we use the prefix variable as substring for ellection commisionaire
       # code we can therefore not give it a full DNS name, as election
       # commisionaire composes that name, this string sessionmanager would be
-      # changed to somethg like 'sessionmanager-master.ent5-1-1.ls.google.com'
+      # changed to somethg like 'sessionmanager-main.ent5-1-1.ls.google.com'
       # for EnterpriseFrontend and Authzchecker we need to pass on the
       # variables mentioning the servername:port, we do it using the
       # SESSIONMANAGER_ALIASES config variable
@@ -1344,7 +1344,7 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
 
     ##
 
-    if master:
+    if main:
       # Set all machines as config replicas
       self.set_var('CONFIG_REPLICAS', machines)
 
@@ -1431,15 +1431,15 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
         'oneboxenterprise':        bin_dir,
         'mixer':                   bin_dir,
         'headrequestor':           bin_dir,
-        'rtslave':                 bin_dir,
+        'rtsubordinate':                 bin_dir,
         'qrewrite':                bin_dir,
         'spellmixer':              bin_dir,
         'clustering_server':       bin_dir,
         'ent_fedroot':             bin_dir,
 
         # belows for crawling, etc.
-        'workqueue-master':        bin_dir,
-        'workqueue-slave':         bin_dir,
+        'workqueue-main':        bin_dir,
+        'workqueue-subordinate':         bin_dir,
         'workschedulerserver':     bin_dir,
         'config_manager':          E.normpath('%s/local/google3/enterprise/'
             'legacy/production/configmgr' % enterprise_home),
@@ -1766,26 +1766,26 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
       self.set_var('URLTRACKER_DIRECTORY',
                    ("%s/data/enterprise-data/urltracker/" % enterprise_home));
 
-    # Figure out how many rtslaves we need to run per node.
+    # Figure out how many rtsubordinates we need to run per node.
     if machines and ent_num_shards:
       num_machines = len(machines)
-      tot_slaves = ent_num_shards * self.GetNumRTSlaveClones(num_machines)
-      max_rtslaves_per_node = (tot_slaves + num_machines - 1) / num_machines
+      tot_subordinates = ent_num_shards * self.GetNumRTSubordinateClones(num_machines)
+      max_rtsubordinates_per_node = (tot_subordinates + num_machines - 1) / num_machines
     else:
-      max_rtslaves_per_node = 1
+      max_rtsubordinates_per_node = 1
 
     if rt_ram_dir:
       # We 'allocate' a fixed size of memory for index serving.  We give some
-      # of it directly to each rtslave and give the rest to all instances on
+      # of it directly to each rtsubordinate and give the rest to all instances on
       # node as ram-based filesystem.  Don't give too much to it directly to
       # avoid fragmentation of this budget.
-      rtslave_mmap_memory = 1024L << 20
+      rtsubordinate_mmap_memory = 1024L << 20
       tot_mem = self.var('ENT_MEMORY_FOR_INDEX_SERVING')
-      ramfs_usage = tot_mem - (rtslave_mmap_memory * max_rtslaves_per_node)
+      ramfs_usage = tot_mem - (rtsubordinate_mmap_memory * max_rtsubordinates_per_node)
       if ramfs_usage <= 0: ramfs_usage = 1  #0 means use all of it
       self.set_var('RTSLAVE_RAMFS_MAX_USAGE', ramfs_usage)
     else:
-      rtslave_mmap_memory = self.get_max_mmap_memory()
+      rtsubordinate_mmap_memory = self.get_max_mmap_memory()
       # Virtual GSA limit the rtserver memory usage to 25% of whole memory
       if ent_config_type == 'FULL':
         meminfo_content = open('/proc/meminfo').read()
@@ -1794,8 +1794,8 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
         if match:
            whole_memory_size = long(match.group(1)) << 10
            vgsa_mem_limit = long(whole_memory_size / 4L)
-           if rtslave_mmap_memory > vgsa_mem_limit:
-             rtslave_mmap_memory = vgsa_mem_limit
+           if rtsubordinate_mmap_memory > vgsa_mem_limit:
+             rtsubordinate_mmap_memory = vgsa_mem_limit
 
     if ent_config_type in ('LITE', 'FULL'):
       # ~150K per shard for virtual platforms
@@ -1815,10 +1815,10 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
 
     if gfs_cell:
       self.set_var('RTSERVER_MMAP_BUDGET', '200MB') #cluster gets bigger budget
-      self.set_var('RTSLAVE_MAX_MMAP_MEMORY', rtslave_mmap_memory)
-      # Since rtslaves refresh their checkpoint every 15 minutes, we
+      self.set_var('RTSLAVE_MAX_MMAP_MEMORY', rtsubordinate_mmap_memory)
+      # Since rtsubordinates refresh their checkpoint every 15 minutes, we
       # should not create checkpoints too often otherwise we run into
-      # cases where rtslaves try to open an already deleted file.
+      # cases where rtsubordinates try to open an already deleted file.
       self.set_var('RTSERVER_FLUSH_TIME_INTERVAL', {
         'base_indexer'         :  900, # 15 min
         'daily_indexer'        :  900,
@@ -1831,7 +1831,7 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
       self.set_var('URLSCHEDULER_MUST_RECRAWL_AGE', 2592000)
     else:
       self.set_var('RTSERVER_MMAP_BUDGET', '200MB')
-      self.set_var('RTSLAVE_MAX_MMAP_MEMORY', rtslave_mmap_memory)
+      self.set_var('RTSLAVE_MAX_MMAP_MEMORY', rtsubordinate_mmap_memory)
       self.set_var('RTSERVER_FLUSH_TIME_INTERVAL', {
         'base_indexer'         :  300, # 5 min
         'daily_indexer'        :  300,
@@ -1851,7 +1851,7 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
     # gets queries and gets killed by babysitter while doing so.
     # Give it a little extra because we always mmap lexicon (ignoring the
     # mmap budget), so we could go over.
-    #index_bytes = rtslave_mmap_memory + (300L << 20)
+    #index_bytes = rtsubordinate_mmap_memory + (300L << 20)
     #self.set_var('RTSLAVE_MAX_INDEX_BYTES', index_bytes)
     # NOTE: Commented because the default value has been increased
 
@@ -2007,10 +2007,10 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
 
     if gfs_cell and namespace_prefix:
       self.set_var('WORKQUEUE_MASTER_CHECKPOINT',
-                   '%s/workqueue-master-checkpoint' % namespace_prefix)
+                   '%s/workqueue-main-checkpoint' % namespace_prefix)
     elif datadisk:
       self.set_var('WORKQUEUE_MASTER_CHECKPOINT',
-                   '%s/workqueue/workqueue-master-checkpoint' % datadisk)
+                   '%s/workqueue/workqueue-main-checkpoint' % datadisk)
     ##
 
     if gfs_cell:
@@ -2302,7 +2302,7 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
           'resource': ['ram:256'],
         }
 
-      #machines[servertype.GetPortBase('filesyncmaster') + i] = builders
+      #machines[servertype.GetPortBase('filesyncmain') + i] = builders
       #machines[servertype.GetPortBase('filesyncer') + i] = \
       #                                              builders + backends
 
@@ -2318,16 +2318,16 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
         }
       ##
 
-      rtslave_shardlen = self.GetNumRTSlaveClones(num_machines)
-      constraint_general['rtslave'] = {
+      rtsubordinate_shardlen = self.GetNumRTSubordinateClones(num_machines)
+      constraint_general['rtsubordinate'] = {
         'resource': ['cpumhz:200,ram:3000'],
-        'shardlen': [rtslave_shardlen, rtslave_shardlen],
+        'shardlen': [rtsubordinate_shardlen, rtsubordinate_shardlen],
       }
 
       ##
 
       # HACK: For uni-processor kernel reduce the cpumhz.  Otherwise,
-      # assigner wouldn't assign more than one rtslave clone and serving
+      # assigner wouldn't assign more than one rtsubordinate clone and serving
       # could break as soon as a node goes down.
       self.AdjustProcUsageIfUniprocessorKernel(constraint_general)
 
@@ -2336,8 +2336,8 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
       shareable_set.remove('default')
       # allow two contentfilters (of different shards) on the same machine
       shareable_set.append('contentfilter')
-      # allow multiple rtslaves of different shard on the same machine
-      shareable_set.extend(['rtslave']*(max_rtslaves_per_node-1))
+      # allow multiple rtsubordinates of different shard on the same machine
+      shareable_set.extend(['rtsubordinate']*(max_rtsubordinates_per_node-1))
       # allow multiple urltracker_server of different shard on the same machine
       shareable_set.extend(['urltracker_server']*(max_urltracker_server_per_node-1))
 
@@ -2520,9 +2520,9 @@ class EntConfig(threadsafegoogleconfig.ThreadsafeConfig):
     else:
       return (False, False, None)
 
-  def GetNumRTSlaveClones(self, num_machines):
+  def GetNumRTSubordinateClones(self, num_machines):
     """
-    Get the number of rtslave clones depending on number of live machines.
+    Get the number of rtsubordinate clones depending on number of live machines.
     """
     if num_machines < 4:
       return 1

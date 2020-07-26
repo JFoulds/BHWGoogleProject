@@ -3,10 +3,10 @@
 # Copyright 2006 Google Inc. All Rights Reserved.
 #
 
-""" Handle GFS_NoPrimaryMaster Alert
+""" Handle GFS_NoPrimaryMain Alert
 
-Usage:   ./handle_gfs_no_master.py [ver] [testver]
-Example: ./handle_gfs_no_master.py 4.6.5 0
+Usage:   ./handle_gfs_no_main.py [ver] [testver]
+Example: ./handle_gfs_no_main.py 4.6.5 0
 Notes:   To avoid this script running on different nodes of a cluster
          at the same time or running too often, chubby file
          /ls/<cellname>/GFS_LOGS_SYNC_TIME is used for concurrency control
@@ -28,7 +28,7 @@ import re
 import traceback
 import tempfile
 
-from google3.enterprise.core import gfs_master_healthcheck
+from google3.enterprise.core import gfs_main_healthcheck
 from google3.enterprise.core import core_utils
 from google3.enterprise.core import gfs_utils
 from google3.enterprise.legacy.util import E
@@ -41,7 +41,7 @@ GFS_SuperBlock = gfs_superblock_pb.GFS_SuperBlock
 def CheckFatalLogs(ver):
   """ check if more than 5 fatal logs within last 60 minutes
     have the following error messages:
-      "Acquired master lock but can not control logs. \
+      "Acquired main lock but can not control logs. \
       Failed to become primary.  Committing suicide"
 
   Arguments:
@@ -50,8 +50,8 @@ def CheckFatalLogs(ver):
     1 - found enough FATAL logs with that error. 0 - otherwise.
   """
 
-  symptom_string = 'Acquired master lock but can not control logs'
-  matched_logs =  gfs_master_healthcheck.SearchStringInLogs(ver,
+  symptom_string = 'Acquired main lock but can not control logs'
+  matched_logs =  gfs_main_healthcheck.SearchStringInLogs(ver,
                     'FATAL', symptom_string, 60)
   return matched_logs > ALLOWED_FATAL_LOGS
 
@@ -63,7 +63,7 @@ def FindCanonical(ver, testver=0, proto_dir=None, superblock_dir=None):
     ver: '4.6.5'
     testver: 1 if the version is in test mode. 0 otherwise.
     proto_dir: for unittest only. dir of the gfs_superblock.proto file.
-    superblock_dir: for unittest only. dir of the master-superblock dir.
+    superblock_dir: for unittest only. dir of the main-superblock dir.
   Returns:
     GFS Replica which is upto date.
   """
@@ -72,7 +72,7 @@ def FindCanonical(ver, testver=0, proto_dir=None, superblock_dir=None):
     superblock_dir = '/ls/%s/gfs/ent' % (
       core_utils.GetGFSChubbyCellName(ver))
 
-  superblock_filename = '%s/master-superblock' % superblock_dir
+  superblock_filename = '%s/main-superblock' % superblock_dir
 
   temp_file = tempfile.mktemp()
 
@@ -100,10 +100,10 @@ def FindCanonical(ver, testver=0, proto_dir=None, superblock_dir=None):
   cellname = gfs_superblock.cellname()
   logging.info('Cell Name: %s' % cellname)
 
-  last_master = gfs_superblock.last_master()
-  if last_master.startswith('ent'):
-    last_master = last_master.split(':')[0]
-  logging.info('Last Master: %s' % last_master)
+  last_main = gfs_superblock.last_main()
+  if last_main.startswith('ent'):
+    last_main = last_main.split(':')[0]
+  logging.info('Last Main: %s' % last_main)
 
   replica_info = {}
 
@@ -112,8 +112,8 @@ def FindCanonical(ver, testver=0, proto_dir=None, superblock_dir=None):
           replica.machine_name(), replica.up_to_date()))
     replica_info[replica.machine_name()] = replica.up_to_date()
 
-  if last_master.startswith('ent') and replica_info[last_master]:
-    return last_master
+  if last_main.startswith('ent') and replica_info[last_main]:
+    return last_main
 
   for machine_name in replica_info:
     if replica_info[machine_name]:
@@ -130,12 +130,12 @@ def SyncLogsWithCanonical(ver, canonical):
     canonical: 'ent1'
   """
 
-  gfs_master_nodes, _ = core_utils.GFSMasterNodes()
-  gfs_master_nodes.remove(canonical)
-  gfs_master_dir = '/export/hda3/%s/data/gfs_master' % ver
-  log_dir = '%s/ent.gfsmaster' % gfs_master_dir
+  gfs_main_nodes, _ = core_utils.GFSMainNodes()
+  gfs_main_nodes.remove(canonical)
+  gfs_main_dir = '/export/hda3/%s/data/gfs_main' % ver
+  log_dir = '%s/ent.gfsmain' % gfs_main_dir
   backup_log_dir = '%s.backup.%d' % (log_dir, int(time.time()))
-  vars = {'gfs_master_dir':     gfs_master_dir,
+  vars = {'gfs_main_dir':     gfs_main_dir,
           'log_dir':            log_dir,
           'backup_log_dir':     backup_log_dir,
           'canonical':          canonical
@@ -143,12 +143,12 @@ def SyncLogsWithCanonical(ver, canonical):
   cmd = ('rm -rf %(log_dir)s.backup*; '
          'mv %(log_dir)s %(backup_log_dir)s; '
          'mkdir -p %(log_dir)s; chown nobody:nobody %(log_dir)s; '
-         'rsync -c -e ssh -aHpogt %(canonical)s:%(log_dir)s %(gfs_master_dir)s'
+         'rsync -c -e ssh -aHpogt %(canonical)s:%(log_dir)s %(gfs_main_dir)s'
          % vars
         )
   out = []
   enthome = '/export/hda3/%s' % ver
-  E.execute(gfs_master_nodes, cmd, out, 1200, 1, 0, enthome)
+  E.execute(gfs_main_nodes, cmd, out, 1200, 1, 0, enthome)
 
 def SetSyncTime(ver, testver):
   """ record the gfs logs sync time in chubby

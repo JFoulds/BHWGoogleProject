@@ -720,7 +720,7 @@ class GSAStatusLogic:
       Warning: this code will break if you ever have two different disk
       configs in a cluster.  This code is not cluster aware and assumes
       that the disk configuration is the same in every node as the node
-      adminrunner runs on (master).  A better way to do this is to get the
+      adminrunner runs on (main).  A better way to do this is to get the
       manifest from each node and calculate the total.
 
       How it works:  This code starts with the total number of JBODS
@@ -1014,7 +1014,7 @@ class GSAStatusLogic:
 
 
   def SVSErrorsStatus(self, lockserv_cmd_out=None):
-    """ Check SVS errors recorded by gsa-master
+    """ Check SVS errors recorded by gsa-main
 
     Args:
       lockserv_cmd_out: {'ent1': 'machine problem Unknown\n'}
@@ -1023,7 +1023,7 @@ class GSAStatusLogic:
             status is 1 if there are SVS erros. Otherwise, status is 0.
     """
 
-    # Add any SVS errors (from gsa-master) to the problem list
+    # Add any SVS errors (from gsa-main) to the problem list
     all_machs_status = 0
     desc = []
     if self._ent_config == 'CLUSTER':

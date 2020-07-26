@@ -268,7 +268,7 @@ if os.environ.has_key('GOOGLEBASE') and os.environ['GOOGLEBASE']:
   GOOGLEBASE = os.path.abspath(os.environ['GOOGLEBASE'])
   SetupPaths()
 elif os.path.isdir('/export/hda3/shared'):
-  GOOGLEBASE = '/export/hda3/shared'       # base path on crawlmasters
+  GOOGLEBASE = '/export/hda3/shared'       # base path on crawlmains
   SetupPaths()
 elif os.path.isdir('/home/build/public'):
   LazySetupPaths()                         # corp environment

@@ -23,7 +23,7 @@ import socket
 
 from google3.pyglib import logging
 from google3.enterprise.legacy.util import E
-from google3.enterprise.legacy.util import find_master
+from google3.enterprise.legacy.util import find_main
 from google3.enterprise.legacy.util import port_talker
 from google3.enterprise.legacy.adminrunner import entconfig
 from google3.enterprise.legacy.adminrunner import adminrunner_client
@@ -54,28 +54,28 @@ def sshd_alive_check(config):
 
 ###############################################################################
 
-def DetectMaster(machines, max_tries, time_sleep, ver):
-  """Detects Master using chubby.
+def DetectMain(machines, max_tries, time_sleep, ver):
+  """Detects Main using chubby.
 
   Returns:
-    master machine's name or None (if none found).
+    main machine's name or None (if none found).
   """
   try_count = 0
-  master = None
-  while (try_count < max_tries) and (master is None):
-    master = find_master.FindMasterUsingChubby(ver)
-    if master is None:
+  main = None
+  while (try_count < max_tries) and (main is None):
+    main = find_main.FindMainUsingChubby(ver)
+    if main is None:
       try_count += 1
-      logging.info('Could not find master, sleeping for %d seconds...',
+      logging.info('Could not find main, sleeping for %d seconds...',
                    time_sleep)
       time.sleep(time_sleep)
 
-  return master
+  return main
 
 ###############################################################################
 
 
-def IncreaseMasterCounter():
+def IncreaseMainCounter():
   ar = adminrunner_client.AdminRunnerClient("localhost", 2100)
   ar.IncreaseCounter(5 * 60 * 1000) # 5 minutes
 
@@ -161,25 +161,25 @@ def StartAdminLoop(config, op='start'):
 
 ###############################################################################
 
-def BecomeMaster(config):
-  """Becomes master -- runs set_standard_crontab.py and starts AdminRunner"""
+def BecomeMain(config):
+  """Becomes main -- runs set_standard_crontab.py and starts AdminRunner"""
 
   # Start our stuff
   StartAdminLoop(config)
 
   # Wait for adminrunner to start up
   if not IsAdminRunnerAlive(12, 10):  # max_tries, sleep_time
-    raise Error, 'I am the master but could not start AdminRunner.'
+    raise Error, 'I am the main but could not start AdminRunner.'
 
-  # start snmpd when becoming master
+  # start snmpd when becoming main
   enableSnmp()
 
-  # Write NTP parameters of master into /etc/ntp.conf
-  SetMasterNTP(config)
+  # Write NTP parameters of main into /etc/ntp.conf
+  SetMainNTP(config)
 
 ###############################################################################
-def SetMasterNTP(config):
-  """ Rewrite the content of the master-node /etc/ntp.conf file """
+def SetMainNTP(config):
+  """ Rewrite the content of the main-node /etc/ntp.conf file """
 
   global_file = config.GetConfigFileName()
 
@@ -196,12 +196,12 @@ def SetMasterNTP(config):
       # Run a set-uid program to rewrite /etc/ntp.conf
       os.system("/usr/local/sbin/reconfigure_net NTP %s" % server_arg)
     else:
-      logging.error("Missing variable NTP_SERVERS. Can not set master NTP. ")
+      logging.error("Missing variable NTP_SERVERS. Can not set main NTP. ")
 
 ###############################################################################
 
-def AvoidGFSMasterOnNode(config, node):
-  """ avoiding running primary gfs master on a node
+def AvoidGFSMainOnNode(config, node):
+  """ avoiding running primary gfs main on a node
 
   Arguments:
     config: instance of entconfig
@@ -210,24 +210,24 @@ def AvoidGFSMasterOnNode(config, node):
 
   ver = config.VERSION
   testver = install_utilities.is_test(ver)
-  # first make sure there is a primary master
-  out = gfs_utils.EnsureGFSMasterRunning(ver, testver)
+  # first make sure there is a primary main
+  out = gfs_utils.EnsureGFSMainRunning(ver, testver)
   if out is not None:
-    logging.error("GFSMaster_NoMaster alert detected, "
+    logging.error("GFSMain_NoMain alert detected, "
                   "but fix was not successful. Error message: [%s]" % out)
   else:
-    gfs_utils.AvoidGFSMasterOnNode(ver, testver, node)
-  # ensure gfs chunkservers are added after gfs master is running
+    gfs_utils.AvoidGFSMainOnNode(ver, testver, node)
+  # ensure gfs chunkservers are added after gfs main is running
   gfs_utils.AddGFSChunkservers(ver, testver, config.MACHINES)
 
-def SetNonMasterNTP(master):
-  """ Rewrite the content of the nonmaster-node /etc/ntp.conf file
+def SetNonMainNTP(main):
+  """ Rewrite the content of the nonmain-node /etc/ntp.conf file
 
   Args:
-    master - "ent1"
+    main - "ent1"
   """
 
-  os.system("/usr/local/sbin/reconfigure_net NTP %s" % master)
+  os.system("/usr/local/sbin/reconfigure_net NTP %s" % main)
 
 ###############################################################################
 def KillRedundantServices(config):
@@ -248,7 +248,7 @@ def KillRedundantServices(config):
 
 ###############################################################################
 
-def MasterKillMyself(config):
+def MainKillMyself(config):
 
   util_dir = "%s/local/google3/enterprise/legacy/util" % config.ENTERPRISE_HOME
 
@@ -262,23 +262,23 @@ def MasterKillMyself(config):
                      "--kill_by_group" %
                      (config.ENTERPRISE_BASHRC, util_dir, script))
 
-  KillProcessIfNotMaster(config)
+  KillProcessIfNotMain(config)
 
 ###############################################################################
-def KillProcessIfNotMaster(config):
+def KillProcessIfNotMain(config):
   # kill babysitter
   util_dir = "%s/local/google3/enterprise/legacy/util" % config.ENTERPRISE_HOME
   E.killBabysitter(util_dir, config.GetConfigFileName(), config.VERSION)
 
-  # stop snmpd when not a master
+  # stop snmpd when not a main
   disableSnmp()
 
 ###############################################################################
 
-def ResyncWithMaster(google_config_file,
+def ResyncWithMain(google_config_file,
                      enterprise_home,
                      enterprise_user,
-                     master) :
+                     main) :
 
   scripts_dir = "%s/local/google3/enterprise/legacy/scripts" % enterprise_home
 
@@ -286,8 +286,8 @@ def ResyncWithMaster(google_config_file,
   E.su_exe_or_fail(
     enterprise_user,
     ". %s && cd %s && alarm 600 ./replicate_config.py %s %s" %
-    (enterprise_bashrc, scripts_dir, master, google_config_file))
-  SetNonMasterNTP(master)
+    (enterprise_bashrc, scripts_dir, main, google_config_file))
+  SetNonMainNTP(main)
 
 ###############################################################################
 
@@ -389,7 +389,7 @@ def enableSnmp():
     pass
 
 def disableSnmp():
-  '''Stop SNMP daemon if not master or not enabled'''
+  '''Stop SNMP daemon if not main or not enabled'''
   os.system('/etc/rc.d/init.d/snmpd stop > /dev/null')
 
 def monitorSnmp():
@@ -410,7 +410,7 @@ def EnableGFS(config):
     # File doesn't exist; this is good
     pass
   try:
-    disabled_file = ('%s/data/gfs_master/ent.gfsmaster/DISABLED' %
+    disabled_file = ('%s/data/gfs_main/ent.gfsmain/DISABLED' %
                      config.ENTERPRISE_HOME)
     os.unlink(disabled_file)
     logging.error('GFS had disabled itself.  Removed %s' % disabled_file)
@@ -435,7 +435,7 @@ def DnsConfig(config):
 
 def PeriodicScript(config):
   """
-  If we have the FANCY_CLUSTER flag on we perform some master election
+  If we have the FANCY_CLUSTER flag on we perform some main election
   """
   global apacheRecheck
 
@@ -445,11 +445,11 @@ def PeriodicScript(config):
   sshd_alive = sshd_alive_check(config)
   tries = 6
   sleep_time = 10
-  master = DetectMaster(machines, tries, sleep_time, config.var('VERSION'))
-  if master is None:
-    raise Error, 'Could not find master in %d tries.' % tries
+  main = DetectMain(machines, tries, sleep_time, config.var('VERSION'))
+  if main is None:
+    raise Error, 'Could not find main in %d tries.' % tries
 
-  logging.info('%s is the master' % master)
+  logging.info('%s is the main' % main)
 
   if not sshd_alive:
     # No ssh running. I restart sshd
@@ -460,33 +460,33 @@ def PeriodicScript(config):
 
   # The name of this machine
   crt_machine = E.getCrtHostName()
-  if master == crt_machine:  # I am the master
-    # make sure gfs master is not running on the same node on clusters
+  if main == crt_machine:  # I am the main
+    # make sure gfs main is not running on the same node on clusters
     if len(machines) > 1:
-      AvoidGFSMasterOnNode(config, crt_machine)
+      AvoidGFSMainOnNode(config, crt_machine)
 
     if IsAdminRunnerAlive(6, 10):  # max_tries, sleep_time
       # Lincense stuff -- incrrease the serving time count
-      IncreaseMasterCounter()
+      IncreaseMainCounter()
       # babysit loop_AdminRunner and loop_webserve_config
       StartAdminLoop(config, op='babysit')
-    else:  # I am the master but adminrunner does not seem to be running
-      logging.info('I (%s) am the master but adminrunner does not seem to be'
+    else:  # I am the main but adminrunner does not seem to be running
+      logging.info('I (%s) am the main but adminrunner does not seem to be'
                    'running.' % crt_machine)
-      BecomeMaster(config)
-  else:   # I am not the master
-    resync_with_master = 1
-    if core_utils.CanRunGSAMaster(crt_machine):
+      BecomeMain(config)
+  else:   # I am not the main
+    resync_with_main = 1
+    if core_utils.CanRunGSAMain(crt_machine):
       if IsAdminRunnerAlive(1, 0):   # max_tries, sleep_time
         # Kills adminrunner related processes, webconfig.py
-        # calls KillProcessIfNotMaster
-        MasterKillMyself(config)
-        resync_with_master = 0
+        # calls KillProcessIfNotMain
+        MainKillMyself(config)
+        resync_with_main = 0
       else:
-        KillProcessIfNotMaster(config)
-    if resync_with_master:
-      ResyncWithMaster(config.GetConfigFileName(), config.ENTERPRISE_HOME,
-                       config.ENTERPRISE_USER, master)
+        KillProcessIfNotMain(config)
+    if resync_with_main:
+      ResyncWithMain(config.GetConfigFileName(), config.ENTERPRISE_HOME,
+                       config.ENTERPRISE_USER, main)
 
   # check all services and kill services I am not supposed to run
   KillRedundantServices(config)

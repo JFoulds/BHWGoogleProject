@@ -19,7 +19,7 @@ from google3.enterprise.legacy.setup import prodlib
 from google3.enterprise.legacy.production.common import setlib
 from google3.enterprise.legacy.production.babysitter import servertype
 from google3.enterprise.legacy.setup import serverflags
-from google3.enterprise.legacy.production.babysitter import masterconfig
+from google3.enterprise.legacy.production.babysitter import mainconfig
 from google3.enterprise.legacy.production.babysitter import segment_data
 from google3.enterprise.legacy.setup import asyncli
 
@@ -428,7 +428,7 @@ class ServerSet:
     return servertype.IsBalancerType(self.servertype())
 
   # Return the servertype of the balanced set if this is a
-  # set of balancers.  If 'serve_as' has been used (for rtslaves)
+  # set of balancers.  If 'serve_as' has been used (for rtsubordinates)
   # we return the serve_as type.
   def balsrvset(self):
     if not self.isbaltype():
@@ -1118,12 +1118,12 @@ class ServerManager:
       srvset = setspec
     elif len(spec) == 2:
       (service, srvset) = spec
-      factory = masterconfig.Factory(self.property('coloc'),
+      factory = mainconfig.Factory(self.property('coloc'),
                                      config_dir=self.property('config_dir'))
       srv_mgr = factory.GetConfigs(service)[0].GetServerManager()
     elif len(spec) == 3:
       (coloc, service, srvset) = spec
-      factory = masterconfig.Factory(coloc,
+      factory = mainconfig.Factory(coloc,
                                      config_dir=self.property('config_dir'))
       srv_mgr = factory.GetConfigs(service)[0].GetServerManager()
     else:
@@ -1471,7 +1471,7 @@ def IsValidSetName(setname):
 def GetServersMonitoredForColocService(coloc, service, default_types_to_load,
                                        default_types_not_to_load):
   config_mach_dict = {}
-  factory = masterconfig.Factory(coloc)
+  factory = mainconfig.Factory(coloc)
   configs = factory.GetConfigs(service)
   for config in configs:
     types_to_load = default_types_to_load

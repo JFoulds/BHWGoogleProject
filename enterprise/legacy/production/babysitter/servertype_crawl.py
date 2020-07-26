@@ -497,7 +497,7 @@ def restart_wrapper(name, config, host, port, user_args,
   # we will use "rsync" like this
   rsync_bin = '/usr/bin/rsync -t -e "ssh -c none"'
   if (name == 'web'):
-    rsync_cmd = rsync_cmd + rsync_bin + " -a google@master.prodz:/root/googledata/ /root/googledata/ && "
+    rsync_cmd = rsync_cmd + rsync_bin + " -a google@main.prodz:/root/googledata/ /root/googledata/ && "
 
   # append common arguments
   args = user_args
@@ -777,11 +777,11 @@ def args_urlserver(config, port):
     if config.var('RTINDEXER_FOR_SERVING'):
       args.append("--docserver_shards=%d" % config.GetNumShards('base_indexer'))
     elif config.var('RTSLAVE_FOR_SERVING'):
-      shards = config.GetNumShards('rtslave')
+      shards = config.GetNumShards('rtsubordinate')
       if shards == 0:
         # No shards, so check if there are any shards for the port-shifted
-        # rtslave; GSA shifts ports when running in TEST mode.
-        shards = config.GetNumShards('rtslave:1')
+        # rtsubordinate; GSA shifts ports when running in TEST mode.
+        shards = config.GetNumShards('rtsubordinate:1')
       args.append("--docserver_shards=%d" % shards)
     else:
       # otherwise just see how many docservers the bot talks to
@@ -3147,7 +3147,7 @@ def num_pageranks(starturls):
   return len(string.split(starturls, ','))
 
 # Pagerank derives its host port list for communication with the
-# pagerank master by adding 500 to the ports specified for the
+# pagerank main by adding 500 to the ports specified for the
 # pagerankers The actual ports used by the pagerankers are used for
 # health checks
 def pagerank_host_port_list(name, config):
@@ -4557,7 +4557,7 @@ def restart_urlhistory_processor(config, host, port):
 
   # if started in serving_only mode, we don't merge and we don't process_logs
   if config.var('URLHISTORY_PROCESSOR_QUERY_ONLY'):
-    args.append("--slave")
+    args.append("--subordinate")
     args.append("--nomerger")
   else:
     # We want to merge wider -- override default set earlier

@@ -18,7 +18,7 @@ import string
 
 from google3.pyglib import logging
 from google3.enterprise.legacy.install import install_utilities
-from google3.enterprise.legacy.util import find_master
+from google3.enterprise.legacy.util import find_main
 from google3.enterprise.legacy.util import E
 from google3.enterprise.legacy.logs import liblog
 from google3.enterprise.legacy.adminrunner import entconfig
@@ -28,11 +28,11 @@ from google3.file.base import pywrapfile
 ###############################################################################
 
 def CollectLogs(all_machines, gws_log_dir, log_collect_dir):
-  # We only run this on oneway or master node of cluster.
-  master = find_master.FindMaster(2100, all_machines)
+  # We only run this on oneway or main node of cluster.
+  main = find_main.FindMain(2100, all_machines)
   crt_machine = E.getCrtHostName()
-  if len(all_machines) != 1 and (len(master) != 1 or master[0] != crt_machine):
-    logging.info('Not a oneway or cluster master node. Return!')
+  if len(all_machines) != 1 and (len(main) != 1 or main[0] != crt_machine):
+    logging.info('Not a oneway or cluster main node. Return!')
     return
 
   lockfile = '%s/lock' % log_collect_dir
@@ -47,20 +47,20 @@ def CollectLogs(all_machines, gws_log_dir, log_collect_dir):
       src_pattern = '%s/partnerlog.*' % gws_log_dir
       dest_dir = '%s/%s' % (log_collect_dir, machine)
 
-      # If it's a oneway or master node, we make a symlink to gws_log_dir instead
+      # If it's a oneway or main node, we make a symlink to gws_log_dir instead
       # of rsync to log_collect directory
       if machine == crt_machine:
         # To make it backward compatible, we need to remove old dest_dir if it's
         # already an existing directory from previous version because in previous
-        # versions we created a dir and rsynced files even on the master node and
+        # versions we created a dir and rsynced files even on the main node and
         # one-ways.
         if os.path.exists(dest_dir) and not os.path.islink(dest_dir):
-          if not E.rm(master, '%s/*' % dest_dir) or not E.rmdir(master, dest_dir):
+          if not E.rm(main, '%s/*' % dest_dir) or not E.rmdir(main, dest_dir):
             logging.error('Directory %s exists and cannot be cleaned.', dest_dir)
             continue
           logging.info('Cleaned existing directory %s.', dest_dir)
 
-        if E.ln(master, gws_log_dir, dest_dir):
+        if E.ln(main, gws_log_dir, dest_dir):
           logging.info('Symlink %s to directory %s:%s for logs' %
                        (dest_dir, machine, gws_log_dir))
         else:
@@ -68,7 +68,7 @@ def CollectLogs(all_machines, gws_log_dir, log_collect_dir):
                         (dest_dir, gws_log_dir))
         continue
 
-      # For non-master nodes on cluster, we need to rsync those files to master node
+      # For non-main nodes on cluster, we need to rsync those files to main node
       logging.info('Collecting logs from %s:%s into %s' % (
         machine, src_pattern, dest_dir))
 
@@ -93,12 +93,12 @@ def CollectLogs(all_machines, gws_log_dir, log_collect_dir):
 def SyncOpLogs(all_machines, log_dir):
   """ This will sync the AdminRunner.OPERATOR.* logs to all machines """
 
-  # We have to run this only on master
-  master = find_master.FindMaster(2100, all_machines)
+  # We have to run this only on main
+  main = find_main.FindMain(2100, all_machines)
 
   # The name of this machine
   crt_machine = E.getCrtHostName()
-  if len(master) == 1 and master[0] == crt_machine:
+  if len(main) == 1 and main[0] == crt_machine:
     for machine in all_machines:
       if machine != crt_machine:
         src_dir = '%s/AdminRunner.OPERATOR.*' % (log_dir)

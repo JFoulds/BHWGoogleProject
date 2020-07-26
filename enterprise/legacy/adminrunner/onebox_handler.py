@@ -304,7 +304,7 @@ class OneBoxHandler(admin_handler.ar_handler):
     backendFile.write(dom.toxml(encoding="utf-8"));
     backendFile.close()
 
-    # rewrite the master XSL that calls each individual one:
+    # rewrite the main XSL that calls each individual one:
 
     custFile = open(self.xslDir + os.sep + custFileName, "w")
     custFile.write(customerHeader)

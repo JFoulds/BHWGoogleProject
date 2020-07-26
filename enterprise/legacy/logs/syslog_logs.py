@@ -25,7 +25,7 @@ from google3.enterprise.legacy.install import install_utilities
 from google3.enterprise.legacy.logs import liblog
 from google3.enterprise.legacy.logs import syslog_client
 from google3.enterprise.legacy.util import E
-from google3.enterprise.legacy.util import find_master
+from google3.enterprise.legacy.util import find_main
 from google3.enterprise.legacy.util import port_talker
 from google3.pyglib import gfile
 from google3.pyglib import logging
@@ -35,22 +35,22 @@ MAX_COUNT_BETWEEN_CHECKPOINT = 1000
 ###############################################################################
 
 
-def isMaster(config):
-  """Return true if is running on master node."""
+def isMain(config):
+  """Return true if is running on main node."""
   if len(config.var('MACHINES')) == 1:
     return 1
   (status, response) = port_talker.Talk(E.getCrtHostName(),
                                         core_utils.GSA_MASTER_PORT,
-                                        'v is_master', 5)
+                                        'v is_main', 5)
   return status and response[0] == '1'
 
 def checkpointAndCheckStatus(checkpoint_file, apache_logs, config):
-  """Checkpoint apache_logs into file and return true if still is a master."""
+  """Checkpoint apache_logs into file and return true if still is a main."""
   if not liblog.makeValid(checkpoint_file, apache_logs):
     logging.error('Error writing checkpoint %s' % checkpoint_file)
     return 0
-  if not isMaster(config):
-    logging.error('I am not a master. Terminating')
+  if not isMain(config):
+    logging.error('I am not a main. Terminating')
     return 0
   return 1
 
@@ -128,9 +128,9 @@ def main(argv):
   if not state in [ 'ACTIVE', 'SERVE' ]:
     sys.exit(0)
 
-  # Collect syslogs only from master node.
-  if not isMaster(config):
-    logging.fatal('Not a oneway or cluster master node. Return!')
+  # Collect syslogs only from main node.
+  if not isMain(config):
+    logging.fatal('Not a oneway or cluster main node. Return!')
 
   pywrapbase.InitGoogleScript('', ['foo',
           '--gfs_aliases=%s' % config.var("GFS_ALIASES"),

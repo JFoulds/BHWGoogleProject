@@ -98,7 +98,7 @@ class LocalBabysitterUtil:
     core_utils.ExecCmd(cmd, msg)
 
   def GetMiscFiles(self, prefix):
-    """Given a service prefix, e.g. gsa-master, chubbydnsserver etc. returns
+    """Given a service prefix, e.g. gsa-main, chubbydnsserver etc. returns
     pidfile, conffile and binary associated.
     """
     conffile = CONF_FILE_FMT % (prefix, self.__ver)

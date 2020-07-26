@@ -22,7 +22,7 @@ from google3.enterprise.legacy.util import E
 from google3.pyglib import logging
 
 from google3.enterprise.legacy.util import port_talker
-from google3.enterprise.legacy.util import find_master
+from google3.enterprise.legacy.util import find_main
 from google3.enterprise.legacy.util import python_kill
 from google3.enterprise.legacy.util import fed_network_config
 from google3.enterprise.legacy.util import fed_network_util
@@ -37,7 +37,7 @@ from google3.enterprise.core import core_utils
 FED_NETWORK_CONFIG = '%s/local/conf/fed_network.xml'
 
 class FederationNetworkService(ent_service.ent_service):
-  """Manages the federation network service on every slave or corpus root."""
+  """Manages the federation network service on every subordinate or corpus root."""
 
   def __init__(self):
     ent_service.ent_service.__init__(self, "fed_network", 0, "2minly", 1, 3600)

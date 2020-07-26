@@ -60,8 +60,8 @@ class EntQuorumError(exceptions.Exception):
   """
   pass
 
-class EntMasterError(exceptions.Exception):
-  """Indicates an error message related to master election in an enterprise
+class EntMainError(exceptions.Exception):
+  """Indicates an error message related to main election in an enterprise
   cluster.
   """
   pass
@@ -204,9 +204,9 @@ def GetSessionManagerPrefix(is_cluster=None):
   """Returns the prefix for the Session manager server.
 
   On a cluster the prefix is used as an argument in the election commissar code
-  to compose the master name. 
+  to compose the main name. 
   On a oneway this value is set to be 'localhost' and the binary interprets
-  that as running without any master election using chubby.
+  that as running without any main election using chubby.
   Returns:
     sessionmanager or localhost
   """
@@ -218,7 +218,7 @@ def GetSessionManagerAliases(ver, testver, is_cluster=None):
   """Returns the alias for the Session manager server.
 
   On a cluster: this name is partly created by the Election commisar code.
-    For this particular name we give the argument sessionmanager-master and
+    For this particular name we give the argument sessionmanager-main and
     the election commisar sufixes the rest of the string.
   On a oneway: we just use a hostname as ent1
   Args:
@@ -227,7 +227,7 @@ def GetSessionManagerAliases(ver, testver, is_cluster=None):
     is_cluster: 1 if Cluster, 0 for other platforms
   Returns:
     On cluster a full qualified hostname:port for e.g:
-      sessionmanager-master.ent5-0-3.ls.google.com:port
+      sessionmanager-main.ent5-0-3.ls.google.com:port
     On oneway just 'ent1:port'
     where port is obtained through GetSessionManagerPort()
   """
@@ -236,7 +236,7 @@ def GetSessionManagerAliases(ver, testver, is_cluster=None):
   if not is_cluster:
     return '%s:%s' % ('ent1', smport)
   smprefix = GetSessionManagerPrefix(is_cluster)
-  return '%s-master.%s.ls.google.com:%s' % (smprefix, ent_dash_ver, smport)
+  return '%s-main.%s.ls.google.com:%s' % (smprefix, ent_dash_ver, smport)
 
 def GetSessionManagerPort(testver):
   """Returns the port of SessionManager Server.
@@ -286,8 +286,8 @@ def GetLSRepPort(version, testver):
   logging.info('Replica port for version %s is %s' % (version, port))
   return port
 
-def GetGFSMasterPort(testver):
-  """Returns the port of the gfs_master
+def GetGFSMainPort(testver):
+  """Returns the port of the gfs_main
 
   Arguments:
     testver: 1 - the version is in test mode. 0 - otherwise.
@@ -297,10 +297,10 @@ def GetGFSMasterPort(testver):
   """
 
   if testver:
-    gfsmasterport = GFSMASTER_TEST_PORT
+    gfsmainport = GFSMASTER_TEST_PORT
   else:
-    gfsmasterport = GFSMASTER_BASE_PORT
-  return gfsmasterport
+    gfsmainport = GFSMASTER_BASE_PORT
+  return gfsmainport
 
 def GetGFSAliases(ver, testver):
   """Returns the gfs_aliases
@@ -310,11 +310,11 @@ def GetGFSAliases(ver, testver):
     testver: 1 - the version is in test mode. 0 - otherwise.
 
   Returns:
-    'ent=master.ent.gfs.ent4-6-5.ls.google.com:3830'
+    'ent=main.ent.gfs.ent4-6-5.ls.google.com:3830'
   """
 
-  gfsmasterport = GetGFSMasterPort(testver)
-  return '%s=%s:%s'% (GFS_CELL, MakeGFSMasterPath(ver), gfsmasterport)
+  gfsmainport = GetGFSMainPort(testver)
+  return '%s=%s:%s'% (GFS_CELL, MakeGFSMainPath(ver), gfsmainport)
 
 def GetDeadNodeDir(ver):
   """Returns the directory where dead nodes info lives.
@@ -447,7 +447,7 @@ def AmISessionManagerNode():
   Nodes on the higher bucket are returned as the session manager nodes. For a
   5way they are ent2, ent3, ent4, ent5.
   12way they are ent2 through ent12. We basically want to run it on all nodes
-  but are avoiding the nodes which will be loaded because of being GFS master
+  but are avoiding the nodes which will be loaded because of being GFS main
   at most times(i.e ent1 for both 5 and 12 ways)
 
   returns:
@@ -485,20 +485,20 @@ def UseGFS(total_nodes):
   """
   return total_nodes >= 3
 
-def GetGSAMaster(ver, testver):
-  """Returns current GSA master by looking up chubby DNS.
+def GetGSAMain(ver, testver):
+  """Returns current GSA main by looking up chubby DNS.
   """
   nodes = GetNodes()
   if len(nodes) == 1:
     return nodes[0]
-  lockfile = '/ls/%s/gsa-masterlock' % GetCellName(ver)
+  lockfile = '/ls/%s/gsa-mainlock' % GetCellName(ver)
   basecmd = GetLSClientCmd(ver, testver)
   fi = os.popen('%s cat %s'  % (basecmd, lockfile),
                 'r')
   data = fi.read()
   ret = fi.close()
   if ret:
-    raise EntMasterError, 'Error getting GSA master from %s' % lockfile
+    raise EntMainError, 'Error getting GSA main from %s' % lockfile
   return data
 
 # We take logging as argument because this module can be used by google2 and
@@ -583,8 +583,8 @@ def GetDNSPath(ver):
 def MakeFullPath(dns_entry, ver):
   """Retunrs full path for DNS lookups of dns_entry. Also replaces variables
   like entcell in the dns_entry to the cell name.
-  e.g. MakeFullPath('gfs-%(gfscell)s-master', '4.3.39') will return something
-  like gfs-ent4-3-39-master.ent4-3-39.ls.google.com.
+  e.g. MakeFullPath('gfs-%(gfscell)s-main', '4.3.39') will return something
+  like gfs-ent4-3-39-main.ent4-3-39.ls.google.com.
   """
   vars = { 'entcell' : GetCellName(ver),
            'gfschubbycell' : GetGFSChubbyCellName(ver),
@@ -592,25 +592,25 @@ def MakeFullPath(dns_entry, ver):
          }
   return '%s.%s' % (dns_entry % vars, GetDNSPath(ver))
 
-def MakeGFSMasterPath(ver):
-  """Returns GFS Master Path. E.g., MakeGFSMasterPath('4.4.4') will return
-  master.ent.gfs.ent4-4-4.ls.google.com
+def MakeGFSMainPath(ver):
+  """Returns GFS Main Path. E.g., MakeGFSMainPath('4.4.4') will return
+  main.ent.gfs.ent4-4-4.ls.google.com
   """
-  return MakeFullPath('master.%(gfscell)s.gfs', ver)
+  return MakeFullPath('main.%(gfscell)s.gfs', ver)
 
-def MakeGSAMasterPath(ver):
-  """Returns GSA master path.
+def MakeGSAMainPath(ver):
+  """Returns GSA main path.
 
-  E.g., MakeGSAMasterPath('4.6.4') will return
-  gsa-ent4-6-4-master.ent4-6-4.ls.google.com
+  E.g., MakeGSAMainPath('4.6.4') will return
+  gsa-ent4-6-4-main.ent4-6-4.ls.google.com
   """
-  return MakeFullPath('gsa-%(entcell)s-master', ver)
+  return MakeFullPath('gsa-%(entcell)s-main', ver)
 
 def HasSVSErrors(node, ver, is_test_ver=0):
   """Returns true if the node has SVS errors by talking to chubby. If the svs
   file can't be found for that node then we return true. The svs file for each
   node is of the format /ls/<cell>/svs_<node_name>. This file is generated by
-  gsa-master process running on each node.
+  gsa-main process running on each node.
   is_test_ver indicates if the version is in TEST mode with shifted ports.
   """
   basecmd = 'alarm 10 %s' % GetLSClientCmd(ver, is_test_ver)
@@ -640,14 +640,14 @@ def FindHealthyNode(logging, ver, is_test_ver=0):
   logging.warn('Could not find a healthy node. Using current node.')
   return GetNode()
 
-def CanRunGSAMaster(node_name, all_nodes=None, max_node_failures=None):
-  """ Can GSA master run on this node?
-  In order to avoid GSA master and GFS master running on the same node,
+def CanRunGSAMain(node_name, all_nodes=None, max_node_failures=None):
+  """ Can GSA main run on this node?
+  In order to avoid GSA main and GFS main running on the same node,
   only the first 1+r nodes with even node number (ent2, ent4, ...) can
-  run GSA Master. r is the number of node failures allowed.
+  run GSA Main. r is the number of node failures allowed.
   It is very important that this function returns the same result
   after a node is added/removed. Some code is based on this assumption.
-  For example, periodic script skips some work on non-gsa master nodes.
+  For example, periodic script skips some work on non-gsa main nodes.
 
   Arguments:
     node_name: 'ent1'
@@ -655,7 +655,7 @@ def CanRunGSAMaster(node_name, all_nodes=None, max_node_failures=None):
     max_node_failures: 2 - for unittest
 
   Returns:
-    1, GSA master can run on this node. 0, otherwise.
+    1, GSA main can run on this node. 0, otherwise.
   """
 
   if all_nodes is None:
@@ -665,32 +665,32 @@ def CanRunGSAMaster(node_name, all_nodes=None, max_node_failures=None):
   sort_all_nodes_temp = [(int(x.replace('ent', '')), x) for x in all_nodes]
   sort_all_nodes_temp.sort()
   all_nodes = [s[1] for s in sort_all_nodes_temp]
-  gsa_master_nodes = []
-  non_gsa_master_nodes = []
+  gsa_main_nodes = []
+  non_gsa_main_nodes = []
   node_index = 1
   for node in all_nodes:
     if node_index %2 == 0:
-      gsa_master_nodes.append(node)
+      gsa_main_nodes.append(node)
     else:
-      non_gsa_master_nodes.append(node)
+      non_gsa_main_nodes.append(node)
     node_index += 1
-    if len(gsa_master_nodes) > max_node_failures:
+    if len(gsa_main_nodes) > max_node_failures:
       break
-  if len(gsa_master_nodes) <= max_node_failures:
-    additional_gsa_master_nodes = max_node_failures + 1 - len(gsa_master_nodes)
-    gsa_master_nodes += non_gsa_master_nodes[0:additional_gsa_master_nodes]
-  if node_name in gsa_master_nodes:
+  if len(gsa_main_nodes) <= max_node_failures:
+    additional_gsa_main_nodes = max_node_failures + 1 - len(gsa_main_nodes)
+    gsa_main_nodes += non_gsa_main_nodes[0:additional_gsa_main_nodes]
+  if node_name in gsa_main_nodes:
     return 1
   else:
     return 0
 
-def GFSMasterNodes(all_nodes=None, active_nodes=None, max_node_failures=None):
-  """ list of all GFS master nodes, list of GFS shadow master nodes
+def GFSMainNodes(all_nodes=None, active_nodes=None, max_node_failures=None):
+  """ list of all GFS main nodes, list of GFS shadow main nodes
 
-  We need r+1 primary-only gfs masters, r+1 shadow gfs masters.
+  We need r+1 primary-only gfs mains, r+1 shadow gfs mains.
   r is the number of node failures allowed.
-  The primary only GFS master nodes cannot run GSA master. The shadow
-  GFS master nodes can run GSA master, but try to avoid that.
+  The primary only GFS main nodes cannot run GSA main. The shadow
+  GFS main nodes can run GSA main, but try to avoid that.
   When a node is added/removed, other nodes' role should not change:
 
   Arguments:
@@ -714,33 +714,33 @@ def GFSMasterNodes(all_nodes=None, active_nodes=None, max_node_failures=None):
                              for x in all_nodes]
   sort_all_nodes_temp.sort()
   all_nodes = [s[1] for s in sort_all_nodes_temp]
-  primary_only_gfs_master_nodes = []
+  primary_only_gfs_main_nodes = []
   other_nodes = []
   node_index = 1
   for node in all_nodes:
     if (node_index %2 != 0 and
-       len(primary_only_gfs_master_nodes) <= max_node_failures):
-      primary_only_gfs_master_nodes.append(node)
+       len(primary_only_gfs_main_nodes) <= max_node_failures):
+      primary_only_gfs_main_nodes.append(node)
     else:
       other_nodes.append(node)
     node_index += 1
-  if len(primary_only_gfs_master_nodes) <= max_node_failures:
+  if len(primary_only_gfs_main_nodes) <= max_node_failures:
     additional_primary_nodes = (max_node_failures + 1 -
-                                       len(primary_only_gfs_master_nodes))
-    primary_only_gfs_master_nodes += other_nodes[0:additional_primary_nodes]
+                                       len(primary_only_gfs_main_nodes))
+    primary_only_gfs_main_nodes += other_nodes[0:additional_primary_nodes]
     other_nodes = other_nodes[additional_primary_nodes:]
   other_nodes.reverse()
-  shadow_gfs_masters = other_nodes[0:max_node_failures + 1]
+  shadow_gfs_mains = other_nodes[0:max_node_failures + 1]
 
-  all_gfs_masters = primary_only_gfs_master_nodes + shadow_gfs_masters
+  all_gfs_mains = primary_only_gfs_main_nodes + shadow_gfs_mains
   # filter inactive nodes
-  return ([x for x in all_gfs_masters if x in active_nodes],
-          [x for x in shadow_gfs_masters if x in active_nodes])
+  return ([x for x in all_gfs_mains if x in active_nodes],
+          [x for x in shadow_gfs_mains if x in active_nodes])
 
-def DesiredMasterNode(all_nodes=None, active_nodes=None,
+def DesiredMainNode(all_nodes=None, active_nodes=None,
                       max_node_failures=None):
-  """ Find desired GSA master node. node with the smallest number is mostly
-  desired. First find out all the nodes that can run GSA masters. Then pick
+  """ Find desired GSA main node. node with the smallest number is mostly
+  desired. First find out all the nodes that can run GSA mains. Then pick
   the first one that is active.
 
   Arguments:
@@ -764,27 +764,27 @@ def DesiredMasterNode(all_nodes=None, active_nodes=None,
   sort_all_nodes_temp = [(int(x.replace('ent', '')), x) for x in all_nodes]
   sort_all_nodes_temp.sort()
   all_nodes = [s[1] for s in sort_all_nodes_temp]
-  gsa_master_nodes = []
-  non_gsa_master_nodes = []
+  gsa_main_nodes = []
+  non_gsa_main_nodes = []
   node_index = 1
   for node in all_nodes:
     if node_index %2 == 0:
-      gsa_master_nodes.append(node)
+      gsa_main_nodes.append(node)
     else:
-      non_gsa_master_nodes.append(node)
+      non_gsa_main_nodes.append(node)
     node_index += 1
-    if len(gsa_master_nodes) > max_node_failures:
+    if len(gsa_main_nodes) > max_node_failures:
       break
-  if len(gsa_master_nodes) <= max_node_failures:
-    additional_gsa_master_nodes = max_node_failures + 1 - len(gsa_master_nodes)
-    gsa_master_nodes += non_gsa_master_nodes[0:additional_gsa_master_nodes]
-  for node in gsa_master_nodes:
+  if len(gsa_main_nodes) <= max_node_failures:
+    additional_gsa_main_nodes = max_node_failures + 1 - len(gsa_main_nodes)
+    gsa_main_nodes += non_gsa_main_nodes[0:additional_gsa_main_nodes]
+  for node in gsa_main_nodes:
     if node in active_nodes:
       return node
   return None
 
-def GSAMasterPort(is_testver):
-  """ Return the GSA master port
+def GSAMainPort(is_testver):
+  """ Return the GSA main port
 
   Arguments:
     is_testver: 0/1

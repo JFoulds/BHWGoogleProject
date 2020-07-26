@@ -57,7 +57,7 @@ class SNMPHandler(admin_handler.ar_handler):
       self.type = 'CLUSTER'
     else:
       self.type = 'ONEBOX'
-    self.master = [self.cfg.getGlobalParam('MASTER')]
+    self.main = [self.cfg.getGlobalParam('MASTER')]
 
   def get_accepted_commands(self):
     return {
@@ -72,7 +72,7 @@ class SNMPHandler(admin_handler.ar_handler):
     ''' This starts the SNMP daemon only on the MASTER'''
     cmd = 'secure_script_wrapper -p2 %s start' % self.snmpWrapperPath
     logMsg = 'SNMP started'
-    return self.execCmd(cmd, self.master, logMsg)
+    return self.execCmd(cmd, self.main, logMsg)
 
   def stop(self):
     ''' This stops the SNMP daemon '''

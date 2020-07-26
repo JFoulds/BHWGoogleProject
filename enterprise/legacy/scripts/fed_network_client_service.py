@@ -5,7 +5,7 @@
 """Script to launch clients and connect to a federation corpus root.
 
 This service runs every 2 mins, to ensure that any broken connections are 
-re-tried, new corpus root slaves are added. The service is active only when
+re-tried, new corpus root subordinates are added. The service is active only when
 there is a federation network configuration existing.
 """
 
@@ -45,7 +45,7 @@ FEDERATION_CONFIGROOT_FILE = ('%s/local/googledata/enterprise/data/'
   
 
 class FederationNetworkClientService(ent_service.ent_service):
-  """Manages the federation network client, on every master or superroot."""
+  """Manages the federation network client, on every main or superroot."""
 
   def __init__(self):
     ent_service.ent_service.__init__(self, 'fed_network_client', 0, '2minly', 1,
@@ -119,7 +119,7 @@ class FederationNetworkClientService(ent_service.ent_service):
         logging.error('Exception in configuration %s' % ex.message)
         return 1
       else:
-        # Connect to all the slaves
+        # Connect to all the subordinates
         (status_connect, message) = client.Start()
         
         # Create the config root

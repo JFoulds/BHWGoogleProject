@@ -40,7 +40,7 @@ import time
 from google3.base import pywrapbase
 from google3.pyglib import logging
 from google3.enterprise.legacy.install import install_utilities
-from google3.enterprise.legacy.util import find_master
+from google3.enterprise.legacy.util import find_main
 from google3.enterprise.legacy.util import E
 from google3.enterprise.legacy.util import C
 from google3.enterprise.legacy.logs import liblog

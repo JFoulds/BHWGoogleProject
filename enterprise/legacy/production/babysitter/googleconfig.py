@@ -30,8 +30,8 @@ from google3.enterprise.legacy.production.babysitter import configutil
 from google3.enterprise.legacy.production.babysitter import config_factory
 from google3.enterprise.legacy.production.babysitter import validatorlib
 from google3.enterprise.legacy.production.babysitter import config_namespace
-# Note that masterconfig is a circular import
-from google3.enterprise.legacy.production.babysitter import masterconfig
+# Note that mainconfig is a circular import
+from google3.enterprise.legacy.production.babysitter import mainconfig
 
 #
 # Googleconfig serves as a wrapper around config data that
@@ -1263,7 +1263,7 @@ class Config:
   def GetServiceName(self):
     if not self.var('COLOC', ''): return None
     try:
-      factory = masterconfig.Factory(self.var('COLOC'),
+      factory = mainconfig.Factory(self.var('COLOC'),
                                      config_dir=self.config_dir_)
       return factory.GetServiceName(os.path.basename(self.GetConfigFileName()))
     except IOError:
@@ -1277,7 +1277,7 @@ class Config:
   def GetGroupName(self):
     if not self.var('COLOC', ''): return None
     try:
-      factory = masterconfig.Factory(self.var('COLOC'),
+      factory = mainconfig.Factory(self.var('COLOC'),
                                      config_dir=self.config_dir_)
       return factory.GetGroupName(os.path.basename(self.GetConfigFileName()))
     except IOError:
@@ -1293,7 +1293,7 @@ class Config:
   def GetServiceGroups(self):
     if not self.var('COLOC', ''): return None
     try:
-      factory = masterconfig.Factory(self.var('COLOC'),
+      factory = mainconfig.Factory(self.var('COLOC'),
                                      config_dir=self.config_dir_)
       return factory.GetServiceGroups(os.path.basename(self.GetConfigFileName()))
     except IOError:
